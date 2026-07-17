@@ -1,0 +1,1150 @@
+{
+  "collapsedGroups": [],
+  "groups": ["Resets", "Shop Scan Client", "Pregame Detector Client", "BRB"],
+  "version": 23,
+  "t": "2026-07-17T10:39:28.1733109+02:00",
+  "blocking": false,
+  "queues": [],
+  "actions": [
+    {
+      "id": "2d04c060-cab9-49a1-97ef-b3573e48f661",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Reset All",
+      "group": "Resets",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "value": "1. Hide all extra groups",
+          "color": "",
+          "id": "d1cb1a1e-b656-46ea-a8be-146e55bcb0bc",
+          "weight": 0.0,
+          "type": 1009,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "METASCENE",
+          "groupName": "Music",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "9258c70f-16aa-4699-aa73-0e933756acb5",
+          "weight": 0.0,
+          "type": 32,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "sceneName": "METASCENE",
+          "groupName": "Scenes Clones",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "5a2babee-be6f-47e2-b8ad-64cbc55c3024",
+          "weight": 0.0,
+          "type": 32,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "sceneName": "METASCENE",
+          "groupName": "Voice Clips",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "dad883dc-ac47-43ae-92c8-e964be9b0c51",
+          "weight": 0.0,
+          "type": 32,
+          "parentId": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "sceneName": "METASCENE",
+          "groupName": "Transitions",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "95b6be27-44f2-4cb7-96ce-5a7205b937ab",
+          "weight": 0.0,
+          "type": 32,
+          "parentId": null,
+          "enabled": true,
+          "index": 4
+        },
+        {
+          "sceneName": "METASCENE",
+          "groupName": "Text messages",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "d328d3f7-9f65-4215-a12e-6763b03b47fa",
+          "weight": 0.0,
+          "type": 32,
+          "parentId": null,
+          "enabled": true,
+          "index": 5
+        },
+        {
+          "sceneName": "METASCENE",
+          "groupName": "Retarded mates",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "8b61c845-c3db-43ba-8c57-20c8d788beb5",
+          "weight": 0.0,
+          "type": 32,
+          "parentId": null,
+          "enabled": true,
+          "index": 6
+        },
+        {
+          "value": "2. Ensure main sources are visible",
+          "color": "",
+          "id": "e2d695a7-15cb-4344-a755-5a02af19dc26",
+          "weight": 0.0,
+          "type": 1009,
+          "parentId": null,
+          "enabled": true,
+          "index": 7
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "Dota2 Clone",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "a57c1675-57dd-446b-84ea-e392a92ffdf3",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 8
+        },
+        {
+          "value": "2.1 Show the << Cut transition >> DSLR to avoid visible Fade",
+          "color": "",
+          "id": "bc36023b-f587-4308-bb56-cc5531abb00f",
+          "weight": 0.0,
+          "type": 1009,
+          "parentId": null,
+          "enabled": true,
+          "index": 9
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "DSLR Clone (Cut)",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "606c1404-66fb-4782-8ca3-c23d31ada2bb",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 10
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "DSLR Clone (Fade)",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "ee44f05a-0a4c-43e4-9c39-e1e087fbfef6",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 11
+        },
+        {
+          "value": "3. Reset Filters",
+          "color": "",
+          "id": "c04b889d-65ff-44e8-9736-a0f92f6c23c5",
+          "weight": 0.0,
+          "type": 1009,
+          "parentId": null,
+          "enabled": true,
+          "index": 12
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "Scenes Clones",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "e7f359d7-8dc4-4eff-8426-e539fc9cc6fc",
+          "weight": 0.0,
+          "type": 41,
+          "parentId": null,
+          "enabled": true,
+          "index": 13
+        },
+        {
+          "value": "4. Normalize volume",
+          "color": "",
+          "id": "eb486ffc-13f0-4211-bddc-5f7784536fa8",
+          "weight": 0.0,
+          "type": 1009,
+          "parentId": null,
+          "enabled": true,
+          "index": 14
+        },
+        {
+          "name": "Set USB Mix volume to 0db",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"SetInputVolume\",\r\n  \"requestData\": {\r\n    \"inputName\": \"MG12XU Stereo USB Mix\",\r\n    \"inputVolumeDb\": 0\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "fc9aea25-7ebe-4a09-8089-fc3635a5a5d8",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 15
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "e314b940-fe9f-4f30-8108-891826a98a06",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "DSLR :: Hide",
+      "group": "Shop Scan Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "DSLR Clone (Fade)",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "3e7a0bfa-b4f9-4fb1-9230-c6b53763faa0",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "DSLR Clone (Cut)",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "030f51cc-53a7-4b8e-8aac-dcbd7ed0d93b",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "6cba2fc5-205f-4e51-9b35-7b0d5331cc7b",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "DSLR :: Show & Shop messages :: Hide",
+      "group": "Shop Scan Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "DSLR Clone (Fade)",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "140b55e2-3eea-4f36-8b8b-441163ea423f",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "<< brb buying milk >>",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "4a96cb29-2695-4b04-91d6-445eb61bf692",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "shop_open_duration_message",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "a2aa2343-b069-4459-a041-1669bd1a0d33",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "9e2a7010-59f9-454c-8ab0-71f8024fe1ad",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Retarded Mates",
+      "group": "",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "name": "Random Teammate",
+          "color": null,
+          "random": true,
+          "subActions": [
+            {
+              "sceneName": "METASCENE",
+              "sourceName": "pic - Teammate 1.1",
+              "state": 0,
+              "connectionId": "00000000-0000-0000-0000-000000000000",
+              "id": "c83c2618-a48d-44a6-881e-db8578160717",
+              "weight": 0.0,
+              "type": 30,
+              "parentId": "01718b83-1ae5-4c81-9651-4ae9adcc9510",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "sceneName": "METASCENE",
+              "sourceName": "pic - Teammate 1.2",
+              "state": 0,
+              "connectionId": "00000000-0000-0000-0000-000000000000",
+              "id": "7ca9154e-3eb3-4ffb-92e3-fe4f2ad60192",
+              "weight": 0.0,
+              "type": 30,
+              "parentId": "01718b83-1ae5-4c81-9651-4ae9adcc9510",
+              "enabled": true,
+              "index": 1
+            },
+            {
+              "sceneName": "METASCENE",
+              "sourceName": "pic - Teammate 1.3",
+              "state": 0,
+              "connectionId": "00000000-0000-0000-0000-000000000000",
+              "id": "42a8b6a6-5729-43e5-b1f0-d850f0299f78",
+              "weight": 0.0,
+              "type": 30,
+              "parentId": "01718b83-1ae5-4c81-9651-4ae9adcc9510",
+              "enabled": true,
+              "index": 2
+            }
+          ],
+          "id": "01718b83-1ae5-4c81-9651-4ae9adcc9510",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "Teammates Zoom",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "99b46c2e-6e44-461e-89ab-9d17ab2d9161",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "16d5492a-b5ff-47c0-85a8-43856d67b988",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "<< brb buying milk >> :: Show",
+      "group": "Shop Scan Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "<< brb buying milk >>",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "908e1c47-382c-44f2-8ccf-42ba6adb922a",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "bd02530a-65f6-4dc1-b92f-4ca7b09cd06b",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "<< brb buying milk>> :: Hide",
+      "group": "Shop Scan Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "<< brb buying milk >>",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "67292ef8-f1f0-453f-a00c-de77bcac2409",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "35e4928e-bfbd-4d0f-b696-4af7d225c429",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Display time since shop opening -F",
+      "group": "Shop Scan Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "shop_open_duration_message",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "7a0c9026-0245-4e03-878e-e8af5123efb5",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "file": "C:\\Users\\ville\\MyMegaScript\\src\\apps\\shop_watcher\\data\\time_since_shop_opened.txt",
+          "parseVariables": false,
+          "autoType": false,
+          "variableName": null,
+          "id": "70952116-c001-4c4d-8150-0d965567a446",
+          "weight": 0.0,
+          "type": 1006,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "sceneName": "METASCENE",
+          "sourceName": "shop_open_duration_message",
+          "text": "%line0%",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "2a2f02a7-4650-4b2c-8d6b-a2c780f0ce58",
+          "weight": 0.0,
+          "type": 39,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "1a938c12-9ee1-4a94-9b4a-477c6abcc86b",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "DSLR:: Hide (VS screen)",
+      "group": "Pregame Detector Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "Game Start",
+          "sourceName": "Moving DSLR",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "aff1fb0d-c7bb-4537-9639-7d00a051b8d6",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "2703d18d-cae8-4859-8ae6-d495284b34ab",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "DSLR :: Move & set Visibile (Starting buy)",
+      "group": "Pregame Detector Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "Game Start",
+          "filterName": "Move to buy phase",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "e1fb65ac-0864-4ed1-82c3-2ce2e32c459c",
+          "weight": 0.0,
+          "type": 47,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "Game Start",
+          "sourceName": "Moving DSLR",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "21127b8f-343d-474b-aa8c-27720706d3e7",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "fb10f3b6-e8b0-4c46-a3f3-af4587c42332",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "DSLR :: Move & set Visibile (Hero pick)",
+      "group": "Pregame Detector Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "Game Start",
+          "filterName": "Move to origin",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "971f483a-2648-4d7b-8d62-5e4d4af86ab0",
+          "weight": 0.0,
+          "type": 47,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "Game Start",
+          "sourceName": "Moving DSLR",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "027fb08d-79f1-42e9-9973-0a3915c74627",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "1f8045f7-d4dc-45ef-bc8e-9d52be9d0db0",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Switch to METASCENE (In Game)",
+      "group": "Pregame Detector Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "METASCENE",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "664212a4-f23b-4e74-8503-baa84d5ef050",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "3b8d1ffe-3af3-4dd8-881c-ea6811122f78",
+      "queue": null,
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Switch to GameStart (Game found)",
+      "group": "Pregame Detector Client",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "Game Start",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "3f5d1381-cb1e-4aa6-9a72-0e270de40977",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "Game Start",
+          "filterName": "Move to origin",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "0129297a-8434-4e49-8040-7eed340bbb6a",
+          "weight": 0.0,
+          "type": 47,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "sceneName": "Game Start",
+          "sourceName": "Moving DSLR",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "12d61440-bd6d-4ad4-a0a1-2533a8ba0a6c",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "7a94dc23-1b38-4ff5-81b8-2f778757942d",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "BRB Timer",
+      "group": "BRB",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "timerId": "b1bdb2dd-8d77-4b5e-98d9-65fb70bdd815",
+          "id": "ac8c85a2-4f83-45e2-bf88-34bcfdb198ab",
+          "type": 701,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "UpdateBrbText",
+          "description": null,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICB2YXIgc3RhcnQgPSBDUEguR2V0R2xvYmFsVmFyPERhdGVUaW1lPigiQlJCU3RhcnRUaW1lIiwgdHJ1ZSk7DQogICAgICAgIHZhciBkdXJhdGlvbiA9IENQSC5HZXRHbG9iYWxWYXI8c3RyaW5nPigiQlJCRHVyYXRpb24iLCB0cnVlKTsNCiAgICAgICAgdmFyIGVsYXBzZWQgPSBEYXRlVGltZS5Ob3cgLSBzdGFydDsNCg0KICAgICAgICB2YXIgZHVyYXRpb25UZXh0ID0gaW50LlRyeVBhcnNlKGR1cmF0aW9uLCBvdXQgdmFyIG1pbnMpDQogICAgICAgICAgICA/ICQie21pbnN9IHsobWlucyA9PSAxID8gIm1pbiIgOiAibWlucyIpfSINCiAgICAgICAgICAgIDogJCJ7ZHVyYXRpb259IG1pbnMiOw0KDQogICAgICAgIHZhciB0ZXh0ID0gJCJCUkIgaW4ge2R1cmF0aW9uVGV4dH1cbiIgKyAkIkVsYXBzZWQ6IHtlbGFwc2VkOm1tXFw6c3N9IjsNCg0KICAgICAgICBDUEguT2JzU2V0R2RpVGV4dCgic2NlbmVfbG91bmdlIiwgImJyYiIsIHRleHQpOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "c9d29a51-6db8-4e39-b1e1-19c2ec1ae5aa",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "1bbc6b0c-dd89-4479-a7ea-43931bb4988c",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "BRB Set 5 min",
+      "group": "BRB",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "6d70499f-a46b-4644-9269-07032b8125f3",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "setup",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "destination": 0,
+              "variableName": "brbDuration",
+              "persisted": true,
+              "source": 0,
+              "value": "5",
+              "autoType": false,
+              "id": "c48efbf6-67ad-499c-9c5d-3a17573abfab",
+              "weight": 0.0,
+              "type": 122,
+              "parentId": "e0e3b158-3dbd-4dc1-b20b-f4cf32593781",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "actionId": "b16d9d17-4e91-4086-857a-63dae5d62847",
+              "runImmedately": true,
+              "id": "f593ddf5-922f-4477-80c0-9575ef065344",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "e0e3b158-3dbd-4dc1-b20b-f4cf32593781",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "e0e3b158-3dbd-4dc1-b20b-f4cf32593781",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "26304054-a054-49f6-a22d-92db199ef8f2",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "BRB Set 2 min",
+      "group": "BRB",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "01583545-2473-4877-9b10-9236a5425ea3",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "setup",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "destination": 0,
+              "variableName": "brbDuration",
+              "persisted": true,
+              "source": 0,
+              "value": "2",
+              "autoType": false,
+              "id": "0793025c-3887-43c3-9b58-842e37608f5f",
+              "weight": 0.0,
+              "type": 122,
+              "parentId": "1a613cef-f0a0-4f23-bdae-71485b19f2cf",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "actionId": "b16d9d17-4e91-4086-857a-63dae5d62847",
+              "runImmedately": true,
+              "id": "b2992278-45af-4df0-a2bd-a5f6be1b5e24",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "1a613cef-f0a0-4f23-bdae-71485b19f2cf",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "1a613cef-f0a0-4f23-bdae-71485b19f2cf",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "65ce00d4-1399-4e5a-a6e9-7f48a1fd407b",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "BRB Auto-hide",
+      "group": "BRB",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "sceneName": "scene_lounge",
+          "obsId": null,
+          "id": "0fb3d240-9b44-4eaf-9f3b-12e5eedb9af2",
+          "type": 14004,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "source": 0,
+          "variableName": "SkipAutoHide",
+          "persisted": true,
+          "destinationVariable": "SkipAutoHide",
+          "defaultValue": null,
+          "id": "5febd0af-60fe-48cd-972f-1e3ab44a1937",
+          "weight": 0.0,
+          "type": 121,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "input": "%SkipAutoHide%",
+          "operation": 0,
+          "value": "true",
+          "autoType": true,
+          "subActions": [
+            {
+              "random": false,
+              "subActions": [
+                {
+                  "destination": 0,
+                  "variableName": "SkipAutoHide",
+                  "persisted": true,
+                  "source": 0,
+                  "value": false,
+                  "autoType": true,
+                  "id": "73efd07d-3341-45d1-9d78-c0befc578402",
+                  "weight": 0.0,
+                  "type": 122,
+                  "parentId": "81cc4e7f-bc28-40ac-85c8-c1e6868d7f0d",
+                  "enabled": true,
+                  "index": 0
+                }
+              ],
+              "id": "81cc4e7f-bc28-40ac-85c8-c1e6868d7f0d",
+              "weight": 0.0,
+              "type": 99901,
+              "parentId": null,
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "random": false,
+              "subActions": [
+                {
+                  "sceneName": "scene_lounge",
+                  "sourceName": "brb",
+                  "state": 1,
+                  "connectionId": "00000000-0000-0000-0000-000000000000",
+                  "id": "ab89a8cd-9a7c-4ad5-8454-725850f863fa",
+                  "weight": 0.0,
+                  "type": 30,
+                  "parentId": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
+                  "enabled": true,
+                  "index": 0
+                }
+              ],
+              "id": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
+              "weight": 0.0,
+              "type": 99902,
+              "parentId": null,
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "eba0f212-d783-44f5-b1d1-65305683ae76",
+          "weight": 0.0,
+          "type": 120,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b8344892-d837-4018-961d-6099bd2dc651",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "BRB Set Input",
+      "group": "BRB",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "019274f3-5045-43dc-b9aa-d3fcdbf6bc98",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "setup",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "title": "brbDuration",
+              "prompt": "brb in ... (minutes)",
+              "originalText": "",
+              "outputVariable": "duration",
+              "autoTypeOutput": true,
+              "id": "20598eb4-7d30-493e-b433-018ca5459210",
+              "weight": 0.0,
+              "type": 1023,
+              "parentId": "df052a78-367a-4dea-a30d-ccb2f31d061c",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "destination": 0,
+              "variableName": "brbDuration",
+              "persisted": true,
+              "source": 0,
+              "value": "%duration%",
+              "autoType": true,
+              "id": "1ca90006-dd02-4d90-8019-4ed48db8536d",
+              "weight": 0.0,
+              "type": 122,
+              "parentId": "df052a78-367a-4dea-a30d-ccb2f31d061c",
+              "enabled": true,
+              "index": 1
+            },
+            {
+              "actionId": "b16d9d17-4e91-4086-857a-63dae5d62847",
+              "runImmedately": true,
+              "id": "f08d7503-d588-4bb8-b662-de796a52c12f",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "df052a78-367a-4dea-a30d-ccb2f31d061c",
+              "enabled": true,
+              "index": 2
+            }
+          ],
+          "id": "df052a78-367a-4dea-a30d-ccb2f31d061c",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b16d9d17-4e91-4086-857a-63dae5d62847",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "BRB Start",
+      "group": "BRB",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "e6e3234a-6913-4783-986a-4e76965abb16",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "source": 0,
+          "variableName": "brbDuration",
+          "persisted": true,
+          "destinationVariable": "brbDuration",
+          "defaultValue": null,
+          "id": "6ad0a5eb-11c8-4a61-956b-fd0bff7a10eb",
+          "weight": 0.0,
+          "type": 121,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "StartTimer",
+          "description": null,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
+          ],
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCg0KcHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiYnJiRHVyYXRpb24iLCBvdXQgc3RyaW5nIGJyYkR1cmF0aW9uKTsNCiAgICAgICAgQ1BILkxvZ0luZm8odHlwZW9mKEJSQk1hbmFnZXIpLkFzc2VtYmx5LkZ1bGxOYW1lKTsNCiAgICAgICAgQlJCTWFuYWdlci5TdGFydChDUEgsIGJyYkR1cmF0aW9uKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "a0b85186-4f3a-4439-8d5e-39d69a28bf20",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "timerId": "b1bdb2dd-8d77-4b5e-98d9-65fb70bdd815",
+          "state": 0,
+          "id": "fe599aa8-a15f-434c-83f8-4dac2137676c",
+          "weight": 0.0,
+          "type": 8,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "sceneName": "scene_lounge",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "065b6041-58bf-46eb-a30e-634305e14d3b",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "sceneName": "scene_lounge",
+          "sourceName": "brb",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "34814e79-c13e-48be-a448-a11c41184562",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 4
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "e2b131c0-e5a3-4b48-b3b0-52a5cb15818a",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "BRB Set 1 min",
+      "group": "BRB",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "7e6f4b20-2313-421a-b58a-13ff0c0f8dc7",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "setup",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "destination": 0,
+              "variableName": "brbDuration",
+              "persisted": true,
+              "source": 0,
+              "value": "1",
+              "autoType": false,
+              "id": "217d4b6d-5844-4127-b5b8-3121497cabc9",
+              "weight": 0.0,
+              "type": 122,
+              "parentId": "9798ca86-2e87-4cd9-9f54-142cd51bbd85",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "actionId": "b16d9d17-4e91-4086-857a-63dae5d62847",
+              "runImmedately": true,
+              "id": "2729b3e2-9a79-46b5-8b26-6ace98eeffce",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "9798ca86-2e87-4cd9-9f54-142cd51bbd85",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "9798ca86-2e87-4cd9-9f54-142cd51bbd85",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    }
+  ]
+}

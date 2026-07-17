@@ -966,6 +966,16 @@
           "random": false,
           "subActions": [
             {
+              "actionId": "b19a7b00-5f2a-4461-9a7e-a748d354e33d",
+              "runImmedately": true,
+              "id": "f0218070-a4ee-481f-b8e3-86cd5e8c6edc",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "df052a78-367a-4dea-a30d-ccb2f31d061c",
+              "enabled": true,
+              "index": 0
+            },
+            {
               "title": "brbDuration",
               "prompt": "brb in ... (minutes)",
               "originalText": "",
@@ -976,7 +986,7 @@
               "type": 1023,
               "parentId": "df052a78-367a-4dea-a30d-ccb2f31d061c",
               "enabled": true,
-              "index": 0
+              "index": 1
             },
             {
               "destination": 0,
@@ -990,7 +1000,7 @@
               "type": 122,
               "parentId": "df052a78-367a-4dea-a30d-ccb2f31d061c",
               "enabled": true,
-              "index": 1
+              "index": 2
             },
             {
               "actionId": "b16d9d17-4e91-4086-857a-63dae5d62847",
@@ -1000,7 +1010,7 @@
               "type": 4,
               "parentId": "df052a78-367a-4dea-a30d-ccb2f31d061c",
               "enabled": true,
-              "index": 2
+              "index": 3
             }
           ],
           "id": "df052a78-367a-4dea-a30d-ccb2f31d061c",
@@ -1202,6 +1212,46 @@
           "parentId": null,
           "enabled": true,
           "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b19a7b00-5f2a-4461-9a7e-a748d354e33d",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Focus next new SB window",
+      "group": "Helper Actions",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "command": "{{STREAMING_REPO_PATH}}external\\streamerbot\\focus_newest_hwnd.ahk",
+          "arguments": null,
+          "workingDir": null,
+          "envVars": {},
+          "waitForExit": 0,
+          "id": "87ceda08-8c30-44fa-a02a-691979271a50",
+          "weight": 0.0,
+          "type": 6,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "value": "50",
+          "maxValue": null,
+          "random": false,
+          "id": "7f2c0c35-58d8-4ebe-9399-38da359728f6",
+          "weight": 0.0,
+          "type": 1002,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
         }
       ],
       "collapsedGroups": []

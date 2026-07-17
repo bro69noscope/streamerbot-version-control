@@ -1,0 +1,300 @@
+{
+  "windowSettings": {
+    "hiddenTabs": [],
+    "hiddenSettingsTabs": [],
+    "hiddenPlatformsTabs": [],
+    "hiddenBroadcastersTabs": [],
+    "hiddenIntegrationsTabs": [],
+    "tabOrder": [
+      "tpViewers",
+      "tpActions",
+      "tpActionQueues",
+      "tpCommands",
+      "tpPlatforms",
+      "tpBroadcasters",
+      "tpIntegrations",
+      "tpMidi",
+      "tpSpeechToText",
+      "tpHotKeys",
+      "tpServersClients",
+      "tpSettings",
+      "tpAbout"
+    ],
+    "tabSettingsOrder": [
+      "tpUserInterface",
+      "tpGeneral",
+      "tpSettingsLabs",
+      "tpGroups",
+      "tpFileWatcher",
+      "tpTimedActions",
+      "tpCredits",
+      "tpQuotes",
+      "tpCompilerSettings",
+      "tpFileTails"
+    ],
+    "tabPlatformsOrder": [],
+    "tabBroadcastersOrder": [],
+    "tabIntegrationsOrder": [],
+    "favoriteSubActions": [],
+    "favoriteTriggers": [],
+    "defaultCommentColor": "#229977",
+    "subActionDisabledColor": "#DB7093",
+    "customColors": null,
+    "noDeleteConfirmation": [],
+    "useDarkMode": true,
+    "navPaneOpen": true,
+    "minimizeToTray": false,
+    "minimizeToTrayOnClose": false,
+    "closeConfirmation": false,
+    "executeCodeDialogWidth": 825,
+    "executeCodeDialogHeight": 594,
+    "actionsPageLayout": null,
+    "columnWidths": {},
+    "triggerSplitter": 115,
+    "globalWindowPreventCapture": false,
+    "globalWindowShowLastWrite": false,
+    "disableActionHistory": false,
+    "disableViewersTab": false,
+    "hideSplashScreen": false,
+    "positions": {
+      "main": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjgyLCJUb3AiOjE0NiwiUmlnaHQiOjI3ODIsIkJvdHRvbSI6MTYwOH19",
+      "chat": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjU2MiwiVG9wIjo3MiwiUmlnaHQiOjMwMDIsIkJvdHRvbSI6NzUyfX0=",
+      "executeCode": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MzAyLCJUb3AiOjMxNCwiUmlnaHQiOjE0MjcsIkJvdHRvbSI6MTE4Mn19",
+      "export": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6OTIwLCJUb3AiOjMzMywiUmlnaHQiOjIwNDUsIkJvdHRvbSI6MTE3Nn19",
+      "import": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MTI4LCJUb3AiOjEyOCwiUmlnaHQiOjEyNTMsIkJvdHRvbSI6OTcxfX0="
+    },
+    "integrations": null
+  },
+  "labs": { "pendingCache": false },
+  "defaults": {
+    "actions": {
+      "random": false,
+      "concurrent": false,
+      "alwaysrun": false,
+      "exclude": false
+    },
+    "commands": {
+      "include": false,
+      "ignoreBot": true,
+      "ignoreInternal": true,
+      "persistUserCounter": false,
+      "persistCounter": false,
+      "caseSensitive": false,
+      "sources": 1,
+      "userCooldown": 0,
+      "globalCooldown": 0
+    },
+    "subActionSwitchCase": { "caseSensitive": true }
+  },
+  "timedActions": {
+    "timers": [
+      {
+        "id": "b1bdb2dd-8d77-4b5e-98d9-65fb70bdd815",
+        "name": "brb update",
+        "enabled": false,
+        "repeat": true,
+        "interval": 1,
+        "randomInterval": false,
+        "upperInterval": 0,
+        "lines": 0,
+        "counter": 56908
+      }
+    ]
+  },
+  "fileWatcherSettings": {
+    "watchers": [
+      {
+        "id": "e7f44b50-6c7b-4862-a9e4-97a25a254df4",
+        "enabled": false,
+        "asJson": false,
+        "addChangedData": true,
+        "folderPath": "C:\\Users\\ville\\MyMegaScript\\src\\apps\\shop_watcher\\data\\streamerbot_watched_folder",
+        "filter": "time_with_shop_open.txt",
+        "includeSubdirectories": false
+      }
+    ]
+  },
+  "fileTails": { "fileTails": [] },
+  "processWatcher": { "autoStart": false },
+  "speechToText": {
+    "commands": [],
+    "autoStart": false,
+    "audioDevice": "70773ae9-f396-4e1e-aefb-4222f3b2031e",
+    "confidenceThreshold": 0.0,
+    "locale": "en-US",
+    "logSpokenText": false
+  },
+  "websockets": {
+    "autoStart": true,
+    "address": "127.0.0.1",
+    "port": 50001,
+    "endpoint": "/",
+    "enableAuth": false,
+    "authEnforce": false,
+    "authPassword": "",
+    "connections": [],
+    "servers": []
+  },
+  "udp": { "autoStart": false, "port": 4242 },
+  "http": {
+    "autoStart": false,
+    "address": "127.0.0.1",
+    "port": 7474,
+    "mapping": {}
+  },
+  "credits": {
+    "creditEvents": [],
+    "rolesPresent": [],
+    "groupPresent": [],
+    "topEvents": [],
+    "autoReset": 12
+  },
+  "twitch": {
+    "streamUpdateOnConnect": false,
+    "firstWordsAutoReset": 12,
+    "giftSubIgnoreFromGiftBomb": true,
+    "presentViewersEnabled": true,
+    "presentViewersLiveUpdate": false,
+    "presentViewersInterval": 5,
+    "emoteHandlerBetterTtv": true,
+    "emoteHandlerSevenTv": true,
+    "emoteHandlerFrankerFaceZ": true,
+    "pyramidEnabled": false,
+    "minPyramidWidth": 2,
+    "subCounterEnabled": false,
+    "subCounterRolloverEnabled": false,
+    "subCounterOutputFile": "C:\\Users\\ville\\MyPrograms\\Streamer.bot\\data\\subcounter.txt",
+    "subCounterOutputText": "%subCounter% of %rollover% (%rolloverCount%)",
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "youTube": {
+    "presentViewersEnabled": true,
+    "presentViewersInterval": 5,
+    "firstWordsAutoReset": 12,
+    "botAutoConnect": false,
+    "autoMonitor": true,
+    "acceptedTerms": false,
+    "tags": ["Horizontal", "Vertical"],
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "trovo": {
+    "presentViewersEnabled": true,
+    "presentViewersInterval": 5,
+    "firstWordsAutoReset": 12,
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "kick": {
+    "presentViewersEnabled": true,
+    "presentViewersInterval": 5,
+    "firstWordsAutoReset": 12,
+    "emoteHandlerSevenTv": true,
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "donorDrives": { "settings": [] },
+  "pulsoid": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "hypeRate": {
+    "hypeRateId": null,
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "tipeeeStream": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "treatStream": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "lumiaStream": {
+    "socketToken": null,
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "crowdcontrol": { "autoConnect": false, "autoReconnect": false },
+  "website": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "compilerSettings": { "commonReferences": [] },
+  "pallygg": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "version": 32,
+  "instanceId": "750f4ced-a06b-4cf4-9061-40c9dfa113da",
+  "instanceName": "Streamer.bot",
+  "logLevel": 1,
+  "logFolder": null,
+  "backupFolder": null,
+  "useInvariantCulture": false,
+  "updateChannel": "stable",
+  "lastVersion": "0.2.3",
+  "disabledSubActions": [],
+  "disabledTriggers": [],
+  "disabledNavItems": [],
+  "slobsSettings": { "connections": [] },
+  "polyPopServerSettings": {
+    "autoStart": false,
+    "address": "127.0.0.1",
+    "port": 9652,
+    "endpoint": "/"
+  },
+  "voiceModSettings": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "streamDeckSettings": {
+    "autoStart": true,
+    "address": "127.0.0.1",
+    "port": 50003
+  },
+  "vTubeStudioSettings": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "address": "localhost",
+    "port": 8001
+  },
+  "throwingSystemSettings": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "address": "localhost",
+    "port": 42069
+  },
+  "elgatoSettings": {
+    "waveLinkAutoConnect": false,
+    "waveLinkAutoReconnect": false,
+    "cameraHubAutoConnect": false,
+    "cameraHubAutoReconnect": false
+  },
+  "speakerbot": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "address": "127.0.0.1",
+    "port": 7580
+  },
+  "defaultAudioDevice": "00000000-0000-0000-0000-000000000000",
+  "volume": 1.0,
+  "audioUseSystemDefault": true,
+  "maskVariables": false,
+  "maskedVariables": ["apiKey", "url"],
+  "subActionDuplicateLocation": 0
+}

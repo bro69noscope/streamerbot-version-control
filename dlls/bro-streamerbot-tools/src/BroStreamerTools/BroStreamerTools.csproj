@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net481</TargetFramework>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+
+    <Nullable>disable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <OutputPath>artifacts\</OutputPath>
+      <LangVersion>latest</LangVersion>
+
+    <AssemblyName>BroStreamerTools</AssemblyName>
+    <RootNamespace>BroStreamerTools</RootNamespace>
+  </PropertyGroup>
+
+</Project>

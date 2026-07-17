@@ -2,7 +2,7 @@
   "collapsedGroups": [],
   "groups": ["Resets", "Shop Scan Client", "Pregame Detector Client", "BRB"],
   "version": 23,
-  "t": "2026-07-17T10:39:28.1733109+02:00",
+  "t": "2026-07-17T19:59:14.77461+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -903,6 +903,16 @@
                   "parentId": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
                   "enabled": true,
                   "index": 0
+                },
+                {
+                  "timerId": "b1bdb2dd-8d77-4b5e-98d9-65fb70bdd815",
+                  "state": 1,
+                  "id": "861a71f3-9b4b-46e7-924c-488335c592dc",
+                  "weight": 0.0,
+                  "type": 8,
+                  "parentId": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
+                  "enabled": true,
+                  "index": 1
                 }
               ],
               "id": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
@@ -1019,6 +1029,16 @@
       ],
       "subActions": [
         {
+          "timerId": "b1bdb2dd-8d77-4b5e-98d9-65fb70bdd815",
+          "state": 0,
+          "id": "fe599aa8-a15f-434c-83f8-4dac2137676c",
+          "weight": 0.0,
+          "type": 8,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
           "source": 0,
           "variableName": "brbDuration",
           "persisted": true,
@@ -1029,7 +1049,7 @@
           "type": 121,
           "parentId": null,
           "enabled": true,
-          "index": 0
+          "index": 1
         },
         {
           "name": "StartTimer",
@@ -1046,16 +1066,6 @@
           "id": "a0b85186-4f3a-4439-8d5e-39d69a28bf20",
           "weight": 0.0,
           "type": 99999,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
-          "timerId": "b1bdb2dd-8d77-4b5e-98d9-65fb70bdd815",
-          "state": 0,
-          "id": "fe599aa8-a15f-434c-83f8-4dac2137676c",
-          "weight": 0.0,
-          "type": 8,
           "parentId": null,
           "enabled": true,
           "index": 2
@@ -1081,6 +1091,16 @@
           "parentId": null,
           "enabled": true,
           "index": 4
+        },
+        {
+          "actionId": "7a94dc23-1b38-4ff5-81b8-2f778757942d",
+          "runImmedately": true,
+          "id": "5234651f-2a77-4c72-a5b6-8dff8f8ded23",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 5
         }
       ],
       "collapsedGroups": []
@@ -1139,6 +1159,40 @@
           "id": "9798ca86-2e87-4cd9-9f54-142cd51bbd85",
           "weight": 0.0,
           "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "350c6607-bdf9-4930-92ce-1df19b953c6f",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "BRB End",
+      "group": "BRB",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "301f5f52-c7dd-408d-aaaa-0ea8aba26ae0",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "actionId": "65ce00d4-1399-4e5a-a6e9-7f48a1fd407b",
+          "runImmedately": true,
+          "id": "992de6a7-5783-4ac4-a573-39c8ff3d2c5a",
+          "weight": 0.0,
+          "type": 4,
           "parentId": null,
           "enabled": true,
           "index": 0

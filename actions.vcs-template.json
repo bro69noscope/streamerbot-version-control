@@ -1255,6 +1255,70 @@
         }
       ],
       "collapsedGroups": []
+    },
+    {
+      "id": "5a63350f-9e97-447c-9d91-990dad7dd458",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Temporary Cam Zoom",
+      "group": "",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "25aebd0b-4083-48f3-bf82-6c90ce44e583",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "6a0d06e9-e8c5-4cd3-8447-074d667a8878",
+          "weight": 0.0,
+          "type": 43,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "scene_zoom",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "25f5f8fb-f733-4a7c-9c6e-f8c603f66237",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "value": "1100",
+          "maxValue": null,
+          "random": false,
+          "id": "51cb3913-4ad6-4b12-b897-00888bf3cf3c",
+          "weight": 0.0,
+          "type": 1002,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "sceneName": "%currentScene%",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "851dff43-4271-4ee1-b40b-e234f15ef629",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 3
+        }
+      ],
+      "collapsedGroups": []
     }
   ]
 }

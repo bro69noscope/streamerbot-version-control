@@ -1349,7 +1349,7 @@
       ],
       "subActions": [
         {
-          "name": "virtual cam in prod conn",
+          "name": "virtual cam in production conn",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -1362,9 +1362,9 @@
           "index": 0
         },
         {
-          "name": "hardware cam in virtual cam conn",
+          "name": "hardware cam in virtual_camera conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam_virtual\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"vcam_capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
           "id": "e62683af-7d25-4b0b-82ac-b89b4f5f1daa",
@@ -1375,7 +1375,7 @@
           "index": 1
         },
         {
-          "name": "start vcam",
+          "name": "start vcam in virtual_camera conn",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"StartVirtualCam\",\r\n  \"requestData\": {}\r\n}",
           "resultsToArgs": true,
@@ -1412,9 +1412,9 @@
       ],
       "subActions": [
         {
-          "name": "virtual cam in prod conn",
+          "name": "virtual cam in virtual_camera conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam_virtual\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"vcam_capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
           "id": "77dd4765-11eb-4b4a-bc38-e7526fe7533c",
@@ -1425,7 +1425,7 @@
           "index": 0
         },
         {
-          "name": "hardware cam in virtual cam conn",
+          "name": "hardware cam in production conn",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -1438,7 +1438,7 @@
           "index": 1
         },
         {
-          "name": "start vcam",
+          "name": "stop vcam in virtual_camara conn",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"StopVirtualCam\",\r\n  \"requestData\": {}\r\n}",
           "resultsToArgs": true,

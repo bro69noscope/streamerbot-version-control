@@ -1,14 +1,22 @@
 {
-  "collapsedGroups": ["Pregame Detector Client", "Resets", "Shop Scan Client"],
+  "collapsedGroups": [
+    "Shop Scan Client",
+    "BRB",
+    "",
+    "Helper Actions",
+    "Pregame Detector Client",
+    "Resets"
+  ],
   "groups": [
     "Resets",
     "Shop Scan Client",
     "Pregame Detector Client",
     "BRB",
-    "Helper Actions"
+    "Helper Actions",
+    "Toggle Virtual Cam Config"
   ],
   "version": 23,
-  "t": "2026-07-17T22:40:52.9354542+02:00",
+  "t": "2026-07-20T21:32:13.302664+02:00",
   "blocking": false,
   "queues": [],
   "actions": [

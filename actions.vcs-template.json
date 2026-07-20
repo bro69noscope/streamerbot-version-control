@@ -1327,6 +1327,132 @@
         }
       ],
       "collapsedGroups": []
+    },
+    {
+      "id": "6ddfb373-fc41-4812-a619-ca31bf9a5230",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Enable Virtual Cam",
+      "group": "Toggle Virtual Cam Config",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "e5dee500-1a7b-4bdd-860d-86d0be12e8ad",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "virtual cam in prod conn",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
+          "id": "bb361489-8886-4cf2-ae68-35a1e6ac1c01",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "hardware cam in virtual cam conn",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam_virtual\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
+          "id": "e62683af-7d25-4b0b-82ac-b89b4f5f1daa",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "start vcam",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"StartVirtualCam\",\r\n  \"requestData\": {}\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
+          "id": "f88849f4-3567-4e3a-8519-e76836620045",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "ae7bbb67-8bc9-4662-97ae-c0ae8b9f4755",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "Disable Virtual Cam",
+      "group": "Toggle Virtual Cam Config",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "47730ae0-1290-4f6c-8174-a0f4491616ad",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "virtual cam in prod conn",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam_virtual\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
+          "id": "77dd4765-11eb-4b4a-bc38-e7526fe7533c",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "hardware cam in virtual cam conn",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
+          "id": "f6a57d78-4d84-4abb-a898-fb3e69b4c1aa",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "start vcam",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"StopVirtualCam\",\r\n  \"requestData\": {}\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
+          "id": "4a629466-e273-49da-a551-203ee5b01273",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "collapsedGroups": []
     }
   ]
 }

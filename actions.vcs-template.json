@@ -1,6 +1,5 @@
 {
   "collapsedGroups": [
-    "BRB",
     "Helper Actions",
     "Pregame Detector Client",
     "Resets",
@@ -15,7 +14,7 @@
     "Toggle Virtual Cam Config"
   ],
   "version": 23,
-  "t": "2026-07-21T00:51:18.6511858+02:00",
+  "t": "2026-07-22T13:26:35.8988573+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -678,7 +677,7 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "BRB Timer",
+      "name": "BRB Timer Tick",
       "group": "BRB",
       "alwaysRun": false,
       "randomAction": false,

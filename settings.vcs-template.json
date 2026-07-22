@@ -128,7 +128,7 @@
   "websockets": {
     "autoStart": true,
     "address": "127.0.0.1",
-    "port": 50001,
+    "port": "{{STREAMERBOT_PRODUCTION_PORT}}",
     "endpoint": "/",
     "enableAuth": false,
     "authEnforce": false,
@@ -241,7 +241,7 @@
   },
   "version": 32,
   "instanceId": "750f4ced-a06b-4cf4-9061-40c9dfa113da",
-  "instanceName": "Streamer.bot",
+  "instanceName": "Streamer.bot production",
   "logLevel": 1,
   "logFolder": null,
   "backupFolder": null,
@@ -266,7 +266,7 @@
   "streamDeckSettings": {
     "autoStart": true,
     "address": "127.0.0.1",
-    "port": 50003
+    "port": "{{STREAMERBOT_PRODUCTION_STREAMDECK_PORT}}"
   },
   "vTubeStudioSettings": {
     "autoConnect": false,

@@ -1,0 +1,237 @@
+{
+  "collapsedGroups": [],
+  "groups": ["brb", "Set Scenes"],
+  "version": 23,
+  "t": "2026-07-21T15:54:08.3489376+02:00",
+  "blocking": false,
+  "queues": [],
+  "actions": [
+    {
+      "id": "4410fd5b-4484-4145-ae97-403fa3f1378a",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "brb start",
+      "group": "brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "88e04fe7-6eee-4194-9d00-227e7f532ac2",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
+          "state": 0,
+          "id": "81672951-1cf5-4284-a9ce-59fd9ba85486",
+          "weight": 0.0,
+          "type": 8,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "source": 0,
+          "variableName": "brbDuration",
+          "persisted": true,
+          "destinationVariable": "brbDuration",
+          "defaultValue": null,
+          "id": "17c8cea7-fe75-4e63-9107-7ffcbb9dcf6f",
+          "weight": 0.0,
+          "type": 121,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "StartTimer",
+          "description": null,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
+          ],
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCg0KcHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiYnJiRHVyYXRpb24iLCBvdXQgc3RyaW5nIGJyYkR1cmF0aW9uKTsNCiAgICAgICAgQ1BILkxvZ0luZm8odHlwZW9mKEJSQk1hbmFnZXIpLkFzc2VtYmx5LkZ1bGxOYW1lKTsNCiAgICAgICAgQlJCTWFuYWdlci5TdGFydChDUEgsIGJyYkR1cmF0aW9uKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "56780817-1d9e-4737-b763-d8f86518c370",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "sceneName": "ftp_scene_lounge",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "3ed73ae9-aa7f-4870-88f6-1a090dc007ae",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "sceneName": "ftp_scene_lounge",
+          "sourceName": "brb",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "90917310-06eb-437f-9240-b422ad8e974f",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 4
+        },
+        {
+          "actionId": "dc343f23-783e-4000-b37b-bf2fae30d006",
+          "runImmedately": true,
+          "id": "b96f8b56-4e13-4d28-8bd6-2096da8564a3",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 5
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "dc343f23-783e-4000-b37b-bf2fae30d006",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "brb timer tick",
+      "group": "brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
+          "id": "a2284036-1057-4b37-9ef1-1fda19a2b795",
+          "type": 701,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "UpdateBrbText",
+          "description": null,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICB2YXIgc3RhcnQgPSBDUEguR2V0R2xvYmFsVmFyPERhdGVUaW1lPigiQlJCU3RhcnRUaW1lIiwgdHJ1ZSk7DQogICAgICAgIHZhciBkdXJhdGlvbiA9IENQSC5HZXRHbG9iYWxWYXI8c3RyaW5nPigiQlJCRHVyYXRpb24iLCB0cnVlKTsNCiAgICAgICAgdmFyIGVsYXBzZWQgPSBEYXRlVGltZS5Ob3cgLSBzdGFydDsNCg0KICAgICAgICB2YXIgZHVyYXRpb25UZXh0ID0gaW50LlRyeVBhcnNlKGR1cmF0aW9uLCBvdXQgdmFyIG1pbnMpDQogICAgICAgICAgICA/ICQie21pbnN9IHsobWlucyA9PSAxID8gIm1pbiIgOiAibWlucyIpfSINCiAgICAgICAgICAgIDogJCJ7ZHVyYXRpb259IG1pbnMiOw0KDQogICAgICAgIHZhciB0ZXh0ID0gJCJCUkIgaW4ge2R1cmF0aW9uVGV4dH1cbiIgKyAkIkVsYXBzZWQ6IHtlbGFwc2VkOm1tXFw6c3N9IjsNCg0KICAgICAgICBDUEguT2JzU2V0R2RpVGV4dCgiZnRwX3NjZW5lX2xvdW5nZSIsICJicmIiLCB0ZXh0KTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "d35bd7b8-77b3-4aa4-b458-98f71e26963b",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "75e9b2ad-0446-43c5-a842-ceb1ca70a896",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "brb_set_test",
+      "group": "brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "d1439f5a-f748-44c2-86d1-d3085e5c98e8",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "setup",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "destination": 0,
+              "variableName": "brbDuration",
+              "persisted": true,
+              "source": 0,
+              "value": "1",
+              "autoType": false,
+              "id": "d95be03a-dd5f-4af2-aad2-7d08db4a6387",
+              "weight": 0.0,
+              "type": 122,
+              "parentId": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
+              "runImmedately": true,
+              "id": "e667ba01-3eb9-4a13-9290-6af6eb16ca0c",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b485a409-a30f-4f98-9d85-a27f6e5c60c3",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "ftp_scene_screencap",
+      "group": "Set Scenes",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "ftp_scene_screencap",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "65ebab81-c155-4803-a052-4ad8c1f90da3",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    }
+  ]
+}

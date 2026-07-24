@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "t": "2026-07-24T20:24:23.1196764+02:00",
+  "connections": [
+    {
+      "id": "27af1dd2-f380-4d23-b51a-67edd22b6e79",
+      "name": "Obs film_the_process",
+      "obsVersion": 1,
+      "host": "127.0.0.1",
+      "port": "{{OBS_PORTABLE_FTP_PORT}}",
+      "autoConnect": true,
+      "reconnectOnDisconnect": true,
+      "password": null,
+      "retryInterval": 30,
+      "default": true
+    }
+  ]
+}

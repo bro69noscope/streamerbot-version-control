@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "t": "2026-07-24T20:18:04.0308549+02:00",
+  "connections": [
+    {
+      "id": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
+      "name": "Obs production",
+      "obsVersion": 1,
+      "host": "127.0.0.1",
+      "port": "{{OBS_PRODUCTION_PORT}}",
+      "autoConnect": true,
+      "reconnectOnDisconnect": true,
+      "password": "",
+      "retryInterval": 30,
+      "default": true
+    },
+    {
+      "id": "4633f832-8228-441f-af9c-83dcd78640e7",
+      "name": "Obs portable_virtual_camera",
+      "obsVersion": 1,
+      "host": "127.0.0.1",
+      "port": "{{OBS_PORTABLE_VCAM_PORT}}",
+      "autoConnect": true,
+      "reconnectOnDisconnect": true,
+      "password": null,
+      "retryInterval": 30,
+      "default": false
+    },
+    {
+      "id": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
+      "name": "Obs portable_film_the_process",
+      "obsVersion": 1,
+      "host": "127.0.0.1",
+      "port": "{{OBS_PORTABLE_FTP_PORT}}",
+      "autoConnect": true,
+      "reconnectOnDisconnect": true,
+      "password": null,
+      "retryInterval": 30,
+      "default": false
+    }
+  ]
+}

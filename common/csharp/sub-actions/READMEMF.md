@@ -1,11 +1,11 @@
 listen, easy: we just mirror the streamer.bot layout like this
 .
-├── Action_Group_Name
-│   ├── Action_Name
+├── ActionGroupName
+│   ├── ActionName
 │   │   ├── SubActionExecuteCodeName.cs
 │   │   └── SubActionExecuteCodeName.cs
-│   └── Action_Name
+│   └── ActionName
 │       └── SubActionExecuteCodeName.cs
-└── Action_Group_Name
-    └── Action_Name
+└── ActionGroupName
+    └── ActionName
         └── SubActionExecuteCodeName.cs

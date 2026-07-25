@@ -1,0 +1,8 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <Compile Include="StartTimer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+<Project>
+  <PropertyGroup>
+    <IsShadowProject Condition="$(MSBuildProjectName.EndsWith('.shadow'))">true</IsShadowProject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(IsShadowProject)'=='true'">
+    <TargetFramework>net481</TargetFramework>
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+    <Nullable>disable</Nullable>
+    <NoWarn>CS8321</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(IsShadowProject)'=='true'">
+    <Compile Include="$(MSBuildThisFileDirectory)_shims\CPHStub.cs" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(IsShadowProject)'=='true'">
+    <Reference Include="Streamer.bot.Plugin.Interface">
+      <HintPath>C:\Users\ville\myfiles\streaming-programs\streamerbot-portable-production\Streamer.bot\Streamer.bot.Plugin.Interface.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+</Project>

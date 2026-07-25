@@ -9,7 +9,7 @@
     "Show Sources"
   ],
   "version": 23,
-  "t": "2026-07-25T22:36:53.229124+02:00",
+  "t": "2026-07-26T00:11:56.8680215+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -738,6 +738,62 @@
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "0205a52f-324c-4141-a4cd-9428b35bbeee",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "6f17c6a8-b9b8-4334-91ff-e7ff5a3babdc",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "hide tobii",
+      "group": "Hide Sources",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "scene_tobii",
+          "sourceName": "capture_tobii",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "7bd0976e-47da-4c11-9aa1-e31354c4a162",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b8be51c1-ef8d-4be8-938b-1e5cecfb3c29",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "show tobii",
+      "group": "Show Sources",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "scene_tobii",
+          "sourceName": "capture_tobii",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "7998338e-cd97-4c3e-8cae-2b20821e98af",
           "weight": 0.0,
           "type": 30,
           "parentId": null,

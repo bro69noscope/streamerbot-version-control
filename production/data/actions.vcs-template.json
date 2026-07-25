@@ -1,10 +1,5 @@
 {
-  "collapsedGroups": [
-    "Helper Actions",
-    "Pregame Detector Client",
-    "Resets",
-    "Shop Scan Client"
-  ],
+  "collapsedGroups": ["Pregame Detector Client", "Resets"],
   "groups": [
     "Resets",
     "Shop Scan Client",
@@ -14,7 +9,7 @@
     "Toggle Virtual Cam Config"
   ],
   "version": 23,
-  "t": "2026-07-24T22:08:14.7624893+02:00",
+  "t": "2026-07-25T22:41:03.0897809+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -735,7 +730,7 @@
       ],
       "subActions": [
         {
-          "name": "setup",
+          "name": ".",
           "color": null,
           "random": false,
           "subActions": [
@@ -796,7 +791,7 @@
       ],
       "subActions": [
         {
-          "name": "setup",
+          "name": ".",
           "color": null,
           "random": false,
           "subActions": [
@@ -858,89 +853,102 @@
       ],
       "subActions": [
         {
-          "source": 0,
-          "variableName": "SkipAutoHide",
-          "persisted": true,
-          "destinationVariable": "SkipAutoHide",
-          "defaultValue": null,
-          "id": "5febd0af-60fe-48cd-972f-1e3ab44a1937",
-          "weight": 0.0,
-          "type": 121,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        },
-        {
-          "input": "%SkipAutoHide%",
-          "operation": 0,
-          "value": "true",
-          "autoType": true,
+          "name": ".",
+          "color": null,
+          "random": false,
           "subActions": [
             {
-              "random": false,
-              "subActions": [
-                {
-                  "destination": 0,
-                  "variableName": "SkipAutoHide",
-                  "persisted": true,
-                  "source": 0,
-                  "value": false,
-                  "autoType": true,
-                  "id": "73efd07d-3341-45d1-9d78-c0befc578402",
-                  "weight": 0.0,
-                  "type": 122,
-                  "parentId": "81cc4e7f-bc28-40ac-85c8-c1e6868d7f0d",
-                  "enabled": true,
-                  "index": 0
-                }
-              ],
-              "id": "81cc4e7f-bc28-40ac-85c8-c1e6868d7f0d",
+              "source": 0,
+              "variableName": "SkipAutoHide",
+              "persisted": true,
+              "destinationVariable": "SkipAutoHide",
+              "defaultValue": null,
+              "id": "5febd0af-60fe-48cd-972f-1e3ab44a1937",
               "weight": 0.0,
-              "type": 99901,
-              "parentId": null,
+              "type": 121,
+              "parentId": "b11d05d2-26e3-4a09-b690-bdb07a48451f",
               "enabled": true,
               "index": 0
             },
             {
-              "random": false,
+              "input": "%SkipAutoHide%",
+              "operation": 0,
+              "value": "true",
+              "autoType": true,
               "subActions": [
                 {
-                  "sceneName": "scene_lounge",
-                  "sourceName": "brb",
-                  "state": 1,
-                  "connectionId": "00000000-0000-0000-0000-000000000000",
-                  "id": "ab89a8cd-9a7c-4ad5-8454-725850f863fa",
+                  "random": false,
+                  "subActions": [
+                    {
+                      "destination": 0,
+                      "variableName": "SkipAutoHide",
+                      "persisted": true,
+                      "source": 0,
+                      "value": false,
+                      "autoType": true,
+                      "id": "73efd07d-3341-45d1-9d78-c0befc578402",
+                      "weight": 0.0,
+                      "type": 122,
+                      "parentId": "81cc4e7f-bc28-40ac-85c8-c1e6868d7f0d",
+                      "enabled": true,
+                      "index": 0
+                    }
+                  ],
+                  "id": "81cc4e7f-bc28-40ac-85c8-c1e6868d7f0d",
                   "weight": 0.0,
-                  "type": 30,
-                  "parentId": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
+                  "type": 99901,
+                  "parentId": null,
                   "enabled": true,
                   "index": 0
                 },
                 {
-                  "timerId": "b1bdb2dd-8d77-4b5e-98d9-65fb70bdd815",
-                  "state": 1,
-                  "id": "861a71f3-9b4b-46e7-924c-488335c592dc",
+                  "random": false,
+                  "subActions": [
+                    {
+                      "sceneName": "scene_lounge",
+                      "sourceName": "brb",
+                      "state": 1,
+                      "connectionId": "00000000-0000-0000-0000-000000000000",
+                      "id": "ab89a8cd-9a7c-4ad5-8454-725850f863fa",
+                      "weight": 0.0,
+                      "type": 30,
+                      "parentId": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
+                      "enabled": true,
+                      "index": 0
+                    },
+                    {
+                      "timerId": "b1bdb2dd-8d77-4b5e-98d9-65fb70bdd815",
+                      "state": 1,
+                      "id": "861a71f3-9b4b-46e7-924c-488335c592dc",
+                      "weight": 0.0,
+                      "type": 8,
+                      "parentId": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
+                      "enabled": true,
+                      "index": 1
+                    }
+                  ],
+                  "id": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
                   "weight": 0.0,
-                  "type": 8,
-                  "parentId": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
+                  "type": 99902,
+                  "parentId": null,
                   "enabled": true,
                   "index": 1
                 }
               ],
-              "id": "d98cf26c-8c91-4653-a066-4ce08a675ebb",
+              "id": "eba0f212-d783-44f5-b1d1-65305683ae76",
               "weight": 0.0,
-              "type": 99902,
-              "parentId": null,
+              "type": 120,
+              "parentId": "b11d05d2-26e3-4a09-b690-bdb07a48451f",
               "enabled": true,
               "index": 1
             }
           ],
-          "id": "eba0f212-d783-44f5-b1d1-65305683ae76",
+          "id": "b11d05d2-26e3-4a09-b690-bdb07a48451f",
           "weight": 0.0,
-          "type": 120,
+          "type": 99900,
           "parentId": null,
           "enabled": true,
-          "index": 1
+          "index": 0
         }
       ],
       "collapsedGroups": []
@@ -967,7 +975,7 @@
       ],
       "subActions": [
         {
-          "name": "setup",
+          "name": ".",
           "color": null,
           "random": false,
           "subActions": [
@@ -1149,7 +1157,7 @@
       ],
       "subActions": [
         {
-          "name": "setup",
+          "name": ".",
           "color": null,
           "random": false,
           "subActions": [

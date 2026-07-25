@@ -23,7 +23,7 @@
     "closeConfirmation": true,
     "executeCodeDialogWidth": 0,
     "executeCodeDialogHeight": 0,
-    "actionsPageLayout": null,
+    "actionsPageLayout": "403*|391*|330.142857142857*|330.142857142857*",
     "columnWidths": {},
     "triggerSplitter": 115,
     "globalWindowPreventCapture": false,
@@ -33,7 +33,8 @@
     "hideSplashScreen": false,
     "positions": {
       "main": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NTMsIlRvcCI6MCwiUmlnaHQiOjIyOTMsIkJvdHRvbSI6MTI2MH19",
-      "executeCode": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NDkzLCJUb3AiOjExMywiUmlnaHQiOjIwNjgsIkJvdHRvbSI6MTMyOH19"
+      "executeCode": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NDkzLCJUb3AiOjExMywiUmlnaHQiOjIwNjgsIkJvdHRvbSI6MTMyOH19",
+      "chat": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjU2MywiVG9wIjo1NSwiUmlnaHQiOjMwMjAsIkJvdHRvbSI6NzU4fX0="
     },
     "integrations": null
   },
@@ -69,7 +70,7 @@
         "randomInterval": false,
         "upperInterval": 0,
         "lines": 0,
-        "counter": 7965
+        "counter": 30165
       }
     ]
   },

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Sub Alert Overlay</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    overflow: hidden;
+    font-family: 'Segoe UI', Arial, sans-serif;
+  }
+  #alert-box {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    opacity: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);
+    transition: opacity 0.35s ease, transform 0.35s ease;
+    pointer-events: none;
+  }
+  #alert-box.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  #alert-box .headline {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  #alert-box .username {
+    color: #a970ff;
+  }
+  #alert-box .message {
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 400;
+    max-width: 700px;
+  }
+</style>
+</head>
+<body>
+
+<div id="alert-box">
+  <div class="headline"><span class="username" id="alert-user"></span> just subscribed!</div>
+  <div class="message" id="alert-message"></div>
+</div>
+
+<audio id="alert-sound" src="sub_alert.mp3" preload="auto"></audio>
+
+<script>
+// ---- CONFIG ----
+const WS_HOST = "127.0.0.1";
+const WS_PORT = 52001;      // must match Streamer.bot WebSocket Server settings
+const WS_ENDPOINT = "/";
+const ALERT_DISPLAY_MS = 7000;
+const TTS_VOLUME = 1.0;
+const TTS_RATE = 1.0;
+const SOUND_VOLUME = 1.0;   // 0.0 - 1.0
+// ----------------
+
+const soundEl = document.getElementById("alert-sound");
+soundEl.volume = SOUND_VOLUME;
+
+let pendingMessage = null;
+
+soundEl.addEventListener("ended", () => {
+  if (pendingMessage) {
+    speak(pendingMessage);
+    pendingMessage = null;
+  }
+});
+
+const alertBox = document.getElementById("alert-box");
+const userEl = document.getElementById("alert-user");
+const msgEl = document.getElementById("alert-message");
+
+let queue = [];
+let playing = false;
+
+function connect() {
+  const ws = new WebSocket(`ws://${WS_HOST}:${WS_PORT}${WS_ENDPOINT}`);
+
+  ws.onopen = () => {
+    console.log("[overlay] connected to Streamer.bot, subscribing...");
+
+    ws.send(JSON.stringify({
+      request: "Subscribe",
+      id: "sub-alert-overlay",
+      events: {
+        General: ["Custom"]
+      }
+    }));
+  };
+
+  ws.onmessage = (evt) => {
+    let msg;
+    try {
+      msg = JSON.parse(evt.data);
+    } catch (e) {
+      return; // not JSON, ignore
+    }
+
+    // Ignore the subscribe confirmation response and any other non-event messages
+    if (!msg.event || msg.event.source !== "General" || msg.event.type !== "Custom") {
+      return;
+    }
+
+    // Actual broadcasted payload lives here
+    let payload;
+    try {
+      payload = typeof msg.data === "string" ? JSON.parse(msg.data) : msg.data;
+    } catch (e) {
+      return;
+    }
+
+    if (payload && payload.event === "subAlert") {
+      queue.push(payload);
+      processQueue();
+    }
+  };
+
+  ws.onclose = () => {
+    console.log("[overlay] disconnected, retrying in 3s");
+    setTimeout(connect, 3000);
+  };
+
+  ws.onerror = () => ws.close();
+}
+
+function processQueue() {
+  if (playing || queue.length === 0) return;
+  playing = true;
+  const item = queue.shift();
+  showAlert(item);
+}
+
+function showAlert(item) {
+  userEl.textContent = item.user || "Someone";
+  msgEl.textContent = item.message || "";
+
+  alertBox.classList.add("show");
+
+  soundEl.currentTime = 0;
+  soundEl.play().catch(() => {}); // ignore autoplay-block errors
+
+  pendingMessage = item.message || null;
+
+  setTimeout(() => {
+    alertBox.classList.remove("show");
+    setTimeout(() => {
+      playing = false;
+      processQueue();
+    }, 700);
+  }, ALERT_DISPLAY_MS);
+}
+
+function speak(text) {
+  if (!("speechSynthesis" in window)) return;
+  const utter = new SpeechSynthesisUtterance(text);
+  utter.volume = TTS_VOLUME;
+  utter.rate = TTS_RATE;
+  window.speechSynthesis.speak(utter);
+}
+
+connect();
+</script>
+
+</body>
+</html>

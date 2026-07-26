@@ -8,17 +8,41 @@ public class CPHInline
         CPH.TryGetArg("userName", out string user);
         CPH.TryGetArg("messageStripped", out string message);
         CPH.TryGetArg("tier", out string tier);
-        CPH.TryGetArg("cumulative", out string cumulative); // only present on ReSub
+        CPH.TryGetArg("cumulative", out string cumulative); // present on ReSub
+        CPH.TryGetArg("recipientUserName", out string recipient); // present on Gift Sub
+        CPH.TryGetArg("gifts", out string giftCount); // present on Gift Bomb
 
-        bool isResub = !string.IsNullOrEmpty(cumulative);
+        string kind;
+        if (!string.IsNullOrEmpty(giftCount))
+        {
+            kind = "giftbomb";
+        }
+        else if (!string.IsNullOrEmpty(recipient))
+        {
+            kind = "giftsub";
+        }
+        else if (!string.IsNullOrEmpty(cumulative))
+        {
+            kind = "resub";
+        }
+        else
+        {
+            kind = "sub";
+        }
 
         message ??= "";
         tier ??= "1";
         cumulative ??= "0";
+        recipient ??= "";
+        giftCount ??= "0";
+        user ??= "Someone";
 
         string json =
             "{"
             + "\"event\":\"subAlert\","
+            + "\"kind\":\""
+            + kind
+            + "\","
             + "\"user\":\""
             + Escape(user)
             + "\","
@@ -28,15 +52,18 @@ public class CPHInline
             + "\"message\":\""
             + Escape(message)
             + "\","
-            + "\"isResub\":"
-            + (isResub ? "true" : "false")
-            + ","
             + "\"months\":\""
             + Escape(cumulative)
+            + "\","
+            + "\"recipient\":\""
+            + Escape(recipient)
+            + "\","
+            + "\"giftCount\":\""
+            + Escape(giftCount)
             + "\""
             + "}";
 
-        BroLogger.Info($"Broadcasting JSON: {json}");
+        BroLogger.Info($"kind={kind}, json={json}");
 
         CPH.WebsocketBroadcastJson(json);
         return true;

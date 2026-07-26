@@ -50,6 +50,8 @@
 </div>
 <audio id="alert-sound-sub" src="sub_alert.mp3" preload="auto"></audio>
 <audio id="alert-sound-resub" src="resub_alert.mp3" preload="auto"></audio>
+<audio id="alert-sound-giftsub" src="giftsub_alert.mp3" preload="auto"></audio>
+<audio id="alert-sound-giftbomb" src="giftsub_alert.mp3" preload="auto"></audio>
 <script>
 // ---- CONFIG ----
 const WS_HOST = "127.0.0.1";
@@ -62,11 +64,13 @@ const SOUND_VOLUME = 1.0;   // 0.0 - 1.0
 // ----------------
 const soundSubEl = document.getElementById("alert-sound-sub");
 const soundResubEl = document.getElementById("alert-sound-resub");
-soundSubEl.volume = SOUND_VOLUME;
-soundResubEl.volume = SOUND_VOLUME;
+const soundGiftsubEl = document.getElementById("alert-sound-giftsub");
+const soundGiftbombEl = document.getElementById("alert-sound-giftbomb");
+[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl].forEach(el => {
+  el.volume = SOUND_VOLUME;
+});
 
 let pendingMessage = null;
-let activeSoundEl = null;
 
 function onSoundEnded() {
   if (pendingMessage) {
@@ -74,8 +78,9 @@ function onSoundEnded() {
     pendingMessage = null;
   }
 }
-soundSubEl.addEventListener("ended", onSoundEnded);
-soundResubEl.addEventListener("ended", onSoundEnded);
+[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl].forEach(el => {
+  el.addEventListener("ended", onSoundEnded);
+});
 
 const alertBox = document.getElementById("alert-box");
 const userEl = document.getElementById("alert-user");
@@ -133,16 +138,30 @@ function processQueue() {
 function showAlert(item) {
   userEl.textContent = item.user || "Someone";
   msgEl.textContent = item.message || "";
-  if (item.isResub) {
-    headlineText.textContent = "resubscribed for " + (item.months || "?") + " months!";
-  } else {
-    headlineText.textContent = "just subscribed!";
+
+  let soundEl;
+  switch (item.kind) {
+    case "resub":
+      headlineText.textContent = "resubscribed for " + (item.months || "?") + " months!";
+      soundEl = soundResubEl;
+      break;
+    case "giftsub":
+      headlineText.textContent = "gifted a sub to " + (item.recipient || "someone") + "!";
+      soundEl = soundGiftsubEl;
+      break;
+    case "giftbomb":
+      headlineText.textContent = "gifted " + (item.giftCount || "?") + " subs to a buncha wild animals!";
+      soundEl = soundGiftbombEl;
+      break;
+    default:
+      headlineText.textContent = "just subscribed!";
+      soundEl = soundSubEl;
   }
+
   alertBox.classList.add("show");
 
-  activeSoundEl = item.isResub ? soundResubEl : soundSubEl;
-  activeSoundEl.currentTime = 0;
-  activeSoundEl.play().catch(() => {}); // ignore autoplay-block errors
+  soundEl.currentTime = 0;
+  soundEl.play().catch(() => {}); // ignore autoplay-block errors
 
   pendingMessage = item.message || null;
   setTimeout(() => {

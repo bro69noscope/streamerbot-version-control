@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <ItemGroup>
+    <Compile Include="StartSubAlert.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj" />
+  </ItemGroup>
+</Project>
+

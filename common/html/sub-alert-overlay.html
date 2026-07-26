@@ -44,14 +44,12 @@
 </style>
 </head>
 <body>
-
 <div id="alert-box">
-  <div class="headline"><span class="username" id="alert-user"></span> just subscribed!</div>
+  <div class="headline"><span class="username" id="alert-user"></span> <span id="headline-text">just subscribed!</span></div>
   <div class="message" id="alert-message"></div>
 </div>
-
-<audio id="alert-sound" src="sub_alert.mp3" preload="auto"></audio>
-
+<audio id="alert-sound-sub" src="sub_alert.mp3" preload="auto"></audio>
+<audio id="alert-sound-resub" src="resub_alert.mp3" preload="auto"></audio>
 <script>
 // ---- CONFIG ----
 const WS_HOST = "127.0.0.1";
@@ -62,32 +60,33 @@ const TTS_VOLUME = 1.0;
 const TTS_RATE = 1.0;
 const SOUND_VOLUME = 1.0;   // 0.0 - 1.0
 // ----------------
-
-const soundEl = document.getElementById("alert-sound");
-soundEl.volume = SOUND_VOLUME;
+const soundSubEl = document.getElementById("alert-sound-sub");
+const soundResubEl = document.getElementById("alert-sound-resub");
+soundSubEl.volume = SOUND_VOLUME;
+soundResubEl.volume = SOUND_VOLUME;
 
 let pendingMessage = null;
+let activeSoundEl = null;
 
-soundEl.addEventListener("ended", () => {
+function onSoundEnded() {
   if (pendingMessage) {
     speak(pendingMessage);
     pendingMessage = null;
   }
-});
+}
+soundSubEl.addEventListener("ended", onSoundEnded);
+soundResubEl.addEventListener("ended", onSoundEnded);
 
 const alertBox = document.getElementById("alert-box");
 const userEl = document.getElementById("alert-user");
 const msgEl = document.getElementById("alert-message");
-
+const headlineText = document.getElementById("headline-text");
 let queue = [];
 let playing = false;
-
 function connect() {
   const ws = new WebSocket(`ws://${WS_HOST}:${WS_PORT}${WS_ENDPOINT}`);
-
   ws.onopen = () => {
     console.log("[overlay] connected to Streamer.bot, subscribing...");
-
     ws.send(JSON.stringify({
       request: "Subscribe",
       id: "sub-alert-overlay",
@@ -96,7 +95,6 @@ function connect() {
       }
     }));
   };
-
   ws.onmessage = (evt) => {
     let msg;
     try {
@@ -104,12 +102,10 @@ function connect() {
     } catch (e) {
       return; // not JSON, ignore
     }
-
     // Ignore the subscribe confirmation response and any other non-event messages
     if (!msg.event || msg.event.source !== "General" || msg.event.type !== "Custom") {
       return;
     }
-
     // Actual broadcasted payload lives here
     let payload;
     try {
@@ -117,39 +113,38 @@ function connect() {
     } catch (e) {
       return;
     }
-
     if (payload && payload.event === "subAlert") {
       queue.push(payload);
       processQueue();
     }
   };
-
   ws.onclose = () => {
     console.log("[overlay] disconnected, retrying in 3s");
     setTimeout(connect, 3000);
   };
-
   ws.onerror = () => ws.close();
 }
-
 function processQueue() {
   if (playing || queue.length === 0) return;
   playing = true;
   const item = queue.shift();
   showAlert(item);
 }
-
 function showAlert(item) {
   userEl.textContent = item.user || "Someone";
   msgEl.textContent = item.message || "";
-
+  if (item.isResub) {
+    headlineText.textContent = "resubscribed for " + (item.months || "?") + " months!";
+  } else {
+    headlineText.textContent = "just subscribed!";
+  }
   alertBox.classList.add("show");
 
-  soundEl.currentTime = 0;
-  soundEl.play().catch(() => {}); // ignore autoplay-block errors
+  activeSoundEl = item.isResub ? soundResubEl : soundSubEl;
+  activeSoundEl.currentTime = 0;
+  activeSoundEl.play().catch(() => {}); // ignore autoplay-block errors
 
   pendingMessage = item.message || null;
-
   setTimeout(() => {
     alertBox.classList.remove("show");
     setTimeout(() => {
@@ -158,7 +153,6 @@ function showAlert(item) {
     }, 700);
   }, ALERT_DISPLAY_MS);
 }
-
 function speak(text) {
   if (!("speechSynthesis" in window)) return;
   const utter = new SpeechSynthesisUtterance(text);
@@ -166,9 +160,7 @@ function speak(text) {
   utter.rate = TTS_RATE;
   window.speechSynthesis.speak(utter);
 }
-
 connect();
 </script>
-
 </body>
 </html>

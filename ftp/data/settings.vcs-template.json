@@ -23,8 +23,8 @@
     "closeConfirmation": true,
     "executeCodeDialogWidth": 0,
     "executeCodeDialogHeight": 0,
-    "actionsPageLayout": "403*|391*|330.142857142857*|330.142857142857*",
-    "columnWidths": {},
+    "actionsPageLayout": "543.469593378913*|596.244692335372*|330.142857142857*|330.142857142857*",
+    "columnWidths": { "history": "MTk1fDc1fDc1fDc1fDEyNXwxNDV8MTQ1fDE0NQ==" },
     "triggerSplitter": 115,
     "globalWindowPreventCapture": false,
     "globalWindowShowLastWrite": false,
@@ -33,8 +33,9 @@
     "hideSplashScreen": false,
     "positions": {
       "main": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NTMsIlRvcCI6MCwiUmlnaHQiOjIyOTMsIkJvdHRvbSI6MTI2MH19",
-      "executeCode": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NDkzLCJUb3AiOjExMywiUmlnaHQiOjIwNjgsIkJvdHRvbSI6MTMyOH19",
-      "chat": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjU2MywiVG9wIjo1NSwiUmlnaHQiOjMwMjAsIkJvdHRvbSI6NzU4fX0="
+      "executeCode": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MzU0LCJUb3AiOjQ0LCJSaWdodCI6MjM2OSwiQm90dG9tIjoxMzQxfX0=",
+      "chat": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjU2MywiVG9wIjo1NSwiUmlnaHQiOjMwMjAsIkJvdHRvbSI6NzU4fX0=",
+      "variableViewer": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NjY4LCJUb3AiOjIxOCwiUmlnaHQiOjE4OTMsIkJvdHRvbSI6MTIyM319"
     },
     "integrations": null
   },
@@ -64,13 +65,13 @@
       {
         "id": "2b2a386a-f4fc-4b53-a642-958028f231f1",
         "name": "brb update",
-        "enabled": true,
+        "enabled": false,
         "repeat": true,
         "interval": 1,
         "randomInterval": false,
         "upperInterval": 0,
         "lines": 0,
-        "counter": 35838
+        "counter": 69689
       }
     ]
   },
@@ -100,7 +101,7 @@
   "http": {
     "autoStart": false,
     "address": "127.0.0.1",
-    "port": 7474,
+    "port": 52002,
     "mapping": {}
   },
   "credits": {

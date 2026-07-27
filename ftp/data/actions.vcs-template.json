@@ -10,7 +10,7 @@
     "Alerts"
   ],
   "version": 23,
-  "t": "2026-07-27T13:18:58.7328564+02:00",
+  "t": "2026-07-27T15:44:05.4158333+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -951,6 +951,70 @@
           "parentId": null,
           "enabled": true,
           "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "c2a4dbc2-c02f-493e-8dbf-f888e898fefc",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "kofi alerts",
+      "group": "Alerts",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "min": -1.0,
+          "max": -1.0,
+          "id": "2a985d97-4f13-4617-9cac-dce3332dbef9",
+          "type": 7001,
+          "enabled": true,
+          "exclusions": []
+        },
+        {
+          "id": "7b568f38-3bf6-4e58-ad93-fe32a7619543",
+          "type": 7002,
+          "enabled": true,
+          "exclusions": []
+        },
+        {
+          "id": "4f7e2f24-43a5-45c3-8f99-2fe297893760",
+          "type": 7003,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "StartTipAlert",
+          "description": null,
+          "references": [
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Net.Http.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.Serialization.dll",
+            ".\\Microsoft.Bcl.AsyncInterfaces.dll",
+            ".\\System.Threading.Tasks.Extensions.dll",
+            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.WindowsRuntime.dll",
+            ".\\System.Reflection.Metadata.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJhbW91bnQiLCBvdXQgc3RyaW5nIGFtb3VudCk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImN1cnJlbmN5Iiwgb3V0IHN0cmluZyBjdXJyZW5jeSk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImZyb20iLCBvdXQgc3RyaW5nIGZyb20pOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJtZXNzYWdlIiwgb3V0IHN0cmluZyBtZXNzYWdlKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiX19zb3VyY2UiLCBvdXQgc3RyaW5nIHNvdXJjZSk7DQoNCiAgICAgICAgc3RyaW5nIGtpbmQgPSAoc291cmNlID09ICJLb2ZpU3Vic2NyaXB0aW9uIikgPyAia29maXN1YiIgOiAidGlwIjsNCg0KICAgICAgICBhbW91bnQgPz89ICIwIjsNCiAgICAgICAgY3VycmVuY3kgPz89ICJVU0QiOw0KICAgICAgICBmcm9tID8/PSAiU29tZW9uZSI7DQogICAgICAgIG1lc3NhZ2UgPz89ICIiOw0KDQogICAgICAgIHN0cmluZyBqc29uID0NCiAgICAgICAgICAgICJ7Ig0KICAgICAgICAgICAgKyAiXCJldmVudFwiOlwidGlwQWxlcnRcIiwiDQogICAgICAgICAgICArICJcImtpbmRcIjpcIiINCiAgICAgICAgICAgICsga2luZA0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJ1c2VyXCI6XCIiDQogICAgICAgICAgICArIEVzY2FwZShmcm9tKQ0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJhbW91bnRcIjpcIiINCiAgICAgICAgICAgICsgRXNjYXBlKGFtb3VudCkNCiAgICAgICAgICAgICsgIlwiLCINCiAgICAgICAgICAgICsgIlwiY3VycmVuY3lcIjpcIiINCiAgICAgICAgICAgICsgRXNjYXBlKGN1cnJlbmN5KQ0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJtZXNzYWdlXCI6XCIiDQogICAgICAgICAgICArIEVzY2FwZShtZXNzYWdlKQ0KICAgICAgICAgICAgKyAiXCIiDQogICAgICAgICAgICArICJ9IjsNCg0KICAgICAgICBCcm9Mb2dnZXIuSW5mbygkIkJyb2FkY2FzdGluZyBzb3VyY2U9e3NvdXJjZX0sIGtpbmQ9e2tpbmR9LCBqc29uPXtqc29ufSIpOw0KDQogICAgICAgIENQSC5XZWJzb2NrZXRCcm9hZGNhc3RKc29uKGpzb24pOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQoNCiAgICBwcml2YXRlIHN0cmluZyBFc2NhcGUoc3RyaW5nIHMpID0+IChzID8/ICIiKS5SZXBsYWNlKCJcXCIsICJcXFxcIikuUmVwbGFjZSgiXCIiLCAiXFxcIiIpOw0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "46e6b750-dcfa-46c7-969c-775d7220c8ac",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
         }
       ],
       "collapsedGroups": []

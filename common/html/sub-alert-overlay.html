@@ -52,13 +52,14 @@
 <audio id="alert-sound-resub" src="resub_alert.mp3" preload="auto"></audio>
 <audio id="alert-sound-giftsub" src="giftsub_alert.mp3" preload="auto"></audio>
 <audio id="alert-sound-giftbomb" src="giftsub_alert.mp3" preload="auto"></audio>
+<audio id="alert-sound-tip" src="tip_alert.mp3" preload="auto"></audio>
 <script>
 // ---- CONFIG ----
 const WS_HOST = "127.0.0.1";
 const WS_PORT = 52001;      // must match Streamer.bot WebSocket Server settings
 const WS_ENDPOINT = "/";
 const ALERT_DISPLAY_MS = 7000;
-const TTS_VOLUME = 1.0;
+const TTS_VOLUME = 0.8;
 const TTS_RATE = 1.0;
 const SOUND_VOLUME = 1.0;   // 0.0 - 1.0
 // ----------------
@@ -66,7 +67,8 @@ const soundSubEl = document.getElementById("alert-sound-sub");
 const soundResubEl = document.getElementById("alert-sound-resub");
 const soundGiftsubEl = document.getElementById("alert-sound-giftsub");
 const soundGiftbombEl = document.getElementById("alert-sound-giftbomb");
-[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl].forEach(el => {
+const soundTipEl = document.getElementById("alert-sound-tip");
+[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl].forEach(el => {
   el.volume = SOUND_VOLUME;
 });
 
@@ -78,7 +80,7 @@ function onSoundEnded() {
     pendingMessage = null;
   }
 }
-[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl].forEach(el => {
+[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl].forEach(el => {
   el.addEventListener("ended", onSoundEnded);
 });
 
@@ -118,7 +120,7 @@ function connect() {
     } catch (e) {
       return;
     }
-    if (payload && payload.event === "subAlert") {
+    if (payload && (payload.event === "subAlert" || payload.event === "tipAlert")) {
       queue.push(payload);
       processQueue();
     }
@@ -152,6 +154,10 @@ function showAlert(item) {
     case "giftbomb":
       headlineText.textContent = "gifted " + (item.giftCount || "?") + " subs to a buncha wild animals!";
       soundEl = soundGiftbombEl;
+      break;
+    case "tip":
+      headlineText.textContent = "tipped " + (item.amount || "?") + " " + (item.currency || "") + "!";
+      soundEl = soundTipEl;
       break;
     default:
       headlineText.textContent = "just subscribed!";

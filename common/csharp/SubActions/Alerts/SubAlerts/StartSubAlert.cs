@@ -11,6 +11,17 @@ public class CPHInline
         CPH.TryGetArg("cumulative", out string cumulative); // present on ReSub
         CPH.TryGetArg("recipientUserName", out string recipient); // present on Gift Sub
         CPH.TryGetArg("gifts", out string giftCount); // present on Gift Bomb
+        CPH.TryGetArg("debugthis", out bool debugEnabled);
+
+        if (debugEnabled)
+        {
+            BroLogger.Info($"userName: found={user != null}, value='{user}'");
+            BroLogger.Info($"messageStripped: found={message != null}, value='{message}'");
+            BroLogger.Info($"tier: found={tier != null}, value='{tier}'");
+            BroLogger.Info($"cumulative: found={cumulative != null}, value='{cumulative}'");
+            BroLogger.Info($"recipientUserName: found={recipient != null}, value='{recipient}'");
+            BroLogger.Info($"gifts: found={giftCount != null}, value='{giftCount}'");
+        }
 
         string kind;
         if (!string.IsNullOrEmpty(giftCount))
@@ -63,7 +74,10 @@ public class CPHInline
             + "\""
             + "}";
 
-        BroLogger.Info($"kind={kind}, json={json}");
+        if (debugEnabled)
+        {
+            BroLogger.Info($"kind={kind}, json={json}");
+        }
 
         CPH.WebsocketBroadcastJson(json);
         return true;

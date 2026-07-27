@@ -10,6 +10,16 @@ public class CPHInline
         CPH.TryGetArg("from", out string from);
         CPH.TryGetArg("message", out string message);
         CPH.TryGetArg("__source", out string source);
+        CPH.TryGetArg("debugthis", out bool debugEnabled);
+
+        if (debugEnabled)
+        {
+            BroLogger.Info($"amount: found={amount != null}, value='{amount}'");
+            BroLogger.Info($"currency: found={currency != null}, value='{currency}'");
+            BroLogger.Info($"from: found={from != null}, value='{from}'");
+            BroLogger.Info($"message: found={message != null}, value='{message}'");
+            BroLogger.Info($"__source: found={source != null}, value='{source}'");
+        }
 
         string kind;
         if (source == "KofiSubscription")
@@ -54,7 +64,10 @@ public class CPHInline
             + "\""
             + "}";
 
-        BroLogger.Info($"Broadcasting source={source}, kind={kind}, json={json}");
+        if (debugEnabled)
+        {
+            BroLogger.Info($"Broadcasting source={source}, kind={kind}, json={json}");
+        }
 
         CPH.WebsocketBroadcastJson(json);
         return true;

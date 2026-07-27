@@ -88,7 +88,7 @@
   "websockets": {
     "autoStart": true,
     "address": "127.0.0.1",
-    "port": "{{STREAMERBOT_FTP_PORT}}",
+    "port": "{{STREAMERBOT_FTP_WS_PORT}}",
     "endpoint": "/",
     "enableAuth": false,
     "authEnforce": false,

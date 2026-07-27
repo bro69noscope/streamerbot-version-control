@@ -9,6 +9,9 @@ public class CPHInline
         CPH.TryGetArg("currency", out string currency);
         CPH.TryGetArg("from", out string from);
         CPH.TryGetArg("message", out string message);
+        CPH.TryGetArg("__source", out string source);
+
+        string kind = (source == "KofiSubscription") ? "kofisub" : "tip";
 
         amount ??= "0";
         currency ??= "USD";
@@ -18,7 +21,9 @@ public class CPHInline
         string json =
             "{"
             + "\"event\":\"tipAlert\","
-            + "\"kind\":\"tip\","
+            + "\"kind\":\""
+            + kind
+            + "\","
             + "\"user\":\""
             + Escape(from)
             + "\","
@@ -33,7 +38,7 @@ public class CPHInline
             + "\""
             + "}";
 
-        BroLogger.Info($"Broadcasting JSON: {json}");
+        BroLogger.Info($"Broadcasting source={source}, kind={kind}, json={json}");
 
         CPH.WebsocketBroadcastJson(json);
         return true;

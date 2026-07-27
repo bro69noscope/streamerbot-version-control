@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Compile Include="StartTipAlert.cs" />
+    <Compile Include="StartKofiAlert.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj" />

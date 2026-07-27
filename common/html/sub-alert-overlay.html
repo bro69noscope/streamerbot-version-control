@@ -53,6 +53,7 @@
 <audio id="alert-sound-giftsub" src="giftsub_alert.mp3" preload="auto"></audio>
 <audio id="alert-sound-giftbomb" src="giftsub_alert.mp3" preload="auto"></audio>
 <audio id="alert-sound-tip" src="tip_alert.mp3" preload="auto"></audio>
+<audio id="alert-sound-kofisub" src="kofi_sub_alert.mp3" preload="auto"></audio>
 <script>
 // ---- CONFIG ----
 const WS_HOST = "127.0.0.1";
@@ -68,7 +69,8 @@ const soundResubEl = document.getElementById("alert-sound-resub");
 const soundGiftsubEl = document.getElementById("alert-sound-giftsub");
 const soundGiftbombEl = document.getElementById("alert-sound-giftbomb");
 const soundTipEl = document.getElementById("alert-sound-tip");
-[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl].forEach(el => {
+const soundKofisubEl = document.getElementById("alert-sound-kofisub");
+[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl, soundKofisubEl].forEach(el => {
   el.volume = SOUND_VOLUME;
 });
 
@@ -80,7 +82,7 @@ function onSoundEnded() {
     pendingMessage = null;
   }
 }
-[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl].forEach(el => {
+[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl, soundKofisubEl].forEach(el => {
   el.addEventListener("ended", onSoundEnded);
 });
 
@@ -158,6 +160,10 @@ function showAlert(item) {
     case "tip":
       headlineText.textContent = "tipped " + (item.amount || "?") + " " + (item.currency || "") + "!";
       soundEl = soundTipEl;
+      break;
+    case "kofisub":
+      headlineText.textContent = "subscribed via Ko-fi for " + (item.amount || "?") + " " + (item.currency || "") + " Monthly !";
+      soundEl = soundKofisubEl;
       break;
     default:
       headlineText.textContent = "just subscribed!";

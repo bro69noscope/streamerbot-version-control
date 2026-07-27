@@ -10,7 +10,7 @@
     "Alerts"
   ],
   "version": 23,
-  "t": "2026-07-27T12:41:16.5698612+02:00",
+  "t": "2026-07-27T13:18:58.7328564+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -856,20 +856,79 @@
       ],
       "subActions": [
         {
-          "name": null,
-          "description": null,
-          "references": [
-            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
-            ".\\dlls\\BroStreamerTools.dll"
+          "name": "debugThis?",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "variableName": "debugThis",
+              "value": 1,
+              "autoType": true,
+              "id": "c90a62e4-f118-49a6-b71f-dc1238e23250",
+              "weight": 0.0,
+              "type": 123,
+              "parentId": "d9c2261a-6f25-45f4-94bd-7765307d7738",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "input": "%debugThis%",
+              "operation": 0,
+              "value": "true",
+              "autoType": true,
+              "subActions": [
+                {
+                  "random": false,
+                  "subActions": [
+                    {
+                      "name": null,
+                      "description": null,
+                      "references": [
+                        "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+                        ".\\dlls\\BroStreamerTools.dll"
+                      ],
+                      "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJ1c2VyTmFtZSIsIG91dCBzdHJpbmcgZ2lmdGVyKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygicmVjaXBpZW50VXNlck5hbWUiLCBvdXQgc3RyaW5nIHJlY2lwaWVudCk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImdpZnRzIiwgb3V0IHN0cmluZyBnaWZ0Q291bnQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJ0aWVyIiwgb3V0IHN0cmluZyB0aWVyKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiaXNBbm9ueW1vdXMiLCBvdXQgc3RyaW5nIGlzQW5vbik7DQoNCiAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJ1c2VyTmFtZTogJ3tnaWZ0ZXJ9JyIpOw0KICAgICAgICBCcm9Mb2dnZXIuSW5mbygkInJlY2lwaWVudFVzZXJOYW1lOiAne3JlY2lwaWVudH0nIik7DQogICAgICAgIEJyb0xvZ2dlci5JbmZvKCQiZ2lmdHM6ICd7Z2lmdENvdW50fSciKTsNCiAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJ0aWVyOiAne3RpZXJ9JyIpOw0KICAgICAgICBCcm9Mb2dnZXIuSW5mbygkImlzQW5vbnltb3VzOiAne2lzQW5vbn0nIik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+                      "precompile": false,
+                      "delayStart": false,
+                      "saveResultToVariable": false,
+                      "saveToVariable": null,
+                      "id": "a2c3ee9a-3769-4ce1-a7c3-9060f2873f06",
+                      "weight": 0.0,
+                      "type": 99999,
+                      "parentId": "24182b2f-2a68-40d6-b182-19bd680e0fac",
+                      "enabled": true,
+                      "index": 0
+                    }
+                  ],
+                  "id": "24182b2f-2a68-40d6-b182-19bd680e0fac",
+                  "weight": 0.0,
+                  "type": 99901,
+                  "parentId": null,
+                  "enabled": true,
+                  "index": 0
+                },
+                {
+                  "random": false,
+                  "subActions": [],
+                  "id": "21ad19be-871e-43df-850e-be8c75dd7708",
+                  "weight": 0.0,
+                  "type": 99902,
+                  "parentId": null,
+                  "enabled": true,
+                  "index": 1
+                }
+              ],
+              "id": "dd25f1e4-329f-4aa0-bc99-25f05ab40262",
+              "weight": 0.0,
+              "type": 120,
+              "parentId": "d9c2261a-6f25-45f4-94bd-7765307d7738",
+              "enabled": true,
+              "index": 1
+            }
           ],
-          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJ1c2VyTmFtZSIsIG91dCBzdHJpbmcgZ2lmdGVyKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygicmVjaXBpZW50VXNlck5hbWUiLCBvdXQgc3RyaW5nIHJlY2lwaWVudCk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImdpZnRzIiwgb3V0IHN0cmluZyBnaWZ0Q291bnQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJ0aWVyIiwgb3V0IHN0cmluZyB0aWVyKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiaXNBbm9ueW1vdXMiLCBvdXQgc3RyaW5nIGlzQW5vbik7DQoNCiAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJ1c2VyTmFtZTogJ3tnaWZ0ZXJ9JyIpOw0KICAgICAgICBCcm9Mb2dnZXIuSW5mbygkInJlY2lwaWVudFVzZXJOYW1lOiAne3JlY2lwaWVudH0nIik7DQogICAgICAgIEJyb0xvZ2dlci5JbmZvKCQiZ2lmdHM6ICd7Z2lmdENvdW50fSciKTsNCiAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJ0aWVyOiAne3RpZXJ9JyIpOw0KICAgICAgICBCcm9Mb2dnZXIuSW5mbygkImlzQW5vbnltb3VzOiAne2lzQW5vbn0nIik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
-          "precompile": false,
-          "delayStart": false,
-          "saveResultToVariable": false,
-          "saveToVariable": null,
-          "id": "a2c3ee9a-3769-4ce1-a7c3-9060f2873f06",
+          "id": "d9c2261a-6f25-45f4-94bd-7765307d7738",
           "weight": 0.0,
-          "type": 99999,
+          "type": 99900,
           "parentId": null,
           "enabled": true,
           "index": 0

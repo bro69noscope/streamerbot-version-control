@@ -10,7 +10,7 @@
     "Alerts"
   ],
   "version": 23,
-  "t": "2026-07-27T12:13:29.4944836+02:00",
+  "t": "2026-07-27T12:41:16.5698612+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -176,7 +176,7 @@
       ],
       "subActions": [
         {
-          "name": "setup",
+          "name": ".",
           "color": null,
           "random": false,
           "subActions": [
@@ -510,7 +510,7 @@
       ],
       "subActions": [
         {
-          "name": "setup",
+          "name": ".",
           "color": null,
           "random": false,
           "subActions": [
@@ -571,7 +571,7 @@
       ],
       "subActions": [
         {
-          "name": "setup",
+          "name": ".",
           "color": null,
           "random": false,
           "subActions": [

@@ -11,7 +11,23 @@ public class CPHInline
         CPH.TryGetArg("message", out string message);
         CPH.TryGetArg("__source", out string source);
 
-        string kind = (source == "KofiSubscription") ? "kofisub" : "tip";
+        string kind;
+        if (source == "KofiSubscription")
+        {
+            kind = "kofisub";
+        }
+        else if (source == "KofiResubscription")
+        {
+            kind = "kofiresub";
+        }
+        else if (source == "KofiDonation")
+        {
+            kind = "tip";
+        }
+        else
+        {
+            kind = "unknown";
+        }
 
         amount ??= "0";
         currency ??= "USD";

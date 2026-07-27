@@ -54,6 +54,9 @@
 <audio id="alert-sound-giftbomb" src="giftsub_alert.mp3" preload="auto"></audio>
 <audio id="alert-sound-tip" src="tip_alert.mp3" preload="auto"></audio>
 <audio id="alert-sound-kofisub" src="kofi_sub_alert.mp3" preload="auto"></audio>
+<audio id="alert-sound-kofiresub" src="kofi_resub_alert.mp3" preload="auto"></audio>
+<audio id="alert-sound-error" src="error_alert.mp3" preload="auto"></audio>
+<audio id="alert-sound-unknown" src="unknown_alert.mp3" preload="auto"></audio>
 <script>
 // ---- CONFIG ----
 const WS_HOST = "127.0.0.1";
@@ -70,11 +73,25 @@ const soundGiftsubEl = document.getElementById("alert-sound-giftsub");
 const soundGiftbombEl = document.getElementById("alert-sound-giftbomb");
 const soundTipEl = document.getElementById("alert-sound-tip");
 const soundKofisubEl = document.getElementById("alert-sound-kofisub");
-[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl, soundKofisubEl].forEach(el => {
+const soundKofiresubEl = document.getElementById("alert-sound-kofiresub");
+const soundErrorEl = document.getElementById("alert-sound-error");
+const soundUnknownEl = document.getElementById("alert-sound-unknown");
+const allSounds = [soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl, 
+  soundKofisubEl, soundKofiresubEl, soundErrorEl, soundUnknownEl];
+
+allSounds.forEach(el => {
   el.volume = SOUND_VOLUME;
 });
-
 let pendingMessage = null;
+
+const failedSounds = new Set();
+
+allSounds.forEach(el => {
+  el.addEventListener("error", () => {
+    console.log("[overlay] failed to load sound:", el.src);
+    failedSounds.add(el);
+  });
+});
 
 function onSoundEnded() {
   if (pendingMessage) {
@@ -82,10 +99,9 @@ function onSoundEnded() {
     pendingMessage = null;
   }
 }
-[soundSubEl, soundResubEl, soundGiftsubEl, soundGiftbombEl, soundTipEl, soundKofisubEl].forEach(el => {
+allSounds.forEach(el => {
   el.addEventListener("ended", onSoundEnded);
 });
-
 const alertBox = document.getElementById("alert-box");
 const userEl = document.getElementById("alert-user");
 const msgEl = document.getElementById("alert-message");
@@ -142,9 +158,12 @@ function processQueue() {
 function showAlert(item) {
   userEl.textContent = item.user || "Someone";
   msgEl.textContent = item.message || "";
-
   let soundEl;
   switch (item.kind) {
+    case "sub":
+      headlineText.textContent = "just subscribed!";
+      soundEl = soundSubEl;
+      break;
     case "resub":
       headlineText.textContent = "resubscribed for " + (item.months || "?") + " months!";
       soundEl = soundResubEl;
@@ -165,16 +184,23 @@ function showAlert(item) {
       headlineText.textContent = "subscribed via Ko-fi for " + (item.amount || "?") + " " + (item.currency || "") + " Monthly !";
       soundEl = soundKofisubEl;
       break;
+    case "kofiresub":
+      headlineText.textContent = "renewed their Ko-fi membership for " + (item.amount || "?") + " " + (item.currency || "") + " Monthly !";
+      soundEl = soundKofiresubEl;
+      break;
     default:
-      headlineText.textContent = "just subscribed!";
-      soundEl = soundSubEl;
+      headlineText.textContent = "scuffed improperly coded alert XD";
+      soundEl = soundUnknownEl;
   }
-
   alertBox.classList.add("show");
+
+  if (failedSounds.has(soundEl) && soundEl !== soundErrorEl) {
+    console.log("[overlay] sound failed to load previously, using error sound instead:", soundEl.src);
+    soundEl = soundErrorEl;
+  }
 
   soundEl.currentTime = 0;
   soundEl.play().catch(() => {}); // ignore autoplay-block errors
-
   pendingMessage = item.message || null;
   setTimeout(() => {
     alertBox.classList.remove("show");

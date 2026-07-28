@@ -810,7 +810,7 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "sub alerts",
+      "name": "twitch sub alerts",
       "group": "Alerts",
       "alwaysRun": false,
       "randomAction": false,
@@ -856,85 +856,18 @@
       ],
       "subActions": [
         {
-          "name": "debugThis?",
-          "color": null,
-          "random": false,
-          "subActions": [
-            {
-              "variableName": "debugThis",
-              "value": 1,
-              "autoType": true,
-              "id": "c90a62e4-f118-49a6-b71f-dc1238e23250",
-              "weight": 0.0,
-              "type": 123,
-              "parentId": "d9c2261a-6f25-45f4-94bd-7765307d7738",
-              "enabled": true,
-              "index": 0
-            },
-            {
-              "input": "%debugThis%",
-              "operation": 0,
-              "value": "true",
-              "autoType": true,
-              "subActions": [
-                {
-                  "random": false,
-                  "subActions": [
-                    {
-                      "name": null,
-                      "description": null,
-                      "references": [
-                        "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
-                        ".\\dlls\\BroStreamerTools.dll"
-                      ],
-                      "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJ1c2VyTmFtZSIsIG91dCBzdHJpbmcgZ2lmdGVyKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygicmVjaXBpZW50VXNlck5hbWUiLCBvdXQgc3RyaW5nIHJlY2lwaWVudCk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImdpZnRzIiwgb3V0IHN0cmluZyBnaWZ0Q291bnQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJ0aWVyIiwgb3V0IHN0cmluZyB0aWVyKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiaXNBbm9ueW1vdXMiLCBvdXQgc3RyaW5nIGlzQW5vbik7DQoNCiAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJ1c2VyTmFtZTogJ3tnaWZ0ZXJ9JyIpOw0KICAgICAgICBCcm9Mb2dnZXIuSW5mbygkInJlY2lwaWVudFVzZXJOYW1lOiAne3JlY2lwaWVudH0nIik7DQogICAgICAgIEJyb0xvZ2dlci5JbmZvKCQiZ2lmdHM6ICd7Z2lmdENvdW50fSciKTsNCiAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJ0aWVyOiAne3RpZXJ9JyIpOw0KICAgICAgICBCcm9Mb2dnZXIuSW5mbygkImlzQW5vbnltb3VzOiAne2lzQW5vbn0nIik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
-                      "precompile": false,
-                      "delayStart": false,
-                      "saveResultToVariable": false,
-                      "saveToVariable": null,
-                      "id": "a2c3ee9a-3769-4ce1-a7c3-9060f2873f06",
-                      "weight": 0.0,
-                      "type": 99999,
-                      "parentId": "24182b2f-2a68-40d6-b182-19bd680e0fac",
-                      "enabled": true,
-                      "index": 0
-                    }
-                  ],
-                  "id": "24182b2f-2a68-40d6-b182-19bd680e0fac",
-                  "weight": 0.0,
-                  "type": 99901,
-                  "parentId": null,
-                  "enabled": true,
-                  "index": 0
-                },
-                {
-                  "random": false,
-                  "subActions": [],
-                  "id": "21ad19be-871e-43df-850e-be8c75dd7708",
-                  "weight": 0.0,
-                  "type": 99902,
-                  "parentId": null,
-                  "enabled": true,
-                  "index": 1
-                }
-              ],
-              "id": "dd25f1e4-329f-4aa0-bc99-25f05ab40262",
-              "weight": 0.0,
-              "type": 120,
-              "parentId": "d9c2261a-6f25-45f4-94bd-7765307d7738",
-              "enabled": true,
-              "index": 1
-            }
-          ],
-          "id": "d9c2261a-6f25-45f4-94bd-7765307d7738",
+          "variableName": "debugthis",
+          "value": 1,
+          "autoType": true,
+          "id": "68141a84-bab0-4945-a820-724d1c20179b",
           "weight": 0.0,
-          "type": 99900,
+          "type": 123,
           "parentId": null,
           "enabled": true,
           "index": 0
         },
         {
-          "name": "StartSubAlert",
+          "name": "StartTwitchSubAlert",
           "description": null,
           "references": [
             "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -945,7 +878,7 @@
           "delayStart": false,
           "saveResultToVariable": false,
           "saveToVariable": null,
-          "id": "36ed0095-497f-42cc-8a2a-7fbf65d9d91c",
+          "id": "134d0785-5941-4b43-b337-e71b42f4923c",
           "weight": 0.0,
           "type": 99999,
           "parentId": null,
@@ -986,9 +919,26 @@
           "type": 7003,
           "enabled": true,
           "exclusions": []
+        },
+        {
+          "id": "40def644-3792-48d6-a773-1fe3944c6be8",
+          "type": 7004,
+          "enabled": true,
+          "exclusions": []
         }
       ],
       "subActions": [
+        {
+          "variableName": "debugthis",
+          "value": 1,
+          "autoType": true,
+          "id": "dabbf4fe-15c0-4702-81fb-b115ded32ab6",
+          "weight": 0.0,
+          "type": 123,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
         {
           "name": "StartTipAlert",
           "description": null,
@@ -1004,7 +954,7 @@
             "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.WindowsRuntime.dll",
             ".\\System.Reflection.Metadata.dll"
           ],
-          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJhbW91bnQiLCBvdXQgc3RyaW5nIGFtb3VudCk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImN1cnJlbmN5Iiwgb3V0IHN0cmluZyBjdXJyZW5jeSk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImZyb20iLCBvdXQgc3RyaW5nIGZyb20pOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJtZXNzYWdlIiwgb3V0IHN0cmluZyBtZXNzYWdlKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiX19zb3VyY2UiLCBvdXQgc3RyaW5nIHNvdXJjZSk7DQoNCiAgICAgICAgc3RyaW5nIGtpbmQgPSAoc291cmNlID09ICJLb2ZpU3Vic2NyaXB0aW9uIikgPyAia29maXN1YiIgOiAidGlwIjsNCg0KICAgICAgICBhbW91bnQgPz89ICIwIjsNCiAgICAgICAgY3VycmVuY3kgPz89ICJVU0QiOw0KICAgICAgICBmcm9tID8/PSAiU29tZW9uZSI7DQogICAgICAgIG1lc3NhZ2UgPz89ICIiOw0KDQogICAgICAgIHN0cmluZyBqc29uID0NCiAgICAgICAgICAgICJ7Ig0KICAgICAgICAgICAgKyAiXCJldmVudFwiOlwidGlwQWxlcnRcIiwiDQogICAgICAgICAgICArICJcImtpbmRcIjpcIiINCiAgICAgICAgICAgICsga2luZA0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJ1c2VyXCI6XCIiDQogICAgICAgICAgICArIEVzY2FwZShmcm9tKQ0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJhbW91bnRcIjpcIiINCiAgICAgICAgICAgICsgRXNjYXBlKGFtb3VudCkNCiAgICAgICAgICAgICsgIlwiLCINCiAgICAgICAgICAgICsgIlwiY3VycmVuY3lcIjpcIiINCiAgICAgICAgICAgICsgRXNjYXBlKGN1cnJlbmN5KQ0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJtZXNzYWdlXCI6XCIiDQogICAgICAgICAgICArIEVzY2FwZShtZXNzYWdlKQ0KICAgICAgICAgICAgKyAiXCIiDQogICAgICAgICAgICArICJ9IjsNCg0KICAgICAgICBCcm9Mb2dnZXIuSW5mbygkIkJyb2FkY2FzdGluZyBzb3VyY2U9e3NvdXJjZX0sIGtpbmQ9e2tpbmR9LCBqc29uPXtqc29ufSIpOw0KDQogICAgICAgIENQSC5XZWJzb2NrZXRCcm9hZGNhc3RKc29uKGpzb24pOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQoNCiAgICBwcml2YXRlIHN0cmluZyBFc2NhcGUoc3RyaW5nIHMpID0+IChzID8/ICIiKS5SZXBsYWNlKCJcXCIsICJcXFxcIikuUmVwbGFjZSgiXCIiLCAiXFxcIiIpOw0KfQ0K",
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJhbW91bnQiLCBvdXQgc3RyaW5nIGFtb3VudCk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImN1cnJlbmN5Iiwgb3V0IHN0cmluZyBjdXJyZW5jeSk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImZyb20iLCBvdXQgc3RyaW5nIGZyb20pOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJtZXNzYWdlIiwgb3V0IHN0cmluZyBtZXNzYWdlKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiX19zb3VyY2UiLCBvdXQgc3RyaW5nIHNvdXJjZSk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImRlYnVndGhpcyIsIG91dCBib29sIGRlYnVnRW5hYmxlZCk7DQoNCiAgICAgICAgaWYgKGRlYnVnRW5hYmxlZCkNCiAgICAgICAgew0KICAgICAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJhbW91bnQ6IGZvdW5kPXthbW91bnQgIT0gbnVsbH0sIHZhbHVlPSd7YW1vdW50fSciKTsNCiAgICAgICAgICAgIEJyb0xvZ2dlci5JbmZvKCQiY3VycmVuY3k6IGZvdW5kPXtjdXJyZW5jeSAhPSBudWxsfSwgdmFsdWU9J3tjdXJyZW5jeX0nIik7DQogICAgICAgICAgICBCcm9Mb2dnZXIuSW5mbygkImZyb206IGZvdW5kPXtmcm9tICE9IG51bGx9LCB2YWx1ZT0ne2Zyb219JyIpOw0KICAgICAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJtZXNzYWdlOiBmb3VuZD17bWVzc2FnZSAhPSBudWxsfSwgdmFsdWU9J3ttZXNzYWdlfSciKTsNCiAgICAgICAgICAgIEJyb0xvZ2dlci5JbmZvKCQiX19zb3VyY2U6IGZvdW5kPXtzb3VyY2UgIT0gbnVsbH0sIHZhbHVlPSd7c291cmNlfSciKTsNCiAgICAgICAgfQ0KDQogICAgICAgIHN0cmluZyBraW5kOw0KICAgICAgICBpZiAoc291cmNlID09ICJLb2ZpU3Vic2NyaXB0aW9uIikNCiAgICAgICAgew0KICAgICAgICAgICAga2luZCA9ICJrb2Zpc3ViIjsNCiAgICAgICAgfQ0KICAgICAgICBlbHNlIGlmIChzb3VyY2UgPT0gIktvZmlSZXN1YnNjcmlwdGlvbiIpDQogICAgICAgIHsNCiAgICAgICAgICAgIGtpbmQgPSAia29maXJlc3ViIjsNCiAgICAgICAgfQ0KICAgICAgICBlbHNlIGlmIChzb3VyY2UgPT0gIktvZmlEb25hdGlvbiIpDQogICAgICAgIHsNCiAgICAgICAgICAgIGtpbmQgPSAidGlwIjsNCiAgICAgICAgfQ0KICAgICAgICBlbHNlDQogICAgICAgIHsNCiAgICAgICAgICAgIGtpbmQgPSAidW5rbm93biI7DQogICAgICAgIH0NCg0KICAgICAgICBhbW91bnQgPz89ICIwIjsNCiAgICAgICAgY3VycmVuY3kgPz89ICJVU0QiOw0KICAgICAgICBmcm9tID8/PSAiU29tZW9uZSI7DQogICAgICAgIG1lc3NhZ2UgPz89ICIiOw0KDQogICAgICAgIHN0cmluZyBqc29uID0NCiAgICAgICAgICAgICJ7Ig0KICAgICAgICAgICAgKyAiXCJldmVudFwiOlwidGlwQWxlcnRcIiwiDQogICAgICAgICAgICArICJcImtpbmRcIjpcIiINCiAgICAgICAgICAgICsga2luZA0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJ1c2VyXCI6XCIiDQogICAgICAgICAgICArIEVzY2FwZShmcm9tKQ0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJhbW91bnRcIjpcIiINCiAgICAgICAgICAgICsgRXNjYXBlKGFtb3VudCkNCiAgICAgICAgICAgICsgIlwiLCINCiAgICAgICAgICAgICsgIlwiY3VycmVuY3lcIjpcIiINCiAgICAgICAgICAgICsgRXNjYXBlKGN1cnJlbmN5KQ0KICAgICAgICAgICAgKyAiXCIsIg0KICAgICAgICAgICAgKyAiXCJtZXNzYWdlXCI6XCIiDQogICAgICAgICAgICArIEVzY2FwZShtZXNzYWdlKQ0KICAgICAgICAgICAgKyAiXCIiDQogICAgICAgICAgICArICJ9IjsNCg0KICAgICAgICBpZiAoZGVidWdFbmFibGVkKQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuSW5mbygkIkJyb2FkY2FzdGluZyBzb3VyY2U9e3NvdXJjZX0sIGtpbmQ9e2tpbmR9LCBqc29uPXtqc29ufSIpOw0KICAgICAgICB9DQoNCiAgICAgICAgQ1BILldlYnNvY2tldEJyb2FkY2FzdEpzb24oanNvbik7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCg0KICAgIHByaXZhdGUgc3RyaW5nIEVzY2FwZShzdHJpbmcgcykgPT4gKHMgPz8gIiIpLlJlcGxhY2UoIlxcIiwgIlxcXFwiKS5SZXBsYWNlKCJcIiIsICJcXFwiIik7DQp9DQo=",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1014,7 +964,7 @@
           "type": 99999,
           "parentId": null,
           "enabled": true,
-          "index": 0
+          "index": 1
         }
       ],
       "collapsedGroups": []

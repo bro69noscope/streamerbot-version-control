@@ -32,7 +32,7 @@ public class CPHInline
         }
         else if (source == "KofiDonation")
         {
-            kind = "tip";
+            kind = "kofitip";
         }
         else
         {
@@ -46,7 +46,7 @@ public class CPHInline
 
         string json =
             "{"
-            + "\"event\":\"tipAlert\","
+            + "\"event\":\"KofiAlert\","
             + "\"kind\":\""
             + kind
             + "\","

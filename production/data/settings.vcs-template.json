@@ -128,7 +128,7 @@
   "websockets": {
     "autoStart": true,
     "address": "127.0.0.1",
-    "port": "{{STREAMERBOT_PRODUCTION_PORT}}",
+    "port": "{{STREAMERBOT_PRODUCTION_WS_PORT}}",
     "endpoint": "/",
     "enableAuth": false,
     "authEnforce": false,

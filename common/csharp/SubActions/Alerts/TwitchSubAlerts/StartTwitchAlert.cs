@@ -50,7 +50,7 @@ public class CPHInline
 
         string json =
             "{"
-            + "\"event\":\"TwitchsubAlert\","
+            + "\"event\":\"TwitchAlert\","
             + "\"kind\":\""
             + kind
             + "\","

@@ -5,20 +5,20 @@ public class CPHInline
 {
     public bool Execute()
     {
+        CPH.TryGetArg("__source", out string source);
         CPH.TryGetArg("amount", out string amount);
         CPH.TryGetArg("currency", out string currency);
         CPH.TryGetArg("from", out string from);
         CPH.TryGetArg("message", out string message);
-        CPH.TryGetArg("__source", out string source);
         CPH.TryGetArg("debugthis", out bool debugEnabled);
 
         if (debugEnabled)
         {
+            BroLogger.Info($"__source: found={source != null}, value='{source}'");
             BroLogger.Info($"amount: found={amount != null}, value='{amount}'");
             BroLogger.Info($"currency: found={currency != null}, value='{currency}'");
             BroLogger.Info($"from: found={from != null}, value='{from}'");
             BroLogger.Info($"message: found={message != null}, value='{message}'");
-            BroLogger.Info($"__source: found={source != null}, value='{source}'");
         }
 
         string kind;
@@ -41,7 +41,7 @@ public class CPHInline
 
         amount ??= "0";
         currency ??= "USD";
-        from ??= "Someone";
+        from ??= "Someone anonymous";
         message ??= "";
 
         string json =

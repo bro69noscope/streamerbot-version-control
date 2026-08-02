@@ -5,6 +5,7 @@ public class CPHInline
 {
     public bool Execute()
     {
+        CPH.TryGetArg("__source", out string source);
         CPH.TryGetArg("userName", out string user);
         CPH.TryGetArg("messageStripped", out string message);
         CPH.TryGetArg("tier", out string tier);
@@ -15,6 +16,7 @@ public class CPHInline
 
         if (debugEnabled)
         {
+            BroLogger.Info($"__source: found={source != null}, value='{source}'");
             BroLogger.Info($"userName: found={user != null}, value='{user}'");
             BroLogger.Info($"messageStripped: found={message != null}, value='{message}'");
             BroLogger.Info($"tier: found={tier != null}, value='{tier}'");
@@ -46,7 +48,7 @@ public class CPHInline
         cumulative ??= "0";
         recipient ??= "";
         giftCount ??= "0";
-        user ??= "Someone";
+        user ??= "Someone anonymous";
 
         tier = System.Text.RegularExpressions.Regex.Match(tier, @"\d+").Value;
         if (string.IsNullOrEmpty(tier))
@@ -80,7 +82,7 @@ public class CPHInline
 
         if (debugEnabled)
         {
-            BroLogger.Info($"kind={kind}, json={json}");
+            BroLogger.Info($"Broadcasting source={source}, kind={kind}, json={json}");
         }
 
         CPH.WebsocketBroadcastJson(json);

@@ -42,11 +42,15 @@ public class CPHInline
         }
 
         message ??= "";
-        tier ??= "1";
+        tier ??= "tier 1";
         cumulative ??= "0";
         recipient ??= "";
         giftCount ??= "0";
         user ??= "Someone";
+
+        tier = System.Text.RegularExpressions.Regex.Match(tier, @"\d+").Value;
+        if (string.IsNullOrEmpty(tier))
+            tier = "1";
 
         string json =
             "{"

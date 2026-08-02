@@ -1,3 +1,5 @@
 <prosody pitch="+10%">
-Oh wow -. they just tipped, a tip, bro, -. look bro
+  <prosody rate="110%"> 
+    Oh wow -. they just tipped, a tip, bro, -. look bro
+</prosody>
 </prosody>

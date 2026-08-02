@@ -48,7 +48,8 @@ public class CPHInline
         cumulative ??= "0";
         recipient ??= "";
         giftCount ??= "0";
-        user ??= "Someone anonymous";
+        if (string.IsNullOrEmpty(user))
+            user = "Someone anonymous";
 
         tier = System.Text.RegularExpressions.Regex.Match(tier, @"\d+").Value;
         if (string.IsNullOrEmpty(tier))

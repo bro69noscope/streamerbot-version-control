@@ -41,8 +41,9 @@ public class CPHInline
 
         amount ??= "0";
         currency ??= "USD";
-        from ??= "Someone anonymous";
         message ??= "";
+        if (string.IsNullOrEmpty(from))
+            from = "Someone anonymous";
 
         string json =
             "{"

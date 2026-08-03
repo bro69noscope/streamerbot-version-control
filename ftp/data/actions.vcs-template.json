@@ -1,5 +1,5 @@
 {
-  "collapsedGroups": ["Hide Sources", "Set Scenes", "Show Sources"],
+  "collapsedGroups": ["Alerts", "Hide Sources", "Set Scenes", "Show Sources"],
   "groups": [
     "brb",
     "Set Scenes",
@@ -10,7 +10,7 @@
     "Alerts"
   ],
   "version": 23,
-  "t": "2026-08-02T21:57:05.5006436+02:00",
+  "t": "2026-08-03T21:17:22.6064342+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -493,26 +493,14 @@
                   "random": false,
                   "subActions": [
                     {
-                      "sceneName": "scene_lounge",
-                      "sourceName": "brb",
-                      "state": 1,
-                      "connectionId": "00000000-0000-0000-0000-000000000000",
-                      "id": "279df4bd-8fe9-4935-b8d0-fd2deaeb04d1",
+                      "actionId": "7ebb29d2-03f0-4138-9bdb-805848dfe3c6",
+                      "runImmedately": true,
+                      "id": "d9f9a2bb-8e27-4255-b391-1ac5ea0b6b3b",
                       "weight": 0.0,
-                      "type": 30,
+                      "type": 4,
                       "parentId": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
                       "enabled": true,
                       "index": 0
-                    },
-                    {
-                      "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
-                      "state": 1,
-                      "id": "119798bb-6408-4c80-8709-d14f0cd666e3",
-                      "weight": 0.0,
-                      "type": 8,
-                      "parentId": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
-                      "enabled": true,
-                      "index": 1
                     }
                   ],
                   "id": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
@@ -1019,6 +1007,57 @@
           "parentId": null,
           "enabled": true,
           "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "7ebb29d2-03f0-4138-9bdb-805848dfe3c6",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "brb end",
+      "group": "Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "name": ".",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
+              "state": 1,
+              "id": "e863c275-17c1-495f-87a7-b0ac1c89133f",
+              "weight": 0.0,
+              "type": 8,
+              "parentId": "03d56ddc-b7be-414a-9c96-137d091b95a5",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "sceneName": "scene_lounge",
+              "sourceName": "brb",
+              "state": 1,
+              "connectionId": "00000000-0000-0000-0000-000000000000",
+              "id": "a474b8fc-e9cd-4166-a95b-b76791b20094",
+              "weight": 0.0,
+              "type": 30,
+              "parentId": "03d56ddc-b7be-414a-9c96-137d091b95a5",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "03d56ddc-b7be-414a-9c96-137d091b95a5",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
         }
       ],
       "collapsedGroups": []

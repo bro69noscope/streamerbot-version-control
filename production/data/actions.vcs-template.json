@@ -1,10 +1,10 @@
 {
   "collapsedGroups": [
     "BRB",
-    "Shop Scan Client",
-    "Pregame Detector Client",
     "Helpers",
+    "Pregame Detector Client",
     "Resets",
+    "Shop Scan Client",
     "Toggle Virtual Cam Config"
   ],
   "groups": [
@@ -17,7 +17,7 @@
     "Brb"
   ],
   "version": 23,
-  "t": "2026-08-03T20:59:12.3294811+02:00",
+  "t": "2026-08-03T21:18:26.1617944+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -1604,26 +1604,14 @@
                   "random": false,
                   "subActions": [
                     {
-                      "sceneName": "scene_lounge",
-                      "sourceName": "brb",
-                      "state": 1,
-                      "connectionId": "00000000-0000-0000-0000-000000000000",
-                      "id": "279df4bd-8fe9-4935-b8d0-fd2deaeb04d1",
+                      "actionId": "7ebb29d2-03f0-4138-9bdb-805848dfe3c6",
+                      "runImmedately": true,
+                      "id": "cd398c69-4969-4b5c-9b2a-2b563b181acf",
                       "weight": 0.0,
-                      "type": 30,
+                      "type": 4,
                       "parentId": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
                       "enabled": true,
                       "index": 0
-                    },
-                    {
-                      "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
-                      "state": 1,
-                      "id": "119798bb-6408-4c80-8709-d14f0cd666e3",
-                      "weight": 0.0,
-                      "type": 8,
-                      "parentId": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
-                      "enabled": true,
-                      "index": 1
                     }
                   ],
                   "id": "98148655-d7d2-494b-af14-ecd90eb6d8ff",

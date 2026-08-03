@@ -1,5 +1,5 @@
 {
-  "collapsedGroups": ["Alerts", "Hide Sources", "Set Scenes", "Show Sources"],
+  "collapsedGroups": ["Set Scenes", "Brb", "Helpers", "Hide Sources"],
   "groups": [
     "brb",
     "Set Scenes",
@@ -7,10 +7,11 @@
     "Brb",
     "Hide Sources",
     "Show Sources",
-    "Alerts"
+    "Alerts",
+    "Refresh Sources"
   ],
   "version": 23,
-  "t": "2026-08-03T21:17:22.6064342+02:00",
+  "t": "2026-08-03T22:16:14.3762068+02:00",
   "blocking": false,
   "queues": [],
   "actions": [
@@ -1058,6 +1059,57 @@
           "parentId": null,
           "enabled": true,
           "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "a50651eb-eaad-43fb-86ad-1ac315808a75",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "refresh alerts",
+      "group": "Refresh Sources",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "sceneName": "scene_alerts",
+          "sourceName": "browser_streamerbot_alerts",
+          "state": 1,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "85ec42f0-51e6-4888-adac-02b630b64242",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "value": "1000",
+          "maxValue": null,
+          "random": false,
+          "id": "0b1a6851-8a8e-43e4-b6b7-3b9effc4b420",
+          "weight": 0.0,
+          "type": 1002,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "sceneName": "scene_alerts",
+          "sourceName": "browser_streamerbot_alerts",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "86eb9de3-eebe-485a-a1c5-8eb3dcdf1142",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
         }
       ],
       "collapsedGroups": []

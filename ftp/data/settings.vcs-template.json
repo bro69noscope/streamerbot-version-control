@@ -72,13 +72,13 @@
       {
         "id": "2b2a386a-f4fc-4b53-a642-958028f231f1",
         "name": "brb update",
-        "enabled": true,
+        "enabled": false,
         "repeat": true,
         "interval": 1,
         "randomInterval": false,
         "upperInterval": 0,
         "lines": 0,
-        "counter": 76865
+        "counter": 77351
       }
     ]
   },

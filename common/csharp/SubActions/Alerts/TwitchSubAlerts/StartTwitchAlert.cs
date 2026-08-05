@@ -26,21 +26,30 @@ public class CPHInline
         }
 
         string kind;
-        if (!string.IsNullOrEmpty(giftCount))
+        switch (source)
         {
-            kind = "giftbomb";
-        }
-        else if (!string.IsNullOrEmpty(recipient))
-        {
-            kind = "giftsub";
-        }
-        else if (!string.IsNullOrEmpty(cumulative))
-        {
-            kind = "resub";
-        }
-        else
-        {
-            kind = "sub";
+            case "TwitchFollow":
+                kind = "follow";
+                break;
+            case "TwitchGiftBomb":
+                kind = "giftbomb";
+                break;
+            case "TwitchGiftSub":
+                kind = "giftsub";
+                break;
+            case "TwitchReSub":
+                kind = "resub";
+                break;
+            case "TwitchSub":
+                kind = "sub";
+                break;
+            default:
+                kind = "unknown";
+                if (debugEnabled)
+                    BroLogger.Info(
+                        $"Unrecognized __source '{source}', falling back to kind=unknown"
+                    );
+                break;
         }
 
         message ??= "";
@@ -55,31 +64,19 @@ public class CPHInline
         if (string.IsNullOrEmpty(tier))
             tier = "1";
 
-        string json =
-            "{"
-            + "\"event\":\"TwitchAlert\","
-            + "\"kind\":\""
-            + kind
-            + "\","
-            + "\"user\":\""
-            + Escape(user)
-            + "\","
-            + "\"tier\":\""
-            + Escape(tier)
-            + "\","
-            + "\"message\":\""
-            + Escape(message)
-            + "\","
-            + "\"months\":\""
-            + Escape(cumulative)
-            + "\","
-            + "\"recipient\":\""
-            + Escape(recipient)
-            + "\","
-            + "\"giftCount\":\""
-            + Escape(giftCount)
-            + "\""
-            + "}";
+        var payload = new
+        {
+            @event = "TwitchAlert",
+            kind,
+            user,
+            tier,
+            message,
+            months = cumulative,
+            recipient,
+            giftCount,
+        };
+
+        string json = Newtonsoft.Json.JsonConvert.SerializeObject(payload);
 
         if (debugEnabled)
         {
@@ -89,6 +86,4 @@ public class CPHInline
         CPH.WebsocketBroadcastJson(json);
         return true;
     }
-
-    private string Escape(string s) => (s ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"");
 }

@@ -45,25 +45,17 @@ public class CPHInline
         if (string.IsNullOrEmpty(from))
             from = "Someone anonymous";
 
-        string json =
-            "{"
-            + "\"event\":\"KofiAlert\","
-            + "\"kind\":\""
-            + kind
-            + "\","
-            + "\"user\":\""
-            + Escape(from)
-            + "\","
-            + "\"amount\":\""
-            + Escape(amount)
-            + "\","
-            + "\"currency\":\""
-            + Escape(currency)
-            + "\","
-            + "\"message\":\""
-            + Escape(message)
-            + "\""
-            + "}";
+        var payload = new
+        {
+            @event = "KofiAlert",
+            kind,
+            user = from,
+            amount,
+            currency,
+            message,
+        };
+
+        string json = Newtonsoft.Json.JsonConvert.SerializeObject(payload);
 
         if (debugEnabled)
         {
@@ -73,6 +65,4 @@ public class CPHInline
         CPH.WebsocketBroadcastJson(json);
         return true;
     }
-
-    private string Escape(string s) => (s ?? "").Replace("\\", "\\\\").Replace("\"", "\\\"");
 }

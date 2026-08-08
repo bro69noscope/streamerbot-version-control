@@ -20,7 +20,7 @@
     "navPaneOpen": true,
     "minimizeToTray": false,
     "minimizeToTrayOnClose": false,
-    "closeConfirmation": true,
+    "closeConfirmation": false,
     "executeCodeDialogWidth": 0,
     "executeCodeDialogHeight": 0,
     "actionsPageLayout": "580.469593378914*|559.244692335372*|330.142857142857*|330.142857142857*",
@@ -36,7 +36,7 @@
     "disableViewersTab": false,
     "hideSplashScreen": false,
     "positions": {
-      "main": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTMyMDAwLCJZIjotMzIwMDB9LCJtYXhQb3NpdGlvbiI6eyJYIjotMSwiWSI6LTF9LCJub3JtYWxQb3NpdGlvbiI6eyJMZWZ0Ijo1NiwiVG9wIjowLCJSaWdodCI6MjI5NiwiQm90dG9tIjoxMjYwfX0=",
+      "main": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NTYsIlRvcCI6MCwiUmlnaHQiOjIyOTYsIkJvdHRvbSI6MTI2MH19",
       "executeCode": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MzU0LCJUb3AiOjQ0LCJSaWdodCI6MjM2OSwiQm90dG9tIjoxMzQxfX0=",
       "chat": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjU2MywiVG9wIjo1NSwiUmlnaHQiOjMwMjAsIkJvdHRvbSI6NzU4fX0=",
       "variableViewer": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NjY4LCJUb3AiOjIxOCwiUmlnaHQiOjE4OTMsIkJvdHRvbSI6MTIyM319",
@@ -44,7 +44,9 @@
       "import": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjY0LCJUb3AiOjI2NCwiUmlnaHQiOjE4MzksIkJvdHRvbSI6MTQ0NH19",
       "export": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MzMzLCJUb3AiOjUwLCJSaWdodCI6MTkwOCwiQm90dG9tIjoxMjMwfX0="
     },
-    "integrations": null
+    "integrations": null,
+    "monacoFontFamily": "Consolas, \"Courier New\", monospace",
+    "monacoFontSize": 14.0
   },
   "labs": { "pendingCache": false },
   "defaults": {
@@ -78,7 +80,7 @@
         "randomInterval": false,
         "upperInterval": 0,
         "lines": 0,
-        "counter": 77351
+        "counter": 77355
       }
     ]
   },
@@ -129,6 +131,7 @@
     "emoteHandlerSevenTv": true,
     "emoteHandlerFrankerFaceZ": true,
     "pyramidEnabled": false,
+    "pyramidSharedChat": false,
     "minPyramidWidth": 2,
     "subCounterEnabled": false,
     "subCounterRolloverEnabled": false,
@@ -146,14 +149,6 @@
     "autoMonitor": true,
     "acceptedTerms": false,
     "tags": ["Horizontal", "Vertical"],
-    "autoConnect": false,
-    "autoReconnect": false,
-    "retryInterval": 0
-  },
-  "trovo": {
-    "presentViewersEnabled": true,
-    "presentViewersInterval": 5,
-    "firstWordsAutoReset": 12,
     "autoConnect": false,
     "autoReconnect": false,
     "retryInterval": 0
@@ -207,7 +202,13 @@
     "autoReconnect": false,
     "retryInterval": 0
   },
-  "version": 32,
+  "streamLoots": { "autoConnect": false, "autoReconnect": false },
+  "streamfog": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "version": 34,
   "instanceId": "cd1558a6-6705-4f36-b6eb-fa395e1913ac",
   "instanceName": "Streamer.bot ftp",
   "logLevel": 1,
@@ -252,18 +253,22 @@
     "waveLinkAutoConnect": false,
     "waveLinkAutoReconnect": false,
     "cameraHubAutoConnect": false,
-    "cameraHubAutoReconnect": false
+    "cameraHubAutoReconnect": false,
+    "streamDeckMcpAutoConnect": false,
+    "streamDeckMcpAutoReconnect": false
   },
   "speakerbot": {
     "autoConnect": false,
     "autoReconnect": false,
     "address": "127.0.0.1",
-    "port": 7580
+    "port": 7580,
+    "endpoint": "/"
   },
   "defaultAudioDevice": "00000000-0000-0000-0000-000000000000",
   "volume": 1.0,
   "audioUseSystemDefault": true,
   "maskVariables": false,
   "maskedVariables": ["apiKey", "url"],
-  "subActionDuplicateLocation": 0
+  "subActionDuplicateLocation": 0,
+  "useMonacoEditor": true
 }

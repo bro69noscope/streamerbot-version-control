@@ -8,16 +8,16 @@ public class CPHInline
     public bool Execute()
     {
         if (
-            !CPH.TryGetArg("payloadJson", out string payloadJson)
-            || string.IsNullOrEmpty(payloadJson)
+            !CPH.TryGetArg("replayPayloadJson", out string replayPayloadJson)
+            || string.IsNullOrEmpty(replayPayloadJson)
         )
         {
-            BroLogger.Error("ReplayAlert: missing/invalid payloadJson arg");
+            BroLogger.Error("ReplayAlert: missing/invalid replayPayloadJson arg");
             return false;
         }
         try
         {
-            var parsed = JToken.Parse(payloadJson);
+            var parsed = JToken.Parse(replayPayloadJson);
             CPH.WebsocketBroadcastJson(parsed.ToString(Formatting.None));
             return true;
         }

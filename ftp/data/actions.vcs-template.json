@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-08-08T10:02:00.7386997+02:00",
+  "t": "2026-08-17T21:34:59.2108241+02:00",
   "blocking": false,
   "collapsedGroups": ["Brb", "Hide Sources", "Set Scenes"],
   "groups": [
@@ -992,15 +992,15 @@
           "name": "StartKofiAlert",
           "description": null,
           "references": [
-            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
             ".\\dlls\\BroStreamerTools.dll",
-            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
-            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Net.Http.dll",
-            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll",
-            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.Serialization.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Net.Http.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.Serialization.dll",
             ".\\Microsoft.Bcl.AsyncInterfaces.dll",
             ".\\System.Threading.Tasks.Extensions.dll",
-            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.WindowsRuntime.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.WindowsRuntime.dll",
             ".\\System.Reflection.Metadata.dll"
           ],
           "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJfX3NvdXJjZSIsIG91dCBzdHJpbmcgc291cmNlKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiYW1vdW50Iiwgb3V0IHN0cmluZyBhbW91bnQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJjdXJyZW5jeSIsIG91dCBzdHJpbmcgY3VycmVuY3kpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJmcm9tIiwgb3V0IHN0cmluZyBmcm9tKTsNCiAgICAgICAgQ1BILlRyeUdldEFyZygibWVzc2FnZSIsIG91dCBzdHJpbmcgbWVzc2FnZSk7DQogICAgICAgIENQSC5UcnlHZXRBcmcoImRlYnVndGhpcyIsIG91dCBib29sIGRlYnVnRW5hYmxlZCk7DQoNCiAgICAgICAgaWYgKGRlYnVnRW5hYmxlZCkNCiAgICAgICAgew0KICAgICAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJfX3NvdXJjZTogZm91bmQ9e3NvdXJjZSAhPSBudWxsfSwgdmFsdWU9J3tzb3VyY2V9JyIpOw0KICAgICAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJhbW91bnQ6IGZvdW5kPXthbW91bnQgIT0gbnVsbH0sIHZhbHVlPSd7YW1vdW50fSciKTsNCiAgICAgICAgICAgIEJyb0xvZ2dlci5JbmZvKCQiY3VycmVuY3k6IGZvdW5kPXtjdXJyZW5jeSAhPSBudWxsfSwgdmFsdWU9J3tjdXJyZW5jeX0nIik7DQogICAgICAgICAgICBCcm9Mb2dnZXIuSW5mbygkImZyb206IGZvdW5kPXtmcm9tICE9IG51bGx9LCB2YWx1ZT0ne2Zyb219JyIpOw0KICAgICAgICAgICAgQnJvTG9nZ2VyLkluZm8oJCJtZXNzYWdlOiBmb3VuZD17bWVzc2FnZSAhPSBudWxsfSwgdmFsdWU9J3ttZXNzYWdlfSciKTsNCiAgICAgICAgfQ0KDQogICAgICAgIHN0cmluZyBraW5kOw0KICAgICAgICBpZiAoc291cmNlID09ICJLb2ZpU3Vic2NyaXB0aW9uIikNCiAgICAgICAgew0KICAgICAgICAgICAga2luZCA9ICJrb2Zpc3ViIjsNCiAgICAgICAgfQ0KICAgICAgICBlbHNlIGlmIChzb3VyY2UgPT0gIktvZmlSZXN1YnNjcmlwdGlvbiIpDQogICAgICAgIHsNCiAgICAgICAgICAgIGtpbmQgPSAia29maXJlc3ViIjsNCiAgICAgICAgfQ0KICAgICAgICBlbHNlIGlmIChzb3VyY2UgPT0gIktvZmlEb25hdGlvbiIpDQogICAgICAgIHsNCiAgICAgICAgICAgIGtpbmQgPSAia29maXRpcCI7DQogICAgICAgIH0NCiAgICAgICAgZWxzZQ0KICAgICAgICB7DQogICAgICAgICAgICBraW5kID0gInVua25vd24iOw0KICAgICAgICB9DQoNCiAgICAgICAgYW1vdW50ID8/PSAiMCI7DQogICAgICAgIGN1cnJlbmN5ID8/PSAiVVNEIjsNCiAgICAgICAgbWVzc2FnZSA/Pz0gIiI7DQogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JFbXB0eShmcm9tKSkNCiAgICAgICAgICAgIGZyb20gPSAiU29tZW9uZSBhbm9ueW1vdXMiOw0KDQogICAgICAgIHZhciBwYXlsb2FkID0gbmV3DQogICAgICAgIHsNCiAgICAgICAgICAgIEBldmVudCA9ICJLb2ZpQWxlcnQiLA0KICAgICAgICAgICAga2luZCwNCiAgICAgICAgICAgIHVzZXIgPSBmcm9tLA0KICAgICAgICAgICAgYW1vdW50LA0KICAgICAgICAgICAgY3VycmVuY3ksDQogICAgICAgICAgICBtZXNzYWdlDQogICAgICAgIH07DQoNCiAgICAgICAgc3RyaW5nIGpzb24gPSBOZXd0b25zb2Z0Lkpzb24uSnNvbkNvbnZlcnQuU2VyaWFsaXplT2JqZWN0KHBheWxvYWQpOw0KDQogICAgICAgIGlmIChkZWJ1Z0VuYWJsZWQpDQogICAgICAgIHsNCiAgICAgICAgICAgIEJyb0xvZ2dlci5JbmZvKCQiQnJvYWRjYXN0aW5nIHNvdXJjZT17c291cmNlfSwga2luZD17a2luZH0sIGpzb249e2pzb259Iik7DQogICAgICAgIH0NCg0KICAgICAgICBDUEguV2Vic29ja2V0QnJvYWRjYXN0SnNvbihqc29uKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
@@ -1145,6 +1145,44 @@
           "saveResultToVariable": false,
           "saveToVariable": null,
           "id": "288d0be4-1da8-4e30-a1d9-7573133c272a",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "5ee132dc-78c2-4c11-80d0-cb892c1861c6",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "replay alert",
+      "group": "Alerts",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "name": null,
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            ".\\System.Text.Json.dll",
+            ".\\dlls\\BroStreamerTools.dll",
+            ".\\Newtonsoft.Json.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIGlmICgNCiAgICAgICAgICAgICFDUEguVHJ5R2V0QXJnKCJwYXlsb2FkSnNvbiIsIG91dCBzdHJpbmcgcGF5bG9hZEpzb24pDQogICAgICAgICAgICB8fCBzdHJpbmcuSXNOdWxsT3JFbXB0eShwYXlsb2FkSnNvbikNCiAgICAgICAgKQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoIlJlcGxheUFsZXJ0OiBtaXNzaW5nL2ludmFsaWQgcGF5bG9hZEpzb24gYXJnIik7DQogICAgICAgICAgICByZXR1cm4gZmFsc2U7DQogICAgICAgIH0NCiAgICAgICAgdHJ5DQogICAgICAgIHsNCiAgICAgICAgICAgIC8vIHBhcnNlLXRoZW4tcmVzZXJpYWxpemUgdmFsaWRhdGVzIGl0J3MgcmVhbCBKU09OIGJlZm9yZSBicm9hZGNhc3RpbmcNCiAgICAgICAgICAgIHZhciBwYXJzZWQgPSBKVG9rZW4uUGFyc2UocGF5bG9hZEpzb24pOw0KICAgICAgICAgICAgQ1BILldlYnNvY2tldEJyb2FkY2FzdEpzb24ocGFyc2VkLlRvU3RyaW5nKEZvcm1hdHRpbmcuTm9uZSkpOw0KICAgICAgICAgICAgcmV0dXJuIHRydWU7DQogICAgICAgIH0NCiAgICAgICAgY2F0Y2ggKE5ld3RvbnNvZnQuSnNvbi5Kc29uRXhjZXB0aW9uIGV4KQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoJCJSZXBsYXlBbGVydDogYmFkIEpTT046IHtleC5NZXNzYWdlfSIpOw0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQogICAgfQ0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "eb6ac05a-fb23-46a0-b831-7b8ab28963a2",
           "weight": 0.0,
           "type": 99999,
           "parentId": null,

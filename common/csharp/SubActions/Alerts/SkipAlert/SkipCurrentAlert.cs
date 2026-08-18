@@ -1,5 +1,3 @@
-using System;
-
 public partial class CPHInline
 {
     public bool Execute()

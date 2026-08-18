@@ -1,13 +1,10 @@
-using System;
-using System.IO;
 using System.Text.Json;
-using Streamer.bot.Plugin.Interface;
 
-public class CPHInline
+public partial class CPHInline
 {
     public bool Execute()
     {
-        var payload = new System.Collections.Generic.Dictionary<string, object>
+        var payload = new Dictionary<string, object>
         {
             { "inputName", "capture_facecam" },
             { "propertyName", "video_device_id" },

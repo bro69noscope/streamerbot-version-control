@@ -1,9 +1,8 @@
-using System;
 using BroStreamerTools.Logging;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
-public class CPHInline
+public partial class CPHInline
 {
     public bool Execute()
     {
@@ -21,7 +20,7 @@ public class CPHInline
             CPH.WebsocketBroadcastJson(parsed.ToString(Formatting.None));
             return true;
         }
-        catch (Newtonsoft.Json.JsonException ex)
+        catch (JsonException ex)
         {
             BroLogger.Error($"ReplayAlert: bad JSON: {ex.Message}");
             return false;

@@ -1,7 +1,6 @@
-using System;
 using BroStreamerTools.Logging;
 
-public class CPHInline
+public partial class CPHInline
 {
     public bool Execute()
     {

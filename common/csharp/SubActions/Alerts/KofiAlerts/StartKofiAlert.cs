@@ -21,21 +21,24 @@ public partial class CPHInline
         }
 
         string kind;
-        if (source == "KofiSubscription")
+        switch (source)
         {
-            kind = "kofisub";
-        }
-        else if (source == "KofiResubscription")
-        {
-            kind = "kofiresub";
-        }
-        else if (source == "KofiDonation")
-        {
-            kind = "kofitip";
-        }
-        else
-        {
-            kind = "unknown";
+            case "KofiSubscription":
+                kind = "kofisub";
+                break;
+            case "KofiResubscription":
+                kind = "kofiresub";
+                break;
+            case "KofiDonation":
+                kind = "kofitip";
+                break;
+            default:
+                kind = "unknown";
+                if (debugEnabled)
+                    BroLogger.Info(
+                        $"Unrecognized __source '{source}', falling back to kind=unknown"
+                    );
+                break;
         }
 
         amount ??= "0";

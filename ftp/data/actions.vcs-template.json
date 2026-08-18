@@ -1,8 +1,8 @@
 {
   "version": 24,
-  "t": "2026-08-17T21:44:59.9429606+02:00",
+  "t": "2026-08-18T19:00:57.0377552+02:00",
   "blocking": false,
-  "collapsedGroups": ["Brb", "Hide Sources", "Set Scenes"],
+  "collapsedGroups": ["Hide Sources", "Set Scenes"],
   "groups": [
     "brb",
     "Set Scenes",
@@ -63,7 +63,7 @@
           "name": "StartTimer",
           "description": null,
           "references": [
-            "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
             ".\\dlls\\BroStreamerTools.dll"
           ],
           "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCg0KcHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiYnJiRHVyYXRpb24iLCBvdXQgc3RyaW5nIGJyYkR1cmF0aW9uKTsNCiAgICAgICAgQ1BILkxvZ0luZm8odHlwZW9mKEJSQk1hbmFnZXIpLkFzc2VtYmx5LkZ1bGxOYW1lKTsNCiAgICAgICAgQlJCTWFuYWdlci5TdGFydChDUEgsIGJyYkR1cmF0aW9uKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
@@ -1139,7 +1139,7 @@
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
           ],
-          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICB2YXIgcGF5bG9hZCA9IG5ldw0KICAgICAgICB7DQogICAgICAgICAgICBAZXZlbnQgPSAiU2tpcEN1cnJlbnRBbGVydCINCiAgICAgICAgfTsNCg0KICAgICAgICBzdHJpbmcganNvbiA9IE5ld3RvbnNvZnQuSnNvbi5Kc29uQ29udmVydC5TZXJpYWxpemVPYmplY3QocGF5bG9hZCk7DQoNCiAgICAgICAgQ1BILldlYnNvY2tldEJyb2FkY2FzdEpzb24oanNvbik7DQoNCiAgICAgICAgQ1BILkxvZ0luZm8oJCJbU2tpcEN1cnJlbnRBbGVydF0gZGlzcGF0Y2hlZDoge2pzb259Iik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "byteCode": "DQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICB2YXIgcGF5bG9hZCA9IG5ldw0KICAgICAgICB7DQogICAgICAgICAgICBAZXZlbnQgPSAiU2tpcEN1cnJlbnRBbGVydCINCiAgICAgICAgfTsNCg0KICAgICAgICBzdHJpbmcganNvbiA9IE5ld3RvbnNvZnQuSnNvbi5Kc29uQ29udmVydC5TZXJpYWxpemVPYmplY3QocGF5bG9hZCk7DQoNCiAgICAgICAgQ1BILldlYnNvY2tldEJyb2FkY2FzdEpzb24oanNvbik7DQoNCiAgICAgICAgQ1BILkxvZ0luZm8oJCJbU2tpcEN1cnJlbnRBbGVydF0gZGlzcGF0Y2hlZDoge2pzb259Iik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1177,7 +1177,7 @@
             ".\\dlls\\BroStreamerTools.dll",
             ".\\Newtonsoft.Json.dll"
           ],
-          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIGlmICgNCiAgICAgICAgICAgICFDUEguVHJ5R2V0QXJnKCJyZXBsYXlQYXlsb2FkSnNvbiIsIG91dCBzdHJpbmcgcmVwbGF5UGF5bG9hZEpzb24pDQogICAgICAgICAgICB8fCBzdHJpbmcuSXNOdWxsT3JFbXB0eShyZXBsYXlQYXlsb2FkSnNvbikNCiAgICAgICAgKQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoIlJlcGxheUFsZXJ0OiBtaXNzaW5nL2ludmFsaWQgcmVwbGF5UGF5bG9hZEpzb24gYXJnIik7DQogICAgICAgICAgICByZXR1cm4gZmFsc2U7DQogICAgICAgIH0NCiAgICAgICAgdHJ5DQogICAgICAgIHsNCiAgICAgICAgICAgIHZhciBwYXJzZWQgPSBKVG9rZW4uUGFyc2UocmVwbGF5UGF5bG9hZEpzb24pOw0KICAgICAgICAgICAgQ1BILldlYnNvY2tldEJyb2FkY2FzdEpzb24ocGFyc2VkLlRvU3RyaW5nKEZvcm1hdHRpbmcuTm9uZSkpOw0KICAgICAgICAgICAgcmV0dXJuIHRydWU7DQogICAgICAgIH0NCiAgICAgICAgY2F0Y2ggKE5ld3RvbnNvZnQuSnNvbi5Kc29uRXhjZXB0aW9uIGV4KQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoJCJSZXBsYXlBbGVydDogYmFkIEpTT046IHtleC5NZXNzYWdlfSIpOw0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQogICAgfQ0KfQ0K",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIGlmICgNCiAgICAgICAgICAgICFDUEguVHJ5R2V0QXJnKCJyZXBsYXlQYXlsb2FkSnNvbiIsIG91dCBzdHJpbmcgcmVwbGF5UGF5bG9hZEpzb24pDQogICAgICAgICAgICB8fCBzdHJpbmcuSXNOdWxsT3JFbXB0eShyZXBsYXlQYXlsb2FkSnNvbikNCiAgICAgICAgKQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoIlJlcGxheUFsZXJ0OiBtaXNzaW5nL2ludmFsaWQgcmVwbGF5UGF5bG9hZEpzb24gYXJnIik7DQogICAgICAgICAgICByZXR1cm4gZmFsc2U7DQogICAgICAgIH0NCiAgICAgICAgdHJ5DQogICAgICAgIHsNCiAgICAgICAgICAgIHZhciBwYXJzZWQgPSBKVG9rZW4uUGFyc2UocmVwbGF5UGF5bG9hZEpzb24pOw0KICAgICAgICAgICAgQ1BILldlYnNvY2tldEJyb2FkY2FzdEpzb24ocGFyc2VkLlRvU3RyaW5nKEZvcm1hdHRpbmcuTm9uZSkpOw0KICAgICAgICAgICAgcmV0dXJuIHRydWU7DQogICAgICAgIH0NCiAgICAgICAgY2F0Y2ggKE5ld3RvbnNvZnQuSnNvbi5Kc29uRXhjZXB0aW9uIGV4KQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoJCJSZXBsYXlBbGVydDogYmFkIEpTT046IHtleC5NZXNzYWdlfSIpOw0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQogICAgfQ0KfQ0K",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,

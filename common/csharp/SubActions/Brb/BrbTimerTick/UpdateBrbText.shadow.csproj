@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Compile Include="UpdateBrbText.cs" />
+    <Compile Include="UpdateBrbText.cs"/>
   </ItemGroup>
 </Project>

@@ -1,11 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Compile Include="ReplayAlert.cs" />
+    <Compile Include="ReplayAlert.cs"/>
   </ItemGroup>
+
   <ItemGroup>
     <ProjectReference
-      Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"
-    />
-  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+      Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
   </ItemGroup>
 </Project>

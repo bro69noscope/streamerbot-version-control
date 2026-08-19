@@ -1,8 +1,9 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Compile Include="SkipCurrentAlert.cs" />
+    <Compile Include="SkipCurrentAlert.cs"/>
   </ItemGroup>
+
   <ItemGroup>
-  <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
-</ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+  </ItemGroup>
 </Project>

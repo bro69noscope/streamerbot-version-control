@@ -1,3 +1,5 @@
+using BroStreamerTools.Logging;
+
 public partial class CPHInline
 {
     public bool Execute()
@@ -8,7 +10,7 @@ public partial class CPHInline
 
         CPH.WebsocketBroadcastJson(json);
 
-        CPH.LogInfo($"[SkipCurrentAlert] dispatched: {json}");
+        BroLogger.Info($"[SkipCurrentAlert] dispatched: {json}");
 
         return true;
     }

@@ -10,9 +10,19 @@ public static class BroLogger
         "BroStreamerTools.log"
     );
 
+    public static void Debug(string message)
+    {
+        Write("DEBUG", message);
+    }
+
     public static void Info(string message)
     {
         Write("INFO", message);
+    }
+
+    public static void Warning(string message)
+    {
+        Write("WARNING", message);
     }
 
     public static void Error(string message)

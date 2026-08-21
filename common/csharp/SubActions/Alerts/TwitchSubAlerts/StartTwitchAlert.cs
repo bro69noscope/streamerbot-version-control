@@ -15,13 +15,13 @@ public partial class CPHInline
 
         if (debugEnabled)
         {
-            BroLogger.Info($"__source: found={source != null}, value='{source}'");
-            BroLogger.Info($"userName: found={user != null}, value='{user}'");
-            BroLogger.Info($"messageStripped: found={message != null}, value='{message}'");
-            BroLogger.Info($"tier: found={tier != null}, value='{tier}'");
-            BroLogger.Info($"cumulative: found={cumulative != null}, value='{cumulative}'");
-            BroLogger.Info($"recipientUserName: found={recipient != null}, value='{recipient}'");
-            BroLogger.Info($"gifts: found={giftCount != null}, value='{giftCount}'");
+            BroLogger.Debug($"__source: found={source != null}, value='{source}'");
+            BroLogger.Debug($"userName: found={user != null}, value='{user}'");
+            BroLogger.Debug($"messageStripped: found={message != null}, value='{message}'");
+            BroLogger.Debug($"tier: found={tier != null}, value='{tier}'");
+            BroLogger.Debug($"cumulative: found={cumulative != null}, value='{cumulative}'");
+            BroLogger.Debug($"recipientUserName: found={recipient != null}, value='{recipient}'");
+            BroLogger.Debug($"gifts: found={giftCount != null}, value='{giftCount}'");
         }
 
         string kind;
@@ -45,7 +45,7 @@ public partial class CPHInline
             default:
                 kind = "unknown";
                 if (debugEnabled)
-                    BroLogger.Info(
+                    BroLogger.Debug(
                         $"Unrecognized __source '{source}', falling back to kind=unknown"
                     );
                 break;
@@ -79,7 +79,7 @@ public partial class CPHInline
 
         if (debugEnabled)
         {
-            BroLogger.Info($"Broadcasting source={source}, kind={kind}, json={json}");
+            BroLogger.Debug($"Broadcasting source={source}, kind={kind}, json={json}");
         }
 
         CPH.WebsocketBroadcastJson(json);

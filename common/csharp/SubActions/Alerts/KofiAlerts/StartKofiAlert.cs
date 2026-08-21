@@ -13,11 +13,11 @@ public partial class CPHInline
 
         if (debugEnabled)
         {
-            BroLogger.Info($"__source: found={source != null}, value='{source}'");
-            BroLogger.Info($"amount: found={amount != null}, value='{amount}'");
-            BroLogger.Info($"currency: found={currency != null}, value='{currency}'");
-            BroLogger.Info($"from: found={from != null}, value='{from}'");
-            BroLogger.Info($"message: found={message != null}, value='{message}'");
+            BroLogger.Debug($"__source: found={source != null}, value='{source}'");
+            BroLogger.Debug($"amount: found={amount != null}, value='{amount}'");
+            BroLogger.Debug($"currency: found={currency != null}, value='{currency}'");
+            BroLogger.Debug($"from: found={from != null}, value='{from}'");
+            BroLogger.Debug($"message: found={message != null}, value='{message}'");
         }
 
         string kind;
@@ -61,7 +61,7 @@ public partial class CPHInline
 
         if (debugEnabled)
         {
-            BroLogger.Info($"Broadcasting source={source}, kind={kind}, json={json}");
+            BroLogger.Debug($"Broadcasting source={source}, kind={kind}, json={json}");
         }
 
         CPH.WebsocketBroadcastJson(json);

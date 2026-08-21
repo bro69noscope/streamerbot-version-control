@@ -1,7 +1,6 @@
 <Project>
   <PropertyGroup>
-    <IsShadowProject
-      Condition="$(MSBuildProjectName.EndsWith('.shadow'))">
+    <IsShadowProject Condition="$(MSBuildProjectName.EndsWith('.shadow'))">
       true</IsShadowProject>
   </PropertyGroup>
 
@@ -14,8 +13,7 @@
   </PropertyGroup>
 
   <ItemGroup Condition="'$(IsShadowProject)'=='true'">
-    <Compile
-      Include="$(MSBuildThisFileDirectory)_shims\CPHStub.cs"/>
+    <Compile Include="$(MSBuildThisFileDirectory)_shims\CPHStub.cs"/>
   </ItemGroup>
 
   <ItemGroup Condition="'$(IsShadowProject)'=='true'">

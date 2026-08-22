@@ -14,8 +14,9 @@ artifacts/
 .idea/
 *.sln.iml
 
-# VS Code
-.vscode/
+# vs code
+.vscode/*
+!.vscode/settings.json
 
 # NuGet
 *.nupkg

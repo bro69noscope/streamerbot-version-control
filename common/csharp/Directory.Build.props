@@ -1,7 +1,6 @@
 <Project>
   <PropertyGroup>
-    <IsShadowProject Condition="$(MSBuildProjectName.EndsWith('.shadow'))">
-      true</IsShadowProject>
+    <IsShadowProject Condition="$(MSBuildProjectName.EndsWith('.shadow'))">true</IsShadowProject>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(IsShadowProject)'=='true'">

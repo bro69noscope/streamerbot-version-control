@@ -17,8 +17,7 @@
 
   <ItemGroup Condition="'$(IsShadowProject)'=='true'">
     <Reference Include="Streamer.bot.Plugin.Interface">
-      <HintPath>
-        C:\Users\ville\myfiles\streaming-programs\streamerbot-portable-production\Streamer.bot\Streamer.bot.Plugin.Interface.dll</HintPath>
+      <HintPath>C:\Users\ville\myfiles\streaming-programs\streamerbot-portable-production\Streamer.bot\Streamer.bot.Plugin.Interface.dll</HintPath>
       <Private>false</Private>
     </Reference>
   </ItemGroup>

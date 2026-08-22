@@ -5,10 +5,7 @@ SubActions
 │   │   ├── SubActionExecuteCodeName.cs
 │   │   ├── SubActionExecuteCodeName.shadow.csproj
 │   │   ├── SubActionExecuteCodeName.cs
-│   │   ├── SubActionExecuteCodeName.shadow.csproj
-│   │   └── Debug/                              (optional)
-│   │       ├── DebugSubActionExecuteCodeName.cs
-│   │       └── DebugSubActionExecuteCodeName.shadow.csproj
+│   │   └── SubActionExecuteCodeName.shadow.csproj
 │   └── ActionName
 │       └── SubActionExecuteCodeName.cs
 └── ActionGroupName

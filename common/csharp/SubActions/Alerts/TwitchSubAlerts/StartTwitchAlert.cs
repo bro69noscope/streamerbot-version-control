@@ -1,3 +1,4 @@
+using System.Text.RegularExpressions;
 using BroStreamerTools.Logging;
 
 public partial class CPHInline
@@ -59,7 +60,7 @@ public partial class CPHInline
         if (string.IsNullOrEmpty(user))
             user = "Someone anonymous";
 
-        tier = System.Text.RegularExpressions.Regex.Match(tier, @"\d+").Value;
+        tier = Regex.Match(tier, @"\d+").Value;
         if (string.IsNullOrEmpty(tier))
             tier = "1";
 

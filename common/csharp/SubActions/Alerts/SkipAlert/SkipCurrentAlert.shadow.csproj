@@ -4,11 +4,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference
-      Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"/>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+    <ProjectReference Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"/>
   </ItemGroup>
 </Project>

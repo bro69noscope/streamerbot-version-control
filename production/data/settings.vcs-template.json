@@ -60,7 +60,7 @@
     "disableViewersTab": false,
     "hideSplashScreen": false,
     "positions": {
-      "main": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTMyMDAwLCJZIjotMzIwMDB9LCJtYXhQb3NpdGlvbiI6eyJYIjotMSwiWSI6LTF9LCJub3JtYWxQb3NpdGlvbiI6eyJMZWZ0IjotMTkyMCwiVG9wIjoxLCJSaWdodCI6MCwiQm90dG9tIjo4NDB9fQ==",
+      "main": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MCwiVG9wIjoxLCJSaWdodCI6NjQyOCwiQm90dG9tIjoxNDY5fX0=",
       "chat": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjU2MywiVG9wIjo1NSwiUmlnaHQiOjMwMjAsIkJvdHRvbSI6NzY5fX0=",
       "executeCode": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NDE0LCJUb3AiOjI4LCJSaWdodCI6MjI5NSwiQm90dG9tIjoxMzg4fX0=",
       "export": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6OTIwLCJUb3AiOjMzMywiUmlnaHQiOjIwNDUsIkJvdHRvbSI6MTE3Nn19",
@@ -68,7 +68,9 @@
       "obsRaw": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MTYzLCJUb3AiOjgzLCJSaWdodCI6MjQxMiwiQm90dG9tIjoxMzM0fX0=",
       "globalVariable": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NTgwLCJUb3AiOjI4MywiUmlnaHQiOjE5ODAsIkJvdHRvbSI6MTE1OH19"
     },
-    "integrations": null
+    "integrations": null,
+    "monacoFontFamily": "Consolas, \"Courier New\", monospace",
+    "monacoFontSize": 14.0
   },
   "labs": { "pendingCache": false },
   "defaults": {
@@ -165,6 +167,7 @@
     "emoteHandlerSevenTv": true,
     "emoteHandlerFrankerFaceZ": true,
     "pyramidEnabled": false,
+    "pyramidSharedChat": false,
     "minPyramidWidth": 2,
     "subCounterEnabled": false,
     "subCounterRolloverEnabled": false,
@@ -182,14 +185,6 @@
     "autoMonitor": true,
     "acceptedTerms": false,
     "tags": ["Horizontal", "Vertical"],
-    "autoConnect": false,
-    "autoReconnect": false,
-    "retryInterval": 0
-  },
-  "trovo": {
-    "presentViewersEnabled": true,
-    "presentViewersInterval": 5,
-    "firstWordsAutoReset": 12,
     "autoConnect": false,
     "autoReconnect": false,
     "retryInterval": 0
@@ -243,7 +238,13 @@
     "autoReconnect": false,
     "retryInterval": 0
   },
-  "version": 32,
+  "streamLoots": { "autoConnect": false, "autoReconnect": false },
+  "streamfog": {
+    "autoConnect": false,
+    "autoReconnect": false,
+    "retryInterval": 0
+  },
+  "version": 34,
   "instanceId": "750f4ced-a06b-4cf4-9061-40c9dfa113da",
   "instanceName": "Streamer.bot production",
   "logLevel": 1,
@@ -288,18 +289,22 @@
     "waveLinkAutoConnect": false,
     "waveLinkAutoReconnect": false,
     "cameraHubAutoConnect": false,
-    "cameraHubAutoReconnect": false
+    "cameraHubAutoReconnect": false,
+    "streamDeckMcpAutoConnect": false,
+    "streamDeckMcpAutoReconnect": false
   },
   "speakerbot": {
     "autoConnect": false,
     "autoReconnect": false,
     "address": "127.0.0.1",
-    "port": 7580
+    "port": 7580,
+    "endpoint": "/"
   },
   "defaultAudioDevice": "00000000-0000-0000-0000-000000000000",
   "volume": 1.0,
   "audioUseSystemDefault": true,
   "maskVariables": false,
   "maskedVariables": ["apiKey", "url"],
-  "subActionDuplicateLocation": 0
+  "subActionDuplicateLocation": 0,
+  "useMonacoEditor": true
 }

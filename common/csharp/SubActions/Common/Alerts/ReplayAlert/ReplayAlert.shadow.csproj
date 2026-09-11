@@ -8,6 +8,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"/>
+    <ProjectReference Include="..\..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"/>
   </ItemGroup>
 </Project>

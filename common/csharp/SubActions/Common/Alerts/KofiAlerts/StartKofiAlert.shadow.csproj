@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <ItemGroup>
-    <Compile Include="StartTwitchAlert.cs"/>
+    <Compile Include="StartKofiAlert.cs"/>
   </ItemGroup>
 
   <ItemGroup>
@@ -8,6 +8,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"/>
+    <ProjectReference Include="..\..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"/>
   </ItemGroup>
 </Project>

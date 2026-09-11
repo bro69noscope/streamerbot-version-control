@@ -1,8 +1,8 @@
 {
   "version": 24,
-  "t": "2026-09-10T16:54:38.2797816+02:00",
+  "t": "2026-09-11T21:19:59.1091012+02:00",
   "blocking": false,
-  "collapsedGroups": ["BRB"],
+  "collapsedGroups": ["BRB", "Brb", "Pregame Detector Client"],
   "groups": [
     "Resets",
     "Shop Scan Client",
@@ -12,7 +12,8 @@
     "Helpers",
     "Brb",
     "Alerts",
-    "Refresh Sources"
+    "Refresh Sources",
+    "Manage Obs Ui"
   ],
   "queues": [],
   "actions": [
@@ -1045,7 +1046,7 @@
       "triggers": [],
       "subActions": [
         {
-          "command": "{{STREAMING_REPO_PATH}}external\\streamerbot\\focus_newest_hwnd.ahk",
+          "command": "C:/Users/ville/myfiles/git-repos/woertsposzibllen4me/external\\streamerbot\\focus_newest_hwnd.ahk",
           "arguments": null,
           "workingDir": null,
           "envVars": {},
@@ -1824,6 +1825,90 @@
           "parentId": null,
           "enabled": true,
           "index": 2
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "8737d48c-cc69-443d-a98f-63e4e9e09655",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set docks for right monitor",
+      "group": "Manage Obs Ui",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "e37784e1-40b8-445d-90e8-7d1638159f32",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "SetDocksRight",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJDYWxsVmVuZG9yUmVxdWVzdCIsDQogICAgICAgICAgICAie1widmVuZG9yTmFtZVwiOlwianJEb2NraWVcIixcInJlcXVlc3RUeXBlXCI6XCJMb2FkRG9ja3NldFwiLFwicmVxdWVzdERhdGFcIjp7XCJmaWxlbmFtZVwiOlwicmlnaHRfbW9uaXRvcl9wcm9kdWN0aW9uXCJ9fSIsDQogICAgICAgICAgICAwDQogICAgICAgICk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "a9a91096-974f-4064-a453-982678c9e06b",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "d70c66c9-450d-4f56-a8f7-51d3f221b52c",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set docks for center monitor",
+      "group": "Manage Obs Ui",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "8dce4f1c-9627-4a2e-b629-7e7128e62069",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "SetDocksCenter",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJDYWxsVmVuZG9yUmVxdWVzdCIsDQogICAgICAgICAgICAie1widmVuZG9yTmFtZVwiOlwianJEb2NraWVcIixcInJlcXVlc3RUeXBlXCI6XCJMb2FkRG9ja3NldFwiLFwicmVxdWVzdERhdGFcIjp7XCJmaWxlbmFtZVwiOlwiY2VudGVyX21vbml0b3JfcHJvZHVjdGlvblwifX0iLA0KICAgICAgICAgICAgMA0KICAgICAgICApOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "66655329-6e80-4066-8c0f-a2d434fe25e3",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
         }
       ],
       "collapsedGroups": []

@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-09-11T19:12:58.057258+02:00",
+  "t": "2026-09-11T21:42:08.3955598+02:00",
   "blocking": false,
   "collapsedGroups": ["Refresh Sources", "Set Scenes"],
   "groups": [
@@ -1385,6 +1385,16 @@
       ],
       "subActions": [
         {
+          "actionId": "8286360c-ecc7-4e90-82e5-898755c0b4c2",
+          "runImmedately": true,
+          "id": "d7945ea0-30bf-40b5-86cf-9d321735b0d5",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
           "actionId": "34344d2e-0b40-4bcc-85c6-da95fd7bd99d",
           "runImmedately": true,
           "id": "e658513a-d97b-4fa8-a44b-1e9096784bda",
@@ -1392,7 +1402,7 @@
           "type": 4,
           "parentId": null,
           "enabled": true,
-          "index": 0
+          "index": 1
         },
         {
           "actionId": "ce4a8588-ada7-45ba-9385-9f891c424326",
@@ -1402,7 +1412,7 @@
           "type": 4,
           "parentId": null,
           "enabled": true,
-          "index": 1
+          "index": 2
         },
         {
           "actionId": "37c52aa7-fcd7-45c1-b382-f24344b159d2",
@@ -1412,22 +1422,12 @@
           "type": 4,
           "parentId": null,
           "enabled": true,
-          "index": 2
+          "index": 3
         },
         {
           "actionId": "edefa931-2ec5-4207-b31f-bcfaa55bbdf4",
           "runImmedately": true,
           "id": "e284802b-18f4-44ec-b49b-fd9febc11f94",
-          "weight": 0.0,
-          "type": 4,
-          "parentId": null,
-          "enabled": true,
-          "index": 3
-        },
-        {
-          "actionId": "8286360c-ecc7-4e90-82e5-898755c0b4c2",
-          "runImmedately": true,
-          "id": "d7945ea0-30bf-40b5-86cf-9d321735b0d5",
           "weight": 0.0,
           "type": 4,
           "parentId": null,

@@ -1,8 +1,8 @@
 {
   "version": 24,
-  "t": "2026-09-10T16:54:41.4497561+02:00",
+  "t": "2026-09-11T15:09:05.5281218+02:00",
   "blocking": false,
-  "collapsedGroups": [],
+  "collapsedGroups": ["Refresh Sources", "Set Scenes"],
   "groups": [
     "brb",
     "Set Scenes",
@@ -11,7 +11,8 @@
     "Hide Sources",
     "Show Sources",
     "Alerts",
-    "Refresh Sources"
+    "Refresh Sources",
+    "Manage Audio Devices"
   ],
   "queues": [],
   "actions": [
@@ -274,7 +275,7 @@
       "triggers": [],
       "subActions": [
         {
-          "command": "{{STREAMING_REPO_PATH}}external\\streamerbot\\focus_newest_hwnd.ahk",
+          "command": "C:/Users/ville/myfiles/git-repos/woertsposzibllen4me/external\\streamerbot\\focus_newest_hwnd.ahk",
           "arguments": null,
           "workingDir": null,
           "envVars": {},
@@ -1195,6 +1196,548 @@
           "saveResultToVariable": false,
           "saveToVariable": null,
           "id": "eb6ac05a-fb23-46a0-b831-7b8ab28963a2",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "16f70f42-e06c-4b80-9841-52424dc3708d",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "unmute 5/6 channels",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "6619be96-8d27-40c9-bb29-2e7857b48612",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "unmute 5/6 channels",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyXzUvNiI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gMDsNCg0KICAgICAgICBDUEguT2JzU291cmNlVW5NdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "94a091b8-315e-4a1a-a8b8-c690b9287a65",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "ce4a8588-ada7-45ba-9385-9f891c424326",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "mute 5/6 channels",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "cc9947e7-b6a3-4490-ae79-25549f714767",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "mute 5/6 channels",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyXzUvNiI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gMDsNCg0KICAgICAgICBDUEguT2JzU291cmNlTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "e72ecbc8-c9a4-4306-978d-acde39aad18f",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "8b3f5ced-57ff-4fdf-bab4-d9ee1840df1c",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "mute usb out (unmute all others)",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "5c8443b3-d094-47e2-8993-345ba0a84fde",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "mute usb out",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyX3VzYl9vdXQiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZU11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "108fdff9-354d-425d-9092-56a6ca330c37",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "actionId": "aa46a27d-eef4-4f00-9c5b-520e33588535",
+          "runImmedately": true,
+          "id": "20ca87b4-a78b-47bb-8835-3988dab37f4d",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "actionId": "16f70f42-e06c-4b80-9841-52424dc3708d",
+          "runImmedately": true,
+          "id": "69e49cd0-1eb8-43cc-a8cc-93dddd5ef714",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "actionId": "a97ebd94-664e-47e8-8506-3a5c47264b85",
+          "runImmedately": true,
+          "id": "c9902dac-a3f5-4e08-ad53-5f30e6c6707f",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "actionId": "b3972f10-293d-4378-b7dd-f910a771795f",
+          "runImmedately": true,
+          "id": "70b10570-bfa2-4ffc-97e5-a6757505cdcd",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 4
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "e4bf0f0d-350e-40f7-b2d4-5f9226b181c0",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "unmute usb out (mute all others)",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "2005b6bd-b448-4118-b3e2-cc2c768f5557",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "unmute usb out",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyX3VzYl9vdXQiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZVVuTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "dd5c1682-2481-4118-88b6-cd81a3ed1987",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "actionId": "34344d2e-0b40-4bcc-85c6-da95fd7bd99d",
+          "runImmedately": true,
+          "id": "e658513a-d97b-4fa8-a44b-1e9096784bda",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "actionId": "ce4a8588-ada7-45ba-9385-9f891c424326",
+          "runImmedately": true,
+          "id": "085e93e1-07e7-44b0-b8e0-90ae19e1f395",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "actionId": "37c52aa7-fcd7-45c1-b382-f24344b159d2",
+          "runImmedately": true,
+          "id": "c039210e-d801-43be-83bb-cc99f4b07aa2",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "actionId": "edefa931-2ec5-4207-b31f-bcfaa55bbdf4",
+          "runImmedately": true,
+          "id": "e284802b-18f4-44ec-b49b-fd9febc11f94",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 4
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "edefa931-2ec5-4207-b31f-bcfaa55bbdf4",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "mute aux send 1",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "1fd69e8f-ab1c-4983-817f-4f8e02eddd3e",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "mute aux send 1",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyX2F1eF9zZW5kXzEiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZU11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "4c3cfd17-655a-488f-bdae-4292e32c51a9",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "b3972f10-293d-4378-b7dd-f910a771795f",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "unmute aux send 1",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "5b58b642-6b03-4f09-ba2a-8a5ae914e002",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "unmute aux send 1",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyX2F1eF9zZW5kXzEiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZVVuTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "23caa321-5512-4787-abfe-0efc64900c58",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "37c52aa7-fcd7-45c1-b382-f24344b159d2",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "mute 7/8 channels",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "b2ab0da8-ad6f-4d2b-b939-166d893fca5c",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "mute 7/8 channels",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyXzcvOCI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gMDsNCg0KICAgICAgICBDUEguT2JzU291cmNlTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "6c5e4913-67d1-4bec-9814-45bf36461939",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "a97ebd94-664e-47e8-8506-3a5c47264b85",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "unmute 7/8 channels",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "06050909-d100-4d1f-b87c-946cbb43a00c",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "unmute 7/8 channels",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyXzcvOCI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gMDsNCg0KICAgICAgICBDUEguT2JzU291cmNlVW5NdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "8c054d1b-5092-40a7-8e8f-44b6ff88c833",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "34344d2e-0b40-4bcc-85c6-da95fd7bd99d",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "mute 11/12 channels",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "41bc4336-8f75-4b43-935c-f4eba1603725",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "mute 11/12 channels",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyXzExLzEyIjsNCiAgICAgICAgaW50IG9ic0Nvbm5lY3Rpb24gPSAwOw0KDQogICAgICAgIENQSC5PYnNTb3VyY2VNdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "0dca13ef-fae8-449f-a824-56d2f63fb767",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "aa46a27d-eef4-4f00-9c5b-520e33588535",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "unmute 11/12 channels",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "c785a4ec-6ca1-4547-be5a-8ce4de1f75c0",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "unmute 11/12 channels",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyXzExLzEyIjsNCiAgICAgICAgaW50IG9ic0Nvbm5lY3Rpb24gPSAwOw0KDQogICAgICAgIENQSC5PYnNTb3VyY2VVbk11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "d9ccb77d-720c-4490-852c-6c5ed7445155",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "ecec52cf-bda3-495c-a3d5-e800682176d7",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "mute usb out",
+      "group": "Manage Audio Devices",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "9fa5cd2c-15e8-4514-bc8e-9e508c4b2602",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "mute usb out",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX21peGVyX3VzYl9vdXQiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZU11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "c29fe5a0-9351-44cb-9e31-9b2aa0891dd3",
           "weight": 0.0,
           "type": 99999,
           "parentId": null,

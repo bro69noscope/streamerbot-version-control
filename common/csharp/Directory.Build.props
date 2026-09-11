@@ -1,6 +1,10 @@
 <Project>
+
   <PropertyGroup>
     <IsShadowProject Condition="$(MSBuildProjectName.EndsWith('.shadow'))">true</IsShadowProject>
+    <IsSubActionProject Condition="'$(IsShadowProject)'=='true' and
+      $(MSBuildProjectDirectory.Contains('\SubActions\'))">true</IsSubActionProject>
+    <SubActionSourceFile>$(MSBuildProjectName.Replace('.shadow',''))</SubActionSourceFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(IsShadowProject)'=='true'">
@@ -21,4 +25,17 @@
       <Private>false</Private>
     </Reference>
   </ItemGroup>
+
+  <ItemGroup Condition="'$(IsSubActionProject)'=='true'">
+    <Compile Include="$(MSBuildProjectDirectory)\$(SubActionSourceFile).cs"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(IsSubActionProject)'=='true' and '$(UseBroStreamerTools)'=='true'">
+    <ProjectReference Include="$(MSBuildThisFileDirectory)dlls\BroStreamerTools\BroStreamerTools.csproj"/>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(IsSubActionProject)'=='true' and '$(UseNewtonsoftJson)'=='true'">
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
+  </ItemGroup>
+
 </Project>

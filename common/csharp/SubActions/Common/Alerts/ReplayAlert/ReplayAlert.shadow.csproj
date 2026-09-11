@@ -1,13 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
-  <ItemGroup>
-    <Compile Include="ReplayAlert.cs"/>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
-  </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\..\dlls\BroStreamerTools\BroStreamerTools.csproj"/>
-  </ItemGroup>
+  <PropertyGroup>
+    <UseBroStreamerTools>true</UseBroStreamerTools>
+    <UseNewtonsoftJson>true</UseNewtonsoftJson>
+  </PropertyGroup>
 </Project>

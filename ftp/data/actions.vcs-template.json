@@ -1227,7 +1227,7 @@
       ],
       "subActions": [
         {
-          "name": "unmute 5/6 channels",
+          "name": "Unmute5And6Channels",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1269,7 +1269,7 @@
       ],
       "subActions": [
         {
-          "name": "mute 5/6 channels",
+          "name": "Mute5And6Channels",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1459,7 +1459,7 @@
       ],
       "subActions": [
         {
-          "name": "mute aux send 1",
+          "name": "MuteAuxSend1",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1501,7 +1501,7 @@
       ],
       "subActions": [
         {
-          "name": "unmute aux send 1",
+          "name": "UnmuteAuxSend1",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1543,7 +1543,7 @@
       ],
       "subActions": [
         {
-          "name": "mute 7/8 channels",
+          "name": "Mute7And8Channels",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1585,7 +1585,7 @@
       ],
       "subActions": [
         {
-          "name": "unmute 7/8 channels",
+          "name": "Unmute7And8Channels",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1627,7 +1627,7 @@
       ],
       "subActions": [
         {
-          "name": "mute 11/12 channels",
+          "name": "Mute11And12Channels",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1669,7 +1669,7 @@
       ],
       "subActions": [
         {
-          "name": "unmute 11/12 channels",
+          "name": "Unmute11And12Channels",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1711,7 +1711,7 @@
       ],
       "subActions": [
         {
-          "name": "mute usb out",
+          "name": "MuteUsbOut",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1753,7 +1753,7 @@
       ],
       "subActions": [
         {
-          "name": "unmute usb out",
+          "name": "UnmuteUsbOut",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"

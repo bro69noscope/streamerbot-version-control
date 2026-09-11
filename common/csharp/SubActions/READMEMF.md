@@ -24,6 +24,9 @@ SubActions
     └── ActionGroupName
         └── ...
 
+(The SubActionExecuteCodeName filename must match the C# sub-action's own name
+in Streamer.bot: `Execute Code (SubActionExecuteCodeName)`)
+
 Each SubActionExecuteCodeName.cs gets a SubActionExecuteCodeName.shadow.csproj
 next to it so the LSP has one compilation per CPHInline.
 

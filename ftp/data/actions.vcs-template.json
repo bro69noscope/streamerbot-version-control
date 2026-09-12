@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-09-11T21:42:08.3955598+02:00",
+  "t": "2026-09-12T14:23:55.160304+02:00",
   "blocking": false,
   "collapsedGroups": ["Refresh Sources", "Set Scenes"],
   "groups": [
@@ -275,7 +275,7 @@
       "triggers": [],
       "subActions": [
         {
-          "command": "C:/Users/ville/myfiles/git-repos/next-level-live-streaming/external\\streamerbot\\focus_newest_hwnd.ahk",
+          "command": "{{STREAMING_REPO_PATH}}external\\streamerbot\\focus_newest_hwnd.ahk",
           "arguments": null,
           "workingDir": null,
           "envVars": {},

@@ -275,7 +275,7 @@
       "triggers": [],
       "subActions": [
         {
-          "command": "C:/Users/ville/myfiles/git-repos/woertsposzibllen4me/external\\streamerbot\\focus_newest_hwnd.ahk",
+          "command": "C:/Users/ville/myfiles/git-repos/next-level-live-streaming/external\\streamerbot\\focus_newest_hwnd.ahk",
           "arguments": null,
           "workingDir": null,
           "envVars": {},

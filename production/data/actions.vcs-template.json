@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-09-12T14:23:52.3188371+02:00",
+  "t": "2026-09-14T20:32:45.1002321+02:00",
   "blocking": false,
   "collapsedGroups": ["Brb", "BRB", "Pregame Detector Client"],
   "groups": [
@@ -13,7 +13,8 @@
     "Brb",
     "Alerts",
     "Refresh Sources",
-    "Manage Obs Ui"
+    "Manage Obs Ui",
+    "Toggle Tobii Eyetracker Config"
   ],
   "queues": [],
   "actions": [
@@ -1909,6 +1910,97 @@
           "parentId": null,
           "enabled": true,
           "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "f5c2f04a-ab31-47e6-930f-fd9ac2c4f6ff",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set tobii to ftp",
+      "group": "Toggle Tobii Eyetracker Config",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [],
+      "collapsedGroups": []
+    },
+    {
+      "id": "fd4787db-5af6-43dc-8625-78e1f5bb73d7",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set tobii to prod",
+      "group": "Toggle Tobii Eyetracker Config",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "c8de10c9-63c9-4860-bd5e-9f5ba31d9982",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "request sceneItemId for eyetracker in prod-conn",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
+          "id": "3e3f34d8-67e5-4638-a221-0568bc2a3ffb",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "name": "enable eyetracker in prod-conn",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
+          "id": "1411578e-6eac-4fbb-8aae-d496bf1398ee",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "request sceneItemId for eyetracker in ftp-conn",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
+          "id": "b37fd662-64ee-4af7-971e-02a720ecd214",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "name": "disable eyetracker in ftp-conn",
+          "prefix": "obsRaw",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
+          "resultsToArgs": true,
+          "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
+          "id": "4b91cfc9-3181-444d-8025-b010146ee88a",
+          "weight": 0.0,
+          "type": 46,
+          "parentId": null,
+          "enabled": true,
+          "index": 3
         }
       ],
       "collapsedGroups": []

@@ -14,7 +14,7 @@
     "Alerts",
     "Refresh Sources",
     "Manage Obs Ui",
-    "Toggle Tobii Eyetracker Config"
+    "Toggle Eyetracker Config"
   ],
   "queues": [],
   "actions": [
@@ -1920,8 +1920,8 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "set tobii to ftp",
-      "group": "Toggle Tobii Eyetracker Config",
+      "name": "set eyetracker to ftp",
+      "group": "Toggle Eyetracker Config",
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
@@ -1938,7 +1938,7 @@
         {
           "name": "request sceneItemId for eyetracker in ftp-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "55675b79-4277-402e-843c-b00681034bcc",
@@ -1951,7 +1951,7 @@
         {
           "name": "enable eyetracker in ftp-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "72099d27-7aca-4796-b21c-7793f79cdb47",
@@ -1964,7 +1964,7 @@
         {
           "name": "request sceneItemId for eyetracker in prod-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "bdc8fef8-72d4-40ab-a9dc-9383a7769ecf",
@@ -1977,7 +1977,7 @@
         {
           "name": "disable eyetracker in prod-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "d1a4c2d6-cdc8-4998-8ea8-b196f6ac7113",
@@ -1996,8 +1996,8 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "set tobii to prod",
-      "group": "Toggle Tobii Eyetracker Config",
+      "name": "set eyetracker to prod",
+      "group": "Toggle Eyetracker Config",
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
@@ -2014,7 +2014,7 @@
         {
           "name": "request sceneItemId for eyetracker in prod-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "3e3f34d8-67e5-4638-a221-0568bc2a3ffb",
@@ -2027,7 +2027,7 @@
         {
           "name": "enable eyetracker in prod-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "1411578e-6eac-4fbb-8aae-d496bf1398ee",
@@ -2040,7 +2040,7 @@
         {
           "name": "request sceneItemId for eyetracker in ftp-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "b37fd662-64ee-4af7-971e-02a720ecd214",
@@ -2053,7 +2053,7 @@
         {
           "name": "disable eyetracker in ftp-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_tobii\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "4b91cfc9-3181-444d-8025-b010146ee88a",

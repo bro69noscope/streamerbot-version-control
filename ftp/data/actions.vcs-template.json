@@ -797,7 +797,7 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "hide tobii",
+      "name": "hide eyetracker",
       "group": "Hide Sources",
       "alwaysRun": false,
       "randomAction": false,
@@ -805,8 +805,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_tobii",
-          "sourceName": "capture_tobii",
+          "sceneName": "scene_eyetracker",
+          "sourceName": "capture_eyetracker",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "7bd0976e-47da-4c11-9aa1-e31354c4a162",
@@ -825,7 +825,7 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "show tobii",
+      "name": "show eyetracker",
       "group": "Show Sources",
       "alwaysRun": false,
       "randomAction": false,
@@ -833,8 +833,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_tobii",
-          "sourceName": "capture_tobii",
+          "sceneName": "scene_eyetracker",
+          "sourceName": "capture_eyetracker",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "7998338e-cd97-4c3e-8cae-2b20821e98af",

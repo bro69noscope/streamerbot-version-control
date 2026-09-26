@@ -1,8 +1,8 @@
 {
   "version": 24,
-  "t": "2026-09-14T20:50:10.7007175+02:00",
+  "t": "2026-09-26T21:34:28.9999822+02:00",
   "blocking": false,
-  "collapsedGroups": ["Brb", "BRB", "Pregame Detector Client"],
+  "collapsedGroups": ["Brb", "BRB"],
   "groups": [
     "Resets",
     "Shop Scan Client",
@@ -633,7 +633,7 @@
           "index": 0
         },
         {
-          "file": "C:\\Users\\ville\\MyMegaScript\\src\\apps\\shop_watcher\\data\\time_since_shop_opened.txt",
+          "file": "C:\\Users\\ville\\myfiles\\git-repos\\next-level-live-streaming\\data\\apps\\shopwatcher\\obs\\time_since_shop_opened.txt",
           "parseVariables": false,
           "autoType": false,
           "variableName": null,
@@ -1047,9 +1047,9 @@
       "triggers": [],
       "subActions": [
         {
-          "command": "C:/Users/ville/myfiles/git-repos/woertsposzibllen4me/external\\streamerbot\\focus_newest_hwnd.ahk",
+          "command": "C:\\Users\\ville\\myfiles\\git-repos\\next-level-live-streaming\\external\\streamerbot\\focus_newest_hwnd.ahk",
           "arguments": null,
-          "workingDir": null,
+          "workingDir": "C:\\Users\\ville\\myfiles\\git-repos\\next-level-live-streaming\\external\\streamerbot",
           "envVars": {},
           "waitForExit": 0,
           "id": "191f5d92-2ccc-446d-b1d9-5f3defe1af37",

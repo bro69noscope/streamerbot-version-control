@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-09-27T10:50:54.1554507+02:00",
+  "t": "2026-09-27T19:40:46.1025314+02:00",
   "blocking": false,
   "collapsedGroups": ["Brb", "BRB"],
   "groups": [
@@ -633,7 +633,7 @@
           "index": 0
         },
         {
-          "file": "C:\\Users\\ville\\myfiles\\git-repos\\next-level-live-streaming\\data\\apps\\shopwatcher\\obs\\time_since_shop_opened.txt",
+          "file": "{{SHOPWATCHER_TIME_SINCE_SHOP_OPENED_TXT_PATH}}",
           "parseVariables": false,
           "autoType": false,
           "variableName": null,

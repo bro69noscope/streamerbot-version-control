@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-09-29T22:26:25.4953712+02:00",
+  "t": "2026-09-29T22:34:43.5893496+02:00",
   "blocking": false,
   "collapsedGroups": ["Refresh Sources"],
   "groups": [
@@ -67,7 +67,7 @@
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
             ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCg0KcHVibGljIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiYnJiRHVyYXRpb24iLCBvdXQgc3RyaW5nIGJyYkR1cmF0aW9uKTsNCiAgICAgICAgQ1BILkxvZ0luZm8odHlwZW9mKEJSQk1hbmFnZXIpLkFzc2VtYmx5LkZ1bGxOYW1lKTsNCiAgICAgICAgQlJCTWFuYWdlci5TdGFydChDUEgsIGJyYkR1cmF0aW9uKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ==",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIEJyb1N0cmVhbWVyVG9vbHMuTG9nZ2luZzsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJkZWJ1Z3RoaXMiLCBvdXQgYm9vbCBkZWJ1Z0VuYWJsZWQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJicmJEdXJhdGlvbiIsIG91dCBzdHJpbmcgYnJiRHVyYXRpb24pOw0KICAgICAgICBpZiAoZGVidWdFbmFibGVkKQ0KICAgICAgICAgICAgQnJvTG9nZ2VyLkRlYnVnKHR5cGVvZihCUkJNYW5hZ2VyKS5Bc3NlbWJseS5GdWxsTmFtZSk7DQogICAgICAgIEJSQk1hbmFnZXIuU3RhcnQoQ1BILCBicmJEdXJhdGlvbik7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,

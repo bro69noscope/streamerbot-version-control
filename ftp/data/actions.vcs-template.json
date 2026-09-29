@@ -750,7 +750,7 @@
       "subActions": [
         {
           "sceneName": "scene_facecam",
-          "sourceName": "capture_facecam",
+          "sourceName": "capture__facecam",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "94c77866-880f-4c2b-b37d-e2f5e82f3d29",
@@ -778,7 +778,7 @@
       "subActions": [
         {
           "sceneName": "scene_facecam",
-          "sourceName": "capture_facecam",
+          "sourceName": "capture__facecam",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "0205a52f-324c-4141-a4cd-9428b35bbeee",
@@ -805,8 +805,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_eyetracker",
-          "sourceName": "capture_eyetracker",
+          "sceneName": "scene__eyetracker",
+          "sourceName": "capture__game__eyetracker",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "7bd0976e-47da-4c11-9aa1-e31354c4a162",

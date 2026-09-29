@@ -931,7 +931,7 @@
         {
           "name": "virtual cam in production conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "bb361489-8886-4cf2-ae68-35a1e6ac1c01",
@@ -944,7 +944,7 @@
         {
           "name": "hardware cam in virtual_camera conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"vcam_capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__vcam_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
           "id": "e62683af-7d25-4b0b-82ac-b89b4f5f1daa",
@@ -994,7 +994,7 @@
         {
           "name": "virtual cam in virtual_camera conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"vcam_capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__vcam_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
           "id": "77dd4765-11eb-4b4a-bc38-e7526fe7533c",
@@ -1007,7 +1007,7 @@
         {
           "name": "hardware cam in production conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "f6a57d78-4d84-4abb-a898-fb3e69b4c1aa",
@@ -1938,7 +1938,7 @@
         {
           "name": "request sceneItemId for eyetracker in ftp-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "55675b79-4277-402e-843c-b00681034bcc",
@@ -1964,7 +1964,7 @@
         {
           "name": "request sceneItemId for eyetracker in prod-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "bdc8fef8-72d4-40ab-a9dc-9383a7769ecf",
@@ -2014,7 +2014,7 @@
         {
           "name": "request sceneItemId for eyetracker in prod-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "3e3f34d8-67e5-4638-a221-0568bc2a3ffb",
@@ -2040,7 +2040,7 @@
         {
           "name": "request sceneItemId for eyetracker in ftp-conn",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture_eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene_eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "b37fd662-64ee-4af7-971e-02a720ecd214",

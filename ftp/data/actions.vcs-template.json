@@ -1,8 +1,8 @@
 {
   "version": 24,
-  "t": "2026-09-27T10:50:56.9101624+02:00",
+  "t": "2026-09-29T22:26:25.4953712+02:00",
   "blocking": false,
-  "collapsedGroups": ["Refresh Sources", "Set Scenes"],
+  "collapsedGroups": ["Refresh Sources"],
   "groups": [
     "brb",
     "Set Scenes",
@@ -80,7 +80,7 @@
           "index": 2
         },
         {
-          "sceneName": "scene_lounge",
+          "sceneName": "scene__lounge",
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "3ed73ae9-aa7f-4870-88f6-1a090dc007ae",
           "weight": 0.0,
@@ -90,8 +90,8 @@
           "index": 3
         },
         {
-          "sceneName": "scene_lounge",
-          "sourceName": "brb",
+          "sceneName": "scene__lounge",
+          "sourceName": "text__brb_in_x_mins",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "90917310-06eb-437f-9240-b422ad8e974f",
@@ -159,7 +159,7 @@
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
           ],
-          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHZhciBzdGFydCA9IENQSC5HZXRHbG9iYWxWYXI8RGF0ZVRpbWU+KCJCUkJTdGFydFRpbWUiLCB0cnVlKTsNCiAgICAgICAgdmFyIGR1cmF0aW9uID0gQ1BILkdldEdsb2JhbFZhcjxzdHJpbmc+KCJCUkJEdXJhdGlvbiIsIHRydWUpOw0KICAgICAgICB2YXIgZWxhcHNlZCA9IERhdGVUaW1lLk5vdyAtIHN0YXJ0Ow0KDQogICAgICAgIHZhciBkdXJhdGlvblRleHQgPSBpbnQuVHJ5UGFyc2UoZHVyYXRpb24sIG91dCB2YXIgbWlucykNCiAgICAgICAgICAgID8gJCJ7bWluc30geyhtaW5zID09IDEgPyAibWluIiA6ICJtaW5zIil9Ig0KICAgICAgICAgICAgOiAkIntkdXJhdGlvbn0gbWlucyI7DQoNCiAgICAgICAgdmFyIHRleHQgPSAkIkJSQiBpbiB7ZHVyYXRpb25UZXh0fVxuIiArICQiRWxhcHNlZDoge2VsYXBzZWQ6bW1cXDpzc30iOw0KDQogICAgICAgIENQSC5PYnNTZXRHZGlUZXh0KCJzY2VuZV9sb3VuZ2UiLCAiYnJiIiwgdGV4dCk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHZhciBzdGFydCA9IENQSC5HZXRHbG9iYWxWYXI8RGF0ZVRpbWU+KCJCUkJTdGFydFRpbWUiLCB0cnVlKTsNCiAgICAgICAgdmFyIGR1cmF0aW9uID0gQ1BILkdldEdsb2JhbFZhcjxzdHJpbmc+KCJCUkJEdXJhdGlvbiIsIHRydWUpOw0KICAgICAgICB2YXIgZWxhcHNlZCA9IERhdGVUaW1lLk5vdyAtIHN0YXJ0Ow0KDQogICAgICAgIHZhciBkdXJhdGlvblRleHQgPSBpbnQuVHJ5UGFyc2UoZHVyYXRpb24sIG91dCB2YXIgbWlucykNCiAgICAgICAgICAgID8gJCJ7bWluc30geyhtaW5zID09IDEgPyAibWluIiA6ICJtaW5zIil9Ig0KICAgICAgICAgICAgOiAkIntkdXJhdGlvbn0gbWlucyI7DQoNCiAgICAgICAgdmFyIHRleHQgPSAkIkJSQiBpbiB7ZHVyYXRpb25UZXh0fVxuIiArICQiRWxhcHNlZDoge2VsYXBzZWQ6bW1cXDpzc30iOw0KDQogICAgICAgIENQSC5PYnNTZXRHZGlUZXh0KCJzY2VuZV9fbG91bmdlIiwgInRleHRfX2JyYl9pbl94X21pbnMiLCB0ZXh0KTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -241,7 +241,7 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "set scene_screencap",
+      "name": "set scene__center_monitor",
       "group": "Set Scenes",
       "alwaysRun": false,
       "randomAction": false,
@@ -249,7 +249,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_screencap",
+          "sceneName": "scene__center_monitor",
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "65ebab81-c155-4803-a052-4ad8c1f90da3",
           "weight": 0.0,
@@ -433,7 +433,7 @@
       "concurrent": false,
       "triggers": [
         {
-          "sceneName": "scene_lounge",
+          "sceneName": "scene__lounge",
           "obsId": null,
           "id": "79042708-60ed-4516-a785-e7c5da4811b7",
           "type": 14004,
@@ -659,7 +659,7 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "set scene_lounge",
+      "name": "set scene__lounge",
       "group": "Set Scenes",
       "alwaysRun": false,
       "randomAction": false,
@@ -667,7 +667,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_lounge",
+          "sceneName": "scene__lounge",
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "9ff78f3b-5a00-467e-a844-474041fb5c43",
           "weight": 0.0,
@@ -693,8 +693,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_alerts",
-          "sourceName": "browser_streamerbot_alerts",
+          "sceneName": "scene__alerts",
+          "sourceName": "browser__streamerbot_alerts",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "1f6bd6b2-8fc1-4a80-92ed-b2f05d92bb94",
@@ -721,8 +721,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_alerts",
-          "sourceName": "browser_streamerbot_alerts",
+          "sceneName": "scene__alerts",
+          "sourceName": "browser__streamerbot_alerts",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "e6f2935b-d556-456d-91fe-74b9ab95dc9f",
@@ -749,8 +749,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_facecam",
-          "sourceName": "capture__facecam",
+          "sceneName": "scene__facecam",
+          "sourceName": "capture__device__facecam",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "94c77866-880f-4c2b-b37d-e2f5e82f3d29",
@@ -777,8 +777,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_facecam",
-          "sourceName": "capture__facecam",
+          "sceneName": "scene__facecam",
+          "sourceName": "capture__device__facecam",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "0205a52f-324c-4141-a4cd-9428b35bbeee",
@@ -833,7 +833,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_eyetracker",
+          "sceneName": "scene__eyetracker",
           "sourceName": "capture_eyetracker",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -1048,8 +1048,8 @@
               "index": 0
             },
             {
-              "sceneName": "scene_lounge",
-              "sourceName": "brb",
+              "sceneName": "scene__lounge",
+              "sourceName": "text__brb_in_x_mins",
               "state": 1,
               "connectionId": "00000000-0000-0000-0000-000000000000",
               "id": "a474b8fc-e9cd-4166-a95b-b76791b20094",
@@ -1084,8 +1084,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene_alerts",
-          "sourceName": "browser_streamerbot_alerts",
+          "sceneName": "scene__alerts",
+          "sourceName": "browser__streamerbot_alerts",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "85ec42f0-51e6-4888-adac-02b630b64242",
@@ -1107,8 +1107,8 @@
           "index": 1
         },
         {
-          "sceneName": "scene_alerts",
-          "sourceName": "browser_streamerbot_alerts",
+          "sceneName": "scene__alerts",
+          "sourceName": "browser__streamerbot_alerts",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "86eb9de3-eebe-485a-a1c5-8eb3dcdf1142",

@@ -14,7 +14,7 @@ public static class BRBManager
 
         string scene = (string)Invoke(cph, "ObsGetCurrentScene", 0);
 
-        if (scene != "scene_lounge")
+        if (scene != "scene__lounge")
         {
             Invoke(cph, "SetGlobalVar", "SkipAutoHide", true, true);
         }

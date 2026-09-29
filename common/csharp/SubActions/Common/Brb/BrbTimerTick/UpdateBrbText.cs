@@ -14,7 +14,7 @@ public partial class CPHInline
 
         var text = $"BRB in {durationText}\n" + $"Elapsed: {elapsed:mm\\:ss}";
 
-        CPH.ObsSetGdiText("scene_lounge", "brb", text);
+        CPH.ObsSetGdiText("scene__lounge", "text__brb_in_x_mins", text);
         return true;
     }
 }

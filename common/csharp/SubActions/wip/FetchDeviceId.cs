@@ -6,7 +6,7 @@ public partial class CPHInline
     {
         var payload = new Dictionary<string, object>
         {
-            { "inputName", "capture__facecam" },
+            { "inputName", "capture__device__facecam" },
             { "propertyName", "video_device_id" },
         };
 

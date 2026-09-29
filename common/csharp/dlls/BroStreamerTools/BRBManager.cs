@@ -16,7 +16,7 @@ public static class BRBManager
 
         if (scene != "scene__lounge")
         {
-            Invoke(cph, "SetGlobalVar", "SkipAutoHide", true, true);
+            Invoke(cph, "SetGlobalVar", "SkipBrbAutoHide", true, true);
         }
     }
 

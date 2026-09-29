@@ -1562,9 +1562,9 @@
           "subActions": [
             {
               "source": 0,
-              "variableName": "SkipAutoHide",
+              "variableName": "SkipBrbAutoHide",
               "persisted": true,
-              "destinationVariable": "SkipAutoHide",
+              "destinationVariable": "SkipBrbAutoHide",
               "defaultValue": null,
               "id": "205e52de-6a59-48aa-ac6b-4fdc73af55b9",
               "weight": 0.0,
@@ -1574,7 +1574,7 @@
               "index": 0
             },
             {
-              "input": "%SkipAutoHide%",
+              "input": "%SkipBrbAutoHide%",
               "operation": 0,
               "value": "true",
               "autoType": true,
@@ -1584,7 +1584,7 @@
                   "subActions": [
                     {
                       "destination": 0,
-                      "variableName": "SkipAutoHide",
+                      "variableName": "SkipBrbAutoHide",
                       "persisted": true,
                       "source": 0,
                       "value": false,

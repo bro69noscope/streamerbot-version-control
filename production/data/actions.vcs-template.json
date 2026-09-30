@@ -1,8 +1,20 @@
 {
   "version": 24,
-  "t": "2026-09-29T22:34:42.1568221+02:00",
+  "t": "2026-10-01T18:42:59.5424026+02:00",
   "blocking": false,
-  "collapsedGroups": ["BRB"],
+  "collapsedGroups": [
+    "BRB",
+    "Manage Obs Ui",
+    "Pregame Detector Client",
+    "Refresh Sources",
+    "Shop Scan Client",
+    "Toggle Eyetracker Config",
+    "Toggle Virtual Cam Config",
+    "Alerts",
+    "Brb",
+    "Filters",
+    "Helpers"
+  ],
   "groups": [
     "Resets",
     "Shop Scan Client",
@@ -14,7 +26,8 @@
     "Alerts",
     "Refresh Sources",
     "Manage Obs Ui",
-    "Toggle Eyetracker Config"
+    "Toggle Eyetracker Config",
+    "Filters"
   ],
   "queues": [],
   "actions": [
@@ -192,19 +205,27 @@
     },
     {
       "id": "2d04c060-cab9-49a1-97ef-b3573e48f661",
-      "queue": null,
+      "queue": "00000000-0000-0000-0000-000000000000",
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "Reset All",
+      "name": "reset all",
       "group": "Resets",
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
-      "triggers": [],
+      "triggers": [
+        {
+          "variables": {},
+          "id": "005456e4-a6b5-4aee-8a94-7f61d0f39140",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
       "subActions": [
         {
-          "value": "1. Hide all extra groups",
+          "value": "hide all but the fundamental nested scenes in the metascene",
           "color": "",
           "id": "d1cb1a1e-b656-46ea-a8be-146e55bcb0bc",
           "weight": 0.0,
@@ -214,84 +235,18 @@
           "index": 0
         },
         {
-          "sceneName": "METASCENE",
-          "groupName": "Music",
+          "sceneName": "scene__metascene",
           "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "9258c70f-16aa-4699-aa73-0e933756acb5",
+          "id": "9ab30266-93e6-4521-9dd5-f095b407131c",
           "weight": 0.0,
-          "type": 32,
+          "type": 325,
           "parentId": null,
           "enabled": true,
           "index": 1
         },
         {
-          "sceneName": "METASCENE",
-          "groupName": "Scenes Clones",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "5a2babee-be6f-47e2-b8ad-64cbc55c3024",
-          "weight": 0.0,
-          "type": 32,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
-        },
-        {
-          "sceneName": "METASCENE",
-          "groupName": "Voice Clips",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "dad883dc-ac47-43ae-92c8-e964be9b0c51",
-          "weight": 0.0,
-          "type": 32,
-          "parentId": null,
-          "enabled": true,
-          "index": 3
-        },
-        {
-          "sceneName": "METASCENE",
-          "groupName": "Transitions",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "95b6be27-44f2-4cb7-96ce-5a7205b937ab",
-          "weight": 0.0,
-          "type": 32,
-          "parentId": null,
-          "enabled": true,
-          "index": 4
-        },
-        {
-          "sceneName": "METASCENE",
-          "groupName": "Text messages",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "d328d3f7-9f65-4215-a12e-6763b03b47fa",
-          "weight": 0.0,
-          "type": 32,
-          "parentId": null,
-          "enabled": true,
-          "index": 5
-        },
-        {
-          "sceneName": "METASCENE",
-          "groupName": "Retarded mates",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "8b61c845-c3db-43ba-8c57-20c8d788beb5",
-          "weight": 0.0,
-          "type": 32,
-          "parentId": null,
-          "enabled": true,
-          "index": 6
-        },
-        {
-          "value": "2. Ensure main sources are visible",
-          "color": "",
-          "id": "e2d695a7-15cb-4344-a755-5a02af19dc26",
-          "weight": 0.0,
-          "type": 1009,
-          "parentId": null,
-          "enabled": true,
-          "index": 7
-        },
-        {
-          "sceneName": "METASCENE",
-          "sourceName": "Dota2 Clone",
+          "sceneName": "scene__metascene",
+          "sourceName": "scene__gameplay__fundamental_sources",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "a57c1675-57dd-446b-84ea-e392a92ffdf3",
@@ -299,21 +254,21 @@
           "type": 30,
           "parentId": null,
           "enabled": true,
-          "index": 8
+          "index": 2
         },
         {
-          "value": "2.1 Show the << Cut transition >> DSLR to avoid visible Fade",
+          "value": "show the facecam with a cut transition override, for an immediate change",
           "color": "",
           "id": "bc36023b-f587-4308-bb56-cc5531abb00f",
           "weight": 0.0,
           "type": 1009,
           "parentId": null,
           "enabled": true,
-          "index": 9
+          "index": 3
         },
         {
-          "sceneName": "METASCENE",
-          "sourceName": "DSLR Clone (Cut)",
+          "sceneName": "scene__gameplay__fundamental_sources",
+          "sourceName": "~cut__clone__facecam_gameplay___scene__facecam_ingame",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "606c1404-66fb-4782-8ca3-c23d31ada2bb",
@@ -321,11 +276,11 @@
           "type": 30,
           "parentId": null,
           "enabled": true,
-          "index": 10
+          "index": 4
         },
         {
-          "sceneName": "METASCENE",
-          "sourceName": "DSLR Clone (Fade)",
+          "sceneName": "scene__gameplay__fundamental_sources",
+          "sourceName": "~fade__clone__facecam_gameplay___scene__facecam_ingame",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "ee44f05a-0a4c-43e4-9c39-e1e087fbfef6",
@@ -333,43 +288,52 @@
           "type": 30,
           "parentId": null,
           "enabled": true,
-          "index": 11
+          "index": 5
         },
         {
-          "value": "3. Reset Filters",
+          "value": "hide all the filters in the metascene",
           "color": "",
           "id": "c04b889d-65ff-44e8-9736-a0f92f6c23c5",
           "weight": 0.0,
           "type": 1009,
           "parentId": null,
           "enabled": true,
-          "index": 12
+          "index": 6
         },
         {
-          "sceneName": "METASCENE",
-          "sourceName": "Scenes Clones",
+          "sceneName": "scene__metascene",
           "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "e7f359d7-8dc4-4eff-8426-e539fc9cc6fc",
+          "id": "d366dab3-2eac-485f-882c-09b13edea4f8",
           "weight": 0.0,
-          "type": 41,
+          "type": 34,
           "parentId": null,
           "enabled": true,
-          "index": 13
+          "index": 7
         },
         {
-          "value": "4. Normalize volume",
+          "actionId": "5a6ca81d-147f-4499-b588-a853060d3f51",
+          "runImmedately": true,
+          "id": "962b6671-8c42-418c-9ada-64275c946ab3",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 8
+        },
+        {
+          "value": "make sure the main mix out volume is normalized",
           "color": "",
           "id": "eb486ffc-13f0-4211-bddc-5f7784536fa8",
           "weight": 0.0,
           "type": 1009,
           "parentId": null,
           "enabled": true,
-          "index": 14
+          "index": 9
         },
         {
-          "name": "Set USB Mix volume to 0db",
+          "name": "set usb out mix volume to 0db",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputVolume\",\r\n  \"requestData\": {\r\n    \"inputName\": \"MG12XU Stereo USB Mix\",\r\n    \"inputVolumeDb\": 0\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetInputVolume\",\r\n  \"requestData\": {\r\n    \"inputName\": \"audio__mixer_usb_out\",\r\n    \"inputVolumeDb\": 0\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "fc9aea25-7ebe-4a09-8089-fc3635a5a5d8",
@@ -377,7 +341,7 @@
           "type": 46,
           "parentId": null,
           "enabled": true,
-          "index": 15
+          "index": 10
         }
       ],
       "collapsedGroups": []
@@ -553,11 +517,11 @@
     },
     {
       "id": "16d5492a-b5ff-47c0-85a8-43856d67b988",
-      "queue": null,
+      "queue": "00000000-0000-0000-0000-000000000000",
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "<< brb buying milk >> :: Show",
+      "name": "show text__brb_buying_milk",
       "group": "Shop Scan Client",
       "alwaysRun": false,
       "randomAction": false,
@@ -929,7 +893,7 @@
       ],
       "subActions": [
         {
-          "name": "virtual cam in production conn",
+          "name": "enable virtual cam in production conn",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -942,7 +906,7 @@
           "index": 0
         },
         {
-          "name": "hardware cam in virtual_camera conn",
+          "name": "enable hardware cam in virtual_camera conn",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__vcam_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -2062,6 +2026,105 @@
           "parentId": null,
           "enabled": true,
           "index": 3
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "6bf906d1-8409-4556-a387-74c5214e2f3a",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "hide filters in scene",
+      "group": "Filters",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "566122d2-699b-4c1d-99b4-417c275ecc0b",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "HideFiltersInScene",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            ".\\Newtonsoft.Json.dll",
+            ".\\dlls\\BroStreamerTools.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHByaXZhdGUgY29uc3Qgc3RyaW5nIFRhcmdldFNjZW5lQXJnID0gImhpZGVGaWx0ZXJzVGFyZ2V0U2NlbmUiOw0KDQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBhcmdzLkNvbnRhaW5zS2V5KFRhcmdldFNjZW5lQXJnKSA/IGFyZ3NbVGFyZ2V0U2NlbmVBcmddLlRvU3RyaW5nKCkgOiAiIjsNCg0KICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZShzY2VuZSkpDQogICAgICAgIHsNCiAgICAgICAgICAgIEJyb0xvZ2dlci5XYXJuaW5nKCQiW0hpZGVGaWx0ZXJzXSBNaXNzaW5nICd7VGFyZ2V0U2NlbmVBcmd9JyBhcmd1bWVudCIpOw0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQoNCiAgICAgICAgSGlkZUFsbEZpbHRlcnMoc2NlbmUpOw0KICAgICAgICBIaWRlRmlsdGVyc09uU2NlbmVJdGVtcyhzY2VuZSk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCg0KICAgIHByaXZhdGUgdm9pZCBIaWRlQWxsRmlsdGVycyhzdHJpbmcgc291cmNlTmFtZSkNCiAgICB7DQogICAgICAgIHN0cmluZyBqc29uID0gQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiR2V0U291cmNlRmlsdGVyTGlzdCIsDQogICAgICAgICAgICBuZXcgSk9iamVjdCB7IFsic291cmNlTmFtZSJdID0gc291cmNlTmFtZSB9LlRvU3RyaW5nKCkNCiAgICAgICAgKTsNCg0KICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yV2hpdGVTcGFjZShqc29uKSkNCiAgICAgICAgew0KICAgICAgICAgICAgQnJvTG9nZ2VyLldhcm5pbmcoJCJbSGlkZUZpbHRlcnNdIE5vIGZpbHRlciBkYXRhIGZvciAne3NvdXJjZU5hbWV9JyIpOw0KICAgICAgICAgICAgcmV0dXJuOw0KICAgICAgICB9DQoNCiAgICAgICAgdmFyIHJvb3QgPSBKT2JqZWN0LlBhcnNlKGpzb24pOw0KDQogICAgICAgIGlmICgocm9vdFsicmVzcG9uc2VEYXRhIl0gPz8gcm9vdClbImZpbHRlcnMiXSBpcyBub3QgSkFycmF5IGZpbHRlcnMpDQogICAgICAgIHsNCiAgICAgICAgICAgIEJyb0xvZ2dlci5XYXJuaW5nKCQiW0hpZGVGaWx0ZXJzXSBVbmV4cGVjdGVkIHJlc3BvbnNlOiB7anNvbn0iKTsNCiAgICAgICAgICAgIHJldHVybjsNCiAgICAgICAgfQ0KDQogICAgICAgIGZvcmVhY2ggKHZhciBmaWx0ZXIgaW4gZmlsdGVycykNCiAgICAgICAgew0KICAgICAgICAgICAgc3RyaW5nIG5hbWUgPSAoc3RyaW5nKWZpbHRlclsiZmlsdGVyTmFtZSJdOw0KICAgICAgICAgICAgYm9vbCBlbmFibGVkID0gKGJvb2w/KWZpbHRlclsiZmlsdGVyRW5hYmxlZCJdID8/IGZhbHNlOw0KDQogICAgICAgICAgICBpZiAoIWVuYWJsZWQpDQogICAgICAgICAgICAgICAgY29udGludWU7DQoNCiAgICAgICAgICAgIENQSC5PYnNTZXRGaWx0ZXJTdGF0ZShzb3VyY2VOYW1lLCBuYW1lLCAxKTsNCiAgICAgICAgICAgIEJyb0xvZ2dlci5EZWJ1ZygkIltIaWRlRmlsdGVyc10gSGlkICd7bmFtZX0nIG9uICd7c291cmNlTmFtZX0nIik7DQogICAgICAgIH0NCiAgICB9DQoNCiAgICBwcml2YXRlIHZvaWQgSGlkZUZpbHRlcnNPblNjZW5lSXRlbXMoc3RyaW5nIHNjZW5lTmFtZSkNCiAgICB7DQogICAgICAgIHN0cmluZyBqc29uID0gQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiR2V0U2NlbmVJdGVtTGlzdCIsDQogICAgICAgICAgICBuZXcgSk9iamVjdCB7IFsic2NlbmVOYW1lIl0gPSBzY2VuZU5hbWUgfS5Ub1N0cmluZygpDQogICAgICAgICk7DQoNCiAgICAgICAgaWYgKHN0cmluZy5Jc051bGxPcldoaXRlU3BhY2UoanNvbikpDQogICAgICAgIHsNCiAgICAgICAgICAgIEJyb0xvZ2dlci5XYXJuaW5nKCQiW0hpZGVGaWx0ZXJzXSBObyBzY2VuZSBpdGVtcyBmb3IgJ3tzY2VuZU5hbWV9JyIpOw0KICAgICAgICAgICAgcmV0dXJuOw0KICAgICAgICB9DQoNCiAgICAgICAgdmFyIHJvb3QgPSBKT2JqZWN0LlBhcnNlKGpzb24pOw0KDQogICAgICAgIGlmICgocm9vdFsicmVzcG9uc2VEYXRhIl0gPz8gcm9vdClbInNjZW5lSXRlbXMiXSBpcyBub3QgSkFycmF5IGl0ZW1zKQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuV2FybmluZygkIltIaWRlRmlsdGVyc10gVW5leHBlY3RlZCByZXNwb25zZToge2pzb259Iik7DQogICAgICAgICAgICByZXR1cm47DQogICAgICAgIH0NCg0KICAgICAgICBmb3JlYWNoICh2YXIgaXRlbSBpbiBpdGVtcykNCiAgICAgICAgew0KICAgICAgICAgICAgc3RyaW5nIHNvdXJjZU5hbWUgPSAoc3RyaW5nKWl0ZW1bInNvdXJjZU5hbWUiXTsNCg0KICAgICAgICAgICAgaWYgKHN0cmluZy5Jc051bGxPcldoaXRlU3BhY2Uoc291cmNlTmFtZSkpDQogICAgICAgICAgICAgICAgY29udGludWU7DQoNCiAgICAgICAgICAgIEhpZGVBbGxGaWx0ZXJzKHNvdXJjZU5hbWUpOw0KICAgICAgICB9DQogICAgfQ0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "088a9fd2-0bdd-4f04-afc2-98666eabf366",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "5a6ca81d-147f-4499-b588-a853060d3f51",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "hide filters in current scene",
+      "group": "Filters",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "7a368f4a-e8ac-4077-85ba-3a9d303200ee",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
+          "id": "7f772ff1-1062-46ad-a91e-f1af1c7ef2ef",
+          "weight": 0.0,
+          "type": 43,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "variableName": "hideFiltersTargetScene",
+          "value": "%currentScene%",
+          "autoType": true,
+          "id": "cb47bc6a-0c3c-47d4-a926-cf19f1e7ffc4",
+          "weight": 0.0,
+          "type": 123,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "actionId": "6bf906d1-8409-4556-a387-74c5214e2f3a",
+          "runImmedately": true,
+          "id": "e67e42da-66b5-4088-831d-471d1a2966a5",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
         }
       ],
       "collapsedGroups": []

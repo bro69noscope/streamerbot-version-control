@@ -44,3 +44,6 @@ references in Streamer.bot. set them in the .shadow.csproj when needed:
       <UseNewtonsoftJson>true</UseNewtonsoftJson>
     </PropertyGroup>
 ```
+
+In order for the LSP to properly diagnose the project, do not forget to run
+`dotnet sln restore csharp.sln` after the csproj was built.

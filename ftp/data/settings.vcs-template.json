@@ -74,7 +74,7 @@
     "timers": [
       {
         "id": "2b2a386a-f4fc-4b53-a642-958028f231f1",
-        "name": "brb update",
+        "name": "update brb",
         "enabled": false,
         "repeat": true,
         "interval": 1,

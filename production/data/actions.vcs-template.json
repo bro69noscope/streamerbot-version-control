@@ -893,7 +893,7 @@
       ],
       "subActions": [
         {
-          "name": "enable virtual cam in production conn",
+          "name": "enable virtual cam in obs_conn__prod",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -906,7 +906,7 @@
           "index": 0
         },
         {
-          "name": "enable hardware cam in virtual_camera conn",
+          "name": "enable hardware cam in obs_conn__vcam",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__vcam_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -919,7 +919,7 @@
           "index": 1
         },
         {
-          "name": "start vcam in virtual_camera conn",
+          "name": "start vcam in obs_conn__vcam",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"StartVirtualCam\",\r\n  \"requestData\": {}\r\n}",
           "resultsToArgs": true,
@@ -956,7 +956,7 @@
       ],
       "subActions": [
         {
-          "name": "virtual cam in virtual_camera conn",
+          "name": "virtual cam in obs_conn__vcam",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__vcam_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -969,7 +969,7 @@
           "index": 0
         },
         {
-          "name": "hardware cam in production conn",
+          "name": "hardware cam in obs_conn__prod",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -982,7 +982,7 @@
           "index": 1
         },
         {
-          "name": "stop vcam in virtual_camara conn",
+          "name": "stop vcam in obs_conn__vcam",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"StopVirtualCam\",\r\n  \"requestData\": {}\r\n}",
           "resultsToArgs": true,
@@ -1900,7 +1900,7 @@
       ],
       "subActions": [
         {
-          "name": "request sceneItemId for eyetracker in ftp-conn",
+          "name": "request sceneItemId for eyetracker in obs_conn__ftp",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -1913,7 +1913,7 @@
           "index": 0
         },
         {
-          "name": "enable eyetracker in ftp-conn",
+          "name": "enable eyetracker in obs_conn__ftp",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -1926,7 +1926,7 @@
           "index": 1
         },
         {
-          "name": "request sceneItemId for eyetracker in prod-conn",
+          "name": "request sceneItemId for eyetracker in obs_conn__prod",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -1939,7 +1939,7 @@
           "index": 2
         },
         {
-          "name": "disable eyetracker in prod-conn",
+          "name": "disable eyetracker in obs_conn__prod",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -1976,7 +1976,7 @@
       ],
       "subActions": [
         {
-          "name": "request sceneItemId for eyetracker in prod-conn",
+          "name": "request sceneItemId for eyetracker in obs_conn__prod",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -1989,7 +1989,7 @@
           "index": 0
         },
         {
-          "name": "enable eyetracker in prod-conn",
+          "name": "enable eyetracker in obs_conn__prod",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -2002,7 +2002,7 @@
           "index": 1
         },
         {
-          "name": "request sceneItemId for eyetracker in ftp-conn",
+          "name": "request sceneItemId for eyetracker in obs_conn__ftp",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
@@ -2015,7 +2015,7 @@
           "index": 2
         },
         {
-          "name": "disable eyetracker in ftp-conn",
+          "name": "disable eyetracker in obs_conn__ftp",
           "prefix": "obsRaw",
           "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
           "resultsToArgs": true,

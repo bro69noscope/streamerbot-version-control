@@ -1,18 +1,8 @@
 {
   "version": 24,
-  "t": "2026-10-02T16:08:04.6308557+02:00",
+  "t": "2026-10-02T17:05:11.517714+02:00",
   "blocking": false,
-  "collapsedGroups": [
-    "",
-    "Common - General - Manage Brb",
-    "Common - Obs - Refresh Sources",
-    "Common - Streamerbot - Manage Helpers",
-    "Obs - Manage Eyetracker Config",
-    "Common - General - Manage Alerts",
-    "Dota2 - Manage Script Pregamespy",
-    "Obs - Manage Ui",
-    "Obs - Manage Virtual Cam Config"
-  ],
+  "collapsedGroups": [],
   "groups": [
     "General - Manage Resets",
     "Dota2 - Manage Script Shopwatcher",
@@ -24,7 +14,8 @@
     "Common - Obs - Refresh Sources",
     "Obs - Manage Ui",
     "Obs - Manage Eyetracker Config",
-    "Obs - Manage Sources Recursively"
+    "Obs - Manage Sources Recursively",
+    "Obs - Manage Multiple Sources"
   ],
   "queues": [],
   "actions": [
@@ -365,20 +356,20 @@
     },
     {
       "id": "e314b940-fe9f-4f30-8108-891826a98a06",
-      "queue": null,
+      "queue": "00000000-0000-0000-0000-000000000000",
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "DSLR :: Hide",
-      "group": "Dota2 - Manage Script Shopwatcher",
+      "name": "hide metascene facecams",
+      "group": "Obs - Manage Multiple Sources",
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "METASCENE",
-          "sourceName": "DSLR Clone (Fade)",
+          "sceneName": "scene__gameplay__fundamental_sources",
+          "sourceName": "~fade__clone__facecam_gameplay___scene__facecam_ingame",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "3e7a0bfa-b4f9-4fb1-9230-c6b53763faa0",
@@ -389,8 +380,8 @@
           "index": 0
         },
         {
-          "sceneName": "METASCENE",
-          "sourceName": "DSLR Clone (Cut)",
+          "sceneName": "scene__gameplay__fundamental_sources",
+          "sourceName": "~cut__clone__facecam_gameplay___scene__facecam_ingame",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "030f51cc-53a7-4b8e-8aac-dcbd7ed0d93b",
@@ -405,11 +396,11 @@
     },
     {
       "id": "6cba2fc5-205f-4e51-9b35-7b0d5331cc7b",
-      "queue": null,
+      "queue": "00000000-0000-0000-0000-000000000000",
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "DSLR :: Show & Shop messages :: Hide",
+      "name": "show cam and hide shop msgs",
       "group": "Dota2 - Manage Script Shopwatcher",
       "alwaysRun": false,
       "randomAction": false,
@@ -417,8 +408,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "METASCENE",
-          "sourceName": "DSLR Clone (Fade)",
+          "sceneName": "scene__gameplay__fundamental_sources",
+          "sourceName": "~fade__clone__facecam_gameplay___scene__facecam_ingame",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "140b55e2-3eea-4f36-8b8b-441163ea423f",
@@ -429,8 +420,8 @@
           "index": 0
         },
         {
-          "sceneName": "METASCENE",
-          "sourceName": "<< brb buying milk >>",
+          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sourceName": "text__brb_buying_milk",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "4a96cb29-2695-4b04-91d6-445eb61bf692",
@@ -441,8 +432,8 @@
           "index": 1
         },
         {
-          "sceneName": "METASCENE",
-          "sourceName": "shop_open_duration_message",
+          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sourceName": "text__youve_been_in_shop_for_x_seconds",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "a2aa2343-b069-4459-a041-1669bd1a0d33",
@@ -538,7 +529,7 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "show text__brb_buying_milk",
+      "name": "show \"buying milk\" text",
       "group": "Dota2 - Manage Script Shopwatcher",
       "alwaysRun": false,
       "randomAction": false,
@@ -546,8 +537,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "METASCENE",
-          "sourceName": "<< brb buying milk >>",
+          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sourceName": "text__brb_buying_milk",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "908e1c47-382c-44f2-8ccf-42ba6adb922a",
@@ -562,11 +553,11 @@
     },
     {
       "id": "bd02530a-65f6-4dc1-b92f-4ca7b09cd06b",
-      "queue": null,
+      "queue": "00000000-0000-0000-0000-000000000000",
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "<< brb buying milk>> :: Hide",
+      "name": "hide \"buying milk\" text",
       "group": "Dota2 - Manage Script Shopwatcher",
       "alwaysRun": false,
       "randomAction": false,
@@ -574,8 +565,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "METASCENE",
-          "sourceName": "<< brb buying milk >>",
+          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sourceName": "text__brb_buying_milk",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "67292ef8-f1f0-453f-a00c-de77bcac2409",
@@ -590,11 +581,11 @@
     },
     {
       "id": "35e4928e-bfbd-4d0f-b696-4af7d225c429",
-      "queue": null,
+      "queue": "00000000-0000-0000-0000-000000000000",
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "Display time since shop opening -F",
+      "name": "show shop duration msg",
       "group": "Dota2 - Manage Script Shopwatcher",
       "alwaysRun": false,
       "randomAction": false,
@@ -602,8 +593,8 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "METASCENE",
-          "sourceName": "shop_open_duration_message",
+          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sourceName": "text__youve_been_in_shop_for_x_seconds",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "7a0c9026-0245-4e03-878e-e8af5123efb5",
@@ -626,8 +617,8 @@
           "index": 1
         },
         {
-          "sceneName": "METASCENE",
-          "sourceName": "shop_open_duration_message",
+          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sourceName": "text__youve_been_in_shop_for_x_seconds",
           "text": "%line0%",
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "2a2f02a7-4650-4b2c-8d6b-a2c780f0ce58",

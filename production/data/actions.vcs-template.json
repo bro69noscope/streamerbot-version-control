@@ -1,13 +1,17 @@
 {
   "version": 24,
-  "t": "2026-10-01T23:12:54.0459118+02:00",
+  "t": "2026-10-02T16:08:04.6308557+02:00",
   "blocking": false,
   "collapsedGroups": [
+    "",
     "Common - General - Manage Brb",
     "Common - Obs - Refresh Sources",
     "Common - Streamerbot - Manage Helpers",
+    "Obs - Manage Eyetracker Config",
+    "Common - General - Manage Alerts",
     "Dota2 - Manage Script Pregamespy",
-    "Dota2 - Manage Script Shopwatcher"
+    "Obs - Manage Ui",
+    "Obs - Manage Virtual Cam Config"
   ],
   "groups": [
     "General - Manage Resets",
@@ -337,7 +341,7 @@
           "index": 10
         },
         {
-          "value": "hide all the sources in nested scenes. Done at end for perf reasons",
+          "value": "hide all the sources in nested scenes. (Done at end for perf reasons)",
           "color": "",
           "id": "eb986922-4e34-456b-9586-2180962f8d78",
           "weight": 0.0,
@@ -2154,7 +2158,7 @@
     },
     {
       "id": "e7efa024-8b8f-412d-ac2f-946705b8c219",
-      "queue": "00000000-0000-0000-0000-000000000000",
+      "queue": null,
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,

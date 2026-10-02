@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-10-02T17:05:11.517714+02:00",
+  "t": "2026-10-02T17:39:47.6668179+02:00",
   "blocking": false,
   "collapsedGroups": [],
   "groups": [
@@ -213,39 +213,7 @@
       ],
       "subActions": [
         {
-          "value": "hide all but the fundamental nested scenes in the metascene",
-          "color": "",
-          "id": "d1cb1a1e-b656-46ea-a8be-146e55bcb0bc",
-          "weight": 0.0,
-          "type": 1009,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        },
-        {
-          "sceneName": "scene__metascene",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "9ab30266-93e6-4521-9dd5-f095b407131c",
-          "weight": 0.0,
-          "type": 325,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
-          "sceneName": "scene__metascene",
-          "sourceName": "scene__gameplay__fundamental_sources",
-          "state": 0,
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "a57c1675-57dd-446b-84ea-e392a92ffdf3",
-          "weight": 0.0,
-          "type": 30,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
-        },
-        {
-          "value": "show the facecam with a cut transition override, for an immediate change",
+          "value": "show the metascene facecam with a cut transition override, for an immediate change",
           "color": "",
           "id": "bc36023b-f587-4308-bb56-cc5531abb00f",
           "weight": 0.0,

@@ -29,9 +29,9 @@ public partial class CPHInline
         string raw = CPH.ObsSendRaw("GetSceneItemList", payload, 0);
 
         if (string.IsNullOrEmpty(raw))
-            return new JArray();
+            return [];
 
-        return (JArray)JObject.Parse(raw)["sceneItems"] ?? new JArray();
+        return (JArray)JObject.Parse(raw)["sceneItems"] ?? [];
     }
 
     private void SetEnabled(string scene, int itemId, bool enabled)

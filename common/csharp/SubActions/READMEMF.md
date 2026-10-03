@@ -3,7 +3,7 @@ Listen, easy: we just mirror the streamer.bot layout like this:
 SubActions
 ├── Common                                           <- profile scope (Common | Ftp | Production)
 │   ├── AppGroupName                                 <- app scope (Obs | Dota2 | General ...)
-│   │   ├── ActionGroupName                          <- action scope (ManageUi | AnythingElse ...)
+│   │   ├── ActionGroupName                          <- action scope (ManageUi | DoAnythingElse ...)
 │   │   │   ├── ActionName                           <- name of the streamer.bot action
 │   │   │   │   ├── SubActionExecuteCodeName.cs      <- name of the streamer.bot c# sub-action
 │   │   │   │   ├── SubActionExecuteCodeName.shadow.csproj

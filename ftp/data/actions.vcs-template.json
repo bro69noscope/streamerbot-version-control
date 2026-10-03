@@ -60,7 +60,7 @@
           "index": 1
         },
         {
-          "name": "StartTimer",
+          "name": "StartTimer.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -111,7 +111,7 @@
           "index": 5
         },
         {
-          "name": "ClearStreamFeed",
+          "name": "ClearStreamFeed.cs",
           "description": null,
           "references": [
             "C:\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -153,7 +153,7 @@
       ],
       "subActions": [
         {
-          "name": "UpdateBrbText",
+          "name": "UpdateBrbText.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -915,7 +915,7 @@
           "index": 0
         },
         {
-          "name": "StartTwitchAlert",
+          "name": "StartTwitchAlert.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -989,7 +989,7 @@
           "index": 0
         },
         {
-          "name": "StartKofiAlert",
+          "name": "StartKofiAlert.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -1145,7 +1145,7 @@
           "index": 0
         },
         {
-          "name": "SkipCurrentAlert",
+          "name": "SkipCurrentAlert.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -1226,7 +1226,7 @@
       ],
       "subActions": [
         {
-          "name": "Unmute5And6Channels",
+          "name": "Unmute5And6Channels.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1268,7 +1268,7 @@
       ],
       "subActions": [
         {
-          "name": "Mute5And6Channels",
+          "name": "Mute5And6Channels.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1458,7 +1458,7 @@
       ],
       "subActions": [
         {
-          "name": "MuteAuxSend1",
+          "name": "MuteAuxSend1.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1500,7 +1500,7 @@
       ],
       "subActions": [
         {
-          "name": "UnmuteAuxSend1",
+          "name": "UnmuteAuxSend1.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1542,7 +1542,7 @@
       ],
       "subActions": [
         {
-          "name": "Mute7And8Channels",
+          "name": "Mute7And8Channels.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1584,7 +1584,7 @@
       ],
       "subActions": [
         {
-          "name": "Unmute7And8Channels",
+          "name": "Unmute7And8Channels.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1626,7 +1626,7 @@
       ],
       "subActions": [
         {
-          "name": "Mute11And12Channels",
+          "name": "Mute11And12Channels.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1668,7 +1668,7 @@
       ],
       "subActions": [
         {
-          "name": "Unmute11And12Channels",
+          "name": "Unmute11And12Channels.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1710,7 +1710,7 @@
       ],
       "subActions": [
         {
-          "name": "MuteUsbOut",
+          "name": "MuteUsbOut.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1752,7 +1752,7 @@
       ],
       "subActions": [
         {
-          "name": "UnmuteUsbOut",
+          "name": "UnmuteUsbOut.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"

@@ -71,7 +71,7 @@
           "index": 0
         },
         {
-          "name": "StartKofiAlert",
+          "name": "StartKofiAlert.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -169,7 +169,7 @@
           "index": 0
         },
         {
-          "name": "StartTwitchAlert",
+          "name": "StartTwitchAlert.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -1097,7 +1097,7 @@
       ],
       "subActions": [
         {
-          "name": "UpdateBrbText",
+          "name": "UpdateBrbText.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1162,7 +1162,7 @@
           "index": 1
         },
         {
-          "name": "StartTimer",
+          "name": "StartTimer.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -1213,7 +1213,7 @@
           "index": 5
         },
         {
-          "name": "ClearStreamFeed",
+          "name": "ClearStreamFeed.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1722,7 +1722,7 @@
           "index": 0
         },
         {
-          "name": "SkipCurrentAlert",
+          "name": "SkipCurrentAlert.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -1854,7 +1854,7 @@
       ],
       "subActions": [
         {
-          "name": "SetDocksRight",
+          "name": "SetDocksRight.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -1896,7 +1896,7 @@
       ],
       "subActions": [
         {
-          "name": "SetDocksCenter",
+          "name": "SetDocksCenter.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
@@ -2100,7 +2100,7 @@
           "index": 0
         },
         {
-          "name": "HideFiltersInScene",
+          "name": "HideFiltersInScene.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
@@ -2191,7 +2191,7 @@
       "triggers": [],
       "subActions": [
         {
-          "name": "HideMetasceneSources",
+          "name": "HideMetasceneSources.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"

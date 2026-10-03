@@ -213,6 +213,38 @@
       ],
       "subActions": [
         {
+          "value": "hide all but the fundamental nested scene",
+          "color": "",
+          "id": "798e1dcd-4a4c-4056-bf11-9034b410ae57",
+          "weight": 0.0,
+          "type": 1009,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "sceneName": "scene__metascene",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "74fa60ca-66c2-4c2b-b77b-9250cb084142",
+          "weight": 0.0,
+          "type": 325,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "sceneName": "scene__metascene",
+          "sourceName": "scene__gameplay__fundamental_sources",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "0d19896b-253a-4065-a72d-49e648d5b269",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
           "value": "show the metascene facecam with a cut transition override, for an immediate change",
           "color": "",
           "id": "bc36023b-f587-4308-bb56-cc5531abb00f",
@@ -310,6 +342,16 @@
           "index": 11
         },
         {
+          "value": "(we only do this at the end because of speed)",
+          "color": "",
+          "id": "c9bafa47-c04b-473e-a2cf-ca00af5266ea",
+          "weight": 0.0,
+          "type": 1009,
+          "parentId": null,
+          "enabled": true,
+          "index": 12
+        },
+        {
           "actionId": "e7efa024-8b8f-412d-ac2f-946705b8c219",
           "runImmedately": true,
           "id": "b3e493a6-710d-449f-9764-515368ef4b2f",
@@ -317,7 +359,27 @@
           "type": 4,
           "parentId": null,
           "enabled": true,
-          "index": 12
+          "index": 13
+        },
+        {
+          "value": "we can now show all nested scenes again",
+          "color": "",
+          "id": "27337184-08c0-4825-ba1b-69fb04415031",
+          "weight": 0.0,
+          "type": 1009,
+          "parentId": null,
+          "enabled": true,
+          "index": 14
+        },
+        {
+          "actionId": "026bc98a-84c2-442d-8be6-3a1806ceba5f",
+          "runImmedately": true,
+          "id": "7a3e4c07-2f78-4dc5-80cc-5ae62f4ff099",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 15
         }
       ],
       "collapsedGroups": []
@@ -2140,6 +2202,50 @@
           "saveResultToVariable": false,
           "saveToVariable": null,
           "id": "3e710dd1-1015-4ced-8d8a-9ce016a6c46b",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "026bc98a-84c2-442d-8be6-3a1806ceba5f",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "show metascene scenes",
+      "group": "Obs - Manage Multiple Sources",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "338d10fb-6543-451b-80ce-0663251dc958",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "ShowMetasceneSources.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\Newtonsoft.Json.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll"
+          ],
+          "byteCode": "dXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHByaXZhdGUgY29uc3Qgc3RyaW5nIE1ldGFTY2VuZSA9ICJzY2VuZV9fbWV0YXNjZW5lIjsNCg0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIGpzb24gPSBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJHZXRTY2VuZUl0ZW1MaXN0IiwNCiAgICAgICAgICAgIG5ldyBKT2JqZWN0IHsgWyJzY2VuZU5hbWUiXSA9IE1ldGFTY2VuZSB9LlRvU3RyaW5nKCksDQogICAgICAgICAgICAwDQogICAgICAgICk7DQoNCiAgICAgICAgZm9yZWFjaCAodmFyIGl0ZW0gaW4gSk9iamVjdC5QYXJzZShqc29uKVsic2NlbmVJdGVtcyJdKQ0KICAgICAgICB7DQogICAgICAgICAgICBzdHJpbmcgc291cmNlID0gKHN0cmluZylpdGVtWyJzb3VyY2VOYW1lIl07DQogICAgICAgICAgICBDUEguT2JzU2V0U291cmNlVmlzaWJpbGl0eShNZXRhU2NlbmUsIHNvdXJjZSwgdHJ1ZSwgMCk7DQogICAgICAgIH0NCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "5c1c82eb-6d13-4624-96ab-d5746b0776df",
           "weight": 0.0,
           "type": 99999,
           "parentId": null,

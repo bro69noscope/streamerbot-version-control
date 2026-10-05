@@ -1,232 +1,21 @@
 {
   "version": 24,
-  "t": "2026-10-03T14:47:19.1641854+02:00",
+  "t": "2026-10-05T19:42:21.7500664+02:00",
   "blocking": false,
-  "collapsedGroups": ["Common - Obs - Refresh Sources"],
+  "collapsedGroups": [],
   "groups": [
     "Ftp - Obs - Set Active Scenes",
     "Common - Streamerbot - Manage Helpers",
-    "Common - General - Manage Brb",
     "Ftp - Obs - Hide Sources",
     "Ftp - Obs - Show Sources",
     "Common - General - Manage Alerts",
     "Common - Obs - Refresh Sources",
     "Ftp - Obs - Manage Audio Devices",
-    "Common - StreamFeedApp - Manage Feed"
+    "Common - StreamFeedApp - Manage Feed",
+    "Common - General - Manage Brb"
   ],
   "queues": [],
   "actions": [
-    {
-      "id": "4410fd5b-4484-4145-ae97-403fa3f1378a",
-      "queue": "00000000-0000-0000-0000-000000000000",
-      "enabled": true,
-      "excludeFromHistory": false,
-      "excludeFromPending": false,
-      "name": "start brb",
-      "group": "Common - General - Manage Brb",
-      "alwaysRun": false,
-      "randomAction": false,
-      "concurrent": false,
-      "triggers": [
-        {
-          "variables": {},
-          "id": "88e04fe7-6eee-4194-9d00-227e7f532ac2",
-          "type": 702,
-          "enabled": true,
-          "exclusions": []
-        }
-      ],
-      "subActions": [
-        {
-          "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
-          "state": 0,
-          "id": "81672951-1cf5-4284-a9ce-59fd9ba85486",
-          "weight": 0.0,
-          "type": 8,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        },
-        {
-          "source": 0,
-          "variableName": "brbDuration",
-          "persisted": true,
-          "destinationVariable": "brbDuration",
-          "defaultValue": null,
-          "id": "17c8cea7-fe75-4e63-9107-7ffcbb9dcf6f",
-          "weight": 0.0,
-          "type": 121,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
-          "name": "StartTimer.cs",
-          "description": null,
-          "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
-            ".\\dlls\\BroStreamerTools.dll"
-          ],
-          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIEJyb1N0cmVhbWVyVG9vbHMuTG9nZ2luZzsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJkZWJ1Z3RoaXMiLCBvdXQgYm9vbCBkZWJ1Z0VuYWJsZWQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJicmJEdXJhdGlvbiIsIG91dCBzdHJpbmcgYnJiRHVyYXRpb24pOw0KICAgICAgICBpZiAoZGVidWdFbmFibGVkKQ0KICAgICAgICAgICAgQnJvTG9nZ2VyLkRlYnVnKHR5cGVvZihCUkJNYW5hZ2VyKS5Bc3NlbWJseS5GdWxsTmFtZSk7DQogICAgICAgIEJSQk1hbmFnZXIuU3RhcnQoQ1BILCBicmJEdXJhdGlvbik7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
-          "precompile": false,
-          "delayStart": false,
-          "saveResultToVariable": false,
-          "saveToVariable": null,
-          "id": "56780817-1d9e-4737-b763-d8f86518c370",
-          "weight": 0.0,
-          "type": 99999,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
-        },
-        {
-          "sceneName": "scene__lounge",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "3ed73ae9-aa7f-4870-88f6-1a090dc007ae",
-          "weight": 0.0,
-          "type": 34,
-          "parentId": null,
-          "enabled": true,
-          "index": 3
-        },
-        {
-          "sceneName": "scene__lounge",
-          "sourceName": "text__brb_in_x_mins",
-          "state": 0,
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "90917310-06eb-437f-9240-b422ad8e974f",
-          "weight": 0.0,
-          "type": 30,
-          "parentId": null,
-          "enabled": true,
-          "index": 4
-        },
-        {
-          "actionId": "dc343f23-783e-4000-b37b-bf2fae30d006",
-          "runImmedately": true,
-          "id": "b96f8b56-4e13-4d28-8bd6-2096da8564a3",
-          "weight": 0.0,
-          "type": 4,
-          "parentId": null,
-          "enabled": true,
-          "index": 5
-        },
-        {
-          "actionId": "bbc271a9-1de2-4732-9eb4-52cae53119d9",
-          "runImmedately": true,
-          "id": "991dbf89-e901-45ca-97b6-772438cb6711",
-          "weight": 0.0,
-          "type": 4,
-          "parentId": null,
-          "enabled": true,
-          "index": 6
-        }
-      ],
-      "collapsedGroups": []
-    },
-    {
-      "id": "dc343f23-783e-4000-b37b-bf2fae30d006",
-      "queue": "00000000-0000-0000-0000-000000000000",
-      "enabled": true,
-      "excludeFromHistory": false,
-      "excludeFromPending": false,
-      "name": "tick brb timer",
-      "group": "Common - General - Manage Brb",
-      "alwaysRun": false,
-      "randomAction": false,
-      "concurrent": false,
-      "triggers": [
-        {
-          "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
-          "id": "a2284036-1057-4b37-9ef1-1fda19a2b795",
-          "type": 701,
-          "enabled": true,
-          "exclusions": []
-        }
-      ],
-      "subActions": [
-        {
-          "name": "UpdateBrbText.cs",
-          "description": null,
-          "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
-          ],
-          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHZhciBzdGFydCA9IENQSC5HZXRHbG9iYWxWYXI8RGF0ZVRpbWU+KCJCUkJTdGFydFRpbWUiLCB0cnVlKTsNCiAgICAgICAgdmFyIGR1cmF0aW9uID0gQ1BILkdldEdsb2JhbFZhcjxzdHJpbmc+KCJCUkJEdXJhdGlvbiIsIHRydWUpOw0KICAgICAgICB2YXIgZWxhcHNlZCA9IERhdGVUaW1lLk5vdyAtIHN0YXJ0Ow0KDQogICAgICAgIHZhciBkdXJhdGlvblRleHQgPSBpbnQuVHJ5UGFyc2UoZHVyYXRpb24sIG91dCB2YXIgbWlucykNCiAgICAgICAgICAgID8gJCJ7bWluc30geyhtaW5zID09IDEgPyAibWluIiA6ICJtaW5zIil9Ig0KICAgICAgICAgICAgOiAkIntkdXJhdGlvbn0gbWlucyI7DQoNCiAgICAgICAgdmFyIHRleHQgPSAkIkJSQiBpbiB7ZHVyYXRpb25UZXh0fVxuIiArICQiRWxhcHNlZDoge2VsYXBzZWQ6bW1cXDpzc30iOw0KDQogICAgICAgIENQSC5PYnNTZXRHZGlUZXh0KCJzY2VuZV9fbG91bmdlIiwgInRleHRfX2JyYl9pbl94X21pbnMiLCB0ZXh0KTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
-          "precompile": false,
-          "delayStart": false,
-          "saveResultToVariable": false,
-          "saveToVariable": null,
-          "id": "d35bd7b8-77b3-4aa4-b458-98f71e26963b",
-          "weight": 0.0,
-          "type": 99999,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        }
-      ],
-      "collapsedGroups": []
-    },
-    {
-      "id": "75e9b2ad-0446-43c5-a842-ceb1ca70a896",
-      "queue": "00000000-0000-0000-0000-000000000000",
-      "enabled": true,
-      "excludeFromHistory": false,
-      "excludeFromPending": false,
-      "name": "set brb 1",
-      "group": "Common - General - Manage Brb",
-      "alwaysRun": false,
-      "randomAction": false,
-      "concurrent": false,
-      "triggers": [
-        {
-          "variables": {},
-          "id": "d1439f5a-f748-44c2-86d1-d3085e5c98e8",
-          "type": 702,
-          "enabled": true,
-          "exclusions": []
-        }
-      ],
-      "subActions": [
-        {
-          "name": ".",
-          "color": null,
-          "random": false,
-          "subActions": [
-            {
-              "destination": 0,
-              "variableName": "brbDuration",
-              "persisted": true,
-              "source": 0,
-              "value": "1",
-              "autoType": false,
-              "id": "d95be03a-dd5f-4af2-aad2-7d08db4a6387",
-              "weight": 0.0,
-              "type": 122,
-              "parentId": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
-              "enabled": true,
-              "index": 0
-            },
-            {
-              "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
-              "runImmedately": true,
-              "id": "e667ba01-3eb9-4a13-9290-6af6eb16ca0c",
-              "weight": 0.0,
-              "type": 4,
-              "parentId": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
-              "enabled": true,
-              "index": 1
-            }
-          ],
-          "id": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
-          "weight": 0.0,
-          "type": 99900,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        }
-      ],
-      "collapsedGroups": []
-    },
     {
       "id": "b485a409-a30f-4f98-9d85-a27f6e5c60c3",
       "queue": "00000000-0000-0000-0000-000000000000",
@@ -289,358 +78,6 @@
           "parentId": null,
           "enabled": true,
           "index": 1
-        }
-      ],
-      "collapsedGroups": []
-    },
-    {
-      "id": "495959d5-a6fe-429f-bf0b-7c02a4c46526",
-      "queue": "00000000-0000-0000-0000-000000000000",
-      "enabled": true,
-      "excludeFromHistory": false,
-      "excludeFromPending": false,
-      "name": "input brb",
-      "group": "Common - General - Manage Brb",
-      "alwaysRun": false,
-      "randomAction": false,
-      "concurrent": false,
-      "triggers": [
-        {
-          "variables": {},
-          "id": "fd55a474-2d6c-447f-886e-52b88a203f05",
-          "type": 702,
-          "enabled": true,
-          "exclusions": []
-        }
-      ],
-      "subActions": [
-        {
-          "name": ".",
-          "color": null,
-          "random": false,
-          "subActions": [
-            {
-              "actionId": "81cf7280-78e2-4334-a82c-043ead61be16",
-              "runImmedately": true,
-              "id": "cc59bd0f-b30f-454a-81c0-3dec3d7e7105",
-              "weight": 0.0,
-              "type": 4,
-              "parentId": "46114a63-fcf3-4e6f-995a-60f9ca1bd7b0",
-              "enabled": true,
-              "index": 0
-            },
-            {
-              "title": "brbDuration",
-              "prompt": "brb in ... (minutes)",
-              "originalText": "",
-              "outputVariable": "duration",
-              "autoTypeOutput": false,
-              "id": "1cafb50f-57ec-4cb0-9f45-45916fd24998",
-              "weight": 0.0,
-              "type": 1023,
-              "parentId": "46114a63-fcf3-4e6f-995a-60f9ca1bd7b0",
-              "enabled": true,
-              "index": 1
-            },
-            {
-              "input": "%success%",
-              "operation": 0,
-              "value": "True",
-              "autoType": true,
-              "subActions": [
-                {
-                  "random": false,
-                  "subActions": [
-                    {
-                      "destination": 0,
-                      "variableName": "brbDuration",
-                      "persisted": true,
-                      "source": 0,
-                      "value": "%duration%",
-                      "autoType": false,
-                      "id": "240515aa-12e3-4862-bddd-5d5202b1dfa9",
-                      "weight": 0.0,
-                      "type": 122,
-                      "parentId": "1918bbe3-295b-4d99-9c3d-34060f30b00f",
-                      "enabled": true,
-                      "index": 0
-                    },
-                    {
-                      "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
-                      "runImmedately": true,
-                      "id": "ff4ac125-1b6b-4bf0-9219-284a65cb1b8f",
-                      "weight": 0.0,
-                      "type": 4,
-                      "parentId": "1918bbe3-295b-4d99-9c3d-34060f30b00f",
-                      "enabled": true,
-                      "index": 1
-                    }
-                  ],
-                  "id": "1918bbe3-295b-4d99-9c3d-34060f30b00f",
-                  "weight": 0.0,
-                  "type": 99901,
-                  "parentId": null,
-                  "enabled": true,
-                  "index": 0
-                },
-                {
-                  "random": false,
-                  "subActions": [],
-                  "id": "c94ac957-806d-48f1-a9f8-043181de991d",
-                  "weight": 0.0,
-                  "type": 99902,
-                  "parentId": null,
-                  "enabled": true,
-                  "index": 1
-                }
-              ],
-              "id": "5b064650-0cde-4459-aa6b-66704efd97af",
-              "weight": 0.0,
-              "type": 120,
-              "parentId": "46114a63-fcf3-4e6f-995a-60f9ca1bd7b0",
-              "enabled": true,
-              "index": 2
-            }
-          ],
-          "id": "46114a63-fcf3-4e6f-995a-60f9ca1bd7b0",
-          "weight": 0.0,
-          "type": 99900,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        }
-      ],
-      "collapsedGroups": []
-    },
-    {
-      "id": "4bb6ce12-cde0-4d4f-8e8b-d909363a4fc8",
-      "queue": "00000000-0000-0000-0000-000000000000",
-      "enabled": true,
-      "excludeFromHistory": false,
-      "excludeFromPending": false,
-      "name": "auto hide brb",
-      "group": "Common - General - Manage Brb",
-      "alwaysRun": false,
-      "randomAction": false,
-      "concurrent": false,
-      "triggers": [
-        {
-          "sceneName": "scene__lounge",
-          "obsId": null,
-          "id": "79042708-60ed-4516-a785-e7c5da4811b7",
-          "type": 14004,
-          "enabled": true,
-          "exclusions": []
-        }
-      ],
-      "subActions": [
-        {
-          "name": ".",
-          "color": null,
-          "random": false,
-          "subActions": [
-            {
-              "source": 0,
-              "variableName": "SkipBrbAutoHide",
-              "persisted": true,
-              "destinationVariable": "SkipBrbAutoHide",
-              "defaultValue": null,
-              "id": "205e52de-6a59-48aa-ac6b-4fdc73af55b9",
-              "weight": 0.0,
-              "type": 121,
-              "parentId": "7d905b9b-791d-4624-8e60-73aa640f6a05",
-              "enabled": true,
-              "index": 0
-            },
-            {
-              "input": "%SkipBrbAutoHide%",
-              "operation": 0,
-              "value": "true",
-              "autoType": true,
-              "subActions": [
-                {
-                  "random": false,
-                  "subActions": [
-                    {
-                      "destination": 0,
-                      "variableName": "SkipBrbAutoHide",
-                      "persisted": true,
-                      "source": 0,
-                      "value": false,
-                      "autoType": true,
-                      "id": "66dd49c3-343e-4b9c-9f2c-0eb1f0384e22",
-                      "weight": 0.0,
-                      "type": 122,
-                      "parentId": "60a6c672-9fe6-4bb3-b749-ef9cd54c1bc3",
-                      "enabled": true,
-                      "index": 0
-                    }
-                  ],
-                  "id": "60a6c672-9fe6-4bb3-b749-ef9cd54c1bc3",
-                  "weight": 0.0,
-                  "type": 99901,
-                  "parentId": "8c363bef-7ff3-4c71-a2ec-64541beb78a6",
-                  "enabled": true,
-                  "index": 0
-                },
-                {
-                  "random": false,
-                  "subActions": [
-                    {
-                      "actionId": "7ebb29d2-03f0-4138-9bdb-805848dfe3c6",
-                      "runImmedately": true,
-                      "id": "d9f9a2bb-8e27-4255-b391-1ac5ea0b6b3b",
-                      "weight": 0.0,
-                      "type": 4,
-                      "parentId": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
-                      "enabled": true,
-                      "index": 0
-                    }
-                  ],
-                  "id": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
-                  "weight": 0.0,
-                  "type": 99902,
-                  "parentId": "8c363bef-7ff3-4c71-a2ec-64541beb78a6",
-                  "enabled": true,
-                  "index": 1
-                }
-              ],
-              "id": "8c363bef-7ff3-4c71-a2ec-64541beb78a6",
-              "weight": 0.0,
-              "type": 120,
-              "parentId": "7d905b9b-791d-4624-8e60-73aa640f6a05",
-              "enabled": true,
-              "index": 1
-            }
-          ],
-          "id": "7d905b9b-791d-4624-8e60-73aa640f6a05",
-          "weight": 0.0,
-          "type": 99900,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        }
-      ],
-      "collapsedGroups": []
-    },
-    {
-      "id": "9eaf9fe4-3e97-427f-96ed-bedfa57aa581",
-      "queue": "00000000-0000-0000-0000-000000000000",
-      "enabled": true,
-      "excludeFromHistory": false,
-      "excludeFromPending": false,
-      "name": "set brb 2",
-      "group": "Common - General - Manage Brb",
-      "alwaysRun": false,
-      "randomAction": false,
-      "concurrent": false,
-      "triggers": [
-        {
-          "variables": {},
-          "id": "2dd2c072-2036-4a10-aa2d-9a62d5a72c55",
-          "type": 702,
-          "enabled": true,
-          "exclusions": []
-        }
-      ],
-      "subActions": [
-        {
-          "name": ".",
-          "color": null,
-          "random": false,
-          "subActions": [
-            {
-              "destination": 0,
-              "variableName": "brbDuration",
-              "persisted": true,
-              "source": 0,
-              "value": "2",
-              "autoType": false,
-              "id": "d1433861-6d48-468b-a96e-089a77dc2475",
-              "weight": 0.0,
-              "type": 122,
-              "parentId": "91daf43c-69ee-4364-b434-b09d9d3b78bd",
-              "enabled": true,
-              "index": 0
-            },
-            {
-              "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
-              "runImmedately": true,
-              "id": "b9a404b7-e1b4-4235-92d3-852a7f1bd6b2",
-              "weight": 0.0,
-              "type": 4,
-              "parentId": "91daf43c-69ee-4364-b434-b09d9d3b78bd",
-              "enabled": true,
-              "index": 1
-            }
-          ],
-          "id": "91daf43c-69ee-4364-b434-b09d9d3b78bd",
-          "weight": 0.0,
-          "type": 99900,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        }
-      ],
-      "collapsedGroups": []
-    },
-    {
-      "id": "863b0d18-d706-429f-b801-69a71419dd2c",
-      "queue": "00000000-0000-0000-0000-000000000000",
-      "enabled": true,
-      "excludeFromHistory": false,
-      "excludeFromPending": false,
-      "name": "set brb 5",
-      "group": "Common - General - Manage Brb",
-      "alwaysRun": false,
-      "randomAction": false,
-      "concurrent": false,
-      "triggers": [
-        {
-          "variables": {},
-          "id": "8d647b80-6d43-42f2-bbaa-7a687f041e95",
-          "type": 702,
-          "enabled": true,
-          "exclusions": []
-        }
-      ],
-      "subActions": [
-        {
-          "name": ".",
-          "color": null,
-          "random": false,
-          "subActions": [
-            {
-              "destination": 0,
-              "variableName": "brbDuration",
-              "persisted": true,
-              "source": 0,
-              "value": "5",
-              "autoType": false,
-              "id": "38ac32a7-8b79-46be-939b-cd8f147bb3c5",
-              "weight": 0.0,
-              "type": 122,
-              "parentId": "6a3985f6-a4e3-49e7-9688-0a95777f78e8",
-              "enabled": true,
-              "index": 0
-            },
-            {
-              "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
-              "runImmedately": true,
-              "id": "dc8a6aba-3c61-476b-a317-40807bbbccbb",
-              "weight": 0.0,
-              "type": 4,
-              "parentId": "6a3985f6-a4e3-49e7-9688-0a95777f78e8",
-              "enabled": true,
-              "index": 1
-            }
-          ],
-          "id": "6a3985f6-a4e3-49e7-9688-0a95777f78e8",
-          "weight": 0.0,
-          "type": 99900,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
         }
       ],
       "collapsedGroups": []
@@ -1007,57 +444,6 @@
           "parentId": null,
           "enabled": true,
           "index": 1
-        }
-      ],
-      "collapsedGroups": []
-    },
-    {
-      "id": "7ebb29d2-03f0-4138-9bdb-805848dfe3c6",
-      "queue": "00000000-0000-0000-0000-000000000000",
-      "enabled": true,
-      "excludeFromHistory": false,
-      "excludeFromPending": false,
-      "name": "end brb",
-      "group": "Common - General - Manage Brb",
-      "alwaysRun": false,
-      "randomAction": false,
-      "concurrent": false,
-      "triggers": [],
-      "subActions": [
-        {
-          "name": ".",
-          "color": null,
-          "random": false,
-          "subActions": [
-            {
-              "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
-              "state": 1,
-              "id": "e863c275-17c1-495f-87a7-b0ac1c89133f",
-              "weight": 0.0,
-              "type": 8,
-              "parentId": "03d56ddc-b7be-414a-9c96-137d091b95a5",
-              "enabled": true,
-              "index": 0
-            },
-            {
-              "sceneName": "scene__lounge",
-              "sourceName": "text__brb_in_x_mins",
-              "state": 1,
-              "connectionId": "00000000-0000-0000-0000-000000000000",
-              "id": "a474b8fc-e9cd-4166-a95b-b76791b20094",
-              "weight": 0.0,
-              "type": 30,
-              "parentId": "03d56ddc-b7be-414a-9c96-137d091b95a5",
-              "enabled": true,
-              "index": 1
-            }
-          ],
-          "id": "03d56ddc-b7be-414a-9c96-137d091b95a5",
-          "weight": 0.0,
-          "type": 99900,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
         }
       ],
       "collapsedGroups": []
@@ -1792,6 +1178,628 @@
           "id": "9072352c-21c7-44dd-a859-978da8cea937",
           "weight": 0.0,
           "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "dc343f23-783e-4000-b37b-bf2fae30d006",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "tick brb timer",
+      "group": "Common - General - Manage Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
+          "id": "a2284036-1057-4b37-9ef1-1fda19a2b795",
+          "type": 701,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "UpdateBrbText.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHZhciBzdGFydCA9IENQSC5HZXRHbG9iYWxWYXI8RGF0ZVRpbWU+KCJCcmJTdGFydFRpbWUiLCB0cnVlKTsNCiAgICAgICAgdmFyIGR1cmF0aW9uID0gQ1BILkdldEdsb2JhbFZhcjxzdHJpbmc+KCJCcmJEdXJhdGlvbiIsIHRydWUpOw0KICAgICAgICB2YXIgZWxhcHNlZCA9IERhdGVUaW1lLk5vdyAtIHN0YXJ0Ow0KDQogICAgICAgIHZhciBkdXJhdGlvblRleHQgPSBpbnQuVHJ5UGFyc2UoZHVyYXRpb24sIG91dCB2YXIgbWlucykNCiAgICAgICAgICAgID8gJCJ7bWluc30geyhtaW5zID09IDEgPyAibWluIiA6ICJtaW5zIil9Ig0KICAgICAgICAgICAgOiAkIntkdXJhdGlvbn0gbWlucyI7DQoNCiAgICAgICAgdmFyIHRleHQgPSAkIkJSQiBpbiB7ZHVyYXRpb25UZXh0fVxuIiArICQiRWxhcHNlZDoge2VsYXBzZWQ6bW1cXDpzc30iOw0KDQogICAgICAgIENQSC5PYnNTZXRHZGlUZXh0KCJzY2VuZV9fbG91bmdlIiwgInRleHRfX2JyYl9pbl94X21pbnMiLCB0ZXh0KTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "d35bd7b8-77b3-4aa4-b458-98f71e26963b",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "4410fd5b-4484-4145-ae97-403fa3f1378a",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "start brb",
+      "group": "Common - General - Manage Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "88e04fe7-6eee-4194-9d00-227e7f532ac2",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
+          "state": 0,
+          "id": "81672951-1cf5-4284-a9ce-59fd9ba85486",
+          "weight": 0.0,
+          "type": 8,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "source": 0,
+          "variableName": "BrbDuration",
+          "persisted": true,
+          "destinationVariable": "brbDuration",
+          "defaultValue": null,
+          "id": "17c8cea7-fe75-4e63-9107-7ffcbb9dcf6f",
+          "weight": 0.0,
+          "type": 121,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
+          "name": "StartBrbTimer.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
+          ],
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIEJyb1N0cmVhbWVyVG9vbHMuTG9nZ2luZzsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJkZWJ1Z3RoaXMiLCBvdXQgYm9vbCBkZWJ1Z0VuYWJsZWQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJicmJEdXJhdGlvbiIsIG91dCBzdHJpbmcgYnJiRHVyYXRpb24pOw0KDQogICAgICAgIGlmIChkZWJ1Z0VuYWJsZWQpDQogICAgICAgICAgICBCcm9Mb2dnZXIuRGVidWcodHlwZW9mKEJyYk1hbmFnZXIpLkFzc2VtYmx5LkZ1bGxOYW1lKTsNCg0KICAgICAgICBCcmJNYW5hZ2VyLlN0YXJ0KENQSCwgYnJiRHVyYXRpb24sIGRlYnVnRW5hYmxlZCk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "56780817-1d9e-4737-b763-d8f86518c370",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
+        },
+        {
+          "sceneName": "scene__lounge",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "3ed73ae9-aa7f-4870-88f6-1a090dc007ae",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 3
+        },
+        {
+          "sceneName": "scene__lounge",
+          "sourceName": "text__brb_in_x_mins",
+          "state": 0,
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "90917310-06eb-437f-9240-b422ad8e974f",
+          "weight": 0.0,
+          "type": 30,
+          "parentId": null,
+          "enabled": true,
+          "index": 4
+        },
+        {
+          "actionId": "dc343f23-783e-4000-b37b-bf2fae30d006",
+          "runImmedately": true,
+          "id": "b96f8b56-4e13-4d28-8bd6-2096da8564a3",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 5
+        },
+        {
+          "actionId": "bbc271a9-1de2-4732-9eb4-52cae53119d9",
+          "runImmedately": true,
+          "id": "ad186b07-ab12-41d0-9c6b-26e0baa2f501",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 6
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "75e9b2ad-0446-43c5-a842-ceb1ca70a896",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set brb 1",
+      "group": "Common - General - Manage Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "d1439f5a-f748-44c2-86d1-d3085e5c98e8",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": ".",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "destination": 0,
+              "variableName": "BrbDuration",
+              "persisted": true,
+              "source": 0,
+              "value": "1",
+              "autoType": false,
+              "id": "d95be03a-dd5f-4af2-aad2-7d08db4a6387",
+              "weight": 0.0,
+              "type": 122,
+              "parentId": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
+              "runImmedately": true,
+              "id": "e667ba01-3eb9-4a13-9290-6af6eb16ca0c",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "76e419e6-d532-4f78-9a08-2bdbcf96931f",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "9eaf9fe4-3e97-427f-96ed-bedfa57aa581",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set brb 2",
+      "group": "Common - General - Manage Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "2dd2c072-2036-4a10-aa2d-9a62d5a72c55",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": ".",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "destination": 0,
+              "variableName": "BrbDuration",
+              "persisted": true,
+              "source": 0,
+              "value": "2",
+              "autoType": false,
+              "id": "d1433861-6d48-468b-a96e-089a77dc2475",
+              "weight": 0.0,
+              "type": 122,
+              "parentId": "91daf43c-69ee-4364-b434-b09d9d3b78bd",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
+              "runImmedately": true,
+              "id": "b9a404b7-e1b4-4235-92d3-852a7f1bd6b2",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "91daf43c-69ee-4364-b434-b09d9d3b78bd",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "91daf43c-69ee-4364-b434-b09d9d3b78bd",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "863b0d18-d706-429f-b801-69a71419dd2c",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set brb 5",
+      "group": "Common - General - Manage Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "8d647b80-6d43-42f2-bbaa-7a687f041e95",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": ".",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "destination": 0,
+              "variableName": "BrbDuration",
+              "persisted": true,
+              "source": 0,
+              "value": "5",
+              "autoType": false,
+              "id": "38ac32a7-8b79-46be-939b-cd8f147bb3c5",
+              "weight": 0.0,
+              "type": 122,
+              "parentId": "6a3985f6-a4e3-49e7-9688-0a95777f78e8",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
+              "runImmedately": true,
+              "id": "dc8a6aba-3c61-476b-a317-40807bbbccbb",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "6a3985f6-a4e3-49e7-9688-0a95777f78e8",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "6a3985f6-a4e3-49e7-9688-0a95777f78e8",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "495959d5-a6fe-429f-bf0b-7c02a4c46526",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "input brb",
+      "group": "Common - General - Manage Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "fd55a474-2d6c-447f-886e-52b88a203f05",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": ".",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "actionId": "81cf7280-78e2-4334-a82c-043ead61be16",
+              "runImmedately": true,
+              "id": "cc59bd0f-b30f-454a-81c0-3dec3d7e7105",
+              "weight": 0.0,
+              "type": 4,
+              "parentId": "46114a63-fcf3-4e6f-995a-60f9ca1bd7b0",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "title": "input BrbDuration",
+              "prompt": "brb in ... (minutes)",
+              "originalText": "",
+              "outputVariable": "inputDuration",
+              "autoTypeOutput": false,
+              "id": "1cafb50f-57ec-4cb0-9f45-45916fd24998",
+              "weight": 0.0,
+              "type": 1023,
+              "parentId": "46114a63-fcf3-4e6f-995a-60f9ca1bd7b0",
+              "enabled": true,
+              "index": 1
+            },
+            {
+              "input": "%success%",
+              "operation": 0,
+              "value": "True",
+              "autoType": true,
+              "subActions": [
+                {
+                  "random": false,
+                  "subActions": [
+                    {
+                      "destination": 0,
+                      "variableName": "BrbDuration",
+                      "persisted": true,
+                      "source": 0,
+                      "value": "%inputDuration%",
+                      "autoType": false,
+                      "id": "240515aa-12e3-4862-bddd-5d5202b1dfa9",
+                      "weight": 0.0,
+                      "type": 122,
+                      "parentId": "1918bbe3-295b-4d99-9c3d-34060f30b00f",
+                      "enabled": true,
+                      "index": 0
+                    },
+                    {
+                      "actionId": "4410fd5b-4484-4145-ae97-403fa3f1378a",
+                      "runImmedately": true,
+                      "id": "ff4ac125-1b6b-4bf0-9219-284a65cb1b8f",
+                      "weight": 0.0,
+                      "type": 4,
+                      "parentId": "1918bbe3-295b-4d99-9c3d-34060f30b00f",
+                      "enabled": true,
+                      "index": 1
+                    }
+                  ],
+                  "id": "1918bbe3-295b-4d99-9c3d-34060f30b00f",
+                  "weight": 0.0,
+                  "type": 99901,
+                  "parentId": null,
+                  "enabled": true,
+                  "index": 0
+                },
+                {
+                  "random": false,
+                  "subActions": [],
+                  "id": "c94ac957-806d-48f1-a9f8-043181de991d",
+                  "weight": 0.0,
+                  "type": 99902,
+                  "parentId": null,
+                  "enabled": true,
+                  "index": 1
+                }
+              ],
+              "id": "5b064650-0cde-4459-aa6b-66704efd97af",
+              "weight": 0.0,
+              "type": 120,
+              "parentId": "46114a63-fcf3-4e6f-995a-60f9ca1bd7b0",
+              "enabled": true,
+              "index": 2
+            }
+          ],
+          "id": "46114a63-fcf3-4e6f-995a-60f9ca1bd7b0",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "4bb6ce12-cde0-4d4f-8e8b-d909363a4fc8",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "auto hide brb",
+      "group": "Common - General - Manage Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "sceneName": "scene__lounge",
+          "obsId": null,
+          "id": "79042708-60ed-4516-a785-e7c5da4811b7",
+          "type": 14004,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": ".",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "source": 0,
+              "variableName": "SkipBrbAutoHide",
+              "persisted": true,
+              "destinationVariable": "skipBrbAutoHide",
+              "defaultValue": null,
+              "id": "205e52de-6a59-48aa-ac6b-4fdc73af55b9",
+              "weight": 0.0,
+              "type": 121,
+              "parentId": "7d905b9b-791d-4624-8e60-73aa640f6a05",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "input": "%skipBrbAutoHide%",
+              "operation": 0,
+              "value": "true",
+              "autoType": true,
+              "subActions": [
+                {
+                  "random": false,
+                  "subActions": [
+                    {
+                      "destination": 0,
+                      "variableName": "SkipBrbAutoHide",
+                      "persisted": true,
+                      "source": 0,
+                      "value": false,
+                      "autoType": true,
+                      "id": "66dd49c3-343e-4b9c-9f2c-0eb1f0384e22",
+                      "weight": 0.0,
+                      "type": 122,
+                      "parentId": "60a6c672-9fe6-4bb3-b749-ef9cd54c1bc3",
+                      "enabled": true,
+                      "index": 0
+                    }
+                  ],
+                  "id": "60a6c672-9fe6-4bb3-b749-ef9cd54c1bc3",
+                  "weight": 0.0,
+                  "type": 99901,
+                  "parentId": "8c363bef-7ff3-4c71-a2ec-64541beb78a6",
+                  "enabled": true,
+                  "index": 0
+                },
+                {
+                  "random": false,
+                  "subActions": [
+                    {
+                      "actionId": "7ebb29d2-03f0-4138-9bdb-805848dfe3c6",
+                      "runImmedately": true,
+                      "id": "cd398c69-4969-4b5c-9b2a-2b563b181acf",
+                      "weight": 0.0,
+                      "type": 4,
+                      "parentId": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
+                      "enabled": true,
+                      "index": 0
+                    }
+                  ],
+                  "id": "98148655-d7d2-494b-af14-ecd90eb6d8ff",
+                  "weight": 0.0,
+                  "type": 99902,
+                  "parentId": "8c363bef-7ff3-4c71-a2ec-64541beb78a6",
+                  "enabled": true,
+                  "index": 1
+                }
+              ],
+              "id": "8c363bef-7ff3-4c71-a2ec-64541beb78a6",
+              "weight": 0.0,
+              "type": 120,
+              "parentId": "7d905b9b-791d-4624-8e60-73aa640f6a05",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "7d905b9b-791d-4624-8e60-73aa640f6a05",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "7ebb29d2-03f0-4138-9bdb-805848dfe3c6",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "end brb",
+      "group": "Common - General - Manage Brb",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "46e9def5-dbe1-479c-8b54-f526d10d46c1",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": ".",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
+              "state": 1,
+              "id": "e863c275-17c1-495f-87a7-b0ac1c89133f",
+              "weight": 0.0,
+              "type": 8,
+              "parentId": "03d56ddc-b7be-414a-9c96-137d091b95a5",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "sceneName": "scene__lounge",
+              "sourceName": "text__brb_in_x_mins",
+              "state": 1,
+              "connectionId": "00000000-0000-0000-0000-000000000000",
+              "id": "a474b8fc-e9cd-4166-a95b-b76791b20094",
+              "weight": 0.0,
+              "type": 30,
+              "parentId": "03d56ddc-b7be-414a-9c96-137d091b95a5",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "03d56ddc-b7be-414a-9c96-137d091b95a5",
+          "weight": 0.0,
+          "type": 99900,
           "parentId": null,
           "enabled": true,
           "index": 0

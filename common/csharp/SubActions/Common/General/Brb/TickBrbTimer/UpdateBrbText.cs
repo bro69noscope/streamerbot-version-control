@@ -4,8 +4,8 @@ public partial class CPHInline
 {
     public bool Execute()
     {
-        var start = CPH.GetGlobalVar<DateTime>("BRBStartTime", true);
-        var duration = CPH.GetGlobalVar<string>("BRBDuration", true);
+        var start = CPH.GetGlobalVar<DateTime>("BrbStartTime", true);
+        var duration = CPH.GetGlobalVar<string>("BrbDuration", true);
         var elapsed = DateTime.Now - start;
 
         var durationText = int.TryParse(duration, out var mins)

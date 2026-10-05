@@ -1,20 +1,18 @@
 {
   "version": 24,
-  "t": "2026-10-03T14:47:27.1552291+02:00",
+  "t": "2026-10-05T19:42:18.8708967+02:00",
   "blocking": false,
   "collapsedGroups": [
-    "",
-    "Common - General - Manage Alerts",
+    "Common - Streamerbot - Manage Helpers",
+    "Common - StreamFeedApp - Manage Feed",
+    "Dota2 - Manage Script Pregamespy",
     "Dota2 - Manage Script Shopwatcher",
     "General - Manage Resets",
     "Obs - Manage Eyetracker Config",
     "Obs - Manage Multiple Sources",
     "Obs - Manage Sources Recursively",
     "Obs - Manage Ui",
-    "Obs - Manage Virtual Cam Config",
-    "Common - Streamerbot - Manage Helpers",
-    "Dota2 - Manage Script Pregamespy",
-    "Common - Obs - Refresh Sources"
+    "Obs - Manage Virtual Cam Config"
   ],
   "groups": [
     "General - Manage Resets",
@@ -1116,7 +1114,7 @@
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
           ],
-          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHZhciBzdGFydCA9IENQSC5HZXRHbG9iYWxWYXI8RGF0ZVRpbWU+KCJCUkJTdGFydFRpbWUiLCB0cnVlKTsNCiAgICAgICAgdmFyIGR1cmF0aW9uID0gQ1BILkdldEdsb2JhbFZhcjxzdHJpbmc+KCJCUkJEdXJhdGlvbiIsIHRydWUpOw0KICAgICAgICB2YXIgZWxhcHNlZCA9IERhdGVUaW1lLk5vdyAtIHN0YXJ0Ow0KDQogICAgICAgIHZhciBkdXJhdGlvblRleHQgPSBpbnQuVHJ5UGFyc2UoZHVyYXRpb24sIG91dCB2YXIgbWlucykNCiAgICAgICAgICAgID8gJCJ7bWluc30geyhtaW5zID09IDEgPyAibWluIiA6ICJtaW5zIil9Ig0KICAgICAgICAgICAgOiAkIntkdXJhdGlvbn0gbWlucyI7DQoNCiAgICAgICAgdmFyIHRleHQgPSAkIkJSQiBpbiB7ZHVyYXRpb25UZXh0fVxuIiArICQiRWxhcHNlZDoge2VsYXBzZWQ6bW1cXDpzc30iOw0KDQogICAgICAgIENQSC5PYnNTZXRHZGlUZXh0KCJzY2VuZV9fbG91bmdlIiwgInRleHRfX2JyYl9pbl94X21pbnMiLCB0ZXh0KTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHZhciBzdGFydCA9IENQSC5HZXRHbG9iYWxWYXI8RGF0ZVRpbWU+KCJCcmJTdGFydFRpbWUiLCB0cnVlKTsNCiAgICAgICAgdmFyIGR1cmF0aW9uID0gQ1BILkdldEdsb2JhbFZhcjxzdHJpbmc+KCJCcmJEdXJhdGlvbiIsIHRydWUpOw0KICAgICAgICB2YXIgZWxhcHNlZCA9IERhdGVUaW1lLk5vdyAtIHN0YXJ0Ow0KDQogICAgICAgIHZhciBkdXJhdGlvblRleHQgPSBpbnQuVHJ5UGFyc2UoZHVyYXRpb24sIG91dCB2YXIgbWlucykNCiAgICAgICAgICAgID8gJCJ7bWluc30geyhtaW5zID09IDEgPyAibWluIiA6ICJtaW5zIil9Ig0KICAgICAgICAgICAgOiAkIntkdXJhdGlvbn0gbWlucyI7DQoNCiAgICAgICAgdmFyIHRleHQgPSAkIkJSQiBpbiB7ZHVyYXRpb25UZXh0fVxuIiArICQiRWxhcHNlZDoge2VsYXBzZWQ6bW1cXDpzc30iOw0KDQogICAgICAgIENQSC5PYnNTZXRHZGlUZXh0KCJzY2VuZV9fbG91bmdlIiwgInRleHRfX2JyYl9pbl94X21pbnMiLCB0ZXh0KTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1164,7 +1162,7 @@
         },
         {
           "source": 0,
-          "variableName": "brbDuration",
+          "variableName": "BrbDuration",
           "persisted": true,
           "destinationVariable": "brbDuration",
           "defaultValue": null,
@@ -1176,13 +1174,13 @@
           "index": 1
         },
         {
-          "name": "StartTimer.cs",
+          "name": "StartBrbTimer.cs",
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
             ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIEJyb1N0cmVhbWVyVG9vbHMuTG9nZ2luZzsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJkZWJ1Z3RoaXMiLCBvdXQgYm9vbCBkZWJ1Z0VuYWJsZWQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJicmJEdXJhdGlvbiIsIG91dCBzdHJpbmcgYnJiRHVyYXRpb24pOw0KICAgICAgICBpZiAoZGVidWdFbmFibGVkKQ0KICAgICAgICAgICAgQnJvTG9nZ2VyLkRlYnVnKHR5cGVvZihCUkJNYW5hZ2VyKS5Bc3NlbWJseS5GdWxsTmFtZSk7DQogICAgICAgIEJSQk1hbmFnZXIuU3RhcnQoQ1BILCBicmJEdXJhdGlvbik7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIEJyb1N0cmVhbWVyVG9vbHMuTG9nZ2luZzsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJkZWJ1Z3RoaXMiLCBvdXQgYm9vbCBkZWJ1Z0VuYWJsZWQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJicmJEdXJhdGlvbiIsIG91dCBzdHJpbmcgYnJiRHVyYXRpb24pOw0KDQogICAgICAgIGlmIChkZWJ1Z0VuYWJsZWQpDQogICAgICAgICAgICBCcm9Mb2dnZXIuRGVidWcodHlwZW9mKEJyYk1hbmFnZXIpLkFzc2VtYmx5LkZ1bGxOYW1lKTsNCg0KICAgICAgICBCcmJNYW5hZ2VyLlN0YXJ0KENQSCwgYnJiRHVyYXRpb24sIGRlYnVnRW5hYmxlZCk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1267,7 +1265,7 @@
           "subActions": [
             {
               "destination": 0,
-              "variableName": "brbDuration",
+              "variableName": "BrbDuration",
               "persisted": true,
               "source": 0,
               "value": "1",
@@ -1328,7 +1326,7 @@
           "subActions": [
             {
               "destination": 0,
-              "variableName": "brbDuration",
+              "variableName": "BrbDuration",
               "persisted": true,
               "source": 0,
               "value": "2",
@@ -1389,7 +1387,7 @@
           "subActions": [
             {
               "destination": 0,
-              "variableName": "brbDuration",
+              "variableName": "BrbDuration",
               "persisted": true,
               "source": 0,
               "value": "5",
@@ -1459,10 +1457,10 @@
               "index": 0
             },
             {
-              "title": "brbDuration",
+              "title": "input BrbDuration",
               "prompt": "brb in ... (minutes)",
               "originalText": "",
-              "outputVariable": "duration",
+              "outputVariable": "inputDuration",
               "autoTypeOutput": false,
               "id": "1cafb50f-57ec-4cb0-9f45-45916fd24998",
               "weight": 0.0,
@@ -1482,10 +1480,10 @@
                   "subActions": [
                     {
                       "destination": 0,
-                      "variableName": "brbDuration",
+                      "variableName": "BrbDuration",
                       "persisted": true,
                       "source": 0,
-                      "value": "%duration%",
+                      "value": "%inputDuration%",
                       "autoType": false,
                       "id": "240515aa-12e3-4862-bddd-5d5202b1dfa9",
                       "weight": 0.0,
@@ -1555,7 +1553,7 @@
       "triggers": [
         {
           "sceneName": "scene__lounge",
-          "obsId": null,
+          "obsId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "79042708-60ed-4516-a785-e7c5da4811b7",
           "type": 14004,
           "enabled": true,
@@ -1572,7 +1570,7 @@
               "source": 0,
               "variableName": "SkipBrbAutoHide",
               "persisted": true,
-              "destinationVariable": "SkipBrbAutoHide",
+              "destinationVariable": "skipBrbAutoHide",
               "defaultValue": null,
               "id": "205e52de-6a59-48aa-ac6b-4fdc73af55b9",
               "weight": 0.0,
@@ -1582,7 +1580,7 @@
               "index": 0
             },
             {
-              "input": "%SkipBrbAutoHide%",
+              "input": "%skipBrbAutoHide%",
               "operation": 0,
               "value": "true",
               "autoType": true,
@@ -1663,7 +1661,15 @@
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
-      "triggers": [],
+      "triggers": [
+        {
+          "variables": {},
+          "id": "46e9def5-dbe1-479c-8b54-f526d10d46c1",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
       "subActions": [
         {
           "name": ".",

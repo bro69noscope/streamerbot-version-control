@@ -7,9 +7,11 @@ public partial class CPHInline
     {
         CPH.TryGetArg("debugthis", out bool debugEnabled);
         CPH.TryGetArg("brbDuration", out string brbDuration);
+
         if (debugEnabled)
-            BroLogger.Debug(typeof(BRBManager).Assembly.FullName);
-        BRBManager.Start(CPH, brbDuration);
+            BroLogger.Debug(typeof(BrbManager).Assembly.FullName);
+
+        BrbManager.Start(CPH, brbDuration, debugEnabled);
         return true;
     }
 }

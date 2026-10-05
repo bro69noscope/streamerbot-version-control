@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-10-05T19:42:21.7500664+02:00",
+  "t": "2026-10-05T21:54:55.9302824+02:00",
   "blocking": false,
   "collapsedGroups": [],
   "groups": [
@@ -12,7 +12,8 @@
     "Common - Obs - Refresh Sources",
     "Ftp - Obs - Manage Audio Devices",
     "Common - StreamFeedApp - Manage Feed",
-    "Common - General - Manage Brb"
+    "Common - General - Manage Brb",
+    "Common - General - Manage Hwnds"
   ],
   "queues": [],
   "actions": [
@@ -1249,6 +1250,26 @@
       ],
       "subActions": [
         {
+          "actionId": "9fddab81-10f4-4943-8ea9-7cb391283782",
+          "runImmedately": true,
+          "id": "ce6b5950-f4f9-422c-920d-b1ec2f173030",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        },
+        {
+          "actionId": "bbc271a9-1de2-4732-9eb4-52cae53119d9",
+          "runImmedately": true,
+          "id": "ad186b07-ab12-41d0-9c6b-26e0baa2f501",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
+        },
+        {
           "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
           "state": 0,
           "id": "81672951-1cf5-4284-a9ce-59fd9ba85486",
@@ -1256,7 +1277,7 @@
           "type": 8,
           "parentId": null,
           "enabled": true,
-          "index": 0
+          "index": 2
         },
         {
           "source": 0,
@@ -1269,7 +1290,7 @@
           "type": 121,
           "parentId": null,
           "enabled": true,
-          "index": 1
+          "index": 3
         },
         {
           "name": "StartBrbTimer.cs",
@@ -1288,7 +1309,7 @@
           "type": 99999,
           "parentId": null,
           "enabled": true,
-          "index": 2
+          "index": 4
         },
         {
           "sceneName": "scene__lounge",
@@ -1298,7 +1319,7 @@
           "type": 34,
           "parentId": null,
           "enabled": true,
-          "index": 3
+          "index": 5
         },
         {
           "sceneName": "scene__lounge",
@@ -1310,7 +1331,7 @@
           "type": 30,
           "parentId": null,
           "enabled": true,
-          "index": 4
+          "index": 6
         },
         {
           "actionId": "dc343f23-783e-4000-b37b-bf2fae30d006",
@@ -1320,17 +1341,7 @@
           "type": 4,
           "parentId": null,
           "enabled": true,
-          "index": 5
-        },
-        {
-          "actionId": "bbc271a9-1de2-4732-9eb4-52cae53119d9",
-          "runImmedately": true,
-          "id": "ad186b07-ab12-41d0-9c6b-26e0baa2f501",
-          "weight": 0.0,
-          "type": 4,
-          "parentId": null,
-          "enabled": true,
-          "index": 6
+          "index": 7
         }
       ],
       "collapsedGroups": []
@@ -1800,6 +1811,47 @@
           "id": "03d56ddc-b7be-414a-9c96-137d091b95a5",
           "weight": 0.0,
           "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "9fddab81-10f4-4943-8ea9-7cb391283782",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "activate streamfeedapp",
+      "group": "Common - General - Manage Hwnds",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [],
+      "subActions": [
+        {
+          "name": "ActivateStreamFeedApp.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            ".\\System.Text.Json.dll",
+            ".\\Microsoft.Extensions.Primitives.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.Serialization.dll",
+            ".\\System.Text.Encodings.Web.dll",
+            ".\\Microsoft.Extensions.Logging.Abstractions.dll",
+            ".\\System.Reflection.Metadata.dll"
+          ],
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLk5ldC5XZWJTb2NrZXRzOw0KdXNpbmcgU3lzdGVtLlRleHQ7DQp1c2luZyBTeXN0ZW0uVGhyZWFkaW5nOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHVzaW5nIHZhciB3cyA9IG5ldyBDbGllbnRXZWJTb2NrZXQoKTsNCiAgICAgICAgdXNpbmcgdmFyIGN0cyA9IG5ldyBDYW5jZWxsYXRpb25Ub2tlblNvdXJjZShUaW1lU3Bhbi5Gcm9tU2Vjb25kcyg1KSk7DQoNCiAgICAgICAgd3MuQ29ubmVjdEFzeW5jKG5ldyBVcmkoIndzOi8vMTI3LjAuMC4xOjgxODciKSwgY3RzLlRva2VuKS5HZXRBd2FpdGVyKCkuR2V0UmVzdWx0KCk7DQoNCiAgICAgICAgdmFyIGJ5dGVzID0gRW5jb2RpbmcuVVRGOC5HZXRCeXRlcygiQWN0aXZhdGVTdHJlYW1GZWVkQXBwIik7DQogICAgICAgIHZhciBzZWdtZW50ID0gbmV3IEFycmF5U2VnbWVudDxieXRlPihieXRlcyk7DQoNCiAgICAgICAgd3MuU2VuZEFzeW5jKHNlZ21lbnQsIFdlYlNvY2tldE1lc3NhZ2VUeXBlLlRleHQsIHRydWUsIGN0cy5Ub2tlbikuR2V0QXdhaXRlcigpLkdldFJlc3VsdCgpOw0KDQogICAgICAgIHdzLkNsb3NlQXN5bmMoV2ViU29ja2V0Q2xvc2VTdGF0dXMuTm9ybWFsQ2xvc3VyZSwgImRvbmUiLCBjdHMuVG9rZW4pDQogICAgICAgICAgICAuR2V0QXdhaXRlcigpDQogICAgICAgICAgICAuR2V0UmVzdWx0KCk7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "e98fa134-224d-48a7-a37a-7951bcf83771",
+          "weight": 0.0,
+          "type": 99999,
           "parentId": null,
           "enabled": true,
           "index": 0

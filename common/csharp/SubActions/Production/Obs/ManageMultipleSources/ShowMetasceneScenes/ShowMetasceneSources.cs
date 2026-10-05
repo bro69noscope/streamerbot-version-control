@@ -1,3 +1,5 @@
+// Required references to manually add (not included in our sbot dlls):
+//   - System.Core.dll
 using Newtonsoft.Json.Linq;
 
 public partial class CPHInline

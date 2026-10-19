@@ -1,13 +1,12 @@
 {
   "version": 24,
-  "t": "2026-10-19T22:38:08.3230404+02:00",
+  "t": "2026-10-19T23:24:22.1567853+02:00",
   "blocking": false,
   "collapsedGroups": [
     "Common - Streamerbot - Manage Helpers",
     "Dota2 - Manage Script Shopwatcher",
     "Obs - Manage Eyetracker Config",
     "Obs - Manage Multiple Sources",
-    "Obs - Manage Ui",
     "Obs - Manage Virtual Cam Config"
   ],
   "groups": [
@@ -1921,7 +1920,7 @@
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJDYWxsVmVuZG9yUmVxdWVzdCIsDQogICAgICAgICAgICBAInsNCiAgICAgICAgICAgICAgICAiInZlbmRvck5hbWUiIjogIiJqckRvY2tpZSIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdFR5cGUiIjogIiJMb2FkRG9ja3NldCIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdERhdGEiIjogew0KICAgICAgICAgICAgICAgICAgICAiImZpbGVuYW1lIiI6ICIiY2VudGVyX21vbml0b3JfcHJvZHVjdGlvbiIiDQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfSIsDQogICAgICAgICAgICAwDQogICAgICAgICk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJDYWxsVmVuZG9yUmVxdWVzdCIsDQogICAgICAgICAgICBAInsNCiAgICAgICAgICAgICAgICAiInZlbmRvck5hbWUiIjogIiJqckRvY2tpZSIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdFR5cGUiIjogIiJMb2FkRG9ja3NldCIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdERhdGEiIjogew0KICAgICAgICAgICAgICAgICAgICAiImZpbGVuYW1lIiI6ICIiY2VudGVyX21vbml0b3JfcHJvZHVjdGlvbl8xMDgwcCIiDQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfSIsDQogICAgICAgICAgICAwDQogICAgICAgICk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,

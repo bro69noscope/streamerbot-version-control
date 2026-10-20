@@ -1,12 +1,11 @@
 {
   "version": 24,
-  "t": "2026-10-20T17:04:46.4615812+02:00",
+  "t": "2026-10-20T23:16:42.6370324+02:00",
   "blocking": false,
   "collapsedGroups": [
     "Common - Streamerbot - Manage Helpers",
     "Dota2 - Manage Script Shopwatcher",
     "Obs - Manage Eyetracker Config",
-    "Obs - Manage Multiple Sources",
     "Obs - Manage Virtual Cam Config"
   ],
   "groups": [
@@ -404,7 +403,15 @@
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
-      "triggers": [],
+      "triggers": [
+        {
+          "variables": {},
+          "id": "707f3eab-c807-4a98-80b0-ae3edd101507",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
       "subActions": [
         {
           "sceneName": "scene__gameplay__fundamental_sources",
@@ -2412,6 +2419,53 @@
           "parentId": null,
           "enabled": true,
           "index": 1
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "50507a65-e072-47a0-926a-2e25b8439687",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "hide always hide clones",
+      "group": "Obs - Manage Multiple Sources",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "30ac24a2-e848-4294-b7db-7cf35db78314",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "HideAlwaysHide.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.dll",
+            ".\\Newtonsoft.Json.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Data.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll",
+            ".\\dlls\\BroStreamerTools.dll"
+          ],
+          "byteCode": "Ly8gUmVxdWlyZWQgcmVmZXJlbmNlcyB0byBtYW51YWxseSBhZGQgKG5vdCBpbmNsdWRlZCBpbiBvdXIgc2JvdCBkbGxzKToNCi8vICAgLSBTeXN0ZW0uQ29yZS5kbGwNCg0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIGNvbnN0IHN0cmluZyBUYXJnZXQgPSAiY2xvbmVfX2Fsd2F5c19oaWRlIjsNCg0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgdmFyIHNjZW5lcyA9IEpPYmplY3QuUGFyc2UoQ1BILk9ic1NlbmRSYXcoIkdldFNjZW5lTGlzdCIsICJ7fSIsIDApKVsic2NlbmVzIl07DQogICAgICAgIEJyb0xvZ2dlci5EZWJ1ZygkIlNjZW5lIGNvdW50OiB7KChKQXJyYXkpc2NlbmVzKS5Db3VudH0iKTsNCg0KICAgICAgICBmb3JlYWNoICh2YXIgcyBpbiBzY2VuZXMpDQogICAgICAgIHsNCiAgICAgICAgICAgIHN0cmluZyBzY2VuZU5hbWUgPSAoc3RyaW5nKXNbInNjZW5lTmFtZSJdOw0KICAgICAgICAgICAgdHJ5DQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgSGlkZUluKHNjZW5lTmFtZSwgZmFsc2UpOw0KICAgICAgICAgICAgfQ0KICAgICAgICAgICAgY2F0Y2ggKFN5c3RlbS5FeGNlcHRpb24gZXgpDQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgQnJvTG9nZ2VyLkRlYnVnKCQiRmFpbGVkIG9uIHNjZW5lIHtzY2VuZU5hbWV9OiB7ZXguTWVzc2FnZX0iKTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQoNCiAgICB2b2lkIEhpZGVJbihzdHJpbmcgc2NlbmVOYW1lLCBib29sIGlzR3JvdXApDQogICAgew0KICAgICAgICBzdHJpbmcgcmVxID0gaXNHcm91cCA/ICJHZXRHcm91cFNjZW5lSXRlbUxpc3QiIDogIkdldFNjZW5lSXRlbUxpc3QiOw0KICAgICAgICBzdHJpbmcgcGF5bG9hZCA9IG5ldyBKT2JqZWN0IHsgWyJzY2VuZU5hbWUiXSA9IHNjZW5lTmFtZSB9LlRvU3RyaW5nKCk7DQogICAgICAgIHN0cmluZyByYXcgPSBDUEguT2JzU2VuZFJhdyhyZXEsIHBheWxvYWQsIDApOw0KICAgICAgICB2YXIgaXRlbXMgPSBKT2JqZWN0LlBhcnNlKHJhdylbInNjZW5lSXRlbXMiXTsNCg0KICAgICAgICBpZiAoaXRlbXMgPT0gbnVsbCkNCiAgICAgICAgew0KICAgICAgICAgICAgQnJvTG9nZ2VyLkRlYnVnKCQiTm8gc2NlbmVJdGVtcyBmb3Ige3NjZW5lTmFtZX0uIFJhdzoge3Jhd30iKTsNCiAgICAgICAgICAgIHJldHVybjsNCiAgICAgICAgfQ0KDQogICAgICAgIGZvcmVhY2ggKHZhciBpdGVtIGluIGl0ZW1zKQ0KICAgICAgICB7DQogICAgICAgICAgICBzdHJpbmcgbmFtZSA9IChzdHJpbmcpaXRlbVsic291cmNlTmFtZSJdOw0KICAgICAgICAgICAgQnJvTG9nZ2VyLkRlYnVnKCQiQ2hlY2tpbmcge25hbWV9IGluIHtzY2VuZU5hbWV9IChpc0dyb3VwPXtpc0dyb3VwfSkiKTsNCg0KICAgICAgICAgICAgaWYgKG5hbWUgPT0gVGFyZ2V0KQ0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIHN0cmluZyBzZXQgPSBuZXcgSk9iamVjdA0KICAgICAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICAgICAgWyJzY2VuZU5hbWUiXSA9IHNjZW5lTmFtZSwNCiAgICAgICAgICAgICAgICAgICAgWyJzY2VuZUl0ZW1JZCJdID0gKGludClpdGVtWyJzY2VuZUl0ZW1JZCJdLA0KICAgICAgICAgICAgICAgICAgICBbInNjZW5lSXRlbUVuYWJsZWQiXSA9IGZhbHNlLA0KICAgICAgICAgICAgICAgIH0uVG9TdHJpbmcoKTsNCiAgICAgICAgICAgICAgICBDUEguT2JzU2VuZFJhdygiU2V0U2NlbmVJdGVtRW5hYmxlZCIsIHNldCwgMCk7DQogICAgICAgICAgICB9DQoNCiAgICAgICAgICAgIGlmIChpdGVtLlZhbHVlPGJvb2w/PigiaXNHcm91cCIpID8/IGZhbHNlKQ0KICAgICAgICAgICAgICAgIEhpZGVJbihuYW1lLCB0cnVlKTsNCiAgICAgICAgfQ0KICAgIH0NCn0NCg==",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "711b18f4-e9d6-46e8-b7ee-078ecb23c429",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
         }
       ],
       "collapsedGroups": []

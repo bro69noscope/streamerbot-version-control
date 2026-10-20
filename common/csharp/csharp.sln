@@ -139,6 +139,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SetDocksForRightMonitor", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FtpSetDocksRight.shadow", "SubActions\Ftp\Obs\ManageUi\SetDocksForRightMonitor\FtpSetDocksRight.shadow.csproj", "{6ED02025-2A08-481E-9D87-DFADA3A46FF9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "HideAlwaysHideClones", "HideAlwaysHideClones", "{1141768B-240B-A374-4886-05812F69C899}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HideAlwaysHide.shadow", "SubActions\Production\Obs\ManageMultipleSources\HideAlwaysHideClones\HideAlwaysHide.shadow.csproj", "{015557E1-6485-472F-A08E-A7346EEA1C9E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -461,6 +465,18 @@ Global
 		{6ED02025-2A08-481E-9D87-DFADA3A46FF9}.Release|x64.Build.0 = Release|Any CPU
 		{6ED02025-2A08-481E-9D87-DFADA3A46FF9}.Release|x86.ActiveCfg = Release|Any CPU
 		{6ED02025-2A08-481E-9D87-DFADA3A46FF9}.Release|x86.Build.0 = Release|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Debug|x64.Build.0 = Debug|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Debug|x86.Build.0 = Debug|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Release|x64.ActiveCfg = Release|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Release|x64.Build.0 = Release|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Release|x86.ActiveCfg = Release|Any CPU
+		{015557E1-6485-472F-A08E-A7346EEA1C9E}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -531,5 +547,7 @@ Global
 		{EB6B4835-46FF-6316-28BC-44C0C50015C3} = {8D810627-A907-6833-E395-11403686D9FC}
 		{ECE89569-2751-3131-A1D3-1D09FD9EB034} = {EB6B4835-46FF-6316-28BC-44C0C50015C3}
 		{6ED02025-2A08-481E-9D87-DFADA3A46FF9} = {ECE89569-2751-3131-A1D3-1D09FD9EB034}
+		{1141768B-240B-A374-4886-05812F69C899} = {435EE360-0AF3-F7BE-8727-E362626C3D11}
+		{015557E1-6485-472F-A08E-A7346EEA1C9E} = {1141768B-240B-A374-4886-05812F69C899}
 	EndGlobalSection
 EndGlobal

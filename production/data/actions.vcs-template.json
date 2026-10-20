@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-10-19T23:24:22.1567853+02:00",
+  "t": "2026-10-20T17:04:46.4615812+02:00",
   "blocking": false,
   "collapsedGroups": [
     "Common - Streamerbot - Manage Helpers",
@@ -895,8 +895,8 @@
           "index": 1
         },
         {
-          "value": "1300",
-          "maxValue": null,
+          "value": "1000",
+          "maxValue": "1050",
           "random": false,
           "id": "51cb3913-4ad6-4b12-b897-00888bf3cf3c",
           "weight": 0.0,

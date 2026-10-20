@@ -42,13 +42,13 @@
     "customColors": null,
     "noDeleteConfirmation": [],
     "useDarkMode": true,
-    "navPaneOpen": true,
+    "navPaneOpen": false,
     "minimizeToTray": false,
     "minimizeToTrayOnClose": false,
     "closeConfirmation": false,
     "executeCodeDialogWidth": 825,
     "executeCodeDialogHeight": 594,
-    "actionsPageLayout": "511.6716023641*|444.995064302567*|328.142857142857*|328.142857142857*",
+    "actionsPageLayout": "604.520325203252*|592.146341463414*|328.142857142857*|328.142857142857*",
     "columnWidths": {
       "obs": "MzB8MzY3fDk1fDk1fDY1fDExNQ==",
       "actions": "MjU2LjU3MTQyODU3MTQyOHw2NXw2Mi43MTQyODU3MTQyODU4fDY1fDc0Ljk5OTk5OTk5OTk5OTk=",
@@ -106,7 +106,7 @@
         "randomInterval": false,
         "upperInterval": 0,
         "lines": 0,
-        "counter": 192
+        "counter": 281
       }
     ]
   },

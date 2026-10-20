@@ -264,7 +264,7 @@
         },
         {
           "sceneName": "scene__gameplay__fundamental_sources",
-          "sourceName": "~cut__clone__facecam_gameplay___scene__facecam_ingame",
+          "sourceName": "~cut__clone__facecam_gameplay",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "606c1404-66fb-4782-8ca3-c23d31ada2bb",
@@ -276,7 +276,7 @@
         },
         {
           "sceneName": "scene__gameplay__fundamental_sources",
-          "sourceName": "~fade__clone__facecam_gameplay___scene__facecam_ingame",
+          "sourceName": "~fade__clone__facecam_gameplay",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "ee44f05a-0a4c-43e4-9c39-e1e087fbfef6",
@@ -408,7 +408,7 @@
       "subActions": [
         {
           "sceneName": "scene__gameplay__fundamental_sources",
-          "sourceName": "~fade__clone__facecam_gameplay___scene__facecam_ingame",
+          "sourceName": "~fade__clone__facecam_gameplay",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "3e7a0bfa-b4f9-4fb1-9230-c6b53763faa0",
@@ -420,7 +420,7 @@
         },
         {
           "sceneName": "scene__gameplay__fundamental_sources",
-          "sourceName": "~cut__clone__facecam_gameplay___scene__facecam_ingame",
+          "sourceName": "~cut__clone__facecam_gameplay",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "030f51cc-53a7-4b8e-8aac-dcbd7ed0d93b",
@@ -448,7 +448,7 @@
       "subActions": [
         {
           "sceneName": "scene__gameplay__fundamental_sources",
-          "sourceName": "~fade__clone__facecam_gameplay___scene__facecam_ingame",
+          "sourceName": "~fade__clone__facecam_gameplay",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
           "id": "140b55e2-3eea-4f36-8b8b-441163ea423f",

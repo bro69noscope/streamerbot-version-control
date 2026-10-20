@@ -13,7 +13,8 @@
     "Ftp - Obs - Manage Audio Devices",
     "Common - StreamFeedApp - Manage Feed",
     "Common - General - Manage Brb",
-    "Common - General - Manage Hwnds"
+    "Common - General - Manage Hwnds",
+    "Ftp - Obs - Manage Ui"
   ],
   "queues": [],
   "actions": [
@@ -1850,6 +1851,48 @@
           "saveResultToVariable": false,
           "saveToVariable": null,
           "id": "e98fa134-224d-48a7-a37a-7951bcf83771",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "d70c66c9-450d-4f56-a8f7-51d3f221b52c",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set docks for right monitor",
+      "group": "Ftp - Obs - Manage Ui",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "8dce4f1c-9627-4a2e-b629-7e7128e62069",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "FtpSetDocksRight.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJDYWxsVmVuZG9yUmVxdWVzdCIsDQogICAgICAgICAgICBAInsNCiAgICAgICAgICAgICAgICAiInZlbmRvck5hbWUiIjogIiJqckRvY2tpZSIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdFR5cGUiIjogIiJMb2FkRG9ja3NldCIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdERhdGEiIjogew0KICAgICAgICAgICAgICAgICAgICAiImZpbGVuYW1lIiI6ICIicmlnaHRfbW9uaXRvcl9mdHAiIg0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0iLA0KICAgICAgICAgICAgMA0KICAgICAgICApOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "66655329-6e80-4066-8c0f-a2d434fe25e3",
           "weight": 0.0,
           "type": 99999,
           "parentId": null,

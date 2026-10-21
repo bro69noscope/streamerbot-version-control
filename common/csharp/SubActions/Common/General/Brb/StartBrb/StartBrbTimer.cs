@@ -6,7 +6,15 @@ public partial class CPHInline
     public bool Execute()
     {
         CPH.TryGetArg("debugthis", out bool debugEnabled);
-        CPH.TryGetArg("brbDuration", out string brbDuration);
+
+        if (
+            !CPH.TryGetArg("brbDuration", out string brbDuration)
+            || string.IsNullOrEmpty(brbDuration)
+        )
+        {
+            BroLogger.Error("brbDuration arg missing");
+            return false;
+        }
 
         if (debugEnabled)
             BroLogger.Debug(typeof(BrbManager).Assembly.FullName);

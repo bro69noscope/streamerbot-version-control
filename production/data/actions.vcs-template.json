@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-10-21T13:01:40.9316685+02:00",
+  "t": "2026-10-21T13:13:33.8826345+02:00",
   "blocking": false,
   "collapsedGroups": [
     "Common - Streamerbot - Manage Helpers",
@@ -1155,26 +1155,6 @@
       ],
       "subActions": [
         {
-          "actionId": "9fddab81-10f4-4943-8ea9-7cb391283782",
-          "runImmedately": true,
-          "id": "b2dc761b-da66-4646-95aa-650f33b26586",
-          "weight": 0.0,
-          "type": 4,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        },
-        {
-          "actionId": "bbc271a9-1de2-4732-9eb4-52cae53119d9",
-          "runImmedately": true,
-          "id": "ad186b07-ab12-41d0-9c6b-26e0baa2f501",
-          "weight": 0.0,
-          "type": 4,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
           "timerId": "2b2a386a-f4fc-4b53-a642-958028f231f1",
           "state": 0,
           "id": "81672951-1cf5-4284-a9ce-59fd9ba85486",
@@ -1182,7 +1162,17 @@
           "type": 8,
           "parentId": null,
           "enabled": true,
-          "index": 2
+          "index": 0
+        },
+        {
+          "sceneName": "scene__lounge",
+          "connectionId": "00000000-0000-0000-0000-000000000000",
+          "id": "3ed73ae9-aa7f-4870-88f6-1a090dc007ae",
+          "weight": 0.0,
+          "type": 34,
+          "parentId": null,
+          "enabled": true,
+          "index": 1
         },
         {
           "source": 0,
@@ -1195,36 +1185,17 @@
           "type": 121,
           "parentId": null,
           "enabled": true,
+          "index": 2
+        },
+        {
+          "actionId": "dc343f23-783e-4000-b37b-bf2fae30d006",
+          "runImmedately": true,
+          "id": "b96f8b56-4e13-4d28-8bd6-2096da8564a3",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
           "index": 3
-        },
-        {
-          "name": "StartBrbTimer.cs",
-          "description": null,
-          "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
-            ".\\dlls\\BroStreamerTools.dll"
-          ],
-          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIEJyb1N0cmVhbWVyVG9vbHMuTG9nZ2luZzsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJkZWJ1Z3RoaXMiLCBvdXQgYm9vbCBkZWJ1Z0VuYWJsZWQpOw0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJicmJEdXJhdGlvbiIsIG91dCBzdHJpbmcgYnJiRHVyYXRpb24pOw0KDQogICAgICAgIGlmIChkZWJ1Z0VuYWJsZWQpDQogICAgICAgICAgICBCcm9Mb2dnZXIuRGVidWcodHlwZW9mKEJyYk1hbmFnZXIpLkFzc2VtYmx5LkZ1bGxOYW1lKTsNCg0KICAgICAgICBCcmJNYW5hZ2VyLlN0YXJ0KENQSCwgYnJiRHVyYXRpb24sIGRlYnVnRW5hYmxlZCk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
-          "precompile": false,
-          "delayStart": false,
-          "saveResultToVariable": false,
-          "saveToVariable": null,
-          "id": "56780817-1d9e-4737-b763-d8f86518c370",
-          "weight": 0.0,
-          "type": 99999,
-          "parentId": null,
-          "enabled": true,
-          "index": 4
-        },
-        {
-          "sceneName": "scene__lounge",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "3ed73ae9-aa7f-4870-88f6-1a090dc007ae",
-          "weight": 0.0,
-          "type": 34,
-          "parentId": null,
-          "enabled": true,
-          "index": 5
         },
         {
           "sceneName": "scene__lounge",
@@ -1236,12 +1207,41 @@
           "type": 30,
           "parentId": null,
           "enabled": true,
+          "index": 4
+        },
+        {
+          "name": "StartBrbTimer.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
+          ],
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIEJyb1N0cmVhbWVyVG9vbHMuTG9nZ2luZzsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJkZWJ1Z3RoaXMiLCBvdXQgYm9vbCBkZWJ1Z0VuYWJsZWQpOw0KDQogICAgICAgIGlmICgNCiAgICAgICAgICAgICFDUEguVHJ5R2V0QXJnKCJicmJEdXJhdGlvbiIsIG91dCBzdHJpbmcgYnJiRHVyYXRpb24pDQogICAgICAgICAgICB8fCBzdHJpbmcuSXNOdWxsT3JFbXB0eShicmJEdXJhdGlvbikNCiAgICAgICAgKQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoImJyYkR1cmF0aW9uIGFyZyBtaXNzaW5nIik7DQogICAgICAgICAgICByZXR1cm4gZmFsc2U7DQogICAgICAgIH0NCg0KICAgICAgICBpZiAoZGVidWdFbmFibGVkKQ0KICAgICAgICAgICAgQnJvTG9nZ2VyLkRlYnVnKHR5cGVvZihCcmJNYW5hZ2VyKS5Bc3NlbWJseS5GdWxsTmFtZSk7DQoNCiAgICAgICAgQnJiTWFuYWdlci5TdGFydChDUEgsIGJyYkR1cmF0aW9uLCBkZWJ1Z0VuYWJsZWQpOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "56780817-1d9e-4737-b763-d8f86518c370",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 5
+        },
+        {
+          "actionId": "9fddab81-10f4-4943-8ea9-7cb391283782",
+          "runImmedately": true,
+          "id": "ce6b5950-f4f9-422c-920d-b1ec2f173030",
+          "weight": 0.0,
+          "type": 4,
+          "parentId": null,
+          "enabled": true,
           "index": 6
         },
         {
-          "actionId": "dc343f23-783e-4000-b37b-bf2fae30d006",
+          "actionId": "bbc271a9-1de2-4732-9eb4-52cae53119d9",
           "runImmedately": true,
-          "id": "b96f8b56-4e13-4d28-8bd6-2096da8564a3",
+          "id": "ad186b07-ab12-41d0-9c6b-26e0baa2f501",
           "weight": 0.0,
           "type": 4,
           "parentId": null,
@@ -2326,27 +2326,8 @@
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
-      "triggers": [
-        {
-          "variables": {},
-          "id": "9ee259c8-246e-4312-9f8d-d9149c772999",
-          "type": 702,
-          "enabled": true,
-          "exclusions": []
-        }
-      ],
+      "triggers": [],
       "subActions": [
-        {
-          "variableName": "debugthis",
-          "value": true,
-          "autoType": true,
-          "id": "142d8881-2740-425c-8a1e-48c717f7498e",
-          "weight": 0.0,
-          "type": 123,
-          "parentId": null,
-          "enabled": true,
-          "index": 0
-        },
         {
           "name": "ActivateStreamFeedApp.cs",
           "description": null,
@@ -2358,57 +2339,9 @@
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Runtime.Serialization.dll",
             ".\\System.Text.Encodings.Web.dll",
             ".\\Microsoft.Extensions.Logging.Abstractions.dll",
-            ".\\System.Reflection.Metadata.dll",
-            ".\\Serilog.dll",
-            ".\\Sentry.dll",
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll",
-            ".\\Semver.dll",
-            ".\\Sentry.Serilog.dll",
-            ".\\System.Memory.dll",
-            ".\\System.Runtime.CompilerServices.Unsafe.dll",
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Numerics.Vectors.dll",
-            ".\\Streamer.bot.YouTube.Grpc.dll",
-            ".\\Newtonsoft.Json.dll",
-            ".\\Microsoft.Web.WebView2.Core.dll",
-            ".\\Serilog.Sinks.Async.dll",
-            ".\\Serilog.Sinks.File.dll",
-            ".\\System.Diagnostics.DiagnosticSource.dll",
-            ".\\Microsoft.Extensions.DependencyInjection.Abstractions.dll",
-            ".\\Wpf.Ui.dll",
-            ".\\CommunityToolkit.Mvvm.dll",
-            ".\\Microsoft.Extensions.DependencyInjection.dll",
-            ".\\Microsoft.Bcl.AsyncInterfaces.dll",
-            ".\\System.Threading.Tasks.Extensions.dll",
-            ".\\GongSolutions.WPF.DragDrop.dll",
-            ".\\Wpf.Ui.Abstractions.dll",
-            ".\\NAudio.Wasapi.dll",
-            ".\\LiteDB.dll",
-            ".\\System.Buffers.dll",
-            ".\\Microsoft.Bcl.HashCode.dll",
-            ".\\SharpHook.dll",
-            ".\\Microsoft.CodeAnalysis.dll",
-            ".\\System.IO.Pipelines.dll",
-            ".\\System.Threading.Channels.dll",
-            ".\\Wpf.Ui.Tray.dll",
-            ".\\Microsoft.Extensions.Configuration.Abstractions.dll",
-            ".\\Microsoft.AspNetCore.Server.Kestrel.Core.dll",
-            ".\\Microsoft.Extensions.Hosting.Abstractions.dll",
-            ".\\Microsoft.Extensions.FileProviders.Abstractions.dll",
-            ".\\Microsoft.Extensions.Configuration.dll",
-            ".\\Microsoft.Extensions.Configuration.EnvironmentVariables.dll",
-            ".\\Microsoft.Extensions.Configuration.FileExtensions.dll",
-            ".\\Microsoft.Extensions.Options.dll",
-            ".\\Microsoft.Extensions.Logging.dll",
-            ".\\Microsoft.Extensions.ObjectPool.dll",
-            ".\\Microsoft.Extensions.FileProviders.Physical.dll",
-            ".\\Microsoft.IO.RecyclableMemoryStream.dll",
-            ".\\System.Net.WebSockets.WebSocketProtocol.dll",
-            ".\\System.Collections.Immutable.dll",
-            ".\\Microsoft.CodeAnalysis.CSharp.dll",
-            ".\\Mono.Cecil.dll",
-            ".\\dlls\\BroStreamerTools.dll"
+            ".\\System.Reflection.Metadata.dll"
           ],
-          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJkZWJ1Z3RoaXMiLCBvdXQgYm9vbCBkZWJ1Zyk7DQogICAgICAgIHJldHVybiBBaGtDbGllbnQuU2VuZCgiQWN0aXZhdGVTdHJlYW1GZWVkQXBwIiwgZGVidWcpOw0KICAgIH0NCn0NCg==",
+          "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLk5ldC5XZWJTb2NrZXRzOw0KdXNpbmcgU3lzdGVtLlRleHQ7DQp1c2luZyBTeXN0ZW0uVGhyZWFkaW5nOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHVzaW5nIHZhciB3cyA9IG5ldyBDbGllbnRXZWJTb2NrZXQoKTsNCiAgICAgICAgdXNpbmcgdmFyIGN0cyA9IG5ldyBDYW5jZWxsYXRpb25Ub2tlblNvdXJjZShUaW1lU3Bhbi5Gcm9tU2Vjb25kcyg1KSk7DQoNCiAgICAgICAgd3MuQ29ubmVjdEFzeW5jKG5ldyBVcmkoIndzOi8vMTI3LjAuMC4xOjgxODciKSwgY3RzLlRva2VuKS5HZXRBd2FpdGVyKCkuR2V0UmVzdWx0KCk7DQoNCiAgICAgICAgdmFyIGJ5dGVzID0gRW5jb2RpbmcuVVRGOC5HZXRCeXRlcygiQWN0aXZhdGVTdHJlYW1GZWVkQXBwIik7DQogICAgICAgIHZhciBzZWdtZW50ID0gbmV3IEFycmF5U2VnbWVudDxieXRlPihieXRlcyk7DQoNCiAgICAgICAgd3MuU2VuZEFzeW5jKHNlZ21lbnQsIFdlYlNvY2tldE1lc3NhZ2VUeXBlLlRleHQsIHRydWUsIGN0cy5Ub2tlbikuR2V0QXdhaXRlcigpLkdldFJlc3VsdCgpOw0KDQogICAgICAgIHdzLkNsb3NlQXN5bmMoV2ViU29ja2V0Q2xvc2VTdGF0dXMuTm9ybWFsQ2xvc3VyZSwgImRvbmUiLCBjdHMuVG9rZW4pDQogICAgICAgICAgICAuR2V0QXdhaXRlcigpDQogICAgICAgICAgICAuR2V0UmVzdWx0KCk7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -2418,7 +2351,7 @@
           "type": 99999,
           "parentId": null,
           "enabled": true,
-          "index": 1
+          "index": 0
         }
       ],
       "collapsedGroups": []

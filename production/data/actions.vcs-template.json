@@ -2,12 +2,7 @@
   "version": 24,
   "t": "2026-10-21T13:13:33.8826345+02:00",
   "blocking": false,
-  "collapsedGroups": [
-    "Common - Streamerbot - Manage Helpers",
-    "Dota2 - Manage Script Shopwatcher",
-    "Obs - Manage Eyetracker Config",
-    "Obs - Manage Virtual Cam Config"
-  ],
+  "collapsedGroups": [],
   "groups": [
     "General - Manage Resets",
     "Dota2 - Manage Script Shopwatcher",

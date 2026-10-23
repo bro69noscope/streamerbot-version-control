@@ -17,7 +17,7 @@
     "customColors": null,
     "noDeleteConfirmation": [],
     "useDarkMode": true,
-    "navPaneOpen": false,
+    "navPaneOpen": true,
     "minimizeToTray": false,
     "minimizeToTrayOnClose": false,
     "closeConfirmation": false,
@@ -39,9 +39,9 @@
       "main": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MSwiVG9wIjoxLCJSaWdodCI6MTkxOSwiQm90dG9tIjoxMDc5fX0=",
       "executeCode": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MSwiVG9wIjoxLCJSaWdodCI6MTkxOSwiQm90dG9tIjoxMDc5fX0=",
       "chat": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjU2MywiVG9wIjo1NSwiUmlnaHQiOjMwMjAsIkJvdHRvbSI6NzU4fX0=",
-      "variableViewer": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NjY4LCJUb3AiOjIxOCwiUmlnaHQiOjE4OTMsIkJvdHRvbSI6MTIyM319",
+      "variableViewer": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MzQzLCJUb3AiOjQ1LCJSaWdodCI6MTU2OCwiQm90dG9tIjoxMDUwfX0=",
       "globalVariable": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6NTgwLCJUb3AiOjI4MywiUmlnaHQiOjE5ODAsIkJvdHRvbSI6MTE1OH19",
-      "import": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MTI5LCJUb3AiOjE0NywiUmlnaHQiOjExNzksIkJvdHRvbSI6ODk3fX0=",
+      "import": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6LTE3OTEsIlRvcCI6MTQ3LCJSaWdodCI6LTEwOTEsIkJvdHRvbSI6NjQ3fX0=",
       "export": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6Miwic2hvd0NtZCI6MywibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6LTE3NTEsIlRvcCI6NDMsIlJpZ2h0IjotODUxLCJCb3R0b20iOjcxN319",
       "triggerViewer": "77u/eyJsZW5ndGgiOjQ0LCJmbGFncyI6MCwic2hvd0NtZCI6MSwibWluUG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibWF4UG9zaXRpb24iOnsiWCI6LTEsIlkiOi0xfSwibm9ybWFsUG9zaXRpb24iOnsiTGVmdCI6MjY0LCJUb3AiOjI2NCwiUmlnaHQiOjEwOTUsIkJvdHRvbSI6MTA5NX19"
     },
@@ -75,13 +75,13 @@
       {
         "id": "2b2a386a-f4fc-4b53-a642-958028f231f1",
         "name": "update brb",
-        "enabled": true,
+        "enabled": false,
         "repeat": true,
         "interval": 1,
         "randomInterval": false,
         "upperInterval": 0,
         "lines": 0,
-        "counter": 613353
+        "counter": 721958
       }
     ]
   },
@@ -109,7 +109,7 @@
   },
   "udp": { "autoStart": false, "port": 0 },
   "http": {
-    "autoStart": false,
+    "autoStart": true,
     "address": "127.0.0.1",
     "port": "{{STREAMERBOT_FTP_HTTP_PORT}}",
     "mapping": {}

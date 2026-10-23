@@ -1,8 +1,22 @@
 {
   "version": 24,
-  "t": "2026-10-21T13:11:45.4312824+02:00",
+  "t": "2026-10-24T00:29:01.9625567+02:00",
   "blocking": false,
-  "collapsedGroups": [],
+  "collapsedGroups": [
+    "",
+    "Common - General - Manage Alerts",
+    "Common - General - Manage Brb",
+    "Common - General - Manage Hwnds",
+    "Common - Obs - Manage Soures",
+    "Common - Obs - Refresh Sources",
+    "Common - Streamerbot - Manage Helpers",
+    "Common - StreamFeedApp - Manage Feed",
+    "Ftp - Obs - Hide Sources",
+    "Ftp - Obs - Manage Audio Devices",
+    "Ftp - Obs - Manage Ui",
+    "Ftp - Obs - Set Active Scenes",
+    "Ftp - Obs - Show Sources"
+  ],
   "groups": [
     "Ftp - Obs - Set Active Scenes",
     "Common - Streamerbot - Manage Helpers",

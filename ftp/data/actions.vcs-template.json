@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-10-24T00:29:01.9625567+02:00",
+  "t": "2026-10-24T00:41:49.2024171+02:00",
   "blocking": false,
   "collapsedGroups": [
     "",
@@ -28,7 +28,8 @@
     "Common - StreamFeedApp - Manage Feed",
     "Common - General - Manage Brb",
     "Common - General - Manage Hwnds",
-    "Ftp - Obs - Manage Ui"
+    "Ftp - Obs - Manage Ui",
+    "Common - Obs - Manage Soures"
   ],
   "queues": [],
   "actions": [
@@ -1907,6 +1908,91 @@
           "saveResultToVariable": false,
           "saveToVariable": null,
           "id": "66655329-6e80-4066-8c0f-a2d434fe25e3",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "e202ebe1-623a-4332-8cb5-8ba93cd1550f",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "set relevant window capture",
+      "group": "Common - Obs - Manage Soures",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "827a6509-9de8-4c5c-a094-fa3f24f1981b",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "SetObsWinCapture.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIGNvbnN0IHN0cmluZyBJbnB1dE5hbWUgPSAiY2FwdHVyZV9fd2luZG93X19keW5hbWljX2h3bmQiOw0KICAgIGNvbnN0IGludCBPYnNDb25uZWN0aW9uID0gMDsNCg0KICAgIHN0YXRpYyBzdHJpbmcgRW5jKHN0cmluZyBzKQ0KICAgIHsNCiAgICAgICAgcmV0dXJuIHMuUmVwbGFjZSgiIyIsICIjMjMiKS5SZXBsYWNlKCI6IiwgIiMzQSIpOw0KICAgIH0NCg0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHRpdGxlID0gYXJnc1sidGl0bGUiXS5Ub1N0cmluZygpOw0KICAgICAgICBzdHJpbmcgY2xzID0gYXJnc1siY2xhc3MiXS5Ub1N0cmluZygpOw0KICAgICAgICBzdHJpbmcgZXhlID0gYXJnc1siZXhlIl0uVG9TdHJpbmcoKTsNCiAgICAgICAgaW50IHByaW8gPSBpbnQuUGFyc2UoYXJnc1sicHJpb3JpdHkiXS5Ub1N0cmluZygpKTsNCg0KICAgICAgICB2YXIgYm9keSA9IG5ldyBKT2JqZWN0DQogICAgICAgIHsNCiAgICAgICAgICAgIFsiaW5wdXROYW1lIl0gPSBJbnB1dE5hbWUsDQogICAgICAgICAgICBbImlucHV0U2V0dGluZ3MiXSA9IG5ldyBKT2JqZWN0DQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgWyJ3aW5kb3ciXSA9IEVuYyh0aXRsZSkgKyAiOiIgKyBFbmMoY2xzKSArICI6IiArIEVuYyhleGUpLA0KICAgICAgICAgICAgICAgIFsicHJpb3JpdHkiXSA9IHByaW8sDQogICAgICAgICAgICB9LA0KICAgICAgICAgICAgWyJvdmVybGF5Il0gPSB0cnVlLA0KICAgICAgICB9Ow0KDQogICAgICAgIENQSC5PYnNTZW5kUmF3KA0KICAgICAgICAgICAgIlNldElucHV0U2V0dGluZ3MiLA0KICAgICAgICAgICAgYm9keS5Ub1N0cmluZyhOZXd0b25zb2Z0Lkpzb24uRm9ybWF0dGluZy5Ob25lKSwNCiAgICAgICAgICAgIE9ic0Nvbm5lY3Rpb24NCiAgICAgICAgKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "b60929a2-97bf-4352-bf49-63c29c3637e1",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "94a85ec1-3dd4-4f9c-8193-99d1d92f80e7",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "get source input name",
+      "group": "Common - Obs - Manage Soures",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "2e29b0a7-e56f-4c58-9031-a71adab4963f",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "GetObsInputName.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
+          ],
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBjb25zdCBzdHJpbmcgSW5wdXROYW1lID0gImNhcHR1cmVfX3dpbmRvd19fZHluYW1pY19od25kIjsNCiAgICBjb25zdCBpbnQgT2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHN0cmluZyByID0gQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiR2V0SW5wdXRTZXR0aW5ncyIsDQogICAgICAgICAgICAie1wiaW5wdXROYW1lXCI6XCIiICsgSW5wdXROYW1lICsgIlwifSIsDQogICAgICAgICAgICBPYnNDb25uZWN0aW9uDQogICAgICAgICk7DQogICAgICAgIEJyb0xvZ2dlci5JbmZvKHIpOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "541c9d0e-ef2b-4ef3-8206-20c29c2a01d1",
           "weight": 0.0,
           "type": 99999,
           "parentId": null,

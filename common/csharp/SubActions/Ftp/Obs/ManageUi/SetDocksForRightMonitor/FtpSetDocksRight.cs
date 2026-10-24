@@ -8,7 +8,7 @@ public partial class CPHInline
                 ""vendorName"": ""jrDockie"",
                 ""requestType"": ""LoadDockset"",
                 ""requestData"": {
-                    ""filename"": ""right_monitor_ftp""
+                    ""filename"": ""right_monitor_ftp_1080p_100%""
                 }
             }",
             0

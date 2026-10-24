@@ -155,6 +155,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SetRelevantWindowCapture", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SetObsWinCapture.shadow", "SubActions\Common\Obs\ManageSources\SetRelevantWindowCapture\SetObsWinCapture.shadow.csproj", "{9168E20A-86D8-45B7-B2CC-899A7D6EFBBE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SetDocksForCenterMonitor", "SetDocksForCenterMonitor", "{B66AA607-0171-F25B-218C-402E568ED787}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FtpSetDocksCenter.shadow", "SubActions\Ftp\Obs\ManageUi\SetDocksForCenterMonitor\FtpSetDocksCenter.shadow.csproj", "{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -513,6 +517,18 @@ Global
 		{9168E20A-86D8-45B7-B2CC-899A7D6EFBBE}.Release|x64.Build.0 = Release|Any CPU
 		{9168E20A-86D8-45B7-B2CC-899A7D6EFBBE}.Release|x86.ActiveCfg = Release|Any CPU
 		{9168E20A-86D8-45B7-B2CC-899A7D6EFBBE}.Release|x86.Build.0 = Release|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Debug|x64.Build.0 = Debug|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Debug|x86.Build.0 = Debug|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Release|x64.ActiveCfg = Release|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Release|x64.Build.0 = Release|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Release|x86.ActiveCfg = Release|Any CPU
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -591,5 +607,7 @@ Global
 		{064C93DE-2F23-423F-91AE-C89C1D4CC067} = {535E794D-2F52-E46E-FEDC-BB3E66C28774}
 		{C757B19D-D7E5-B4D9-5B2B-EE80E64F289C} = {8BBE9A39-E3B9-D351-9C27-7155D771F4AF}
 		{9168E20A-86D8-45B7-B2CC-899A7D6EFBBE} = {C757B19D-D7E5-B4D9-5B2B-EE80E64F289C}
+		{B66AA607-0171-F25B-218C-402E568ED787} = {EB6B4835-46FF-6316-28BC-44C0C50015C3}
+		{26B472DF-31C4-4F6C-88E1-35465B2B2FA0} = {B66AA607-0171-F25B-218C-402E568ED787}
 	EndGlobalSection
 EndGlobal

@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-10-24T00:41:49.2024171+02:00",
+  "t": "2026-10-24T13:59:19.2288177+02:00",
   "blocking": false,
   "collapsedGroups": [
     "",
@@ -44,7 +44,15 @@
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
-      "triggers": [],
+      "triggers": [
+        {
+          "variables": {},
+          "id": "9e92b2ff-9408-442e-97f9-c28feb920427",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
       "subActions": [
         {
           "sceneName": "scene__center_monitor",
@@ -110,7 +118,15 @@
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
-      "triggers": [],
+      "triggers": [
+        {
+          "variables": {},
+          "id": "2163340a-3d1e-4f70-b30f-190adddaf00a",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
       "subActions": [
         {
           "sceneName": "scene__lounge",

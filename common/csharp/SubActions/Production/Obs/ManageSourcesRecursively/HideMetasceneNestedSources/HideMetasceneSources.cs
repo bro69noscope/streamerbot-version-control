@@ -1,9 +1,9 @@
+using BroStreamerTools;
 using Newtonsoft.Json.Linq;
 
 public partial class CPHInline
 {
-    private const string MetaScene = "scene__metascene";
-    private const string Excluded = "scene__gameplay__fundamental_sources";
+    private const string MetaScene = MetasceneScenes.Parent;
 
     public bool Execute()
     {
@@ -13,7 +13,7 @@ public partial class CPHInline
                 continue;
 
             string nested = (string)item["sourceName"];
-            if (nested == Excluded)
+            if (MetasceneScenes.IsEssential(nested))
                 continue;
 
             foreach (var source in GetItems(nested))

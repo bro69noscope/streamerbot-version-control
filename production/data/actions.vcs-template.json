@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-10-25T17:47:15.9923848+01:00",
+  "t": "2026-10-25T22:34:39.5057594+01:00",
   "blocking": false,
   "collapsedGroups": [
     "",
@@ -231,7 +231,7 @@
       ],
       "subActions": [
         {
-          "value": "hide all but the fundamental nested scene",
+          "value": "hide all but the fundamental and alerts nested scene",
           "color": "",
           "id": "798e1dcd-4a4c-4056-bf11-9034b410ae57",
           "weight": 0.0,
@@ -241,26 +241,14 @@
           "index": 0
         },
         {
-          "sceneName": "scene__metascene",
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "74fa60ca-66c2-4c2b-b77b-9250cb084142",
+          "actionId": "bee3e307-0ef5-4069-9119-551523bd0d61",
+          "runImmedately": true,
+          "id": "fb62baeb-bca4-43f4-877c-9f73144e37c3",
           "weight": 0.0,
-          "type": 325,
+          "type": 4,
           "parentId": null,
           "enabled": true,
           "index": 1
-        },
-        {
-          "sceneName": "scene__metascene",
-          "sourceName": "scene__gameplay__fundamental_sources",
-          "state": 0,
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "0d19896b-253a-4065-a72d-49e648d5b269",
-          "weight": 0.0,
-          "type": 30,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
         },
         {
           "value": "show the metascene facecam with a cut transition override, for an immediate change",
@@ -2225,15 +2213,25 @@
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
-      "triggers": [],
+      "triggers": [
+        {
+          "variables": {},
+          "id": "8861ba65-f94f-4532-bb70-45a100211be3",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
       "subActions": [
         {
           "name": "HideMetasceneSources.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\Newtonsoft.Json.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "dXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHByaXZhdGUgY29uc3Qgc3RyaW5nIE1ldGFTY2VuZSA9ICJzY2VuZV9fbWV0YXNjZW5lIjsNCiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBFeGNsdWRlZCA9ICJzY2VuZV9fZ2FtZXBsYXlfX2Z1bmRhbWVudGFsX3NvdXJjZXMiOw0KDQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBmb3JlYWNoICh2YXIgaXRlbSBpbiBHZXRJdGVtcyhNZXRhU2NlbmUpKQ0KICAgICAgICB7DQogICAgICAgICAgICBpZiAoKHN0cmluZylpdGVtWyJzb3VyY2VUeXBlIl0gIT0gIk9CU19TT1VSQ0VfVFlQRV9TQ0VORSIpDQogICAgICAgICAgICAgICAgY29udGludWU7DQoNCiAgICAgICAgICAgIHN0cmluZyBuZXN0ZWQgPSAoc3RyaW5nKWl0ZW1bInNvdXJjZU5hbWUiXTsNCiAgICAgICAgICAgIGlmIChuZXN0ZWQgPT0gRXhjbHVkZWQpDQogICAgICAgICAgICAgICAgY29udGludWU7DQoNCiAgICAgICAgICAgIGZvcmVhY2ggKHZhciBzb3VyY2UgaW4gR2V0SXRlbXMobmVzdGVkKSkNCiAgICAgICAgICAgICAgICBTZXRFbmFibGVkKG5lc3RlZCwgKGludClzb3VyY2VbInNjZW5lSXRlbUlkIl0sIGZhbHNlKTsNCiAgICAgICAgfQ0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCg0KICAgIHByaXZhdGUgSkFycmF5IEdldEl0ZW1zKHN0cmluZyBzY2VuZSkNCiAgICB7DQogICAgICAgIHN0cmluZyBwYXlsb2FkID0gbmV3IEpPYmplY3QgeyBbInNjZW5lTmFtZSJdID0gc2NlbmUgfS5Ub1N0cmluZygpOw0KICAgICAgICBzdHJpbmcgcmF3ID0gQ1BILk9ic1NlbmRSYXcoIkdldFNjZW5lSXRlbUxpc3QiLCBwYXlsb2FkLCAwKTsNCg0KICAgICAgICBpZiAoc3RyaW5nLklzTnVsbE9yRW1wdHkocmF3KSkNCiAgICAgICAgICAgIHJldHVybiBbXTsNCg0KICAgICAgICByZXR1cm4gKEpBcnJheSlKT2JqZWN0LlBhcnNlKHJhdylbInNjZW5lSXRlbXMiXSA/PyBbXTsNCiAgICB9DQoNCiAgICBwcml2YXRlIHZvaWQgU2V0RW5hYmxlZChzdHJpbmcgc2NlbmUsIGludCBpdGVtSWQsIGJvb2wgZW5hYmxlZCkNCiAgICB7DQogICAgICAgIHN0cmluZyBwYXlsb2FkID0gbmV3IEpPYmplY3QNCiAgICAgICAgew0KICAgICAgICAgICAgWyJzY2VuZU5hbWUiXSA9IHNjZW5lLA0KICAgICAgICAgICAgWyJzY2VuZUl0ZW1JZCJdID0gaXRlbUlkLA0KICAgICAgICAgICAgWyJzY2VuZUl0ZW1FbmFibGVkIl0gPSBlbmFibGVkLA0KICAgICAgICB9LlRvU3RyaW5nKCk7DQoNCiAgICAgICAgQ1BILk9ic1NlbmRSYXcoIlNldFNjZW5lSXRlbUVuYWJsZWQiLCBwYXlsb2FkLCAwKTsNCiAgICB9DQp9DQo=",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIE5ld3RvbnNvZnQuSnNvbi5MaW5xOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwcml2YXRlIGNvbnN0IHN0cmluZyBNZXRhU2NlbmUgPSBNZXRhc2NlbmVTY2VuZXMuUGFyZW50Ow0KDQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBmb3JlYWNoICh2YXIgaXRlbSBpbiBHZXRJdGVtcyhNZXRhU2NlbmUpKQ0KICAgICAgICB7DQogICAgICAgICAgICBpZiAoKHN0cmluZylpdGVtWyJzb3VyY2VUeXBlIl0gIT0gIk9CU19TT1VSQ0VfVFlQRV9TQ0VORSIpDQogICAgICAgICAgICAgICAgY29udGludWU7DQoNCiAgICAgICAgICAgIHN0cmluZyBuZXN0ZWQgPSAoc3RyaW5nKWl0ZW1bInNvdXJjZU5hbWUiXTsNCiAgICAgICAgICAgIGlmIChNZXRhc2NlbmVTY2VuZXMuSXNFc3NlbnRpYWwobmVzdGVkKSkNCiAgICAgICAgICAgICAgICBjb250aW51ZTsNCg0KICAgICAgICAgICAgZm9yZWFjaCAodmFyIHNvdXJjZSBpbiBHZXRJdGVtcyhuZXN0ZWQpKQ0KICAgICAgICAgICAgICAgIFNldEVuYWJsZWQobmVzdGVkLCAoaW50KXNvdXJjZVsic2NlbmVJdGVtSWQiXSwgZmFsc2UpOw0KICAgICAgICB9DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KDQogICAgcHJpdmF0ZSBKQXJyYXkgR2V0SXRlbXMoc3RyaW5nIHNjZW5lKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHBheWxvYWQgPSBuZXcgSk9iamVjdCB7IFsic2NlbmVOYW1lIl0gPSBzY2VuZSB9LlRvU3RyaW5nKCk7DQogICAgICAgIHN0cmluZyByYXcgPSBDUEguT2JzU2VuZFJhdygiR2V0U2NlbmVJdGVtTGlzdCIsIHBheWxvYWQsIDApOw0KDQogICAgICAgIGlmIChzdHJpbmcuSXNOdWxsT3JFbXB0eShyYXcpKQ0KICAgICAgICAgICAgcmV0dXJuIFtdOw0KDQogICAgICAgIHJldHVybiAoSkFycmF5KUpPYmplY3QuUGFyc2UocmF3KVsic2NlbmVJdGVtcyJdID8/IFtdOw0KICAgIH0NCg0KICAgIHByaXZhdGUgdm9pZCBTZXRFbmFibGVkKHN0cmluZyBzY2VuZSwgaW50IGl0ZW1JZCwgYm9vbCBlbmFibGVkKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHBheWxvYWQgPSBuZXcgSk9iamVjdA0KICAgICAgICB7DQogICAgICAgICAgICBbInNjZW5lTmFtZSJdID0gc2NlbmUsDQogICAgICAgICAgICBbInNjZW5lSXRlbUlkIl0gPSBpdGVtSWQsDQogICAgICAgICAgICBbInNjZW5lSXRlbUVuYWJsZWQiXSA9IGVuYWJsZWQsDQogICAgICAgIH0uVG9TdHJpbmcoKTsNCg0KICAgICAgICBDUEguT2JzU2VuZFJhdygiU2V0U2NlbmVJdGVtRW5hYmxlZCIsIHBheWxvYWQsIDApOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -2405,6 +2403,51 @@
           "saveResultToVariable": false,
           "saveToVariable": null,
           "id": "711b18f4-e9d6-46e8-b7ee-078ecb23c429",
+          "weight": 0.0,
+          "type": 99999,
+          "parentId": null,
+          "enabled": true,
+          "index": 0
+        }
+      ],
+      "collapsedGroups": []
+    },
+    {
+      "id": "bee3e307-0ef5-4069-9119-551523bd0d61",
+      "queue": "00000000-0000-0000-0000-000000000000",
+      "enabled": true,
+      "excludeFromHistory": false,
+      "excludeFromPending": false,
+      "name": "hide metascene scenes",
+      "group": "Obs - Manage Multiple Sources",
+      "alwaysRun": false,
+      "randomAction": false,
+      "concurrent": false,
+      "triggers": [
+        {
+          "variables": {},
+          "id": "c978add4-a7ac-4ea1-b1f8-da66f1e1bec2",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
+      "subActions": [
+        {
+          "name": "HideNonEssentialScenes.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\Newtonsoft.Json.dll",
+            ".\\dlls\\BroStreamerTools.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\System.Core.dll"
+          ],
+          "byteCode": "Ly8gUmVxdWlyZWQgcmVmZXJlbmNlcyB0byBtYW51YWxseSBhZGQgKG5vdCBpbmNsdWRlZCBpbiBvdXIgc2JvdCBkbGxzKToNCi8vICAgLSBTeXN0ZW0uQ29yZS5kbGwNCg0KdXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KdXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIGNvbnN0IHN0cmluZyBQYXJlbnRTY2VuZSA9ICJzY2VuZV9fbWV0YXNjZW5lIjsNCiAgICBzdGF0aWMgcmVhZG9ubHkgc3RyaW5nW10gS2VlcCA9IFsic2NlbmVfX2FsZXJ0cyIsICJzY2VuZV9fZ2FtZXBsYXlfX2Z1bmRhbWVudGFsX3NvdXJjZXMiXTsNCg0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILlRyeUdldEFyZygiZGVidWd0aGlzIiwgb3V0IGJvb2wgZGVidWdFbmFibGVkKTsNCg0KICAgICAgICBzdHJpbmcgcmF3ID0gQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiR2V0U2NlbmVJdGVtTGlzdCIsDQogICAgICAgICAgICBuZXcgSk9iamVjdCB7IFsic2NlbmVOYW1lIl0gPSBQYXJlbnRTY2VuZSB9LlRvU3RyaW5nKCksDQogICAgICAgICAgICAwDQogICAgICAgICk7DQogICAgICAgIHZhciBpdGVtcyA9IEpPYmplY3QuUGFyc2UocmF3KVsic2NlbmVJdGVtcyJdOw0KDQogICAgICAgIGlmIChpdGVtcyA9PSBudWxsKQ0KICAgICAgICB7DQogICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoJCJObyBzY2VuZUl0ZW1zIGZvciB7UGFyZW50U2NlbmV9LiBSYXc6IHtyYXd9Iik7DQogICAgICAgICAgICByZXR1cm4gZmFsc2U7DQogICAgICAgIH0NCg0KICAgICAgICBmb3JlYWNoICh2YXIgaXRlbSBpbiBpdGVtcykNCiAgICAgICAgew0KICAgICAgICAgICAgc3RyaW5nIG5hbWUgPSAoc3RyaW5nKWl0ZW1bInNvdXJjZU5hbWUiXTsNCiAgICAgICAgICAgIGJvb2wga2VlcCA9IEFycmF5LkluZGV4T2YoS2VlcCwgbmFtZSkgPj0gMDsNCg0KICAgICAgICAgICAgc3RyaW5nIHNldCA9IG5ldyBKT2JqZWN0DQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgWyJzY2VuZU5hbWUiXSA9IFBhcmVudFNjZW5lLA0KICAgICAgICAgICAgICAgIFsic2NlbmVJdGVtSWQiXSA9IChpbnQpaXRlbVsic2NlbmVJdGVtSWQiXSwNCiAgICAgICAgICAgICAgICBbInNjZW5lSXRlbUVuYWJsZWQiXSA9IGtlZXAsDQogICAgICAgICAgICB9LlRvU3RyaW5nKCk7DQoNCiAgICAgICAgICAgIHRyeQ0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIENQSC5PYnNTZW5kUmF3KCJTZXRTY2VuZUl0ZW1FbmFibGVkIiwgc2V0LCAwKTsNCiAgICAgICAgICAgICAgICBpZiAoZGVidWdFbmFibGVkKQ0KICAgICAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICAgICAgQnJvTG9nZ2VyLkRlYnVnKCQie25hbWV9IC0+IHsoa2VlcCA/ICJzaG93biIgOiAiaGlkZGVuIil9Iik7DQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfQ0KICAgICAgICAgICAgY2F0Y2ggKEV4Y2VwdGlvbiBleCkNCiAgICAgICAgICAgIHsNCiAgICAgICAgICAgICAgICBCcm9Mb2dnZXIuRXJyb3IoJCJGYWlsZWQgb24ge25hbWV9OiB7ZXguTWVzc2FnZX0iKTsNCiAgICAgICAgICAgIH0NCiAgICAgICAgfQ0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "e167b073-2f1e-4625-bca4-4fa6402869eb",
           "weight": 0.0,
           "type": 99999,
           "parentId": null,

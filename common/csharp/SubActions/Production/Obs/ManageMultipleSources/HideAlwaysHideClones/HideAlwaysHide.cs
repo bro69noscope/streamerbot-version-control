@@ -10,25 +10,30 @@ public partial class CPHInline
 
     public bool Execute()
     {
+        CPH.TryGetArg("debugthis", out bool debugEnabled);
+
         var scenes = JObject.Parse(CPH.ObsSendRaw("GetSceneList", "{}", 0))["scenes"];
-        BroLogger.Debug($"Scene count: {((JArray)scenes).Count}");
+        if (debugEnabled)
+        {
+            BroLogger.Debug($"Scene count: {((JArray)scenes).Count}");
+        }
 
         foreach (var s in scenes)
         {
             string sceneName = (string)s["sceneName"];
             try
             {
-                HideIn(sceneName, false);
+                HideIn(sceneName, false, debugEnabled);
             }
             catch (System.Exception ex)
             {
-                BroLogger.Debug($"Failed on scene {sceneName}: {ex.Message}");
+                BroLogger.Error($"Failed on scene {sceneName}: {ex.Message}");
             }
         }
         return true;
     }
 
-    void HideIn(string sceneName, bool isGroup)
+    void HideIn(string sceneName, bool isGroup, bool debugEnabled)
     {
         string req = isGroup ? "GetGroupSceneItemList" : "GetSceneItemList";
         string payload = new JObject { ["sceneName"] = sceneName }.ToString();
@@ -37,14 +42,20 @@ public partial class CPHInline
 
         if (items == null)
         {
-            BroLogger.Debug($"No sceneItems for {sceneName}. Raw: {raw}");
+            if (debugEnabled)
+            {
+                BroLogger.Debug($"No sceneItems for {sceneName}. Raw: {raw}");
+            }
             return;
         }
 
         foreach (var item in items)
         {
             string name = (string)item["sourceName"];
-            BroLogger.Debug($"Checking {name} in {sceneName} (isGroup={isGroup})");
+            if (debugEnabled)
+            {
+                BroLogger.Debug($"Checking {name} in {sceneName} (isGroup={isGroup})");
+            }
 
             if (name == Target)
             {
@@ -58,7 +69,7 @@ public partial class CPHInline
             }
 
             if (item.Value<bool?>("isGroup") ?? false)
-                HideIn(name, true);
+                HideIn(name, true, debugEnabled);
         }
     }
 }

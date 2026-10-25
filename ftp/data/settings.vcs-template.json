@@ -17,7 +17,7 @@
     "customColors": null,
     "noDeleteConfirmation": [],
     "useDarkMode": true,
-    "navPaneOpen": true,
+    "navPaneOpen": false,
     "minimizeToTray": false,
     "minimizeToTrayOnClose": false,
     "closeConfirmation": false,

@@ -1,9 +1,12 @@
+using System;
 using BroStreamerTools.Logging;
 using Newtonsoft.Json.Linq;
 
 public partial class CPHInline
 {
     private const string TargetSceneArg = "hideFiltersTargetScene";
+
+    private static readonly string[] ExcludedFilterNames = ["filter__spout_output"];
 
     public bool Execute()
     {
@@ -48,6 +51,12 @@ public partial class CPHInline
 
             if (!enabled)
                 continue;
+
+            if (Array.IndexOf(ExcludedFilterNames, name) >= 0)
+            {
+                BroLogger.Debug($"[HideFilters] Skipped excluded '{name}' on '{sourceName}'");
+                continue;
+            }
 
             CPH.ObsSetFilterState(sourceName, name, 1);
             BroLogger.Debug($"[HideFilters] Hid '{name}' on '{sourceName}'");

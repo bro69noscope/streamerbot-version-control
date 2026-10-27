@@ -67,6 +67,7 @@ public partial class CPHInline
         var payload = new
         {
             @event = "TwitchAlert",
+            alertId = System.Guid.NewGuid().ToString(),
             kind,
             user,
             tier,

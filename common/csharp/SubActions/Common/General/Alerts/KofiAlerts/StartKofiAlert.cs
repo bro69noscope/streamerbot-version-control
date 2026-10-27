@@ -50,6 +50,7 @@ public partial class CPHInline
         var payload = new
         {
             @event = "KofiAlert",
+            alertId = System.Guid.NewGuid().ToString(),
             kind,
             user = from,
             amount,

@@ -16,7 +16,7 @@ public static class BrbManager
 
         if (scene != "scene__lounge")
         {
-            // the `brb auto-hide` action, triggered once we change to the
+            // the `sbact__auto_hide_brb` action, triggered once we change to the
             // scene__lounge scene, will run later than the synchronous path we
             // take throughout the sub-actions. That is, even tho we only
             // change the scene at the very end of it after showing the brb

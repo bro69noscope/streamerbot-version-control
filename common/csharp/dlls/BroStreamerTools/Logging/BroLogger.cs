@@ -1,5 +1,6 @@
 using System;
 using System.IO;
+using System.Runtime.CompilerServices;
 
 namespace BroStreamerTools.Logging;
 
@@ -10,29 +11,47 @@ public static class BroLogger
         "BroStreamerTools.log"
     );
 
-    public static void Debug(string message)
+    public static void Debug(
+        string message,
+        [CallerFilePath] string file = "",
+        [CallerMemberName] string member = ""
+    )
     {
-        Write("DEBUG", message);
+        Write("DEBUG", message, file, member);
     }
 
-    public static void Info(string message)
+    public static void Info(
+        string message,
+        [CallerFilePath] string file = "",
+        [CallerMemberName] string member = ""
+    )
     {
-        Write("INFO", message);
+        Write("INFO", message, file, member);
     }
 
-    public static void Warning(string message)
+    public static void Warning(
+        string message,
+        [CallerFilePath] string file = "",
+        [CallerMemberName] string member = ""
+    )
     {
-        Write("WARNING", message);
+        Write("WARNING", message, file, member);
     }
 
-    public static void Error(string message)
+    public static void Error(
+        string message,
+        [CallerFilePath] string file = "",
+        [CallerMemberName] string member = ""
+    )
     {
-        Write("ERROR", message);
+        Write("ERROR", message, file, member);
     }
 
-    private static void Write(string level, string message)
+    private static void Write(string level, string message, string file, string member)
     {
-        var line = $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] " + $"[{level}] {message}";
+        var source = Path.GetFileNameWithoutExtension(file);
+        var line =
+            $"[{DateTime.Now:yyyy-MM-dd HH:mm:ss}] " + $"[{level}] [{source}.{member}] {message}";
         File.AppendAllText(LogFile, line + Environment.NewLine);
     }
 }

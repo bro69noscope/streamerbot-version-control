@@ -9,7 +9,7 @@ public partial class CPHInline
         CPH.TryGetArg("currency", out string currency);
         CPH.TryGetArg("from", out string from);
         CPH.TryGetArg("message", out string message);
-        CPH.TryGetArg("debugthis", out bool debugEnabled);
+        CPH.TryGetArg("sbArgDebugThis", out bool debugEnabled);
 
         if (debugEnabled)
         {

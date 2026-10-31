@@ -5,14 +5,14 @@ public partial class CPHInline
 {
     public bool Execute()
     {
-        CPH.TryGetArg("debugthis", out bool debugEnabled);
+        CPH.TryGetArg("sbArgDebugThis", out bool debugEnabled);
 
         if (
-            !CPH.TryGetArg("brbDuration", out string brbDuration)
+            !CPH.TryGetArg("sbArgBrbDuration", out string brbDuration)
             || string.IsNullOrEmpty(brbDuration)
         )
         {
-            BroLogger.Error("brbDuration arg missing");
+            BroLogger.Error("sbArgBrbDuration arg missing");
             return false;
         }
 

@@ -12,7 +12,7 @@ public partial class CPHInline
         CPH.TryGetArg("cumulative", out string cumulative); // present on ReSub
         CPH.TryGetArg("recipientUserName", out string recipient); // present on Gift Sub
         CPH.TryGetArg("gifts", out string giftCount); // present on Gift Bomb
-        CPH.TryGetArg("debugthis", out bool debugEnabled);
+        CPH.TryGetArg("sbArgDebugThis", out bool debugEnabled);
 
         if (debugEnabled)
         {

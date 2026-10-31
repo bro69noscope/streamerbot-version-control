@@ -4,7 +4,7 @@ using Newtonsoft.Json.Linq;
 
 public partial class CPHInline
 {
-    private const string TargetSceneArg = "hideFiltersTargetScene";
+    private const string TargetSceneArg = "sbArgHideFiltersTargetScene";
 
     private static readonly string[] ExcludedFilterNames = ["filter__spout_output"];
 

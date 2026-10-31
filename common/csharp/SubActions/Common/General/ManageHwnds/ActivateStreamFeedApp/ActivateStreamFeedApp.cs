@@ -4,7 +4,7 @@ public partial class CPHInline
 {
     public bool Execute()
     {
-        CPH.TryGetArg("debugthis", out bool debug);
+        CPH.TryGetArg("sbArgDebugThis", out bool debug);
         return AhkClient.Send("ActivateStreamFeedApp", debug);
     }
 }

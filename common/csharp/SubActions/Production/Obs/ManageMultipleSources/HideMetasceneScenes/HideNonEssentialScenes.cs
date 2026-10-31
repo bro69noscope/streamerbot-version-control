@@ -12,7 +12,7 @@ public partial class CPHInline
 
     public bool Execute()
     {
-        CPH.TryGetArg("debugthis", out bool debugEnabled);
+        CPH.TryGetArg("sbArgDebugThis", out bool debugEnabled);
 
         string raw = CPH.ObsSendRaw(
             "GetSceneItemList",

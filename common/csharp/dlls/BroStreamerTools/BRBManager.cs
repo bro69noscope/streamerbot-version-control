@@ -9,10 +9,14 @@ public static class BrbManager
     {
         BroLogger.Info($"BRB started: {duration} minutes");
 
-        Invoke(cph, "SetGlobalVar", "BrbDuration", duration, true);
-        Invoke(cph, "SetGlobalVar", "BrbStartTime", DateTime.Now, true);
+        Invoke(cph, "SetGlobalVar", "sbGlobBrbDuration", duration, true);
+        Invoke(cph, "SetGlobalVar", "sbGlobBrbStartTime", DateTime.Now, true);
 
+        const string skipAutoHideVar = "sbGlobSkipBrbAutoHide";
         string scene = (string)Invoke(cph, "ObsGetCurrentScene", 0);
+
+        if (debugEnabled)
+            BroLogger.Debug($"Current scene is '{scene}'");
 
         if (scene != "scene__lounge")
         {
@@ -22,12 +26,10 @@ public static class BrbManager
             // change the scene at the very end of it after showing the brb
             // text source. This text would end up hidden immediately after
             // showing without a skip flag.
-            Invoke(cph, "SetGlobalVar", "SkipBrbAutoHide", true, true);
+            Invoke(cph, "SetGlobalVar", skipAutoHideVar, true, true);
 
             if (debugEnabled)
-            {
-                BroLogger.Debug($"Current scene is '{scene}', setting SkipBrbAutoHide to true");
-            }
+                BroLogger.Debug($"setting {skipAutoHideVar} to true");
         }
     }
 

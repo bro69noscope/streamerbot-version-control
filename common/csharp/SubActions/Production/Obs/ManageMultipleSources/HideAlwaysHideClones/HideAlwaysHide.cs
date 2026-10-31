@@ -10,7 +10,7 @@ public partial class CPHInline
 
     public bool Execute()
     {
-        CPH.TryGetArg("debugthis", out bool debugEnabled);
+        CPH.TryGetArg("sbArgDebugThis", out bool debugEnabled);
 
         var scenes = JObject.Parse(CPH.ObsSendRaw("GetSceneList", "{}", 0))["scenes"];
         if (debugEnabled)

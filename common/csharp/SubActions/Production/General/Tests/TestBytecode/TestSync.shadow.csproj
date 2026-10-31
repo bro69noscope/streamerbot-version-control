@@ -1,0 +1,5 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <UseBroStreamerTools>true</UseBroStreamerTools>
+  </PropertyGroup>
+</Project>

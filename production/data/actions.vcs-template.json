@@ -2266,7 +2266,7 @@
       "enabled": true,
       "excludeFromHistory": false,
       "excludeFromPending": false,
-      "name": "sbact__ClearStreamfeed",
+      "name": "sbact__ClearStreamFeedApp",
       "group": "Common - StreamFeedApp - Manage Feed",
       "alwaysRun": false,
       "randomAction": false,

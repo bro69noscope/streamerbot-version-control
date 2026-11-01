@@ -1,5 +1,5 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <UseNewtonsoftJson>true</UseNewtonsoftJson>
+    <SbotRefNewtonsoftJson>true</SbotRefNewtonsoftJson>
   </PropertyGroup>
 </Project>

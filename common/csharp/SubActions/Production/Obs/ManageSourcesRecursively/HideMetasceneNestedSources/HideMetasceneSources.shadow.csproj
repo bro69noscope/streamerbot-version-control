@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <UseNewtonsoftJson>true</UseNewtonsoftJson>
-    <UseBroStreamerTools>true</UseBroStreamerTools>
+    <SbotRefNewtonsoftJson>true</SbotRefNewtonsoftJson>
+    <SbotRefBroStreamerTools>true</SbotRefBroStreamerTools>
   </PropertyGroup>
 </Project>

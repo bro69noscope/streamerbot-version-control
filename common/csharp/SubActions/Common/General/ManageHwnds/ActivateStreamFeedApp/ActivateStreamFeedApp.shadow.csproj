@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <UseBroStreamerTools>true</UseBroStreamerTools>
+    <SbotRefBroStreamerTools>true</SbotRefBroStreamerTools>
   </PropertyGroup>
 </Project>
 

@@ -30,11 +30,11 @@
     <Compile Include="$(MSBuildProjectDirectory)\$(SubActionSourceFile).cs"/>
   </ItemGroup>
 
-  <ItemGroup Condition="'$(IsSubActionProject)'=='true' and '$(UseBroStreamerTools)'=='true'">
+  <ItemGroup Condition="'$(IsSubActionProject)'=='true' and '$(SbotRefBroStreamerTools)'=='true'">
     <ProjectReference Include="$(MSBuildThisFileDirectory)dlls\BroStreamerTools\BroStreamerTools.csproj"/>
   </ItemGroup>
 
-  <ItemGroup Condition="'$(IsSubActionProject)'=='true' and '$(UseNewtonsoftJson)'=='true'">
+  <ItemGroup Condition="'$(IsSubActionProject)'=='true' and '$(SbotRefNewtonsoftJson)'=='true'">
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
   </ItemGroup>
 

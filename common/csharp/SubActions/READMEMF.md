@@ -48,8 +48,8 @@ Extra references are opt-in so the shadow mirrors what the sub action really ref
 Streamer.bot. set them in the .shadow.csproj when needed:
 ```
     <PropertyGroup>
-      <UseBroStreamerTools>true</UseBroStreamerTools>
-      <UseNewtonsoftJson>true</UseNewtonsoftJson>
+      <SbotRefBroStreamerTools>true</SbotRefBroStreamerTools>
+      <SbotRefNewtonsoftJson>true</SbotRefNewtonsoftJson>
     </PropertyGroup>
 ```
 

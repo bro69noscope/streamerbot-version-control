@@ -1,6 +1,6 @@
 using System;
 
-public class CPHInline
+public partial class CPHInline
 {
     public bool Execute()
     {

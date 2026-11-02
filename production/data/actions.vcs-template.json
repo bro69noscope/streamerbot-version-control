@@ -1,6 +1,6 @@
 {
   "version": 24,
-  "t": "2026-11-01T20:47:00.7406847+01:00",
+  "t": "2026-11-01T22:41:40.9297227+01:00",
   "blocking": false,
   "collapsedGroups": [],
   "groups": [
@@ -2507,6 +2507,55 @@
           "parentId": null,
           "enabled": true,
           "index": 1
+        },
+        {
+          "name": "testgrp",
+          "color": null,
+          "random": false,
+          "subActions": [
+            {
+              "name": "TestSyncGrp.cs",
+              "description": null,
+              "references": [
+                "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+              ],
+              "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIC8vIHN5bmMgdGVzdCBncnAgNA0KICAgICAgICAvLyB0aGlzIGlzIGFkZGVkIGJ5IHN5bmMNCiAgICAgICAgQnJvTG9nZ2VyLkluZm8oIlN5bmMgdGVzdCAzIik7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+              "precompile": false,
+              "delayStart": false,
+              "saveResultToVariable": false,
+              "saveToVariable": null,
+              "id": "82e5c073-f414-4723-b380-00a8af2b2be6",
+              "weight": 0.0,
+              "type": 99999,
+              "parentId": "07165c66-7368-452b-bb17-db1884bfc68a",
+              "enabled": true,
+              "index": 0
+            },
+            {
+              "name": "TestSyncGrp2.cs",
+              "description": null,
+              "references": [
+                "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+              ],
+              "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIC8vIHN5bmMgdGVzdCA0DQogICAgICAgIEJyb0xvZ2dlci5JbmZvKCJTeW5jIHRlc3QgMyIpOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+              "precompile": false,
+              "delayStart": false,
+              "saveResultToVariable": false,
+              "saveToVariable": null,
+              "id": "2af71f1b-0230-4999-b276-e9c2408499b0",
+              "weight": 0.0,
+              "type": 99999,
+              "parentId": "07165c66-7368-452b-bb17-db1884bfc68a",
+              "enabled": true,
+              "index": 1
+            }
+          ],
+          "id": "07165c66-7368-452b-bb17-db1884bfc68a",
+          "weight": 0.0,
+          "type": 99900,
+          "parentId": null,
+          "enabled": true,
+          "index": 2
         }
       ],
       "collapsedGroups": ["0e31b1ce-ee30-485e-9fa4-e83d9b82321e"]

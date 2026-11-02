@@ -34,6 +34,10 @@
     <ProjectReference Include="$(MSBuildThisFileDirectory)dlls\BroStreamerTools\BroStreamerTools.csproj"/>
   </ItemGroup>
 
+  <ItemGroup Condition="'$(IsSubActionProject)'=='true' and '$(SbotRefFramework)'!=''">
+    <Reference Include="$(SbotRefFramework)"/>
+  </ItemGroup>
+
   <ItemGroup Condition="'$(IsSubActionProject)'=='true' and '$(SbotRefNewtonsoftJson)'=='true'">
     <PackageReference Include="Newtonsoft.Json" Version="13.0.3"/>
   </ItemGroup>

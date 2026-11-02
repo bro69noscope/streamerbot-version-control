@@ -53,5 +53,14 @@ Streamer.bot. set them in the .shadow.csproj when needed:
     </PropertyGroup>
 ```
 
+.NET Framework assemblies (System.Core, System.Net.Http ...) go in one property, by name, with
+`;` between them. The shadow csproj compiles against them, and the templater adds them to the
+sub-action's references in Streamer.bot:
+```
+    <PropertyGroup>
+      <SbotRefFramework>System.Core;System.Net.Http</SbotRefFramework>
+    </PropertyGroup>
+```
+
 In order for the LSP to properly diagnose the project, do not forget to run `dotnet sln restore
 csharp.sln` after the csproj was built.

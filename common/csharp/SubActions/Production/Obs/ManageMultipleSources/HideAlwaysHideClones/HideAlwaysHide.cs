@@ -1,6 +1,3 @@
-// Required references to manually add (not included in our sbot dlls):
-//   - System.Core.dll
-
 using BroStreamerTools.Logging;
 using Newtonsoft.Json.Linq;
 

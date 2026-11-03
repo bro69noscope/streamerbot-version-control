@@ -141,7 +141,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__alerts",
+          "sceneName": "scene__layer__alerts",
           "sourceName": "browser__streamerbot_alerts",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -169,7 +169,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__alerts",
+          "sceneName": "scene__layer__alerts",
           "sourceName": "browser__streamerbot_alerts",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -197,7 +197,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__facecam",
+          "sceneName": "scene__layer__facecam",
           "sourceName": "capture__device__facecam",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -225,7 +225,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__facecam",
+          "sceneName": "scene__layer__facecam",
           "sourceName": "capture__device__facecam",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -253,7 +253,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__eyetracker",
+          "sceneName": "scene__layer__eyetracker",
           "sourceName": "capture__game__eyetracker",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -281,7 +281,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__eyetracker",
+          "sceneName": "scene__layer__eyetracker",
           "sourceName": "capture_eyetracker",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -461,7 +461,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__alerts",
+          "sceneName": "scene__layer__alerts",
           "sourceName": "browser__streamerbot_alerts",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -484,7 +484,7 @@
           "index": 1
         },
         {
-          "sceneName": "scene__alerts",
+          "sceneName": "scene__layer__alerts",
           "sourceName": "browser__streamerbot_alerts",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",

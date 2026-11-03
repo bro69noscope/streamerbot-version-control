@@ -226,7 +226,7 @@
           "index": 2
         },
         {
-          "sceneName": "scene__gameplay__fundamental_sources",
+          "sceneName": "scene__layer_ig__fundamental_sources",
           "sourceName": "~cut__clone__facecam_gameplay",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -238,7 +238,7 @@
           "index": 3
         },
         {
-          "sceneName": "scene__gameplay__fundamental_sources",
+          "sceneName": "scene__layer_ig__fundamental_sources",
           "sourceName": "~fade__clone__facecam_gameplay",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -378,7 +378,7 @@
       ],
       "subActions": [
         {
-          "sceneName": "scene__gameplay__fundamental_sources",
+          "sceneName": "scene__layer_ig__fundamental_sources",
           "sourceName": "~fade__clone__facecam_gameplay",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -390,7 +390,7 @@
           "index": 0
         },
         {
-          "sceneName": "scene__gameplay__fundamental_sources",
+          "sceneName": "scene__layer_ig__fundamental_sources",
           "sourceName": "~cut__clone__facecam_gameplay",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -418,7 +418,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__gameplay__fundamental_sources",
+          "sceneName": "scene__layer_ig__fundamental_sources",
           "sourceName": "~fade__clone__facecam_gameplay",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -430,7 +430,7 @@
           "index": 0
         },
         {
-          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sceneName": "scene__layer_ig__script__shopwatcher",
           "sourceName": "text__brb_buying_milk",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -442,7 +442,7 @@
           "index": 1
         },
         {
-          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sceneName": "scene__layer_ig__script__shopwatcher",
           "sourceName": "text__youve_been_in_shop_for_x_seconds",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -547,7 +547,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sceneName": "scene__layer_ig__script__shopwatcher",
           "sourceName": "text__brb_buying_milk",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -575,7 +575,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sceneName": "scene__layer_ig__script__shopwatcher",
           "sourceName": "text__brb_buying_milk",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -603,7 +603,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sceneName": "scene__layer_ig__script__shopwatcher",
           "sourceName": "text__youve_been_in_shop_for_x_seconds",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -627,7 +627,7 @@
           "index": 1
         },
         {
-          "sceneName": "scene__gameplay__script__shopwatcher",
+          "sceneName": "scene__layer_ig__script__shopwatcher",
           "sourceName": "text__youve_been_in_shop_for_x_seconds",
           "text": "%line0%",
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -1793,7 +1793,7 @@
       "triggers": [],
       "subActions": [
         {
-          "sceneName": "scene__alerts",
+          "sceneName": "scene__layer__alerts",
           "sourceName": "browser__streamerbot_alerts",
           "state": 1,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -1816,7 +1816,7 @@
           "index": 1
         },
         {
-          "sceneName": "scene__alerts",
+          "sceneName": "scene__layer__alerts",
           "sourceName": "browser__streamerbot_alerts",
           "state": 0,
           "connectionId": "00000000-0000-0000-0000-000000000000",
@@ -1938,7 +1938,7 @@
         {
           "name": "request sceneItemId for eyetracker in obs_conn__ftp",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "55675b79-4277-402e-843c-b00681034bcc",
@@ -1951,7 +1951,7 @@
         {
           "name": "enable eyetracker in obs_conn__ftp",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "72099d27-7aca-4796-b21c-7793f79cdb47",
@@ -1964,7 +1964,7 @@
         {
           "name": "request sceneItemId for eyetracker in obs_conn__prod",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "bdc8fef8-72d4-40ab-a9dc-9383a7769ecf",
@@ -1977,7 +1977,7 @@
         {
           "name": "disable eyetracker in obs_conn__prod",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "d1a4c2d6-cdc8-4998-8ea8-b196f6ac7113",
@@ -2014,7 +2014,7 @@
         {
           "name": "request sceneItemId for eyetracker in obs_conn__prod",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "3e3f34d8-67e5-4638-a221-0568bc2a3ffb",
@@ -2027,7 +2027,7 @@
         {
           "name": "enable eyetracker in obs_conn__prod",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
           "id": "1411578e-6eac-4fbb-8aae-d496bf1398ee",
@@ -2040,7 +2040,7 @@
         {
           "name": "request sceneItemId for eyetracker in obs_conn__ftp",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "b37fd662-64ee-4af7-971e-02a720ecd214",
@@ -2053,7 +2053,7 @@
         {
           "name": "disable eyetracker in obs_conn__ftp",
           "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
+          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
           "resultsToArgs": true,
           "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
           "id": "4b91cfc9-3181-444d-8025-b010146ee88a",

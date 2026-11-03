@@ -8,8 +8,8 @@ public static class MetasceneScenes
 
     public static readonly string[] Essential =
     [
-        "scene__alerts",
-        "scene__gameplay__fundamental_sources",
+        "scene__layer__alerts",
+        "scene__layer_ig__fundamental_sources",
     ];
 
     public static bool IsEssential(string sceneName) => Array.IndexOf(Essential, sceneName) >= 0;

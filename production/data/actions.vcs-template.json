@@ -1927,56 +1927,23 @@
       ],
       "subActions": [
         {
-          "name": "request sceneItemId for eyetracker in obs_conn__ftp",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
-          "id": "55675b79-4277-402e-843c-b00681034bcc",
+          "name": "EyetrackerToFtp.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\Newtonsoft.Json.dll"
+          ],
+          "byteCode": "dXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIGNvbnN0IHN0cmluZyBTY2VuZSA9ICJzY2VuZV9fbGF5ZXJfX2V5ZXRyYWNrZXIiOw0KICAgIGNvbnN0IHN0cmluZyBTb3VyY2UgPSAiY2FwdHVyZV9fZ2FtZV9fZXlldHJhY2tlciI7DQoNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIFNldEVuYWJsZWQoMiwgdHJ1ZSk7DQogICAgICAgIFNldEVuYWJsZWQoMCwgZmFsc2UpOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQoNCiAgICB2b2lkIFNldEVuYWJsZWQoaW50IGNvbm4sIGJvb2wgZW5hYmxlZCkNCiAgICB7DQogICAgICAgIHN0cmluZyByYXcgPSBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJHZXRTY2VuZUl0ZW1JZCIsDQogICAgICAgICAgICBuZXcgSk9iamVjdCB7IFsic2NlbmVOYW1lIl0gPSBTY2VuZSwgWyJzb3VyY2VOYW1lIl0gPSBTb3VyY2UgfS5Ub1N0cmluZygpLA0KICAgICAgICAgICAgY29ubg0KICAgICAgICApOw0KICAgICAgICBpbnQgaWQgPSAoaW50KUpPYmplY3QuUGFyc2UocmF3KVsic2NlbmVJdGVtSWQiXTsNCg0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJTZXRTY2VuZUl0ZW1FbmFibGVkIiwNCiAgICAgICAgICAgIG5ldyBKT2JqZWN0DQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgWyJzY2VuZU5hbWUiXSA9IFNjZW5lLA0KICAgICAgICAgICAgICAgIFsic2NlbmVJdGVtSWQiXSA9IGlkLA0KICAgICAgICAgICAgICAgIFsic2NlbmVJdGVtRW5hYmxlZCJdID0gZW5hYmxlZCwNCiAgICAgICAgICAgIH0uVG9TdHJpbmcoKSwNCiAgICAgICAgICAgIGNvbm4NCiAgICAgICAgKTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "6eb3cd51-5aef-4dfe-9c91-67d74fa6645d",
           "weight": 0.0,
-          "type": 46,
+          "type": 99999,
           "parentId": null,
           "enabled": true,
-          "index": 0
-        },
-        {
-          "name": "enable eyetracker in obs_conn__ftp",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
-          "id": "72099d27-7aca-4796-b21c-7793f79cdb47",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
-          "name": "request sceneItemId for eyetracker in obs_conn__prod",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
-          "id": "bdc8fef8-72d4-40ab-a9dc-9383a7769ecf",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
-        },
-        {
-          "name": "disable eyetracker in obs_conn__prod",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
-          "id": "d1a4c2d6-cdc8-4998-8ea8-b196f6ac7113",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 3
+          "index": 4
         }
       ],
       "collapsedGroups": []
@@ -2003,56 +1970,23 @@
       ],
       "subActions": [
         {
-          "name": "request sceneItemId for eyetracker in obs_conn__prod",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
-          "id": "3e3f34d8-67e5-4638-a221-0568bc2a3ffb",
+          "name": "EyetrackerToProd.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\Newtonsoft.Json.dll"
+          ],
+          "byteCode": "dXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIGNvbnN0IHN0cmluZyBTY2VuZSA9ICJzY2VuZV9fbGF5ZXJfX2V5ZXRyYWNrZXIiOw0KICAgIGNvbnN0IHN0cmluZyBTb3VyY2UgPSAiY2FwdHVyZV9fZ2FtZV9fZXlldHJhY2tlciI7DQoNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIFNldEVuYWJsZWQoMCwgdHJ1ZSk7DQogICAgICAgIFNldEVuYWJsZWQoMiwgZmFsc2UpOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQoNCiAgICB2b2lkIFNldEVuYWJsZWQoaW50IGNvbm4sIGJvb2wgZW5hYmxlZCkNCiAgICB7DQogICAgICAgIHN0cmluZyByYXcgPSBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJHZXRTY2VuZUl0ZW1JZCIsDQogICAgICAgICAgICBuZXcgSk9iamVjdCB7IFsic2NlbmVOYW1lIl0gPSBTY2VuZSwgWyJzb3VyY2VOYW1lIl0gPSBTb3VyY2UgfS5Ub1N0cmluZygpLA0KICAgICAgICAgICAgY29ubg0KICAgICAgICApOw0KICAgICAgICBpbnQgaWQgPSAoaW50KUpPYmplY3QuUGFyc2UocmF3KVsic2NlbmVJdGVtSWQiXTsNCg0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJTZXRTY2VuZUl0ZW1FbmFibGVkIiwNCiAgICAgICAgICAgIG5ldyBKT2JqZWN0DQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgWyJzY2VuZU5hbWUiXSA9IFNjZW5lLA0KICAgICAgICAgICAgICAgIFsic2NlbmVJdGVtSWQiXSA9IGlkLA0KICAgICAgICAgICAgICAgIFsic2NlbmVJdGVtRW5hYmxlZCJdID0gZW5hYmxlZCwNCiAgICAgICAgICAgIH0uVG9TdHJpbmcoKSwNCiAgICAgICAgICAgIGNvbm4NCiAgICAgICAgKTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "27800de8-b5fb-4ebb-9db4-d41b150d8185",
           "weight": 0.0,
-          "type": 46,
+          "type": 99999,
           "parentId": null,
           "enabled": true,
           "index": 0
-        },
-        {
-          "name": "enable eyetracker in obs_conn__prod",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": true\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
-          "id": "1411578e-6eac-4fbb-8aae-d496bf1398ee",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
-          "name": "request sceneItemId for eyetracker in obs_conn__ftp",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"GetSceneItemId\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sourceName\": \"capture__game__eyetracker\"\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
-          "id": "b37fd662-64ee-4af7-971e-02a720ecd214",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
-        },
-        {
-          "name": "disable eyetracker in obs_conn__ftp",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetSceneItemEnabled\",\r\n  \"requestData\": {\r\n    \"sceneName\": \"scene__layer__eyetracker\",\r\n    \"sceneItemId\": \"%obsRaw.sceneItemId%\",\r\n    \"sceneItemEnabled\": false\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "d4bcbb75-2be8-46a4-b800-d65ee5f3fefc",
-          "id": "4b91cfc9-3181-444d-8025-b010146ee88a",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 3
         }
       ],
       "collapsedGroups": []

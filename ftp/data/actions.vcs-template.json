@@ -458,42 +458,33 @@
       "alwaysRun": false,
       "randomAction": false,
       "concurrent": false,
-      "triggers": [],
+      "triggers": [
+        {
+          "variables": {},
+          "id": "7bf500a1-0567-4c78-b7cd-6e0fcbff991d",
+          "type": 702,
+          "enabled": true,
+          "exclusions": []
+        }
+      ],
       "subActions": [
         {
-          "sceneName": "scene__layer__alerts",
-          "sourceName": "browser__streamerbot_alerts",
-          "state": 1,
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "85ec42f0-51e6-4888-adac-02b630b64242",
+          "name": "RefreshAlertsBrowser.cs",
+          "description": null,
+          "references": [
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJQcmVzc0lucHV0UHJvcGVydGllc0J1dHRvbiIsDQogICAgICAgICAgICAie1wiaW5wdXROYW1lXCI6XCJicm93c2VyX19zdHJlYW1lcmJvdF9hbGVydHNcIixcInByb3BlcnR5TmFtZVwiOlwicmVmcmVzaG5vY2FjaGVcIn0iLA0KICAgICAgICAgICAgMA0KICAgICAgICApOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "67168e38-5a82-48fd-8281-8c6c8d9e3b74",
           "weight": 0.0,
-          "type": 30,
+          "type": 99999,
           "parentId": null,
           "enabled": true,
-          "index": 0
-        },
-        {
-          "value": "1000",
-          "maxValue": null,
-          "random": false,
-          "id": "0b1a6851-8a8e-43e4-b6b7-3b9effc4b420",
-          "weight": 0.0,
-          "type": 1002,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
-          "sceneName": "scene__layer__alerts",
-          "sourceName": "browser__streamerbot_alerts",
-          "state": 0,
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "86eb9de3-eebe-485a-a1c5-8eb3dcdf1142",
-          "weight": 0.0,
-          "type": 30,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
+          "index": 3
         }
       ],
       "collapsedGroups": []

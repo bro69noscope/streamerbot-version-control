@@ -1,6 +1,5 @@
 namespace BroStreamerTools.Obs;
 
-// Indexes of the OBS connections in Streamer.bot. Pass them as the connection arg of CPH.Obs*.
 public static class ObsConn
 {
     // The first connection of whichever profile runs the action: obs_conn__prod in the production

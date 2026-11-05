@@ -21,7 +21,16 @@
     <ObsMappingsGen>$(MSBuildProjectDirectory)\obj\gen\ObsMappings.g.cs</ObsMappingsGen>
   </PropertyGroup>
   <Target Name="GenerateObsMappings" BeforeTargets="CoreCompile">
-    <Exec Command="pwsh -NoProfile -File &quot;$(MSBuildProjectDirectory)\Obs\gen-obs-mappings.ps1&quot; -OutFile &quot;$(ObsMappingsGen)&quot;"/>
+    <PropertyGroup>
+      <ObsMappingsGenCommand>pwsh -NoProfile -File "$(MSBuildProjectDirectory)\Obs\gen-obs-mappings.ps1" -OutFile "$(ObsMappingsGen)"</ObsMappingsGenCommand>
+    </PropertyGroup>
+
+    <Exec Condition="'$(DesignTimeBuild)' != 'true'" Command="$(ObsMappingsGenCommand)"/>
+
+    <Exec Condition="'$(DesignTimeBuild)' == 'true'" Command="$(ObsMappingsGenCommand)" ContinueOnError="true" IgnoreExitCode="true" StandardOutputImportance="low" StandardErrorImportance="low"/>
+
+    <Warning Condition="'$(DesignTimeBuild)' == 'true' and !Exists('$(ObsMappingsGen)')" Text="ObsMappings.g.cs does not exist, so ObsMappingValues is unresolved. Run 'dotnet build' once with STREAMING_REPO_PATH set, or start the editor from a shell that has it."/>
+
     <ItemGroup>
       <Compile Include="$(ObsMappingsGen)"/>
     </ItemGroup>

@@ -2424,24 +2424,6 @@
               "parentId": "07165c66-7368-452b-bb17-db1884bfc68a",
               "enabled": true,
               "index": 0
-            },
-            {
-              "name": "TestSyncGrp2.cs",
-              "description": null,
-              "references": [
-                "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
-              ],
-              "byteCode": "dXNpbmcgU3lzdGVtOw0KdXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIC8vIHN5bmMgdGVzdCA0DQogICAgICAgIEJyb0xvZ2dlci5JbmZvKCJTeW5jIHRlc3QgMyIpOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
-              "precompile": false,
-              "delayStart": false,
-              "saveResultToVariable": false,
-              "saveToVariable": null,
-              "id": "2af71f1b-0230-4999-b276-e9c2408499b0",
-              "weight": 0.0,
-              "type": 99999,
-              "parentId": "07165c66-7368-452b-bb17-db1884bfc68a",
-              "enabled": true,
-              "index": 1
             }
           ],
           "id": "07165c66-7368-452b-bb17-db1884bfc68a",

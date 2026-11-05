@@ -29,7 +29,7 @@
 
     <Exec Condition="'$(DesignTimeBuild)' == 'true'" Command="$(ObsMappingsGenCommand)" ContinueOnError="true" IgnoreExitCode="true" StandardOutputImportance="low" StandardErrorImportance="low"/>
 
-    <Warning Condition="'$(DesignTimeBuild)' == 'true' and !Exists('$(ObsMappingsGen)')" Text="ObsMappings.g.cs does not exist, so ObsMappingValues is unresolved. Run 'dotnet build' once with STREAMING_REPO_PATH set, or start the editor from a shell that has it."/>
+    <Warning Condition="'$(DesignTimeBuild)' == 'true' and !Exists('$(ObsMappingsGen)')" Text="ObsMappings.g.cs does not exist, so ObsMappingValues is unresolved. Run 'dotnet build' once with BRO_NLLS_REPO_PATH set, or start the editor from a shell that has it."/>
 
     <ItemGroup>
       <Compile Include="$(ObsMappingsGen)"/>

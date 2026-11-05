@@ -8,9 +8,9 @@ param([Parameter(Mandatory=$true)] [string]$OutFile)
 
 $ErrorActionPreference = 'Stop'
 
-$repo = $env:STREAMING_REPO_PATH
+$repo = $env:BRO_NLLS_REPO_PATH
 if (-not $repo) {
-  throw 'STREAMING_REPO_PATH is not set, cannot resolve the OBS mappings file'
+  throw 'BRO_NLLS_REPO_PATH is not set, cannot resolve the OBS mappings file'
 }
 
 . (Join-Path $repo 'external\obs\version-control\dotsource-obs-paths.ps1')

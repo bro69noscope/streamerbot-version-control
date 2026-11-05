@@ -67,7 +67,7 @@
       "triggers": [],
       "subActions": [
         {
-          "command": "{{STREAMING_REPO_PATH}}external\\streamerbot\\focus_newest_hwnd.ahk",
+          "command": "{{BRO_NLLS_REPO_PATH}}external\\streamerbot\\focus_newest_hwnd.ahk",
           "arguments": null,
           "workingDir": null,
           "envVars": {},

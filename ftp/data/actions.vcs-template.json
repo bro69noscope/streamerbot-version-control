@@ -472,9 +472,10 @@
           "name": "RefreshAlertsBrowser.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJQcmVzc0lucHV0UHJvcGVydGllc0J1dHRvbiIsDQogICAgICAgICAgICAie1wiaW5wdXROYW1lXCI6XCJicm93c2VyX19zdHJlYW1lcmJvdF9hbGVydHNcIixcInByb3BlcnR5TmFtZVwiOlwicmVmcmVzaG5vY2FjaGVcIn0iLA0KICAgICAgICAgICAgMA0KICAgICAgICApOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiUHJlc3NJbnB1dFByb3BlcnRpZXNCdXR0b24iLA0KICAgICAgICAgICAgIntcImlucHV0TmFtZVwiOlwiYnJvd3Nlcl9fc3RyZWFtZXJib3RfYWxlcnRzXCIsXCJwcm9wZXJ0eU5hbWVcIjpcInJlZnJlc2hub2NhY2hlXCJ9IiwNCiAgICAgICAgICAgIE9ic0Nvbm4uRGVmYXVsdA0KICAgICAgICApOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -596,9 +597,10 @@
           "name": "Unmute5And6Channels.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyXzUvNiI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gMDsNCg0KICAgICAgICBDUEguT2JzU291cmNlVW5NdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl81LzYiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IE9ic0Nvbm4uRGVmYXVsdDsNCg0KICAgICAgICBDUEguT2JzU291cmNlVW5NdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -638,9 +640,10 @@
           "name": "Mute5And6Channels.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyXzUvNiI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gMDsNCg0KICAgICAgICBDUEguT2JzU291cmNlTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl81LzYiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IE9ic0Nvbm4uRGVmYXVsdDsNCg0KICAgICAgICBDUEguT2JzU291cmNlTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -828,9 +831,10 @@
           "name": "MuteAuxSend1.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyX2F1eF9zZW5kXzEiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZU11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl9hdXhfc2VuZF8xIjsNCiAgICAgICAgaW50IG9ic0Nvbm5lY3Rpb24gPSBPYnNDb25uLkRlZmF1bHQ7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZU11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -870,9 +874,10 @@
           "name": "UnmuteAuxSend1.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyX2F1eF9zZW5kXzEiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZVVuTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl9hdXhfc2VuZF8xIjsNCiAgICAgICAgaW50IG9ic0Nvbm5lY3Rpb24gPSBPYnNDb25uLkRlZmF1bHQ7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZVVuTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -912,9 +917,10 @@
           "name": "Mute7And8Channels.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyXzcvOCI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gMDsNCg0KICAgICAgICBDUEguT2JzU291cmNlTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl83LzgiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IE9ic0Nvbm4uRGVmYXVsdDsNCg0KICAgICAgICBDUEguT2JzU291cmNlTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -954,9 +960,10 @@
           "name": "Unmute7And8Channels.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyXzcvOCI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gMDsNCg0KICAgICAgICBDUEguT2JzU291cmNlVW5NdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl83LzgiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IE9ic0Nvbm4uRGVmYXVsdDsNCg0KICAgICAgICBDUEguT2JzU291cmNlVW5NdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -996,9 +1003,10 @@
           "name": "Mute11And12Channels.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyXzExLzEyIjsNCiAgICAgICAgaW50IG9ic0Nvbm5lY3Rpb24gPSAwOw0KDQogICAgICAgIENQSC5PYnNTb3VyY2VNdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl8xMS8xMiI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gT2JzQ29ubi5EZWZhdWx0Ow0KDQogICAgICAgIENQSC5PYnNTb3VyY2VNdXRlKHNjZW5lLCBzb3VyY2UsIG9ic0Nvbm5lY3Rpb24pOw0KDQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1038,9 +1046,10 @@
           "name": "Unmute11And12Channels.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyXzExLzEyIjsNCiAgICAgICAgaW50IG9ic0Nvbm5lY3Rpb24gPSAwOw0KDQogICAgICAgIENQSC5PYnNTb3VyY2VVbk11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl8xMS8xMiI7DQogICAgICAgIGludCBvYnNDb25uZWN0aW9uID0gT2JzQ29ubi5EZWZhdWx0Ow0KDQogICAgICAgIENQSC5PYnNTb3VyY2VVbk11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1080,9 +1089,10 @@
           "name": "MuteUsbOut.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyX3VzYl9vdXQiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZU11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl91c2Jfb3V0IjsNCiAgICAgICAgaW50IG9ic0Nvbm5lY3Rpb24gPSBPYnNDb25uLkRlZmF1bHQ7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZU11dGUoc2NlbmUsIHNvdXJjZSwgb2JzQ29ubmVjdGlvbik7DQoNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1122,9 +1132,10 @@
           "name": "UnmuteUsbOut.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgc2NlbmUgPSBDUEguT2JzR2V0Q3VycmVudFNjZW5lKCk7DQogICAgICAgIHN0cmluZyBzb3VyY2UgPSAiYXVkaW9fX21peGVyX3VzYl9vdXQiOw0KICAgICAgICBpbnQgb2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZVVuTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHNjZW5lID0gQ1BILk9ic0dldEN1cnJlbnRTY2VuZSgpOw0KICAgICAgICBzdHJpbmcgc291cmNlID0gImF1ZGlvX19taXhlcl91c2Jfb3V0IjsNCiAgICAgICAgaW50IG9ic0Nvbm5lY3Rpb24gPSBPYnNDb25uLkRlZmF1bHQ7DQoNCiAgICAgICAgQ1BILk9ic1NvdXJjZVVuTXV0ZShzY2VuZSwgc291cmNlLCBvYnNDb25uZWN0aW9uKTsNCg0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1832,7 +1843,7 @@
             ".\\System.Reflection.Metadata.dll",
             ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguVHJ5R2V0QXJnKCJzYkFyZ0RlYnVnVGhpcyIsIG91dCBib29sIGRlYnVnKTsNCiAgICAgICAgcmV0dXJuIEFoa0NsaWVudC5TZW5kKCJBY3RpdmF0ZVN0cmVhbUZlZWRBcHAiLCBkZWJ1Zyk7DQogICAgfQ0KfQ0K",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5BaGs7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILlRyeUdldEFyZygic2JBcmdEZWJ1Z1RoaXMiLCBvdXQgYm9vbCBkZWJ1Zyk7DQogICAgICAgIHJldHVybiBBaGtDbGllbnQuU2VuZCgiQWN0aXZhdGVTdHJlYW1GZWVkQXBwIiwgZGVidWcpOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1872,9 +1883,10 @@
           "name": "FtpSetDocksRight.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJDYWxsVmVuZG9yUmVxdWVzdCIsDQogICAgICAgICAgICBAInsNCiAgICAgICAgICAgICAgICAiInZlbmRvck5hbWUiIjogIiJqckRvY2tpZSIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdFR5cGUiIjogIiJMb2FkRG9ja3NldCIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdERhdGEiIjogew0KICAgICAgICAgICAgICAgICAgICAiImZpbGVuYW1lIiI6ICIicmlnaHRfbW9uaXRvcl9mdHBfMTA4MHBfMTAwJSIiDQogICAgICAgICAgICAgICAgfQ0KICAgICAgICAgICAgfSIsDQogICAgICAgICAgICAwDQogICAgICAgICk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiQ2FsbFZlbmRvclJlcXVlc3QiLA0KICAgICAgICAgICAgQCJ7DQogICAgICAgICAgICAgICAgIiJ2ZW5kb3JOYW1lIiI6ICIianJEb2NraWUiIiwNCiAgICAgICAgICAgICAgICAiInJlcXVlc3RUeXBlIiI6ICIiTG9hZERvY2tzZXQiIiwNCiAgICAgICAgICAgICAgICAiInJlcXVlc3REYXRhIiI6IHsNCiAgICAgICAgICAgICAgICAgICAgIiJmaWxlbmFtZSIiOiAiInJpZ2h0X21vbml0b3JfZnRwXzEwODBwXzEwMCUiIg0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0iLA0KICAgICAgICAgICAgT2JzQ29ubi5EZWZhdWx0DQogICAgICAgICk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1915,9 +1927,10 @@
           "description": null,
           "references": [
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
-            ".\\Newtonsoft.Json.dll"
+            ".\\Newtonsoft.Json.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "dXNpbmcgTmV3dG9uc29mdC5Kc29uLkxpbnE7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIGNvbnN0IHN0cmluZyBJbnB1dE5hbWUgPSAiY2FwdHVyZV9fd2luZG93X19keW5hbWljX2h3bmQiOw0KICAgIGNvbnN0IGludCBPYnNDb25uZWN0aW9uID0gMDsNCg0KICAgIHN0YXRpYyBzdHJpbmcgRW5jKHN0cmluZyBzKQ0KICAgIHsNCiAgICAgICAgcmV0dXJuIHMuUmVwbGFjZSgiIyIsICIjMjMiKS5SZXBsYWNlKCI6IiwgIiMzQSIpOw0KICAgIH0NCg0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgc3RyaW5nIHRpdGxlID0gYXJnc1sidGl0bGUiXS5Ub1N0cmluZygpOw0KICAgICAgICBzdHJpbmcgY2xzID0gYXJnc1siY2xhc3MiXS5Ub1N0cmluZygpOw0KICAgICAgICBzdHJpbmcgZXhlID0gYXJnc1siZXhlIl0uVG9TdHJpbmcoKTsNCiAgICAgICAgaW50IHByaW8gPSBpbnQuUGFyc2UoYXJnc1sicHJpb3JpdHkiXS5Ub1N0cmluZygpKTsNCg0KICAgICAgICB2YXIgYm9keSA9IG5ldyBKT2JqZWN0DQogICAgICAgIHsNCiAgICAgICAgICAgIFsiaW5wdXROYW1lIl0gPSBJbnB1dE5hbWUsDQogICAgICAgICAgICBbImlucHV0U2V0dGluZ3MiXSA9IG5ldyBKT2JqZWN0DQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgWyJ3aW5kb3ciXSA9IEVuYyh0aXRsZSkgKyAiOiIgKyBFbmMoY2xzKSArICI6IiArIEVuYyhleGUpLA0KICAgICAgICAgICAgICAgIFsicHJpb3JpdHkiXSA9IHByaW8sDQogICAgICAgICAgICB9LA0KICAgICAgICAgICAgWyJvdmVybGF5Il0gPSB0cnVlLA0KICAgICAgICB9Ow0KDQogICAgICAgIENQSC5PYnNTZW5kUmF3KA0KICAgICAgICAgICAgIlNldElucHV0U2V0dGluZ3MiLA0KICAgICAgICAgICAgYm9keS5Ub1N0cmluZyhOZXd0b25zb2Z0Lkpzb24uRm9ybWF0dGluZy5Ob25lKSwNCiAgICAgICAgICAgIE9ic0Nvbm5lY3Rpb24NCiAgICAgICAgKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQp1c2luZyBOZXd0b25zb2Z0Lkpzb24uTGlucTsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgY29uc3Qgc3RyaW5nIElucHV0TmFtZSA9ICJjYXB0dXJlX193aW5kb3dfX2R5bmFtaWNfaHduZCI7DQogICAgY29uc3QgaW50IE9ic0Nvbm5lY3Rpb24gPSBPYnNDb25uLkRlZmF1bHQ7DQoNCiAgICBzdGF0aWMgc3RyaW5nIEVuYyhzdHJpbmcgcykNCiAgICB7DQogICAgICAgIHJldHVybiBzLlJlcGxhY2UoIiMiLCAiIzIzIikuUmVwbGFjZSgiOiIsICIjM0EiKTsNCiAgICB9DQoNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHN0cmluZyB0aXRsZSA9IGFyZ3NbInRpdGxlIl0uVG9TdHJpbmcoKTsNCiAgICAgICAgc3RyaW5nIGNscyA9IGFyZ3NbImNsYXNzIl0uVG9TdHJpbmcoKTsNCiAgICAgICAgc3RyaW5nIGV4ZSA9IGFyZ3NbImV4ZSJdLlRvU3RyaW5nKCk7DQogICAgICAgIGludCBwcmlvID0gaW50LlBhcnNlKGFyZ3NbInByaW9yaXR5Il0uVG9TdHJpbmcoKSk7DQoNCiAgICAgICAgdmFyIGJvZHkgPSBuZXcgSk9iamVjdA0KICAgICAgICB7DQogICAgICAgICAgICBbImlucHV0TmFtZSJdID0gSW5wdXROYW1lLA0KICAgICAgICAgICAgWyJpbnB1dFNldHRpbmdzIl0gPSBuZXcgSk9iamVjdA0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIFsid2luZG93Il0gPSBFbmModGl0bGUpICsgIjoiICsgRW5jKGNscykgKyAiOiIgKyBFbmMoZXhlKSwNCiAgICAgICAgICAgICAgICBbInByaW9yaXR5Il0gPSBwcmlvLA0KICAgICAgICAgICAgfSwNCiAgICAgICAgICAgIFsib3ZlcmxheSJdID0gdHJ1ZSwNCiAgICAgICAgfTsNCg0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJTZXRJbnB1dFNldHRpbmdzIiwNCiAgICAgICAgICAgIGJvZHkuVG9TdHJpbmcoTmV3dG9uc29mdC5Kc29uLkZvcm1hdHRpbmcuTm9uZSksDQogICAgICAgICAgICBPYnNDb25uZWN0aW9uDQogICAgICAgICk7DQogICAgICAgIHJldHVybiB0cnVlOw0KICAgIH0NCn0NCg==",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -1960,7 +1973,7 @@
             "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
             ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5Mb2dnaW5nOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBjb25zdCBzdHJpbmcgSW5wdXROYW1lID0gImNhcHR1cmVfX3dpbmRvd19fZHluYW1pY19od25kIjsNCiAgICBjb25zdCBpbnQgT2JzQ29ubmVjdGlvbiA9IDA7DQoNCiAgICBwdWJsaWMgYm9vbCBFeGVjdXRlKCkNCiAgICB7DQogICAgICAgIHN0cmluZyByID0gQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiR2V0SW5wdXRTZXR0aW5ncyIsDQogICAgICAgICAgICAie1wiaW5wdXROYW1lXCI6XCIiICsgSW5wdXROYW1lICsgIlwifSIsDQogICAgICAgICAgICBPYnNDb25uZWN0aW9uDQogICAgICAgICk7DQogICAgICAgIEJyb0xvZ2dlci5JbmZvKHIpOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQp1c2luZyBCcm9TdHJlYW1lclRvb2xzLkxvZ2dpbmc7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIGNvbnN0IHN0cmluZyBJbnB1dE5hbWUgPSAiY2FwdHVyZV9fd2luZG93X19keW5hbWljX2h3bmQiOw0KICAgIGNvbnN0IGludCBPYnNDb25uZWN0aW9uID0gT2JzQ29ubi5EZWZhdWx0Ow0KDQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgciA9IENQSC5PYnNTZW5kUmF3KA0KICAgICAgICAgICAgIkdldElucHV0U2V0dGluZ3MiLA0KICAgICAgICAgICAgIntcImlucHV0TmFtZVwiOlwiIiArIElucHV0TmFtZSArICJcIn0iLA0KICAgICAgICAgICAgT2JzQ29ubmVjdGlvbg0KICAgICAgICApOw0KICAgICAgICBCcm9Mb2dnZXIuSW5mbyhyKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KfQ0K",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,
@@ -2034,9 +2047,10 @@
           "name": "FtpSetDocksCenter.cs",
           "description": null,
           "references": [
-            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll",
+            ".\\dlls\\BroStreamerTools.dll"
           ],
-          "byteCode": "cHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJDYWxsVmVuZG9yUmVxdWVzdCIsDQogICAgICAgICAgICBAInsNCiAgICAgICAgICAgICAgICAiInZlbmRvck5hbWUiIjogIiJqckRvY2tpZSIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdFR5cGUiIjogIiJMb2FkRG9ja3NldCIiLA0KICAgICAgICAgICAgICAgICIicmVxdWVzdERhdGEiIjogew0KICAgICAgICAgICAgICAgICAgICAiImZpbGVuYW1lIiI6ICIiY2VudGVyX21vbml0b3JfZnRwXzEwODBwXzE1MCUiIg0KICAgICAgICAgICAgICAgIH0NCiAgICAgICAgICAgIH0iLA0KICAgICAgICAgICAgMA0KICAgICAgICApOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29scy5PYnM7DQoNCnB1YmxpYyBwYXJ0aWFsIGNsYXNzIENQSElubGluZQ0Kew0KICAgIHB1YmxpYyBib29sIEV4ZWN1dGUoKQ0KICAgIHsNCiAgICAgICAgQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiQ2FsbFZlbmRvclJlcXVlc3QiLA0KICAgICAgICAgICAgQCJ7DQogICAgICAgICAgICAgICAgIiJ2ZW5kb3JOYW1lIiI6ICIianJEb2NraWUiIiwNCiAgICAgICAgICAgICAgICAiInJlcXVlc3RUeXBlIiI6ICIiTG9hZERvY2tzZXQiIiwNCiAgICAgICAgICAgICAgICAiInJlcXVlc3REYXRhIiI6IHsNCiAgICAgICAgICAgICAgICAgICAgIiJmaWxlbmFtZSIiOiAiImNlbnRlcl9tb25pdG9yX2Z0cF8xMDgwcF8xNTAlIiINCiAgICAgICAgICAgICAgICB9DQogICAgICAgICAgICB9IiwNCiAgICAgICAgICAgIE9ic0Nvbm4uRGVmYXVsdA0KICAgICAgICApOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
           "precompile": false,
           "delayStart": false,
           "saveResultToVariable": false,

@@ -1,5 +1,5 @@
 using System;
-using BroStreamerTools;
+using BroStreamerTools.Obs;
 using BroStreamerTools.Logging;
 using Newtonsoft.Json.Linq;
 

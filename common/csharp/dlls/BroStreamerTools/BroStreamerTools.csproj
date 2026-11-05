@@ -21,7 +21,7 @@
     <ObsMappingsGen>$(MSBuildProjectDirectory)\obj\gen\ObsMappings.g.cs</ObsMappingsGen>
   </PropertyGroup>
   <Target Name="GenerateObsMappings" BeforeTargets="CoreCompile">
-    <Exec Command="pwsh -NoProfile -File &quot;$(MSBuildProjectDirectory)\gen-obs-mappings.ps1&quot; -OutFile &quot;$(ObsMappingsGen)&quot;"/>
+    <Exec Command="pwsh -NoProfile -File &quot;$(MSBuildProjectDirectory)\Obs\gen-obs-mappings.ps1&quot; -OutFile &quot;$(ObsMappingsGen)&quot;"/>
     <ItemGroup>
       <Compile Include="$(ObsMappingsGen)"/>
     </ItemGroup>

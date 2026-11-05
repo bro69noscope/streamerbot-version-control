@@ -1,4 +1,4 @@
-using BroStreamerTools;
+using BroStreamerTools.Ahk;
 
 public partial class CPHInline
 {

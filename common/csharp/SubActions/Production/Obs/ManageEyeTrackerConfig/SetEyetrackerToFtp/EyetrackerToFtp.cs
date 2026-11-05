@@ -1,4 +1,4 @@
-using BroStreamerTools;
+using BroStreamerTools.Obs;
 using Newtonsoft.Json.Linq;
 
 public partial class CPHInline

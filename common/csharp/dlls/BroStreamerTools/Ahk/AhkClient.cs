@@ -4,9 +4,10 @@ using System.Net.WebSockets;
 using System.Text;
 using System.Threading;
 using BroStreamerTools.Logging;
+using BroStreamerTools.Paths;
 using Newtonsoft.Json.Linq;
 
-namespace BroStreamerTools;
+namespace BroStreamerTools.Ahk;
 
 public static class AhkClient
 {

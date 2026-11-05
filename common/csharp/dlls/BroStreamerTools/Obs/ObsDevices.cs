@@ -1,6 +1,6 @@
 using BroStreamerTools.Logging;
 
-namespace BroStreamerTools;
+namespace BroStreamerTools.Obs;
 
 public static class ObsDevices
 {

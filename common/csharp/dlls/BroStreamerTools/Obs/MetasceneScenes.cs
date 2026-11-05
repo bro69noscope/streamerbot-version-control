@@ -1,6 +1,6 @@
 using System;
 
-namespace BroStreamerTools;
+namespace BroStreamerTools.Obs;
 
 public static class MetasceneScenes
 {

@@ -1,4 +1,4 @@
-namespace BroStreamerTools;
+namespace BroStreamerTools.Obs;
 
 // Indexes of the OBS connections in Streamer.bot. Pass them as the connection arg of CPH.Obs*.
 public static class ObsConn

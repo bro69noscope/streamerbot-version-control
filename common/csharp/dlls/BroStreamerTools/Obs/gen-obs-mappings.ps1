@@ -40,7 +40,7 @@ $source = @(
   "// source: $script:ObsMappingsPath"
   'using System.Collections.Generic;'
   ''
-  'namespace BroStreamerTools;'
+  'namespace BroStreamerTools.Obs;'
   ''
   'static class ObsMappingValues'
   '{'

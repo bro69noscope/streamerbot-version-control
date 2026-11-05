@@ -1,4 +1,4 @@
-using BroStreamerTools;
+using BroStreamerTools.Obs;
 using BroStreamerTools.Logging;
 
 public partial class CPHInline

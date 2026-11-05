@@ -3,7 +3,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using BroStreamerTools.Logging;
 
-namespace BroStreamerTools;
+namespace BroStreamerTools.Paths;
 
 public static class RepoPaths
 {

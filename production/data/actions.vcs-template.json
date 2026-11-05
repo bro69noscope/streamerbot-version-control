@@ -291,14 +291,20 @@
           "index": 8
         },
         {
-          "name": "set usb out mix volume to 0db",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputVolume\",\r\n  \"requestData\": {\r\n    \"inputName\": \"audio__mixer_usb_out\",\r\n    \"inputVolumeDb\": 0\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "00000000-0000-0000-0000-000000000000",
-          "id": "fc9aea25-7ebe-4a09-8089-fc3635a5a5d8",
+          "name": "ResetUsbOutVolume.cs",
+          "description": null,
+          "references": [
+            ".\\dlls\\BroStreamerTools.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCg0KcHVibGljIHBhcnRpYWwgY2xhc3MgQ1BISW5saW5lDQp7DQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJTZXRJbnB1dFZvbHVtZSIsDQogICAgICAgICAgICAie1wiaW5wdXROYW1lXCI6XCJhdWRpb19fbWl4ZXJfdXNiX291dFwiLFwiaW5wdXRWb2x1bWVEYlwiOjB9IiwNCiAgICAgICAgICAgIE9ic0Nvbm4uUHJvZA0KICAgICAgICApOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "5120bcc5-9439-46c2-99f5-b9322f884dfb",
           "weight": 0.0,
-          "type": 46,
+          "type": 99999,
           "parentId": null,
           "enabled": true,
           "index": 9
@@ -911,43 +917,24 @@
       ],
       "subActions": [
         {
-          "name": "set virtual cam in obs_conn__prod",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
-          "id": "bb361489-8886-4cf2-ae68-35a1e6ac1c01",
+          "name": "EnableVcam.cs",
+          "description": null,
+          "references": [
+            ".\\dlls\\BroStreamerTools.dll",
+            ".\\Newtonsoft.Json.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIE5ld3RvbnNvZnQuSnNvbi5MaW5xOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBjb25zdCBzdHJpbmcgVmlydHVhbENhbUlkID0gIk9CUyBWaXJ0dWFsIENhbWVyYToiOw0KDQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgaGFyZHdhcmVDYW1JZCA9IE9ic0RldmljZXMuTWFpbkNhbWVyYTsNCiAgICAgICAgaWYgKGhhcmR3YXJlQ2FtSWQgPT0gbnVsbCkNCiAgICAgICAgew0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQoNCiAgICAgICAgU2V0Q2FtRGV2aWNlKCJjYXB0dXJlX19kZXZpY2VfX2ZhY2VjYW0iLCBWaXJ0dWFsQ2FtSWQsIE9ic0Nvbm4uUHJvZCk7DQogICAgICAgIFNldENhbURldmljZSgiY2FwdHVyZV9fZGV2aWNlX192Y2FtX2ZhY2VjYW0iLCBoYXJkd2FyZUNhbUlkLCBPYnNDb25uLlZjYW0pOw0KICAgICAgICBDUEguT2JzU2VuZFJhdygiU3RhcnRWaXJ0dWFsQ2FtIiwgInt9IiwgT2JzQ29ubi5WY2FtKTsNCiAgICAgICAgcmV0dXJuIHRydWU7DQogICAgfQ0KDQogICAgdm9pZCBTZXRDYW1EZXZpY2Uoc3RyaW5nIGlucHV0LCBzdHJpbmcgZGV2aWNlSWQsIGludCBjb25uKQ0KICAgIHsNCiAgICAgICAgQ1BILk9ic1NlbmRSYXcoDQogICAgICAgICAgICAiU2V0SW5wdXRTZXR0aW5ncyIsDQogICAgICAgICAgICBuZXcgSk9iamVjdA0KICAgICAgICAgICAgew0KICAgICAgICAgICAgICAgIFsiaW5wdXROYW1lIl0gPSBpbnB1dCwNCiAgICAgICAgICAgICAgICBbImlucHV0U2V0dGluZ3MiXSA9IG5ldyBKT2JqZWN0IHsgWyJ2aWRlb19kZXZpY2VfaWQiXSA9IGRldmljZUlkIH0sDQogICAgICAgICAgICB9LlRvU3RyaW5nKCksDQogICAgICAgICAgICBjb25uDQogICAgICAgICk7DQogICAgfQ0KfQ0K",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "66c81353-9014-48d5-a832-04355d38bd36",
           "weight": 0.0,
-          "type": 46,
+          "type": 99999,
           "parentId": null,
           "enabled": true,
           "index": 0
-        },
-        {
-          "name": "set hardware cam in obs_conn__vcam",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__vcam_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
-          "id": "e62683af-7d25-4b0b-82ac-b89b4f5f1daa",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
-          "name": "start vcam in obs_conn__vcam",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"StartVirtualCam\",\r\n  \"requestData\": {}\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
-          "id": "f88849f4-3567-4e3a-8519-e76836620045",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
         }
       ],
       "collapsedGroups": []
@@ -974,43 +961,24 @@
       ],
       "subActions": [
         {
-          "name": "set virtual cam in obs_conn__vcam",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__vcam_facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"OBS Virtual Camera:\"\r\n    }\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
-          "id": "77dd4765-11eb-4b4a-bc38-e7526fe7533c",
+          "name": "DisableVcam.cs",
+          "description": null,
+          "references": [
+            ".\\dlls\\BroStreamerTools.dll",
+            ".\\Newtonsoft.Json.dll",
+            "..\\..\\..\\..\\..\\..\\Windows\\Microsoft.NET\\Framework64\\v4.0.30319\\mscorlib.dll"
+          ],
+          "byteCode": "dXNpbmcgQnJvU3RyZWFtZXJUb29sczsNCnVzaW5nIE5ld3RvbnNvZnQuSnNvbi5MaW5xOw0KDQpwdWJsaWMgcGFydGlhbCBjbGFzcyBDUEhJbmxpbmUNCnsNCiAgICBjb25zdCBzdHJpbmcgVmlydHVhbENhbUlkID0gIk9CUyBWaXJ0dWFsIENhbWVyYToiOw0KDQogICAgcHVibGljIGJvb2wgRXhlY3V0ZSgpDQogICAgew0KICAgICAgICBzdHJpbmcgaGFyZHdhcmVDYW1JZCA9IE9ic0RldmljZXMuTWFpbkNhbWVyYTsNCiAgICAgICAgaWYgKGhhcmR3YXJlQ2FtSWQgPT0gbnVsbCkNCiAgICAgICAgew0KICAgICAgICAgICAgcmV0dXJuIGZhbHNlOw0KICAgICAgICB9DQoNCiAgICAgICAgU2V0Q2FtRGV2aWNlKCJjYXB0dXJlX19kZXZpY2VfX3ZjYW1fZmFjZWNhbSIsIFZpcnR1YWxDYW1JZCwgT2JzQ29ubi5WY2FtKTsNCiAgICAgICAgU2V0Q2FtRGV2aWNlKCJjYXB0dXJlX19kZXZpY2VfX2ZhY2VjYW0iLCBoYXJkd2FyZUNhbUlkLCBPYnNDb25uLlByb2QpOw0KICAgICAgICBDUEguT2JzU2VuZFJhdygiU3RvcFZpcnR1YWxDYW0iLCAie30iLCBPYnNDb25uLlZjYW0pOw0KICAgICAgICByZXR1cm4gdHJ1ZTsNCiAgICB9DQoNCiAgICB2b2lkIFNldENhbURldmljZShzdHJpbmcgaW5wdXQsIHN0cmluZyBkZXZpY2VJZCwgaW50IGNvbm4pDQogICAgew0KICAgICAgICBDUEguT2JzU2VuZFJhdygNCiAgICAgICAgICAgICJTZXRJbnB1dFNldHRpbmdzIiwNCiAgICAgICAgICAgIG5ldyBKT2JqZWN0DQogICAgICAgICAgICB7DQogICAgICAgICAgICAgICAgWyJpbnB1dE5hbWUiXSA9IGlucHV0LA0KICAgICAgICAgICAgICAgIFsiaW5wdXRTZXR0aW5ncyJdID0gbmV3IEpPYmplY3QgeyBbInZpZGVvX2RldmljZV9pZCJdID0gZGV2aWNlSWQgfSwNCiAgICAgICAgICAgIH0uVG9TdHJpbmcoKSwNCiAgICAgICAgICAgIGNvbm4NCiAgICAgICAgKTsNCiAgICB9DQp9DQo=",
+          "precompile": false,
+          "delayStart": false,
+          "saveResultToVariable": false,
+          "saveToVariable": null,
+          "id": "2adc7afb-b023-43c4-942e-3bfdc2f81103",
           "weight": 0.0,
-          "type": 46,
+          "type": 99999,
           "parentId": null,
           "enabled": true,
           "index": 0
-        },
-        {
-          "name": "set hardware cam in obs_conn__prod",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"SetInputSettings\",\r\n  \"requestData\": {\r\n    \"inputName\": \"capture__device__facecam\",\r\n    \"inputSettings\": {\r\n      \"video_device_id\": \"Cam Link 4K:\\\\\\\\?\\\\usb#22vid_0fd9&pid_0066&mi_00#229&70bb0fb&0&0000#22{65e8773d-8f56-11d0-a3b9-00a0c9223196}\\\\global\"\r\n    }\r\n  }\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "a2b7e36b-15d4-4a05-95a4-ace6d17142f7",
-          "id": "f6a57d78-4d84-4abb-a898-fb3e69b4c1aa",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 1
-        },
-        {
-          "name": "stop vcam in obs_conn__vcam",
-          "prefix": "obsRaw",
-          "raw": "{\r\n  \"requestType\": \"StopVirtualCam\",\r\n  \"requestData\": {}\r\n}",
-          "resultsToArgs": true,
-          "connectionId": "4633f832-8228-441f-af9c-83dcd78640e7",
-          "id": "4a629466-e273-49da-a551-203ee5b01273",
-          "weight": 0.0,
-          "type": 46,
-          "parentId": null,
-          "enabled": true,
-          "index": 2
         }
       ],
       "collapsedGroups": []

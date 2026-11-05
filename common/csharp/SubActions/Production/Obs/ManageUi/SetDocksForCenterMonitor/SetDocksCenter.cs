@@ -1,3 +1,5 @@
+using BroStreamerTools;
+
 public partial class CPHInline
 {
     public bool Execute()
@@ -11,7 +13,7 @@ public partial class CPHInline
                     ""filename"": ""center_monitor_production_1080p_150%""
                 }
             }",
-            0
+            ObsConn.Prod
         );
         return true;
     }

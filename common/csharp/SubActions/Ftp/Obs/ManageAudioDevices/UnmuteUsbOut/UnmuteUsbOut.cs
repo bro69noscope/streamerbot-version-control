@@ -1,10 +1,12 @@
+using BroStreamerTools;
+
 public partial class CPHInline
 {
     public bool Execute()
     {
         string scene = CPH.ObsGetCurrentScene();
         string source = "audio__mixer_usb_out";
-        int obsConnection = 0;
+        int obsConnection = ObsConn.Default;
 
         CPH.ObsSourceUnMute(scene, source, obsConnection);
 

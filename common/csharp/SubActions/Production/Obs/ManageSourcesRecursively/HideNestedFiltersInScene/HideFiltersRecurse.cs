@@ -1,4 +1,5 @@
 using System;
+using BroStreamerTools;
 using BroStreamerTools.Logging;
 using Newtonsoft.Json.Linq;
 
@@ -27,7 +28,8 @@ public partial class CPHInline
     {
         string json = CPH.ObsSendRaw(
             "GetSourceFilterList",
-            new JObject { ["sourceName"] = sourceName }.ToString()
+            new JObject { ["sourceName"] = sourceName }.ToString(),
+            ObsConn.Prod
         );
 
         if (string.IsNullOrWhiteSpace(json))
@@ -67,7 +69,8 @@ public partial class CPHInline
     {
         string json = CPH.ObsSendRaw(
             "GetSceneItemList",
-            new JObject { ["sceneName"] = sceneName }.ToString()
+            new JObject { ["sceneName"] = sceneName }.ToString(),
+            ObsConn.Prod
         );
 
         if (string.IsNullOrWhiteSpace(json))

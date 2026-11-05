@@ -1,3 +1,4 @@
+using BroStreamerTools;
 using BroStreamerTools.Logging;
 using Newtonsoft.Json.Linq;
 
@@ -9,7 +10,7 @@ public partial class CPHInline
     {
         CPH.TryGetArg("sbArgDebugThis", out bool debugEnabled);
 
-        var scenes = JObject.Parse(CPH.ObsSendRaw("GetSceneList", "{}", 0))["scenes"];
+        var scenes = JObject.Parse(CPH.ObsSendRaw("GetSceneList", "{}", ObsConn.Prod))["scenes"];
         if (debugEnabled)
         {
             BroLogger.Debug($"Scene count: {((JArray)scenes).Count}");
@@ -34,7 +35,7 @@ public partial class CPHInline
     {
         string req = isGroup ? "GetGroupSceneItemList" : "GetSceneItemList";
         string payload = new JObject { ["sceneName"] = sceneName }.ToString();
-        string raw = CPH.ObsSendRaw(req, payload, 0);
+        string raw = CPH.ObsSendRaw(req, payload, ObsConn.Prod);
         var items = JObject.Parse(raw)["sceneItems"];
 
         if (items == null)
@@ -62,7 +63,7 @@ public partial class CPHInline
                     ["sceneItemId"] = (int)item["sceneItemId"],
                     ["sceneItemEnabled"] = false,
                 }.ToString();
-                CPH.ObsSendRaw("SetSceneItemEnabled", set, 0);
+                CPH.ObsSendRaw("SetSceneItemEnabled", set, ObsConn.Prod);
             }
 
             if (item.Value<bool?>("isGroup") ?? false)

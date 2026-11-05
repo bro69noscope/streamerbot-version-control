@@ -1,3 +1,5 @@
+using BroStreamerTools;
+
 public partial class CPHInline
 {
     public bool Execute()
@@ -5,7 +7,7 @@ public partial class CPHInline
         CPH.ObsSendRaw(
             "PressInputPropertiesButton",
             "{\"inputName\":\"browser__streamerbot_alerts\",\"propertyName\":\"refreshnocache\"}",
-            0
+            ObsConn.Default
         );
         return true;
     }

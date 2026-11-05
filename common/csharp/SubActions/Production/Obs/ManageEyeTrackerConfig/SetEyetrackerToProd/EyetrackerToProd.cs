@@ -1,3 +1,4 @@
+using BroStreamerTools;
 using Newtonsoft.Json.Linq;
 
 public partial class CPHInline
@@ -7,8 +8,8 @@ public partial class CPHInline
 
     public bool Execute()
     {
-        SetEnabled(0, true);
-        SetEnabled(2, false);
+        SetEnabled(ObsConn.Prod, true);
+        SetEnabled(ObsConn.Ftp, false);
         return true;
     }
 

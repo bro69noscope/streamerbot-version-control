@@ -26,7 +26,7 @@ public partial class CPHInline
     private JArray GetItems(string scene)
     {
         string payload = new JObject { ["sceneName"] = scene }.ToString();
-        string raw = CPH.ObsSendRaw("GetSceneItemList", payload, 0);
+        string raw = CPH.ObsSendRaw("GetSceneItemList", payload, ObsConn.Prod);
 
         if (string.IsNullOrEmpty(raw))
             return [];
@@ -43,6 +43,6 @@ public partial class CPHInline
             ["sceneItemEnabled"] = enabled,
         }.ToString();
 
-        CPH.ObsSendRaw("SetSceneItemEnabled", payload, 0);
+        CPH.ObsSendRaw("SetSceneItemEnabled", payload, ObsConn.Prod);
     }
 }

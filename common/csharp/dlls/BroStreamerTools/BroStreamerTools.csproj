@@ -20,9 +20,7 @@
   <PropertyGroup>
     <ObsMappingsGen>$(MSBuildProjectDirectory)\obj\gen\ObsMappings.g.cs</ObsMappingsGen>
   </PropertyGroup>
-  <!-- Bakes the OBS mappings (override aware) into the DLL. Needs pwsh, node and the env vars of
-       the vcs scripts (STREAMING_REPO_PATH, MYFILES_PATH). -->
-  <Target Name="GenerateObsMappings" BeforeTargets=" CoreCompile">
+  <Target Name="GenerateObsMappings" BeforeTargets="CoreCompile">
     <Exec Command="pwsh -NoProfile -File &quot;$(MSBuildProjectDirectory)\gen-obs-mappings.ps1&quot; -OutFile &quot;$(ObsMappingsGen)&quot;"/>
     <ItemGroup>
       <Compile Include="$(ObsMappingsGen)"/>

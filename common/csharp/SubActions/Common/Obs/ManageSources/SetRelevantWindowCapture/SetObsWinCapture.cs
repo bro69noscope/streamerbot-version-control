@@ -1,9 +1,10 @@
+using BroStreamerTools;
 using Newtonsoft.Json.Linq;
 
 public partial class CPHInline
 {
     const string InputName = "capture__window__dynamic_hwnd";
-    const int ObsConnection = 0;
+    const int ObsConnection = ObsConn.Default;
 
     static string Enc(string s)
     {

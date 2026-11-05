@@ -14,7 +14,7 @@ public partial class CPHInline
         string raw = CPH.ObsSendRaw(
             "GetSceneItemList",
             new JObject { ["sceneName"] = ParentScene }.ToString(),
-            0
+            ObsConn.Prod
         );
         var items = JObject.Parse(raw)["sceneItems"];
 
@@ -38,7 +38,7 @@ public partial class CPHInline
 
             try
             {
-                CPH.ObsSendRaw("SetSceneItemEnabled", set, 0);
+                CPH.ObsSendRaw("SetSceneItemEnabled", set, ObsConn.Prod);
                 if (debugEnabled)
                 {
                     BroLogger.Debug($"{name} -> {(keep ? "shown" : "hidden")}");

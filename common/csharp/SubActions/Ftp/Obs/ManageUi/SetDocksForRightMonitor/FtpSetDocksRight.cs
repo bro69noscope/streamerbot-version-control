@@ -1,3 +1,5 @@
+using BroStreamerTools;
+
 public partial class CPHInline
 {
     public bool Execute()
@@ -11,7 +13,7 @@ public partial class CPHInline
                     ""filename"": ""right_monitor_ftp_1080p_100%""
                 }
             }",
-            0
+            ObsConn.Default
         );
         return true;
     }
